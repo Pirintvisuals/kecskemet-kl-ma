@@ -63,6 +63,17 @@ export default function AuroraBackground({ dense = false }: { dense?: boolean })
         animate={{ x: [0, 40, 0], y: [0, -40, 0], scale: [1, 1.2, 1] }}
         transition={{ duration: 26, repeat: Infinity, ease: "easeInOut" }}
       />
+      {/* Warm glow — the "meleg kint / hűvös bent" climate duality */}
+      <motion.div
+        aria-hidden
+        className="absolute -bottom-24 right-[-4rem] h-[30rem] w-[30rem] rounded-full blur-[150px]"
+        style={{
+          background:
+            "radial-gradient(circle at 50% 50%, rgba(249,115,22,0.26), transparent 62%)",
+        }}
+        animate={{ x: [0, -30, 0], y: [0, 30, 0], scale: [1.05, 1, 1.05] }}
+        transition={{ duration: 24, repeat: Infinity, ease: "easeInOut" }}
+      />
 
       {/* Subtle grid */}
       <div

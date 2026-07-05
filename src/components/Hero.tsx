@@ -1,9 +1,9 @@
 "use client";
 
-import Image from "next/image";
 import { motion, type Variants } from "framer-motion";
 import { Phone, ArrowRight, ShieldCheck, Snowflake, Wind } from "lucide-react";
 import AuroraBackground from "./AuroraBackground";
+import ClimatePanel from "./ClimatePanel";
 import { site } from "@/lib/site";
 
 const container: Variants = {
@@ -45,15 +45,15 @@ export default function Hero() {
             variants={item}
             className="font-display text-4xl font-extrabold leading-[1.05] tracking-tight text-white sm:text-5xl lg:text-6xl"
           >
-            Tökéletes klíma
+            Tökéletes hőmérséklet
             <br className="hidden sm:block" />{" "}
             <span
               className="bg-clip-text text-transparent"
               style={{
                 backgroundImage:
-                  "linear-gradient(100deg,#b6e6ff,#74b2f7 35%,#0a6cd4 60%,#b6e6ff 90%)",
+                  "linear-gradient(100deg,#fb923c,#fdba74 22%,#b6e6ff 55%,#38bdf8 78%,#0a6cd4 95%)",
                 backgroundSize: "220% 100%",
-                animation: "shimmer 4s linear infinite",
+                animation: "shimmer 5s linear infinite",
               }}
             >
               minden évszakban
@@ -65,8 +65,9 @@ export default function Hero() {
             variants={item}
             className="mt-6 max-w-xl text-lg leading-relaxed text-muted"
           >
-            {site.brand} – prémium klímaszerelés, karbantartás és javítás
-            Kecskeméten. Telepítéstől a beüzemelésig, egy megbízható szakembertől,{" "}
+            Nyáron kellemes hűvös, télen otthonos meleg. Prémium
+            klímaszerelés, karbantartás és javítás Kecskeméten – egy megbízható
+            szakembertől,{" "}
             <span className="text-brand-100">garanciával és számlával.</span>
           </motion.p>
 
@@ -107,77 +108,14 @@ export default function Hero() {
           </motion.ul>
         </motion.div>
 
-        {/* ---------- Right: animated visual ---------- */}
+        {/* ---------- Right: climate-control visual ---------- */}
         <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
+          initial={{ opacity: 0, scale: 0.92 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1, ease: [0.22, 1, 0.36, 1], delay: 0.3 }}
-          className="relative mx-auto hidden aspect-square w-full max-w-md lg:block"
+          className="hidden lg:block"
         >
-          {/* Glow halo */}
-          <div className="absolute inset-6 rounded-full bg-brand-500/30 blur-3xl" />
-
-          {/* Orbiting rings */}
-          <motion.div
-            className="absolute inset-0 rounded-full border border-brand-400/25"
-            animate={{ rotate: 360 }}
-            transition={{ duration: 40, repeat: Infinity, ease: "linear" }}
-          >
-            <span className="absolute left-1/2 top-0 h-3 w-3 -translate-x-1/2 rounded-full bg-ice shadow-[0_0_14px_4px_rgba(127,212,255,0.7)]" />
-          </motion.div>
-          <motion.div
-            className="absolute inset-10 rounded-full border border-brand-300/20"
-            animate={{ rotate: -360 }}
-            transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
-          >
-            <span className="absolute right-2 top-1/2 h-2.5 w-2.5 -translate-y-1/2 rounded-full bg-brand-300 shadow-[0_0_12px_3px_rgba(116,178,247,0.7)]" />
-          </motion.div>
-
-          {/* Central glass orb with logo */}
-          <motion.div
-            className="glass-strong absolute inset-[22%] flex items-center justify-center rounded-full"
-            animate={{ y: [0, -12, 0] }}
-            transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-          >
-            <div className="absolute inset-0 rounded-full bg-[radial-gradient(circle_at_50%_35%,rgba(72,168,240,0.35),transparent_70%)]" />
-            <Image
-              src="/logo.png"
-              alt="Kecskemét Klíma logó"
-              width={150}
-              height={150}
-              priority
-              className="relative h-[58%] w-[58%] object-contain drop-shadow-[0_8px_24px_rgba(10,108,212,0.6)]"
-            />
-          </motion.div>
-
-          {/* Floating comfort card */}
-          <motion.div
-            className="glass-strong absolute -bottom-2 -left-4 flex items-center gap-3 rounded-2xl px-4 py-3"
-            animate={{ y: [0, -10, 0] }}
-            transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-          >
-            <div className="grid h-10 w-10 place-items-center rounded-xl bg-brand-500/20 text-brand-200">
-              <Snowflake className="h-5 w-5" />
-            </div>
-            <div>
-              <p className="font-display text-xl font-bold leading-none text-white">
-                21°C
-              </p>
-              <p className="text-xs text-muted">Ideális komfort</p>
-            </div>
-          </motion.div>
-
-          {/* Floating rating card */}
-          <motion.div
-            className="glass-strong absolute -right-3 top-4 rounded-2xl px-4 py-3 text-right"
-            animate={{ y: [0, -9, 0] }}
-            transition={{ duration: 5.5, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
-          >
-            <p className="font-display text-xl font-bold leading-none text-white">
-              4.8★
-            </p>
-            <p className="text-xs text-muted">Google értékelés</p>
-          </motion.div>
+          <ClimatePanel />
         </motion.div>
       </div>
 

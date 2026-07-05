@@ -2,6 +2,9 @@ import { processSteps } from "@/lib/site";
 import SectionHeading from "./SectionHeading";
 import Reveal from "./Reveal";
 
+// Warm → cool journey: from the first warm "hello" to cool comfort.
+const stepColors = ["#f97316", "#fb923c", "#38bdf8", "#0a6cd4"];
+
 export default function Process() {
   return (
     <section id="folyamat" className="relative py-24 sm:py-28">
@@ -17,14 +20,28 @@ export default function Process() {
         />
 
         <div className="relative mt-16">
-          {/* connecting line (desktop) */}
-          <div className="pointer-events-none absolute left-0 right-0 top-7 hidden h-px bg-gradient-to-r from-transparent via-brand-400/40 to-transparent lg:block" />
+          {/* connecting line (desktop) — warm → cool */}
+          <div
+            className="pointer-events-none absolute left-0 right-0 top-7 hidden h-px lg:block"
+            style={{
+              background:
+                "linear-gradient(90deg, transparent, #f9731666 20%, #38bdf866 80%, transparent)",
+            }}
+          />
 
           <ol className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-            {processSteps.map((p, i) => (
+            {processSteps.map((p, i) => {
+              const c = stepColors[i % stepColors.length];
+              return (
               <Reveal key={p.step} delay={i * 0.1}>
                 <li className="relative flex flex-col items-center text-center">
-                  <div className="relative z-10 mb-5 grid h-14 w-14 place-items-center rounded-full bg-brand-500 font-display text-lg font-bold text-white shadow-[0_0_0_6px_rgba(10,108,212,0.15),0_16px_40px_-14px_rgba(10,108,212,0.9)]">
+                  <div
+                    className="relative z-10 mb-5 grid h-14 w-14 place-items-center rounded-full font-display text-lg font-bold text-white"
+                    style={{
+                      backgroundColor: c,
+                      boxShadow: `0 0 0 6px ${c}22, 0 16px 40px -14px ${c}`,
+                    }}
+                  >
                     {p.step}
                   </div>
                   <h3 className="font-display text-lg font-bold text-white">
@@ -35,7 +52,8 @@ export default function Process() {
                   </p>
                 </li>
               </Reveal>
-            ))}
+              );
+            })}
           </ol>
         </div>
       </div>

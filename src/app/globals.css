@@ -29,6 +29,16 @@
   --color-ice: #7fd4ff;
   --color-ice-bright: #b6e6ff;
 
+  /* Warm accent (heating / fűtés / comfort) — the climate-duality colour */
+  --color-warm-300: #fdba74;
+  --color-warm-400: #fb923c;
+  --color-warm-500: #f97316;
+  --color-warm-600: #ea580c;
+  --color-coral: #ff7a59;
+
+  /* Fresh mint (clean air) */
+  --color-mint: #2dd4bf;
+
   /* Midnight navy base (dark canvas) */
   --color-navy-700: #101f3d;
   --color-navy-800: #0b1730;
