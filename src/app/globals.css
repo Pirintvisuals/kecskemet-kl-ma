@@ -1,0 +1,181 @@
+@import "tailwindcss";
+
+/* ============================================================
+   KECSKEMÉT KLÍMA — Design System
+   Palette anchored on the brand logo (blue flame):
+   outer flame  ~ #0060C0  |  inner flame ~ #48A8F0  |  white
+   Extended into a full blue scale + midnight navy base.
+   ============================================================ */
+
+@theme {
+  /* Fonts */
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-sora), var(--font-inter), sans-serif;
+
+  /* Brand blue scale (from logo) */
+  --color-brand-50: #eaf4ff;
+  --color-brand-100: #d2e7ff;
+  --color-brand-200: #a9ceff;
+  --color-brand-300: #74b2f7;
+  --color-brand-400: #3b93ef;
+  --color-brand-500: #0a6cd4;
+  --color-brand-600: #005bb5;
+  --color-brand-700: #0a4a93;
+  --color-brand-800: #0b3a72;
+  --color-brand-900: #0c2b54;
+
+  /* Inner-flame sky / "cold air" accent */
+  --color-sky-glow: #48a8f0;
+  --color-ice: #7fd4ff;
+  --color-ice-bright: #b6e6ff;
+
+  /* Midnight navy base (dark canvas) */
+  --color-navy-700: #101f3d;
+  --color-navy-800: #0b1730;
+  --color-navy-900: #081123;
+  --color-navy-950: #050b18;
+
+  /* Semantic */
+  --color-background: #050b18;
+  --color-foreground: #e8f0fb;
+  --color-muted: #9fb2cc;
+
+  /* Motion */
+  --ease-out-soft: cubic-bezier(0.22, 1, 0.36, 1);
+
+  /* Keyframes */
+  --animate-aurora: aurora 18s ease-in-out infinite;
+  --animate-float-slow: floatSlow 9s ease-in-out infinite;
+  --animate-shimmer: shimmer 3.5s linear infinite;
+  --animate-pulse-glow: pulseGlow 4s ease-in-out infinite;
+  --animate-marquee: marquee 32s linear infinite;
+}
+
+@keyframes aurora {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+    opacity: 0.55;
+  }
+  50% {
+    transform: translate3d(4%, -3%, 0) scale(1.15);
+    opacity: 0.85;
+  }
+}
+
+@keyframes floatSlow {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-14px);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+@keyframes pulseGlow {
+  0%,
+  100% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.9;
+  }
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* ---------- Base ---------- */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: var(--color-brand-500);
+  color: #fff;
+}
+
+/* Subtle custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-navy-950);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-brand-800);
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-brand-600);
+}
+
+/* ---------- Utilities ---------- */
+@utility text-gradient-ice {
+  background-image: linear-gradient(
+    100deg,
+    var(--color-ice-bright),
+    var(--color-brand-300) 45%,
+    var(--color-brand-500)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@utility glass {
+  background: color-mix(in oklab, var(--color-navy-800) 55%, transparent);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid color-mix(in oklab, var(--color-brand-300) 16%, transparent);
+}
+
+@utility glass-strong {
+  background: color-mix(in oklab, var(--color-navy-800) 78%, transparent);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid color-mix(in oklab, var(--color-brand-300) 22%, transparent);
+}
+
+@utility glow-ring {
+  box-shadow:
+    0 0 0 1px color-mix(in oklab, var(--color-brand-400) 30%, transparent),
+    0 20px 60px -20px color-mix(in oklab, var(--color-brand-500) 55%, transparent);
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
