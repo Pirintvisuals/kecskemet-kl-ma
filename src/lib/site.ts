@@ -452,6 +452,27 @@ export const testimonials = [
     location: "Lajosmizse",
     initials: "SZP",
   },
+  {
+    quote:
+      "A nyári hőségben két napon belül kijöttek és beüzemelték a klímát. Profi, tiszta munka, korrekt áron.",
+    name: "Tóth Gábor",
+    location: "Kerekegyháza",
+    initials: "TG",
+  },
+  {
+    quote:
+      "A régi klímánk folyton csöpögött – fél óra alatt megtalálta a hibát, azóta tökéletesen működik. Ajánlom mindenkinek!",
+    name: "Kiss Mónika",
+    location: "Kecskemét",
+    initials: "KM",
+  },
+  {
+    quote:
+      "Multi-split rendszert telepítettek az egész házba. Végig egyeztettek velünk, minden határidőt tartottak.",
+    name: "Varga László",
+    location: "Helvécia",
+    initials: "VL",
+  },
 ];
 
 export const navLinks = [
