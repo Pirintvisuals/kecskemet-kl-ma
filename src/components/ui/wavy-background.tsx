@@ -1,6 +1,13 @@
 "use client";
+/**
+ * Wavy Background — from 21st.dev (Aceternity), heavily perf-optimised:
+ *  - renders at half internal resolution (¼ the pixels)
+ *  - GPU CSS blur on the <canvas> instead of per-frame ctx.filter (CPU)
+ *  - throttled to ~30fps, paused when offscreen or tab hidden
+ *  - respects prefers-reduced-motion (draws a single static frame)
+ */
 import { cn } from "@/lib/utils";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef } from "react";
 import { createNoise3D } from "simplex-noise";
 
 export const WavyBackground = ({
@@ -10,12 +17,11 @@ export const WavyBackground = ({
   colors,
   waveWidth,
   backgroundFill,
-  blur = 10,
-  speed = "fast",
+  blur = 8,
+  speed = "slow",
   waveOpacity = 0.5,
-  ...props
 }: {
-  children?: any;
+  children?: React.ReactNode;
   className?: string;
   containerClassName?: string;
   colors?: string[];
@@ -24,111 +30,105 @@ export const WavyBackground = ({
   blur?: number;
   speed?: "slow" | "fast";
   waveOpacity?: number;
-  [key: string]: any;
 }) => {
-  const noise = createNoise3D();
-  let w: number,
-    h: number,
-    nt: number,
-    i: number,
-    x: number,
-    ctx: any,
-    canvas: any;
   const canvasRef = useRef<HTMLCanvasElement>(null);
-  const getSpeed = () => {
-    switch (speed) {
-      case "slow":
-        return 0.001;
-      case "fast":
-        return 0.002;
-      default:
-        return 0.001;
-    }
-  };
-
-  const init = () => {
-    canvas = canvasRef.current;
-    ctx = canvas.getContext("2d");
-    // Size to the container (adapted from the original window-sized version)
-    w = ctx.canvas.width = canvas.offsetWidth;
-    h = ctx.canvas.height = canvas.offsetHeight;
-    ctx.filter = `blur(${blur}px)`;
-    nt = 0;
-    window.addEventListener("resize", () => {
-      if (!canvasRef.current) return;
-      w = ctx.canvas.width = canvas.offsetWidth;
-      h = ctx.canvas.height = canvas.offsetHeight;
-      ctx.filter = `blur(${blur}px)`;
-    });
-    render();
-  };
-
-  const waveColors = colors ?? [
-    "#38bdf8",
-    "#818cf8",
-    "#c084fc",
-    "#e879f9",
-    "#22d3ee",
-  ];
-  const drawWave = (n: number) => {
-    nt += getSpeed();
-    for (i = 0; i < n; i++) {
-      ctx.beginPath();
-      ctx.lineWidth = waveWidth || 50;
-      ctx.strokeStyle = waveColors[i % waveColors.length];
-      for (x = 0; x < w; x += 5) {
-        var y = noise(x / 800, 0.3 * i, nt) * 100;
-        ctx.lineTo(x, y + h * 0.5); // adjust for height, currently at 50% of the container
-      }
-      ctx.stroke();
-      ctx.closePath();
-    }
-  };
-
-  let animationId: number;
-  const render = () => {
-    ctx.fillStyle = backgroundFill || "black";
-    ctx.globalAlpha = waveOpacity || 0.5;
-    ctx.fillRect(0, 0, w, h);
-    drawWave(5);
-    animationId = requestAnimationFrame(render);
-  };
+  const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    init();
-    return () => {
-      cancelAnimationFrame(animationId);
+    const canvas = canvasRef.current;
+    const container = containerRef.current;
+    if (!canvas || !container) return;
+    const ctx = canvas.getContext("2d");
+    if (!ctx) return;
+
+    const SCALE = 0.5; // internal resolution factor (¼ the pixel work)
+    const waveColors = colors ?? ["#0a6cd4", "#38bdf8", "#7fd4ff"];
+    const step = speed === "fast" ? 0.0018 : 0.0009;
+    const lineW = (waveWidth || 34) * SCALE;
+    const amp = 90 * SCALE;
+
+    let w = 0,
+      h = 0,
+      nt = 0,
+      raf = 0,
+      last = 0;
+    let running = true;
+    const noise = createNoise3D();
+
+    const resize = () => {
+      w = canvas.width = Math.max(1, Math.floor(container.offsetWidth * SCALE));
+      h = canvas.height = Math.max(1, Math.floor(container.offsetHeight * SCALE));
     };
-  }, []);
 
-  const [isSafari, setIsSafari] = useState(false);
-  useEffect(() => {
-    // I'm sorry but i have got to support it on safari.
-    setIsSafari(
-      typeof window !== "undefined" &&
-        navigator.userAgent.includes("Safari") &&
-        !navigator.userAgent.includes("Chrome")
+    const draw = () => {
+      nt += step;
+      ctx.globalAlpha = 1;
+      ctx.fillStyle = backgroundFill || "#050b18";
+      ctx.fillRect(0, 0, w, h);
+      ctx.globalAlpha = waveOpacity;
+      ctx.lineWidth = lineW;
+      for (let i = 0; i < waveColors.length; i++) {
+        ctx.beginPath();
+        ctx.strokeStyle = waveColors[i];
+        for (let x = 0; x <= w; x += 14 * SCALE) {
+          const y = noise(x / (800 * SCALE), 0.3 * i, nt) * amp;
+          if (x === 0) ctx.moveTo(x, y + h * 0.5);
+          else ctx.lineTo(x, y + h * 0.5);
+        }
+        ctx.stroke();
+      }
+    };
+
+    resize();
+
+    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (reduce) {
+      draw();
+      window.addEventListener("resize", resize);
+      return () => window.removeEventListener("resize", resize);
+    }
+
+    const loop = (t: number) => {
+      raf = requestAnimationFrame(loop);
+      if (!running) return;
+      if (t - last < 33) return; // ~30fps cap
+      last = t;
+      draw();
+    };
+    raf = requestAnimationFrame(loop);
+
+    const io = new IntersectionObserver(
+      (entries) => {
+        running = entries[0].isIntersecting && !document.hidden;
+      },
+      { threshold: 0 }
     );
-  }, []);
+    io.observe(container);
+    const onVis = () => {
+      running = !document.hidden;
+    };
+    document.addEventListener("visibilitychange", onVis);
+    window.addEventListener("resize", resize);
+
+    return () => {
+      cancelAnimationFrame(raf);
+      io.disconnect();
+      document.removeEventListener("visibilitychange", onVis);
+      window.removeEventListener("resize", resize);
+    };
+  }, [colors, waveWidth, backgroundFill, speed, waveOpacity]);
 
   return (
     <div
-      className={cn(
-        "h-screen flex flex-col items-center justify-center",
-        containerClassName
-      )}
+      ref={containerRef}
+      className={cn("relative h-full w-full", containerClassName)}
     >
       <canvas
-        className="absolute inset-0 z-0"
         ref={canvasRef}
-        id="canvas"
-        style={{
-          ...(isSafari ? { filter: `blur(${blur}px)` } : {}),
-        }}
-      ></canvas>
-      <div className={cn("relative z-10", className)} {...props}>
-        {children}
-      </div>
+        className="absolute inset-0 h-full w-full"
+        style={{ filter: `blur(${blur}px)` }}
+      />
+      {children ? <div className={cn("relative z-10", className)}>{children}</div> : null}
     </div>
   );
 };

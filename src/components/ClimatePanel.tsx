@@ -13,6 +13,30 @@ import { Snowflake, Flame, Minus, Plus, Fan, Power } from "lucide-react";
 const MIN = 16;
 const MAX = 30;
 
+// dial geometry — a 260° arc with the gap centred at the bottom
+const R = 82; // ring radius inside a 200×200 viewBox
+const START = -130; // degrees, 0 = top, clockwise positive
+const END = 130;
+const SWEEP = END - START;
+
+// Round to 3 decimals so SSR (Node) and client (browser) produce byte-identical
+// strings — Math.cos/sin can differ by 1 ULP across engines → hydration mismatch.
+const r3 = (n: number) => Math.round(n * 1000) / 1000;
+
+// polar point on the ring (deg: 0 = top, clockwise)
+const polar = (deg: number) => {
+  const rad = ((deg - 90) * Math.PI) / 180;
+  return [r3(100 + R * Math.cos(rad)), r3(100 + R * Math.sin(rad))] as const;
+};
+
+// SVG arc path between two angles (always clockwise)
+const arc = (from: number, to: number) => {
+  const [x1, y1] = polar(from);
+  const [x2, y2] = polar(to);
+  const large = to - from > 180 ? 1 : 0;
+  return `M ${x1} ${y1} A ${R} ${R} 0 ${large} 1 ${x2} ${y2}`;
+};
+
 export default function ClimatePanel() {
   const [temp, setTemp] = useState(21);
   const [mode, setMode] = useState<"cool" | "heat">("cool");
@@ -21,7 +45,8 @@ export default function ClimatePanel() {
   const accent = mode === "cool" ? "#38bdf8" : "#f97316";
   const accentSoft = mode === "cool" ? "rgba(56,189,248," : "rgba(249,115,22,";
   // marker angle across the top arc (avoids bottom gap)
-  const angle = -130 + ((temp - MIN) / (MAX - MIN)) * 260;
+  const angle = START + ((temp - MIN) / (MAX - MIN)) * SWEEP;
+  const [knobX, knobY] = polar(angle);
 
   const dec = () => setTemp((t) => Math.max(MIN, t - 1));
   const inc = () => setTemp((t) => Math.min(MAX, t + 1));
@@ -63,35 +88,51 @@ export default function ClimatePanel() {
             <Minus className="h-5 w-5" />
           </button>
 
-          <div className="relative grid h-44 w-44 place-items-center">
-            {/* spectrum ring */}
-            <div
-              className="absolute inset-0 rounded-full"
-              style={{
-                background: `conic-gradient(from 180deg,
-                  transparent 0deg 24deg,
-                  #ea580c 24deg, #fb923c 58deg, #fdba74 95deg,
-                  #b6e6ff 145deg, #38bdf8 175deg, #0a6cd4 185deg,
-                  #38bdf8 195deg, #b6e6ff 225deg, #fdba74 270deg,
-                  #fb923c 305deg, #ea580c 336deg,
-                  transparent 336deg 360deg)`,
-                mask: "radial-gradient(farthest-side, transparent calc(100% - 14px), #000 calc(100% - 13px))",
-                WebkitMask:
-                  "radial-gradient(farthest-side, transparent calc(100% - 14px), #000 calc(100% - 13px))",
-                opacity: 0.85,
-              }}
-            />
-            {/* moving marker */}
-            <motion.div
-              className="absolute inset-0"
-              animate={{ rotate: angle }}
-              transition={{ type: "spring", stiffness: 200, damping: 20 }}
+          <div className="relative grid h-44 w-44 shrink-0 place-items-center">
+            {/* dial ring — SVG guarantees a perfectly round, even arc */}
+            <svg
+              viewBox="0 0 200 200"
+              className="absolute inset-0 h-full w-full"
+              aria-hidden
             >
-              <div
-                className="absolute left-1/2 top-0 h-4 w-4 -translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-navy-900 bg-white"
-                style={{ boxShadow: `0 0 14px 4px ${accentSoft}0.85)` }}
+              <defs>
+                <linearGradient id="dialTrack" x1="0" y1="1" x2="1" y2="0">
+                  <stop offset="0%" stopColor="#f97316" />
+                  <stop offset="50%" stopColor="#fdba74" />
+                  <stop offset="100%" stopColor="#38bdf8" />
+                </linearGradient>
+              </defs>
+              {/* full spectrum track */}
+              <path
+                d={arc(START, END)}
+                fill="none"
+                stroke="url(#dialTrack)"
+                strokeWidth={12}
+                strokeLinecap="round"
+                opacity={0.85}
               />
-            </motion.div>
+              {/* progress arc in the active mode colour */}
+              <motion.path
+                fill="none"
+                stroke={accent}
+                strokeWidth={12}
+                strokeLinecap="round"
+                initial={false}
+                animate={{ d: arc(START, angle) }}
+                transition={{ type: "spring", stiffness: 200, damping: 22 }}
+              />
+              {/* knob */}
+              <motion.circle
+                r={9}
+                fill="#fff"
+                stroke="#0b1220"
+                strokeWidth={3}
+                initial={false}
+                animate={{ cx: knobX, cy: knobY }}
+                transition={{ type: "spring", stiffness: 200, damping: 22 }}
+                style={{ filter: `drop-shadow(0 0 6px ${accentSoft}0.85))` }}
+              />
+            </svg>
 
             {/* readout */}
             <div className="grid h-32 w-32 place-items-center rounded-full bg-navy-950/85 ring-1 ring-white/10">
