@@ -4,6 +4,7 @@ import { motion, type Variants } from "framer-motion";
 import { Phone, ArrowRight, ShieldCheck, Snowflake, Wind } from "lucide-react";
 import AuroraBackground from "./AuroraBackground";
 import ClimatePanel from "./ClimatePanel";
+import ImagePlaceholder from "./ImagePlaceholder";
 import { site } from "@/lib/site";
 
 const container: Variants = {
@@ -51,9 +52,9 @@ export default function Hero() {
               className="bg-clip-text text-transparent"
               style={{
                 backgroundImage:
-                  "linear-gradient(100deg,#fb923c,#fdba74 22%,#b6e6ff 55%,#38bdf8 78%,#0a6cd4 95%)",
+                  "linear-gradient(100deg,#b6e6ff,#74b2f7 35%,#0a6cd4 60%,#b6e6ff 90%)",
                 backgroundSize: "220% 100%",
-                animation: "shimmer 5s linear infinite",
+                animation: "shimmer 4s linear infinite",
               }}
             >
               minden évszakban
@@ -75,7 +76,7 @@ export default function Hero() {
           <motion.div variants={item} className="mt-9 flex flex-wrap items-center gap-4">
             <a
               href={site.phoneHref}
-              className="group relative inline-flex items-center gap-2.5 overflow-hidden rounded-full bg-brand-500 px-7 py-3.5 font-semibold text-white shadow-[0_18px_50px_-15px_rgba(10,108,212,0.9)] transition-transform duration-200 hover:-translate-y-0.5 cursor-pointer"
+              className="group relative inline-flex items-center gap-2.5 overflow-hidden rounded-full bg-warm-500 px-7 py-3.5 font-semibold text-white shadow-[0_18px_50px_-15px_rgba(249,115,22,0.8)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-warm-600 cursor-pointer"
             >
               <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/25 to-transparent transition-transform duration-700 group-hover:translate-x-full" />
               <Phone className="h-5 w-5" />
@@ -106,16 +107,31 @@ export default function Hero() {
               </li>
             ))}
           </motion.ul>
+
+          {/* Mobile: interactive panel */}
+          <motion.div variants={item} className="mt-10 lg:hidden">
+            <ClimatePanel />
+          </motion.div>
         </motion.div>
 
-        {/* ---------- Right: climate-control visual ---------- */}
+        {/* ---------- Right: real-photo slot + floating interactive control ---------- */}
         <motion.div
           initial={{ opacity: 0, scale: 0.92 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1, ease: [0.22, 1, 0.36, 1], delay: 0.3 }}
-          className="hidden lg:block"
+          className="relative hidden lg:block"
         >
-          <ClimatePanel />
+          <ImagePlaceholder
+            label="Beszerelt klíma egy nappaliban"
+            hint="Valódi referenciafotó a munkáiról"
+            minH="min-h-[34rem]"
+            align="top"
+            className="w-full"
+          />
+          {/* floating live control over the photo's lower-left corner */}
+          <div className="absolute -bottom-6 -left-8 w-[56%] min-w-[15rem]">
+            <ClimatePanel />
+          </div>
         </motion.div>
       </div>
 

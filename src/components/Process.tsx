@@ -2,8 +2,7 @@ import { processSteps } from "@/lib/site";
 import SectionHeading from "./SectionHeading";
 import Reveal from "./Reveal";
 
-// Warm → cool journey: from the first warm "hello" to cool comfort.
-const stepColors = ["#f97316", "#fb923c", "#38bdf8", "#0a6cd4"];
+const stepColors = ["#0a6cd4", "#0a6cd4", "#0a6cd4", "#0a6cd4"];
 
 export default function Process() {
   return (
@@ -20,14 +19,8 @@ export default function Process() {
         />
 
         <div className="relative mt-16">
-          {/* connecting line (desktop) — warm → cool */}
-          <div
-            className="pointer-events-none absolute left-0 right-0 top-7 hidden h-px lg:block"
-            style={{
-              background:
-                "linear-gradient(90deg, transparent, #f9731666 20%, #38bdf866 80%, transparent)",
-            }}
-          />
+          {/* connecting line (desktop) */}
+          <div className="pointer-events-none absolute left-0 right-0 top-7 hidden h-px bg-gradient-to-r from-transparent via-brand-400/40 to-transparent lg:block" />
 
           <ol className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
             {processSteps.map((p, i) => {

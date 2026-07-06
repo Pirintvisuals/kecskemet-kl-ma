@@ -43,30 +43,18 @@ export default function Services() {
                   className="group relative flex h-full flex-col overflow-hidden rounded-3xl border border-white/8 bg-navy-800/50 p-7 transition-all duration-300 hover:-translate-y-1 hover:border-brand-400/40 hover:bg-navy-800/80 cursor-pointer"
                   style={{ ["--accent" as string]: s.accent }}
                 >
-                  {/* hover glow (accent-tinted) */}
-                  <div
-                    className="pointer-events-none absolute -right-16 -top-16 h-40 w-40 rounded-full opacity-0 blur-3xl transition-opacity duration-500 group-hover:opacity-100"
-                    style={{ background: `${s.accent}33` }}
-                  />
+                  {/* hover glow */}
+                  <div className="pointer-events-none absolute -right-16 -top-16 h-40 w-40 rounded-full bg-brand-500/20 opacity-0 blur-3xl transition-opacity duration-500 group-hover:opacity-100" />
 
                   <div className="relative flex items-start gap-4">
-                    <div
-                      className="grid h-14 w-14 shrink-0 place-items-center rounded-2xl ring-1 transition-transform duration-300 group-hover:scale-105"
-                      style={{
-                        backgroundColor: `${s.accent}26`,
-                        color: s.accent,
-                        boxShadow: `inset 0 0 0 1px ${s.accent}40`,
-                      }}
-                    >
+                    <div className="grid h-14 w-14 shrink-0 place-items-center rounded-2xl bg-gradient-to-br from-brand-500/25 to-sky-glow/10 text-brand-200 ring-1 ring-brand-400/25 transition-transform duration-300 group-hover:scale-105">
                       <Icon className="h-7 w-7" />
                     </div>
                     <div>
                       <h3 className="font-display text-xl font-bold text-white">
                         {s.title}
                       </h3>
-                      <p className="text-sm font-medium" style={{ color: s.accent }}>
-                        {s.short}
-                      </p>
+                      <p className="text-sm font-medium text-brand-300">{s.short}</p>
                     </div>
                   </div>
 
@@ -80,19 +68,13 @@ export default function Services() {
                         key={p}
                         className="flex items-start gap-2 text-sm text-brand-100/90"
                       >
-                        <Check
-                          className="mt-0.5 h-4 w-4 shrink-0"
-                          style={{ color: s.accent }}
-                        />
+                        <Check className="mt-0.5 h-4 w-4 shrink-0 text-brand-300" />
                         {p}
                       </li>
                     ))}
                   </ul>
 
-                  <span
-                    className="relative mt-6 inline-flex items-center gap-1.5 text-sm font-semibold transition-colors"
-                    style={{ color: s.accent }}
-                  >
+                  <span className="relative mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-brand-200 transition-colors group-hover:text-white">
                     Részletek megtekintése
                     <ArrowRight className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
                   </span>

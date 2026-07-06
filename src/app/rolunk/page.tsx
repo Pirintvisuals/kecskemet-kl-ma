@@ -18,6 +18,7 @@ import Footer from "@/components/Footer";
 import Reveal from "@/components/Reveal";
 import AuroraBackground from "@/components/AuroraBackground";
 import AboutVisual from "@/components/AboutVisual";
+import ImagePlaceholder from "@/components/ImagePlaceholder";
 import Stats from "@/components/Stats";
 import CtaBand from "@/components/CtaBand";
 import { differentiators, services, site } from "@/lib/site";
@@ -88,7 +89,7 @@ export default function AboutPage() {
               <div className="mt-9 flex flex-wrap items-center gap-4">
                 <a
                   href={site.phoneHref}
-                  className="inline-flex items-center gap-2.5 rounded-full bg-brand-500 px-7 py-3.5 font-semibold text-white shadow-[0_18px_50px_-15px_rgba(10,108,212,0.9)] transition-transform duration-200 hover:-translate-y-0.5 cursor-pointer"
+                  className="inline-flex items-center gap-2.5 rounded-full bg-warm-500 px-7 py-3.5 font-semibold text-white shadow-[0_18px_50px_-15px_rgba(249,115,22,0.9)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-warm-600 cursor-pointer"
                 >
                   <Phone className="h-5 w-5" />
                   {site.phone}
@@ -141,9 +142,14 @@ export default function AboutPage() {
             </div>
           </Reveal>
 
-          {/* quote + quick facts */}
+          {/* photo + quote + quick facts */}
           <Reveal delay={0.1}>
             <div className="space-y-6">
+              <ImagePlaceholder
+                label="Polyák Zoltán munka közben / céges autó"
+                hint="Team- vagy portréfotó egyenruhában"
+                minH="min-h-[240px]"
+              />
               <div className="relative overflow-hidden rounded-3xl border border-brand-400/20 bg-navy-800/60 p-8">
                 <Quote className="absolute -right-2 -top-2 h-20 w-20 text-brand-500/10" />
                 <p className="relative font-display text-xl font-semibold leading-relaxed text-white">

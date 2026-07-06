@@ -40,11 +40,7 @@ export default function CtaBand({
             <div className="relative mt-8 flex flex-wrap items-center justify-center gap-4">
               <a
                 href={site.phoneHref}
-                className="inline-flex items-center gap-2.5 rounded-full px-7 py-3.5 font-semibold text-white shadow-lg transition-transform duration-200 hover:-translate-y-0.5 cursor-pointer"
-                style={{
-                  backgroundColor: accent,
-                  boxShadow: `0 18px 50px -15px ${accent}`,
-                }}
+                className="inline-flex items-center gap-2.5 rounded-full bg-warm-500 px-7 py-3.5 font-semibold text-white shadow-[0_18px_50px_-15px_rgba(249,115,22,0.8)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-warm-600 cursor-pointer"
               >
                 <Phone className="h-5 w-5" />
                 {site.phone}

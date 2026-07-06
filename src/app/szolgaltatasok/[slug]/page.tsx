@@ -18,6 +18,7 @@ import Reveal from "@/components/Reveal";
 import ClimateVisual from "@/components/ClimateVisual";
 import ServiceFaq from "@/components/ServiceFaq";
 import CtaBand from "@/components/CtaBand";
+import ImagePlaceholder from "@/components/ImagePlaceholder";
 import AuroraBackground from "@/components/AuroraBackground";
 import { services, site } from "@/lib/site";
 
@@ -113,11 +114,7 @@ export default async function ServicePage({
               <div className="mt-9 flex flex-wrap items-center gap-4">
                 <a
                   href={site.phoneHref}
-                  className="inline-flex items-center gap-2.5 rounded-full px-7 py-3.5 font-semibold text-white transition-transform duration-200 hover:-translate-y-0.5 cursor-pointer"
-                  style={{
-                    backgroundColor: accent,
-                    boxShadow: `0 18px 50px -15px ${accent}`,
-                  }}
+                  className="inline-flex items-center gap-2.5 rounded-full bg-warm-500 px-7 py-3.5 font-semibold text-white shadow-[0_18px_50px_-15px_rgba(249,115,22,0.8)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-warm-600 cursor-pointer"
                 >
                   <Phone className="h-5 w-5" />
                   {site.phone}
@@ -261,6 +258,33 @@ export default async function ServicePage({
               </div>
             </div>
           </Reveal>
+        </div>
+      </section>
+
+      {/* ---------------- WORK PHOTOS ---------------- */}
+      <section className="relative py-12">
+        <div className="mx-auto max-w-7xl px-6">
+          <Reveal>
+            <h2 className="mb-8 text-center font-display text-2xl font-bold text-white">
+              Így néz ki egy {s.title.toLowerCase()}
+            </h2>
+          </Reveal>
+          <div className="grid gap-4 sm:grid-cols-2">
+            <Reveal>
+              <ImagePlaceholder
+                label="Előtte"
+                hint={`Fotó a ${s.title.toLowerCase()} előtt`}
+                minH="min-h-[260px]"
+              />
+            </Reveal>
+            <Reveal delay={0.1}>
+              <ImagePlaceholder
+                label="Utána"
+                hint="A kész, elvégzett munka"
+                minH="min-h-[260px]"
+              />
+            </Reveal>
+          </div>
         </div>
       </section>
 

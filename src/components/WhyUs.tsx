@@ -12,8 +12,7 @@ import SectionHeading from "./SectionHeading";
 import Reveal from "./Reveal";
 
 const icons: LucideIcon[] = [ShieldCheck, Zap, Receipt, UserCheck, Layers, Leaf];
-// Warm + cool + fresh mix so the grid feels lively, not monochrome.
-const iconColors = ["#38bdf8", "#fb923c", "#0a6cd4", "#f97316", "#22d3ee", "#2dd4bf"];
+const iconColors = ["#38bdf8", "#38bdf8", "#38bdf8", "#38bdf8", "#38bdf8", "#38bdf8"];
 
 export default function WhyUs() {
   return (

@@ -105,7 +105,7 @@ export default function ContactForm({
 
       <button
         type="submit"
-        className="group flex w-full items-center justify-center gap-2 rounded-xl bg-brand-500 px-6 py-3.5 font-semibold text-white shadow-[0_16px_40px_-14px_rgba(10,108,212,0.9)] transition-transform duration-200 hover:-translate-y-0.5 cursor-pointer"
+        className="group flex w-full items-center justify-center gap-2 rounded-xl bg-warm-500 px-6 py-3.5 font-semibold text-white shadow-[0_16px_40px_-14px_rgba(249,115,22,0.9)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-warm-600 cursor-pointer"
       >
         <Send className="h-4 w-4" />
         Üzenet küldése

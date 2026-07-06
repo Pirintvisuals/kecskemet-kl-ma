@@ -429,6 +429,31 @@ export const faqs = [
   },
 ];
 
+// SAMPLE reviews — replace with the real Google értékelések before launch.
+export const testimonials = [
+  {
+    quote:
+      "Gyors és precíz munka. A klíma másnapra már működött, és minden tiszta maradt utána. Csak ajánlani tudom!",
+    name: "Kovács Zoltán",
+    location: "Kecskemét",
+    initials: "KZ",
+  },
+  {
+    quote:
+      "Segítettek kiválasztani a lakásunkhoz illő megfelelő típust, korrekt áron. Az árajánlatban nem volt rejtett költség.",
+    name: "Nagy Andrea",
+    location: "Kecskemét",
+    initials: "NA",
+  },
+  {
+    quote:
+      "Évek óta velük karbantartatom a klímámat. Megbízható, pontos és korrekt szakember – végre valaki, akire lehet számítani.",
+    name: "Szabó Péter",
+    location: "Lajosmizse",
+    initials: "SZP",
+  },
+];
+
 export const navLinks = [
   { href: "/#szolgaltatasok", label: "Szolgáltatások" },
   { href: "/klimak/", label: "Márkák" },

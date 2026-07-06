@@ -58,7 +58,7 @@ export default function Navbar() {
         {/* Desktop CTA */}
         <a
           href={site.phoneHref}
-          className="hidden items-center gap-2 rounded-full bg-brand-500 px-5 py-2.5 text-sm font-semibold text-white shadow-[0_12px_30px_-12px_rgba(10,108,212,0.9)] transition-transform duration-200 hover:-translate-y-0.5 lg:inline-flex cursor-pointer"
+          className="hidden items-center gap-2 rounded-full bg-warm-500 px-5 py-2.5 text-sm font-semibold text-white shadow-[0_12px_30px_-12px_rgba(249,115,22,0.9)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-warm-600 lg:inline-flex cursor-pointer"
         >
           <Phone className="h-4 w-4" />
           {site.phone}
@@ -102,7 +102,7 @@ export default function Navbar() {
             <a
               href={site.phoneHref}
               onClick={() => setOpen(false)}
-              className="mt-2 flex items-center justify-center gap-2 rounded-xl bg-brand-500 px-5 py-3 font-semibold text-white cursor-pointer"
+              className="mt-2 flex items-center justify-center gap-2 rounded-xl bg-warm-500 px-5 py-3 font-semibold text-white cursor-pointer"
             >
               <Phone className="h-5 w-5" />
               {site.phone}
