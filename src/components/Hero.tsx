@@ -29,18 +29,6 @@ export default function Hero() {
       <div className="relative z-10 mx-auto grid w-full max-w-7xl grid-cols-1 items-center gap-12 px-6 lg:grid-cols-[1.05fr_0.95fr] lg:gap-8">
         {/* ---------- Left: copy ---------- */}
         <motion.div variants={container} initial="hidden" animate="show">
-          {/* Eyebrow */}
-          <motion.div
-            variants={item}
-            className="glass mb-6 inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm text-brand-100"
-          >
-            <span className="relative flex h-2.5 w-2.5">
-              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
-              <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-emerald-400" />
-            </span>
-            Gyors kiszállás Kecskeméten és 30 km-es körzetében
-          </motion.div>
-
           {/* Headline */}
           <motion.h1
             variants={item}

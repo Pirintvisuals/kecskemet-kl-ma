@@ -201,7 +201,7 @@ export const services: Service[] = [
       "Átlátható árajánlat munka előtt",
     ],
     icon: "repair",
-    accent: "#FB923C",
+    accent: "#6366F1",
     metaTitle: "Klíma javítás és hibakeresés Kecskeméten – minden márka | Kecskemét Klíma",
     heroKicker: "Javítás",
     heroLead:
