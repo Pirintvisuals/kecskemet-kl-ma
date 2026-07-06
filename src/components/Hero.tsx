@@ -5,6 +5,7 @@ import { Phone, ArrowRight, ShieldCheck, Snowflake, Wind } from "lucide-react";
 import AuroraBackground from "./AuroraBackground";
 import ClimatePanel from "./ClimatePanel";
 import ImagePlaceholder from "./ImagePlaceholder";
+import { WavyBackground } from "./ui/wavy-background";
 import { site } from "@/lib/site";
 
 const container: Variants = {
@@ -25,6 +26,19 @@ export default function Hero() {
   return (
     <section className="relative flex min-h-[100svh] items-center overflow-hidden pt-28 pb-16">
       <AuroraBackground dense />
+
+      {/* Flowing "airflow" waves along the bottom (21st.dev / Aceternity Wavy Background) */}
+      <div className="pointer-events-none absolute inset-x-0 -bottom-10 h-[34svh] opacity-70 [mask-image:radial-gradient(130%_110%_at_25%_100%,#000_25%,transparent_72%)]">
+        <WavyBackground
+          containerClassName="absolute inset-0 h-full"
+          colors={["#0a6cd4", "#38bdf8", "#7fd4ff", "#fb923c"]}
+          backgroundFill="#050b18"
+          waveWidth={34}
+          blur={7}
+          speed="slow"
+          waveOpacity={0.65}
+        />
+      </div>
 
       <div className="relative z-10 mx-auto grid w-full max-w-7xl grid-cols-1 items-center gap-12 px-6 lg:grid-cols-[1.05fr_0.95fr] lg:gap-8">
         {/* ---------- Left: copy ---------- */}
