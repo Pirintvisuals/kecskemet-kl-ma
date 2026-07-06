@@ -15,7 +15,7 @@ export default function TrustBar() {
           {row.map((b, i) => (
             <span
               key={`${b}-${i}`}
-              className="font-display text-lg font-semibold whitespace-nowrap text-brand-100/50 transition-colors hover:text-brand-100"
+              className="font-display text-lg font-semibold whitespace-nowrap text-brand-100/50 transition-colors hover:text-warm-400"
             >
               {b}
             </span>

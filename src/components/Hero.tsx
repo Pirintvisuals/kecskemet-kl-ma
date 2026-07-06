@@ -34,7 +34,16 @@ export default function Hero() {
             variants={item}
             className="font-display text-4xl font-extrabold leading-[1.05] tracking-tight text-white sm:text-5xl lg:text-6xl"
           >
-            Tökéletes hőmérséklet
+            Tökéletes{" "}
+            <span
+              className="bg-clip-text text-transparent"
+              style={{
+                backgroundImage:
+                  "linear-gradient(90deg,#fb923c 0%,#fdba74 28%,#b6e6ff 55%,#38bdf8 80%,#74b2f7 100%)",
+              }}
+            >
+              hőmérséklet
+            </span>
             <br className="hidden sm:block" />{" "}
             <span
               className="bg-clip-text text-transparent"
@@ -54,25 +63,30 @@ export default function Hero() {
             variants={item}
             className="mt-6 max-w-xl text-lg leading-relaxed text-muted"
           >
-            Nyáron kellemes hűvös, télen otthonos meleg. Prémium
-            klímaszerelés, karbantartás és javítás Kecskeméten – egy megbízható
-            szakembertől,{" "}
+            Nyáron <span className="font-semibold text-ice">kellemes hűvös</span>,
+            télen <span className="font-semibold text-warm-400">otthonos meleg</span>.
+            Prémium klímaszerelés, karbantartás és javítás Kecskeméten – egy
+            megbízható szakembertől,{" "}
             <span className="text-brand-100">garanciával és számlával.</span>
           </motion.p>
 
           {/* CTAs */}
           <motion.div variants={item} className="mt-9 flex flex-wrap items-center gap-4">
-            <a
-              href={site.phoneHref}
-              className="group relative inline-flex items-center gap-2.5 overflow-hidden rounded-full bg-warm-500 px-7 py-3.5 font-semibold text-white shadow-[0_18px_50px_-15px_rgba(249,115,22,0.8)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-warm-600 cursor-pointer"
-            >
-              <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/25 to-transparent transition-transform duration-700 group-hover:translate-x-full" />
-              <Phone className="h-5 w-5" />
-              {site.phone}
-            </a>
+            <span className="relative inline-flex">
+              {/* pulsing halo */}
+              <span className="absolute inset-0 animate-[pulseGlow_3s_ease-in-out_infinite] rounded-full bg-warm-500/40 blur-xl" />
+              <a
+                href={site.phoneHref}
+                className="group relative inline-flex items-center gap-2.5 overflow-hidden rounded-full bg-warm-500 px-7 py-3.5 font-semibold text-white shadow-[0_18px_50px_-15px_rgba(249,115,22,0.8)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-warm-600 cursor-pointer"
+              >
+                <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/25 to-transparent transition-transform duration-700 group-hover:translate-x-full" />
+                <Phone className="h-5 w-5" />
+                {site.phone}
+              </a>
+            </span>
             <a
               href="#szolgaltatasok"
-              className="glass-strong inline-flex items-center gap-2 rounded-full px-6 py-3.5 font-semibold text-brand-50 transition-colors duration-200 hover:text-white cursor-pointer"
+              className="glass-strong group inline-flex items-center gap-2 rounded-full px-6 py-3.5 font-semibold text-brand-50 transition-all duration-200 hover:border-warm-400/50 hover:text-white cursor-pointer"
             >
               Szolgáltatásaink
               <ArrowRight className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
@@ -95,6 +109,25 @@ export default function Hero() {
               </li>
             ))}
           </motion.ul>
+
+          {/* Quick stats — instant credibility */}
+          <motion.div
+            variants={item}
+            className="mt-8 flex flex-wrap items-center gap-x-8 gap-y-4 border-t border-white/8 pt-6"
+          >
+            {[
+              { value: "500+", label: "telepített klíma" },
+              { value: "4.8★", label: "Google értékelés" },
+              { value: "15+", label: "év tapasztalat" },
+            ].map((s) => (
+              <div key={s.label} className="flex items-baseline gap-2">
+                <span className="font-display text-2xl font-extrabold text-warm-400">
+                  {s.value}
+                </span>
+                <span className="text-sm text-muted">{s.label}</span>
+              </div>
+            ))}
+          </motion.div>
 
           {/* Mobile: interactive panel */}
           <motion.div variants={item} className="mt-10 lg:hidden">
