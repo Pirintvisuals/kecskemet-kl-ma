@@ -18,7 +18,7 @@ import Reveal from "@/components/Reveal";
 import ClimateVisual from "@/components/ClimateVisual";
 import ServiceFaq from "@/components/ServiceFaq";
 import CtaBand from "@/components/CtaBand";
-import ImagePlaceholder from "@/components/ImagePlaceholder";
+import BeforeAfter from "@/components/BeforeAfter";
 import AuroraBackground from "@/components/AuroraBackground";
 import { services, site } from "@/lib/site";
 
@@ -269,22 +269,11 @@ export default async function ServicePage({
               Így néz ki egy {s.title.toLowerCase()}
             </h2>
           </Reveal>
-          <div className="grid gap-4 sm:grid-cols-2">
-            <Reveal>
-              <ImagePlaceholder
-                label="Előtte"
-                hint={`Fotó a ${s.title.toLowerCase()} előtt`}
-                minH="min-h-[260px]"
-              />
-            </Reveal>
-            <Reveal delay={0.1}>
-              <ImagePlaceholder
-                label="Utána"
-                hint="A kész, elvégzett munka"
-                minH="min-h-[260px]"
-              />
-            </Reveal>
-          </div>
+          <Reveal>
+            <div className="mx-auto max-w-4xl">
+              <BeforeAfter />
+            </div>
+          </Reveal>
         </div>
       </section>
 
