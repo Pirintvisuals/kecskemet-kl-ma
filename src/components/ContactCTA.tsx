@@ -28,7 +28,7 @@ export default function ContactCTA() {
                 </span>
                 <h2 className="mt-4 font-display text-3xl font-bold tracking-tight text-white sm:text-4xl">
                   Kérjen ingyenes{" "}
-                  <span className="text-warm-400">árajánlatot</span> még ma
+                  <span className="text-brand-300">árajánlatot</span> még ma
                 </h2>
                 <p className="mt-4 max-w-md text-lg leading-relaxed text-muted">
                   Hívjon telefonon a leggyorsabb válaszért, vagy küldjön üzenetet –

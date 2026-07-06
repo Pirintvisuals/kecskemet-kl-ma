@@ -1,6 +1,15 @@
-import { Phone, ArrowRight } from "lucide-react";
+import { Phone, ArrowRight, Snowflake } from "lucide-react";
 import { site } from "@/lib/site";
 import Reveal from "./Reveal";
+
+// Deterministic frost positions (server-rendered, CSS-animated)
+const FLAKES = [
+  { left: "8%", top: "18%", size: 16, delay: "0s" },
+  { left: "16%", top: "62%", size: 12, delay: "1.2s" },
+  { left: "84%", top: "24%", size: 14, delay: "0.6s" },
+  { left: "92%", top: "58%", size: 11, delay: "1.8s" },
+  { left: "72%", top: "78%", size: 13, delay: "2.4s" },
+];
 
 export default function CtaBand({
   accent = "#38BDF8",
@@ -31,6 +40,22 @@ export default function CtaBand({
               className="pointer-events-none absolute -bottom-20 -left-20 h-64 w-64 rounded-full blur-3xl"
               style={{ background: `${accent}22` }}
             />
+            {/* drifting frost */}
+            {FLAKES.map((f, i) => (
+              <Snowflake
+                key={i}
+                aria-hidden
+                className="pointer-events-none absolute animate-[floatSlow_7s_ease-in-out_infinite] opacity-30"
+                style={{
+                  left: f.left,
+                  top: f.top,
+                  width: f.size,
+                  height: f.size,
+                  color: accent,
+                  animationDelay: f.delay,
+                }}
+              />
+            ))}
             <h2 className="relative mx-auto max-w-2xl font-display text-3xl font-bold tracking-tight text-white sm:text-4xl">
               {title}
             </h2>

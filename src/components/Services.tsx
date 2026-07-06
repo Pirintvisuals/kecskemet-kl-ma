@@ -47,7 +47,7 @@ export default function Services() {
                   <div className="pointer-events-none absolute -right-16 -top-16 h-40 w-40 rounded-full bg-brand-500/20 opacity-0 blur-3xl transition-opacity duration-500 group-hover:opacity-100" />
 
                   <div className="relative flex items-start gap-4">
-                    <div className="grid h-14 w-14 shrink-0 place-items-center rounded-2xl bg-gradient-to-br from-brand-500/25 to-sky-glow/10 text-brand-200 ring-1 ring-brand-400/25 transition-transform duration-300 group-hover:scale-105">
+                    <div className="grid h-14 w-14 shrink-0 place-items-center rounded-2xl bg-gradient-to-br from-brand-500/25 to-sky-glow/10 text-brand-200 ring-1 ring-brand-400/25 transition-transform duration-300 group-hover:scale-110 group-hover:-rotate-6">
                       <Icon className="h-7 w-7" />
                     </div>
                     <div>

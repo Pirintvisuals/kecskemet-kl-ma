@@ -37,7 +37,7 @@ export default function Stats() {
         <div className="glass grid grid-cols-2 gap-y-8 rounded-3xl px-6 py-9 sm:px-10 lg:grid-cols-4">
           {stats.map((s) => (
             <div key={s.label} className="text-center">
-              <p className="font-display text-3xl font-extrabold text-warm-400 sm:text-4xl">
+              <p className="font-display text-3xl font-extrabold text-white sm:text-4xl">
                 <StatValue value={s.value} />
               </p>
               <p className="mt-1.5 text-sm text-muted">{s.label}</p>

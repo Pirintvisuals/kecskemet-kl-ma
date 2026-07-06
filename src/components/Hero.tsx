@@ -39,22 +39,13 @@ export default function Hero() {
               className="bg-clip-text text-transparent"
               style={{
                 backgroundImage:
-                  "linear-gradient(90deg,#fb923c 0%,#fdba74 28%,#b6e6ff 55%,#38bdf8 80%,#74b2f7 100%)",
+                  "linear-gradient(100deg,#fb923c,#fdba74 18%,#b6e6ff 38%,#38bdf8 52%,#0a6cd4 64%,#b6e6ff 78%,#fdba74 90%,#fb923c)",
+                backgroundSize: "250% 100%",
+                animation: "shimmer 7s linear infinite",
               }}
             >
               hőmérséklet
-            </span>
-            <br className="hidden sm:block" />{" "}
-            <span
-              className="bg-clip-text text-transparent"
-              style={{
-                backgroundImage:
-                  "linear-gradient(100deg,#b6e6ff,#74b2f7 35%,#0a6cd4 60%,#b6e6ff 90%)",
-                backgroundSize: "220% 100%",
-                animation: "shimmer 4s linear infinite",
-              }}
-            >
-              minden évszakban
+              <br className="hidden sm:block" /> minden évszakban
             </span>
           </motion.h1>
 
@@ -121,7 +112,7 @@ export default function Hero() {
               { value: "15+", label: "év tapasztalat" },
             ].map((s) => (
               <div key={s.label} className="flex items-baseline gap-2">
-                <span className="font-display text-2xl font-extrabold text-warm-400">
+                <span className="font-display text-2xl font-extrabold text-white">
                   {s.value}
                 </span>
                 <span className="text-sm text-muted">{s.label}</span>
