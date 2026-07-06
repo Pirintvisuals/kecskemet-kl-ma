@@ -96,11 +96,18 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 flex flex-col items-center justify-between gap-3 border-t border-white/8 pt-6 text-center text-xs text-muted sm:flex-row sm:text-left">
+        <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-white/8 pt-6 text-center text-xs text-muted sm:flex-row sm:text-left">
           <p>
             © {year} {site.brand} · {site.owner}. Minden jog fenntartva.
           </p>
-          <p>Kecskemét és {site.serviceRadiusKm} km-es körzete</p>
+          <nav className="flex items-center gap-4">
+            <a href="/impresszum/" className="transition-colors hover:text-white cursor-pointer">
+              Impresszum
+            </a>
+            <a href="/adatkezeles/" className="transition-colors hover:text-white cursor-pointer">
+              Adatkezelési tájékoztató
+            </a>
+          </nav>
         </div>
       </div>
     </footer>

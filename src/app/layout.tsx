@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Sora } from "next/font/google";
 import ScrollProgress from "@/components/ScrollProgress";
+import CookieNotice from "@/components/CookieNotice";
 import "./globals.css";
 
 const inter = Inter({
@@ -41,6 +42,13 @@ export const metadata: Metadata = {
     description:
       "Klíma telepítés, karbantartás, javítás és beüzemelés Kecskeméten. Garancia + számla minden munkára. Hívjon: +36 30 260 57 56",
     siteName: "Kecskemét Klíma",
+    images: [{ url: "/og.png", width: 1200, height: 630, alt: "Kecskemét Klíma" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Kecskemét Klíma – Klímaszerelés Kecskeméten",
+    description: "Klíma telepítés, karbantartás és javítás garanciával.",
+    images: ["/og.png"],
   },
   robots: { index: true, follow: true },
 };
@@ -64,6 +72,7 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col bg-navy-950 text-foreground">
         <ScrollProgress />
         {children}
+        <CookieNotice />
       </body>
     </html>
   );

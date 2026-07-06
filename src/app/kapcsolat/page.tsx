@@ -16,6 +16,7 @@ import Reveal from "@/components/Reveal";
 import AuroraBackground from "@/components/AuroraBackground";
 import ContactForm from "@/components/ContactForm";
 import ServiceArea from "@/components/ServiceArea";
+import MapEmbed from "@/components/MapEmbed";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -164,6 +165,23 @@ export default function ContactPage() {
               </p>
               <ContactForm withService />
             </div>
+          </Reveal>
+        </div>
+      </section>
+
+      {/* ---------------- MAP ---------------- */}
+      <section className="relative py-16">
+        <div className="mx-auto max-w-7xl px-6">
+          <Reveal className="mb-8 text-center">
+            <span className="inline-flex items-center gap-2 rounded-full border border-brand-400/25 bg-brand-500/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-brand-200">
+              Térkép
+            </span>
+            <h2 className="mt-4 font-display text-3xl font-bold tracking-tight text-white sm:text-4xl">
+              Itt talál minket
+            </h2>
+          </Reveal>
+          <Reveal>
+            <MapEmbed />
           </Reveal>
         </div>
       </section>
