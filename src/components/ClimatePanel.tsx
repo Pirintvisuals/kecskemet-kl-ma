@@ -4,14 +4,9 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { Snowflake, Flame, Minus, Plus, Fan, Power } from "lucide-react";
 
-/**
- * INTERACTIVE thermostat — the hero's "wow": visitors can change the target
- * temperature (+/-), toggle Hűtés/Fűtés (which recolours everything), and
- * cycle fan speed. Reads unmistakably as an air-conditioning control.
- */
-
 const MIN = 16;
 const MAX = 30;
+const HEAT_THRESHOLD = 23; // above this → heating mode
 
 // dial geometry — a 260° arc with the gap centred at the bottom
 const R = 82; // ring radius inside a 200×200 viewBox
@@ -37,13 +32,22 @@ const arc = (from: number, to: number) => {
   return `M ${x1} ${y1} A ${R} ${R} 0 ${large} 1 ${x2} ${y2}`;
 };
 
+// Interpolate between blue (#38bdf8) and orange (#f97316) based on t ∈ [0,1]
+const lerp = (a: number, b: number, t: number) => Math.round(a + (b - a) * t);
+const tempColor = (temp: number) => {
+  const t = (temp - MIN) / (MAX - MIN);
+  const r = lerp(56, 249, t);
+  const g = lerp(189, 115, t);
+  const b = lerp(248, 22, t);
+  return { rgb: `rgb(${r},${g},${b})`, rgba: `rgba(${r},${g},${b},` };
+};
+
 export default function ClimatePanel() {
   const [temp, setTemp] = useState(21);
-  const [mode, setMode] = useState<"cool" | "heat">("cool");
   const [fan, setFan] = useState(2);
 
-  const accent = mode === "cool" ? "#38bdf8" : "#f97316";
-  const accentSoft = mode === "cool" ? "rgba(56,189,248," : "rgba(249,115,22,";
+  const mode = temp > HEAT_THRESHOLD ? "heat" : "cool";
+  const { rgb: accent, rgba: accentSoft } = tempColor(temp);
   // marker angle across the top arc (avoids bottom gap)
   const angle = START + ((temp - MIN) / (MAX - MIN)) * SWEEP;
   const [knobX, knobY] = polar(angle);
@@ -163,34 +167,29 @@ export default function ClimatePanel() {
           </button>
         </div>
 
-        {/* mode toggle */}
-        <div className="mt-5 grid grid-cols-2 gap-3">
-          <button
-            type="button"
-            onClick={() => setMode("cool")}
-            className="flex items-center justify-center gap-2 rounded-xl px-3 py-2.5 text-sm font-semibold transition-all cursor-pointer"
-            style={
-              mode === "cool"
-                ? { backgroundColor: "rgba(56,189,248,0.2)", color: "#fff", boxShadow: "inset 0 0 0 1px rgba(56,189,248,0.5)" }
-                : { backgroundColor: "rgba(5,11,24,0.5)", color: "#9fb2cc" }
-            }
-          >
-            <Snowflake className="h-4 w-4" style={{ color: "#38bdf8" }} />
-            Hűtés
-          </button>
-          <button
-            type="button"
-            onClick={() => setMode("heat")}
-            className="flex items-center justify-center gap-2 rounded-xl px-3 py-2.5 text-sm font-semibold transition-all cursor-pointer"
-            style={
-              mode === "heat"
-                ? { backgroundColor: "rgba(249,115,22,0.2)", color: "#fff", boxShadow: "inset 0 0 0 1px rgba(249,115,22,0.5)" }
-                : { backgroundColor: "rgba(5,11,24,0.5)", color: "#9fb2cc" }
-            }
-          >
-            <Flame className="h-4 w-4" style={{ color: "#f97316" }} />
-            Fűtés
-          </button>
+        {/* auto mode indicator */}
+        <div
+          className="mt-5 flex items-center justify-between rounded-xl px-4 py-3 transition-all duration-500"
+          style={{
+            backgroundColor: `${accentSoft}0.12)`,
+            boxShadow: `inset 0 0 0 1px ${accentSoft}0.35)`,
+          }}
+        >
+          <span className="flex items-center gap-2 text-sm font-semibold text-white">
+            <motion.span
+              key={mode}
+              initial={{ scale: 0.6, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              transition={{ type: "spring", stiffness: 300, damping: 20 }}
+              style={{ color: accent }}
+            >
+              {mode === "cool" ? <Snowflake className="h-4 w-4" /> : <Flame className="h-4 w-4" />}
+            </motion.span>
+            {mode === "cool" ? "Hűtés" : "Fűtés"}
+          </span>
+          <span className="text-xs text-muted">
+            {mode === "cool" ? `≤ ${HEAT_THRESHOLD}°C` : `> ${HEAT_THRESHOLD}°C`}
+          </span>
         </div>
 
         {/* fan speed */}
