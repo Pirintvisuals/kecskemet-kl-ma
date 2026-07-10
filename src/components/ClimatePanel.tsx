@@ -14,6 +14,11 @@ const START = -130; // degrees, 0 = top, clockwise positive
 const END = 130;
 const SWEEP = END - START;
 
+// Full arc circumference — used for strokeDashoffset progress animation.
+// Animating `d` causes the SVG large-arc-flag to flip at ~26 °C, which makes
+// the arc collapse for one frame. Animating a number (dashoffset) avoids this.
+const FULL_ARC_LEN = (R * SWEEP * Math.PI) / 180;
+
 // Round to 3 decimals so SSR (Node) and client (browser) produce byte-identical
 // strings — Math.cos/sin can differ by 1 ULP across engines → hydration mismatch.
 const r3 = (n: number) => Math.round(n * 1000) / 1000;
@@ -37,11 +42,11 @@ export default function ClimatePanel() {
   const [fan, setFan] = useState(2);
 
   const mode = temp > HEAT_THRESHOLD ? "heat" : "cool";
-  // two clean, discrete accents — never a muddy in-between
   const accent = mode === "cool" ? "#38bdf8" : "#f97316";
   const accentSoft = mode === "cool" ? "rgba(56,189,248," : "rgba(249,115,22,";
-  // marker angle across the top arc (avoids bottom gap)
-  const angle = START + ((temp - MIN) / (MAX - MIN)) * SWEEP;
+  const progress = (temp - MIN) / (MAX - MIN);
+  // knob position only — arc progress uses strokeDashoffset, not arc()
+  const angle = START + progress * SWEEP;
   const [knobX, knobY] = polar(angle);
 
   const dec = () => setTemp((t) => Math.max(MIN, t - 1));
@@ -107,15 +112,20 @@ export default function ClimatePanel() {
                 strokeLinecap="round"
                 opacity={0.85}
               />
-              {/* progress arc in the active mode colour */}
+              {/* progress arc — fixed path, reveal via dashoffset (avoids large-arc-flag flip) */}
               <motion.path
+                d={arc(START, END)}
                 fill="none"
                 strokeWidth={12}
                 strokeLinecap="round"
+                strokeDasharray={FULL_ARC_LEN}
                 initial={false}
-                animate={{ d: arc(START, angle), stroke: accent }}
+                animate={{
+                  strokeDashoffset: FULL_ARC_LEN * (1 - progress),
+                  stroke: accent,
+                }}
                 transition={{
-                  d: { type: "spring", stiffness: 200, damping: 22 },
+                  strokeDashoffset: { type: "spring", stiffness: 200, damping: 22 },
                   stroke: { duration: 0.4, ease: "easeInOut" },
                 }}
               />
