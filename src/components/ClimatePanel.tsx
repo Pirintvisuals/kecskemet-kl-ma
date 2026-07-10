@@ -50,9 +50,10 @@ export default function ClimatePanel() {
   return (
     <div className="relative mx-auto w-full max-w-sm select-none">
       {/* ambient glow follows the mode */}
-      <div
-        className="absolute inset-6 rounded-full blur-3xl transition-colors duration-500"
-        style={{ background: `${accentSoft}0.25)` }}
+      <motion.div
+        className="absolute inset-6 rounded-full blur-3xl"
+        animate={{ background: `${accentSoft}0.25)` }}
+        transition={{ duration: 0.5, ease: "easeInOut" }}
       />
 
       <div className="glass-strong relative rounded-[2rem] px-6 py-6">
@@ -93,9 +94,8 @@ export default function ClimatePanel() {
             >
               <defs>
                 <linearGradient id="dialTrack" x1="0" y1="1" x2="1" y2="0">
-                  <stop offset="0%" stopColor="#f97316" />
-                  <stop offset="50%" stopColor="#fdba74" />
-                  <stop offset="100%" stopColor="#38bdf8" />
+                  <stop offset="0%" stopColor="#f97316" stopOpacity={0.75} />
+                  <stop offset="100%" stopColor="#38bdf8" stopOpacity={0.75} />
                 </linearGradient>
               </defs>
               {/* full spectrum track */}
@@ -110,12 +110,14 @@ export default function ClimatePanel() {
               {/* progress arc in the active mode colour */}
               <motion.path
                 fill="none"
-                stroke={accent}
                 strokeWidth={12}
                 strokeLinecap="round"
                 initial={false}
-                animate={{ d: arc(START, angle) }}
-                transition={{ type: "spring", stiffness: 200, damping: 22 }}
+                animate={{ d: arc(START, angle), stroke: accent }}
+                transition={{
+                  d: { type: "spring", stiffness: 200, damping: 22 },
+                  stroke: { duration: 0.4, ease: "easeInOut" },
+                }}
               />
               {/* knob */}
               <motion.circle
@@ -126,7 +128,10 @@ export default function ClimatePanel() {
                 initial={false}
                 animate={{ cx: knobX, cy: knobY }}
                 transition={{ type: "spring", stiffness: 200, damping: 22 }}
-                style={{ filter: `drop-shadow(0 0 6px ${accentSoft}0.85))` }}
+                style={{
+                  filter: `drop-shadow(0 0 6px ${accentSoft}0.85))`,
+                  transition: "filter 0.4s ease",
+                }}
               />
             </svg>
 
