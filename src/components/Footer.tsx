@@ -56,7 +56,7 @@ export default function Footer() {
               {services.map((s) => (
                 <li key={s.id}>
                   <a
-                    href="#szolgaltatasok"
+                    href={`/szolgaltatasok/${s.id}/`}
                     className="text-sm text-muted transition-colors hover:text-white cursor-pointer"
                   >
                     {s.title}

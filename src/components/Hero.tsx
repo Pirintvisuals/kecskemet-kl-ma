@@ -40,7 +40,7 @@ export default function Hero() {
         />
       </div>
 
-      <div className="relative z-10 mx-auto grid w-full max-w-7xl grid-cols-1 items-center gap-12 px-6 lg:grid-cols-[1.05fr_0.95fr] lg:gap-8">
+      <div className="relative z-10 mx-auto grid w-full max-w-7xl grid-cols-1 items-center gap-10 px-6 md:grid-cols-[1.1fr_0.9fr] md:gap-8">
         {/* ---------- Left: copy ---------- */}
         <motion.div variants={container} initial="hidden" animate="show">
           {/* Headline */}
@@ -134,8 +134,8 @@ export default function Hero() {
             ))}
           </motion.div>
 
-          {/* Mobile: interactive panel */}
-          <motion.div variants={item} className="mt-10 lg:hidden">
+          {/* Mobile/tablet: interactive panel */}
+          <motion.div variants={item} className="mt-10 md:hidden">
             <ClimatePanel />
           </motion.div>
         </motion.div>
@@ -145,7 +145,7 @@ export default function Hero() {
           initial={{ opacity: 0, scale: 0.92 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1, ease: [0.22, 1, 0.36, 1], delay: 0.3 }}
-          className="relative hidden lg:block"
+          className="relative hidden md:block"
         >
           <ImagePlaceholder
             label="Beszerelt klíma egy nappaliban"

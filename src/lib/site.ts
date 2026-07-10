@@ -476,10 +476,10 @@ export const testimonials = [
 ];
 
 export const navLinks = [
-  { href: "/#szolgaltatasok", label: "Szolgáltatások" },
+  { href: "/szolgaltatasok/", label: "Szolgáltatások" },
   { href: "/klimak/", label: "Márkák" },
   { href: "/rolunk/", label: "Rólunk" },
-  { href: "/#terulet", label: "Hol dolgozunk" },
-  { href: "/#gyik", label: "GYIK" },
+  { href: "/hol-dolgozunk/", label: "Hol dolgozunk" },
+  { href: "/gyik/", label: "GYIK" },
   { href: "/kapcsolat/", label: "Kapcsolat" },
 ];

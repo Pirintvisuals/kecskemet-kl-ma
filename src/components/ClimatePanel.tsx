@@ -32,22 +32,14 @@ const arc = (from: number, to: number) => {
   return `M ${x1} ${y1} A ${R} ${R} 0 ${large} 1 ${x2} ${y2}`;
 };
 
-// Interpolate between blue (#38bdf8) and orange (#f97316) based on t ∈ [0,1]
-const lerp = (a: number, b: number, t: number) => Math.round(a + (b - a) * t);
-const tempColor = (temp: number) => {
-  const t = (temp - MIN) / (MAX - MIN);
-  const r = lerp(56, 249, t);
-  const g = lerp(189, 115, t);
-  const b = lerp(248, 22, t);
-  return { rgb: `rgb(${r},${g},${b})`, rgba: `rgba(${r},${g},${b},` };
-};
-
 export default function ClimatePanel() {
   const [temp, setTemp] = useState(21);
   const [fan, setFan] = useState(2);
 
   const mode = temp > HEAT_THRESHOLD ? "heat" : "cool";
-  const { rgb: accent, rgba: accentSoft } = tempColor(temp);
+  // two clean, discrete accents — never a muddy in-between
+  const accent = mode === "cool" ? "#38bdf8" : "#f97316";
+  const accentSoft = mode === "cool" ? "rgba(56,189,248," : "rgba(249,115,22,";
   // marker angle across the top arc (avoids bottom gap)
   const angle = START + ((temp - MIN) / (MAX - MIN)) * SWEEP;
   const [knobX, knobY] = polar(angle);

@@ -58,7 +58,7 @@ export default function AboutPage() {
       {/* ---------------- HERO ---------------- */}
       <section className="relative flex min-h-[88svh] items-center overflow-hidden pt-28 pb-16">
         <AuroraBackground />
-        <div className="relative z-10 mx-auto grid w-full max-w-7xl grid-cols-1 items-center gap-12 px-6 lg:grid-cols-[1.05fr_0.95fr]">
+        <div className="relative z-10 mx-auto grid w-full max-w-7xl grid-cols-1 items-center gap-10 px-6 md:grid-cols-[1.1fr_0.9fr] md:gap-8">
           <div>
             <nav
               aria-label="Morzsamenü"
@@ -105,7 +105,7 @@ export default function AboutPage() {
             </Reveal>
           </div>
 
-          <div className="hidden lg:block">
+          <div className="hidden md:block">
             <AboutVisual />
           </div>
         </div>
@@ -113,7 +113,7 @@ export default function AboutPage() {
 
       {/* ---------------- STORY ---------------- */}
       <section className="relative py-24">
-        <div className="mx-auto grid max-w-7xl items-center gap-14 px-6 lg:grid-cols-2">
+        <div className="mx-auto grid max-w-7xl items-center gap-10 px-6 md:grid-cols-2 md:gap-14">
           <Reveal>
             <span className="inline-flex items-center gap-2 rounded-full border border-brand-400/25 bg-brand-500/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-brand-200">
               A történetünk
@@ -195,7 +195,7 @@ export default function AboutPage() {
             </p>
           </Reveal>
 
-          <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-14 grid gap-5 sm:grid-cols-2 md:grid-cols-3">
             {differentiators.map((d, i) => {
               const Icon = valueIcons[i % valueIcons.length];
               return (
@@ -226,7 +226,7 @@ export default function AboutPage() {
               Amivel foglalkozunk
             </h2>
           </Reveal>
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-4">
             {services.map((s, i) => (
               <Reveal key={s.id} delay={i * 0.06}>
                 <a

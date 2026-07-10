@@ -70,7 +70,7 @@ export default async function BrandPage({
           className="pointer-events-none absolute inset-0 opacity-40"
           style={{ background: `radial-gradient(60% 50% at 80% 20%, ${accent}22, transparent 70%)` }}
         />
-        <div className="relative z-10 mx-auto grid w-full max-w-7xl grid-cols-1 items-center gap-12 px-6 lg:grid-cols-[1.05fr_0.95fr]">
+        <div className="relative z-10 mx-auto grid w-full max-w-7xl grid-cols-1 items-center gap-10 px-6 md:grid-cols-[1.1fr_0.9fr] md:gap-8">
           <div>
             <nav
               aria-label="Morzsamenü"
@@ -125,7 +125,7 @@ export default async function BrandPage({
             </Reveal>
           </div>
 
-          <div className="hidden lg:block">
+          <div className="hidden md:block">
             <ClimateVisual accent={accent} />
           </div>
         </div>
@@ -177,10 +177,10 @@ export default async function BrandPage({
             </p>
           </Reveal>
 
-          <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-14 grid gap-5 sm:grid-cols-2 md:grid-cols-3">
             {b.models.map((m, i) => (
               <Reveal key={m.name} delay={(i % 3) * 0.08}>
-                <div className="group flex h-full flex-col rounded-3xl border border-white/8 bg-navy-800/50 p-7 transition-all duration-300 hover:-translate-y-1 hover:bg-navy-800/80">
+                <div className="group flex h-full flex-col rounded-3xl border border-white/8 bg-navy-800/50 p-5 sm:p-7 transition-all duration-300 hover:-translate-y-1 hover:bg-navy-800/80">
                   <div className="flex items-center justify-between gap-3">
                     <h3 className="font-display text-2xl font-bold text-white">
                       {m.name}
@@ -237,7 +237,7 @@ export default async function BrandPage({
               Teljes körű {b.name} szerviz egy helyen
             </h2>
           </Reveal>
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-4">
             {services.map((s, i) => {
               const Icon = serviceIcon[s.icon];
               return (
@@ -274,7 +274,7 @@ export default async function BrandPage({
               További márkák
             </h2>
           </Reveal>
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-4">
             {others.map((o, i) => (
               <Reveal key={o.slug} delay={i * 0.06}>
                 <a

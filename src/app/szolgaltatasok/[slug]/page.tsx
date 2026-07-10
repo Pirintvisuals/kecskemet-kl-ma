@@ -68,7 +68,7 @@ export default async function ServicePage({
           }}
         />
 
-        <div className="relative z-10 mx-auto grid w-full max-w-7xl grid-cols-1 items-center gap-12 px-6 lg:grid-cols-[1.05fr_0.95fr]">
+        <div className="relative z-10 mx-auto grid w-full max-w-7xl grid-cols-1 items-center gap-10 px-6 md:grid-cols-[1.1fr_0.9fr] md:gap-8">
           <div>
             {/* Breadcrumb */}
             <nav
@@ -143,7 +143,7 @@ export default async function ServicePage({
             </Reveal>
           </div>
 
-          <div className="hidden lg:block">
+          <div className="hidden md:block">
             <ClimateVisual accent={accent} />
           </div>
         </div>
@@ -159,7 +159,7 @@ export default async function ServicePage({
             <p className="mt-5 text-lg leading-relaxed text-muted">{s.overview}</p>
           </Reveal>
 
-          <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-14 grid gap-5 sm:grid-cols-2 md:grid-cols-4">
             {s.benefits.map((b, i) => (
               <Reveal key={b.title} delay={(i % 4) * 0.08}>
                 <div className="h-full rounded-2xl border border-white/8 bg-navy-800/40 p-6 transition-all duration-300 hover:-translate-y-1 hover:bg-navy-800/70">
@@ -294,10 +294,10 @@ export default async function ServicePage({
 
           <div className="relative mt-16">
             <div
-              className="pointer-events-none absolute left-0 right-0 top-7 hidden h-px lg:block"
+              className="pointer-events-none absolute left-0 right-0 top-7 hidden h-px md:block"
               style={{ background: `linear-gradient(90deg, transparent, ${accent}66, transparent)` }}
             />
-            <ol className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+            <ol className="grid gap-8 sm:grid-cols-2 md:grid-cols-4">
               {s.steps.map((p, i) => (
                 <Reveal key={p.title} delay={i * 0.1}>
                   <li className="relative flex flex-col items-center text-center">

@@ -40,7 +40,7 @@ export default function Services() {
               <Reveal key={s.id} delay={i * 0.08} className="h-full">
                 <a
                   href={`/szolgaltatasok/${s.id}/`}
-                  className="group relative flex h-full flex-col overflow-hidden rounded-3xl border border-white/8 bg-navy-800/50 p-7 transition-all duration-300 hover:-translate-y-1 hover:border-brand-400/40 hover:bg-navy-800/80 cursor-pointer"
+                  className="group relative flex h-full flex-col overflow-hidden rounded-3xl border border-white/8 bg-navy-800/50 p-5 sm:p-7 transition-all duration-300 hover:-translate-y-1 hover:border-brand-400/40 hover:bg-navy-800/80 cursor-pointer"
                   style={{ ["--accent" as string]: s.accent }}
                 >
                   {/* hover glow */}

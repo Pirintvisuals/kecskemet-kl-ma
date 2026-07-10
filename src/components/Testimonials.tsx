@@ -11,7 +11,7 @@ import Reveal from "./Reveal";
 
 function TestimonialCard({ t }: { t: (typeof testimonials)[number] }) {
   return (
-    <figure className="relative flex w-[22rem] shrink-0 flex-col rounded-3xl border border-white/8 bg-navy-800/60 p-6 transition-colors duration-300 hover:border-brand-400/40">
+    <figure className="relative flex w-[82vw] max-w-[22rem] shrink-0 flex-col rounded-3xl border border-white/8 bg-navy-800/60 p-6 transition-colors duration-300 hover:border-brand-400/40">
       <Quote className="absolute right-5 top-5 h-7 w-7 text-brand-500/15" />
       <span className="mb-3 flex gap-0.5">
         {[0, 1, 2, 3, 4].map((s) => (

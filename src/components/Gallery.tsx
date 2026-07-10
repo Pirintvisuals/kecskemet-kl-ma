@@ -25,7 +25,7 @@ export default function Gallery() {
           subtitle="Ide a saját, valódi fotói kerülnek a beszerelt klímákról és a referenciamunkákról – hogy leendő ügyfelei lássák a minőséget."
         />
 
-        <div className="mt-14 grid auto-rows-[200px] grid-cols-1 gap-4 sm:grid-cols-3">
+        <div className="mt-14 grid grid-cols-1 gap-4 sm:auto-rows-[200px] sm:grid-cols-3">
           {shots.map((s, i) => (
             <Reveal
               key={s.label}

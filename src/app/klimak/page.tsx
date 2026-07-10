@@ -58,12 +58,12 @@ export default function BrandsIndex() {
       {/* ---------------- BRAND GRID ---------------- */}
       <section className="relative py-12">
         <div className="mx-auto max-w-7xl px-6">
-          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-5 sm:grid-cols-2 md:grid-cols-3">
             {brandPages.map((b, i) => (
               <Reveal key={b.slug} delay={(i % 3) * 0.08}>
                 <a
                   href={`/klimak/${b.slug}/`}
-                  className="group relative flex h-full flex-col overflow-hidden rounded-3xl border border-white/8 bg-navy-800/50 p-7 transition-all duration-300 hover:-translate-y-1 hover:bg-navy-800/80 cursor-pointer"
+                  className="group relative flex h-full flex-col overflow-hidden rounded-3xl border border-white/8 bg-navy-800/50 p-5 sm:p-7 transition-all duration-300 hover:-translate-y-1 hover:bg-navy-800/80 cursor-pointer"
                 >
                   <div
                     className="pointer-events-none absolute -right-16 -top-16 h-40 w-40 rounded-full opacity-0 blur-3xl transition-opacity duration-500 group-hover:opacity-100"

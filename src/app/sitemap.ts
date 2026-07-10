@@ -9,6 +9,9 @@ const BASE = "https://kecskemetklima.hu";
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticPaths = [
     "",
+    "/szolgaltatasok",
+    "/hol-dolgozunk",
+    "/gyik",
     "/rolunk",
     "/kapcsolat",
     "/klimak",

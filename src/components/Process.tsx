@@ -19,10 +19,10 @@ export default function Process() {
         />
 
         <div className="relative mt-16">
-          {/* connecting line (desktop) */}
-          <div className="pointer-events-none absolute left-0 right-0 top-7 hidden h-px bg-gradient-to-r from-transparent via-brand-400/40 to-transparent lg:block" />
+          {/* connecting line */}
+          <div className="pointer-events-none absolute left-0 right-0 top-7 hidden h-px bg-gradient-to-r from-transparent via-brand-400/40 to-transparent md:block" />
 
-          <ol className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+          <ol className="grid gap-8 sm:grid-cols-2 md:grid-cols-4">
             {processSteps.map((p, i) => {
               const c = stepColors[i % stepColors.length];
               return (

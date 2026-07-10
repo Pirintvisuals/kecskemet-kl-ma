@@ -34,7 +34,7 @@ export default function Stats() {
   return (
     <section className="relative py-14">
       <div className="mx-auto max-w-7xl px-6">
-        <div className="glass grid grid-cols-2 gap-y-8 rounded-3xl px-6 py-9 sm:px-10 lg:grid-cols-4">
+        <div className="glass grid grid-cols-2 gap-y-8 rounded-3xl px-6 py-9 sm:grid-cols-4 sm:px-10">
           {stats.map((s) => (
             <div key={s.label} className="text-center">
               <p className="font-display text-3xl font-extrabold text-white sm:text-4xl">
