@@ -52,9 +52,9 @@ export const services: Service[] = [
       "Új klímaberendezés szakszerű telepítése lakásba, házba és irodába. Segítünk a megfelelő típus és teljesítmény kiválasztásában is.",
     points: [
       "Split és multi-split rendszerek",
-      "Helyszíni felmérés és tanácsadás",
-      "Esztétikus, rejtett vezetékezés",
-      "Márkafüggetlen kivitelezés",
+      "A telepítés magában foglalja a beüzemelést is",
+      "Máshol vett klíma felszerelése, meglévő klíma áthelyezése",
+      "Esztétikus, rejtett vezetékezés – márkafüggetlenül",
     ],
     icon: "install",
     accent: "#38BDF8",
@@ -64,7 +64,7 @@ export const services: Service[] = [
       "Új klíma felszerelése lakásba, házba és irodába – pontosan méretezve, esztétikusan, rejtett vezetékkel. A felméréstől a próbaüzemig egy szakember végzi.",
     overviewTitle: "Kulcsrakész telepítés, az első felméréstől a hűs levegőig",
     overview:
-      "A jó klíma a helyes típusválasztással és a precíz telepítéssel kezdődik. Felmérjük a helyiséget, kiszámoljuk a szükséges hűtőteljesítményt, és segítünk kiválasztani az igényeihez illő készüléket. A felszerelést tisztán, a lakását óvva végezzük, a vezetékeket pedig a lehető legesztétikusabban, rejtve vezetjük.",
+      "A jó klíma a helyes típusválasztással és a precíz telepítéssel kezdődik. Felmérjük a helyiséget, kiszámoljuk a szükséges hűtőteljesítményt, és segítünk kiválasztani az igényeihez illő készüléket. A felszerelést tisztán, a lakását óvva végezzük, a vezetékeket pedig a lehető legesztétikusabban, rejtve vezetjük. A telepítés nem ér véget a felszereléssel: minden esetben tartalmazza a szakszerű beüzemelést is – vákuumozást, gáztöltést és szivárgásvizsgálatot –, hogy a klíma azonnal, minőségi kivitelben és sokáig működjön. Nem csak új készüléket szerelünk fel: a máshol (áruházban, interneten) vásárolt klímát is felszereljük és beüzemeljük, és költözésnél a meglévő klímát is áthelyezzük.",
     benefits: [
       {
         title: "Pontos méretezés",
@@ -118,7 +118,15 @@ export const services: Service[] = [
       },
       {
         q: "Vásároljam meg én a klímát, vagy Önök hozzák?",
-        a: "Mindkettő működik. Segítünk a típusválasztásban, és ha kéri, a készülék beszerzését is intézzük.",
+        a: "Mindkettő működik. Segítünk a típusválasztásban, és ha kéri, a készülék beszerzését is intézzük. Ha máshol (áruházban, interneten) vásárolta a klímát, azt is szívesen felszereljük és beüzemeljük.",
+      },
+      {
+        q: "A telepítés magában foglalja a beüzemelést is?",
+        a: "Igen. A telepítés része a szakszerű beüzemelés: vákuumozás, a gyári előírás szerinti gáztöltés, szivárgás- és tömörségvizsgálat, majd hűtés-fűtés próbaüzem. A klímát üzemkész, kipróbált állapotban, számlával és jótállással adjuk át.",
+      },
+      {
+        q: "Áthelyezik a meglévő klímámat, ha költözünk vagy átalakítunk?",
+        a: "Igen. A már felszerelt klímát szakszerűen leszereljük, az új helyszínen újra felszereljük, majd vákuumozzuk, feltöltjük és szivárgásvizsgálattal ellenőrizzük – hogy az áthelyezett készülék is hibátlanul működjön.",
       },
     ],
   },
@@ -139,15 +147,15 @@ export const services: Service[] = [
     metaTitle: "Klíma karbantartás és tisztítás Kecskeméten | Kecskemét Klíma",
     heroKicker: "Karbantartás",
     heroLead:
-      "Tiszta, egészséges levegő és alacsonyabb áramszámla. Professzionális tisztítás, fertőtlenítés és teljes átvizsgálás – szezon előtt ajánlott.",
-    overviewTitle: "A klíma is megérdemel egy jó nagytakarítást",
+      "A koszos klíma nem csak kellemetlen – egészségügyi kockázat is. A lepenészedett, elhanyagolt klíma baktériumot és penészspórát fúj a levegőbe, ráadásul sokkal többet fogyaszt. Professzionális klímatisztítás, fertőtlenítés és teljes átvizsgálás – szezon előtt kifejezetten ajánlott.",
+    overviewTitle: "A klímatisztítás nem luxus – egészség és pénztárca kérdése",
     overview:
-      "A klíma folyamatosan visszaforgatja a szoba levegőjét – a szűrőkben és a párologtatón por, penész és baktérium telepszik meg. Ez kellemetlen szagot, gyengébb hűtést és magasabb fogyasztást okoz. Rendszeres karbantartással mindezt megelőzzük, a levegő pedig újra friss és egészséges lesz.",
+      "A klíma folyamatosan visszaforgatja a szoba levegőjét, a nedves párologtatón és a szűrőkben pedig ideális körülmények között por, penész, baktérium és gomba telepszik meg. Ha a klíma lepenészedik, ezeket a kórokozókat egyenesen a lakótérbe fújja – ami légúti panaszokat, allergiát, fejfájást és kellemetlen, dohos szagot okozhat. Ráadásul az eltömődött, koszos rendszernek sokkal többet kell dolgoznia ugyanazért a hűtésért, így jelentősen többet fogyaszt. A rendszeres, szakszerű klímatisztítás és fertőtlenítés mindkettőt megelőzi: a levegő újra friss és egészséges lesz, a klíma pedig kevesebb árammal, hatékonyan működik.",
     benefits: [
-      { title: "Egészséges levegő", text: "Penész- és baktériummentesítés – fontos allergiásoknak és kisgyermekes családoknak." },
-      { title: "Alacsonyabb fogyasztás", text: "A tiszta rendszer hatékonyabban hűt, kevesebb árammal." },
-      { title: "Hosszabb élettartam", text: "A rendszeres ápolás megelőzi a drága meghibásodásokat." },
-      { title: "Kellemes, szagmentes lég", text: "Megszűnik a bekapcsoláskor érezhető dohos, savanyú szag." },
+      { title: "Egészséges levegő, penész nélkül", text: "Penész-, gomba- és baktériummentesítés – különösen fontos allergiásoknak, légúti betegeknek és kisgyermekes családoknak." },
+      { title: "Alacsonyabb áramszámla", text: "A lepenészedett, eltömődött klíma jóval többet fogyaszt. A tiszta rendszer ugyanazt a hűtést kevesebb árammal adja." },
+      { title: "Hosszabb élettartam", text: "A rendszeres ápolás megelőzi a drága meghibásodásokat, és tovább élteti a klímát." },
+      { title: "Vége a dohos szagnak", text: "Megszűnik a bekapcsoláskor érezhető penészes, savanyú szag – a klíma újra frissen fúj." },
     ],
     includedTitle: "Mit tartalmaz a karbantartás?",
     included: [
@@ -166,14 +174,23 @@ export const services: Service[] = [
     ],
     signalsTitle: "Itt az ideje, ha…",
     signals: [
-      "Bekapcsoláskor kellemetlen, dohos szagot érez",
-      "Gyengébben hűt, mint korábban",
-      "Több mint egy éve nem volt tisztítva",
+      "Bekapcsoláskor kellemetlen, dohos, penészes szagot érez",
+      "Allergiás tüneteket, tüsszögést vagy légúti panaszt tapasztal, amikor megy a klíma",
+      "Gyengébben hűt, mint korábban, vagy megnőtt a villanyszámla",
+      "Több mint egy éve nem volt tisztítva a klíma",
       "Csöpög vagy folyik a beltéri egységből a víz",
     ],
     priceNote:
       "A karbantartás ára a készülék típusától és a rendszer állapotától függ. Több beltéri egységre kedvezményt adunk – kérjen ajánlatot!",
     faqs: [
+      {
+        q: "Tényleg egészségtelen lehet a koszos klíma?",
+        a: "Igen. A klíma nedves, sötét belsejében penész, gomba és baktérium szaporodhat el, amit a készülék bekapcsoláskor a lakótérbe fúj. Ez allergiát, tüsszögést, légúti panaszokat, fejfájást és kellemetlen szagot okozhat – kisgyermekes és allergiás családoknál különösen fontos a rendszeres fertőtlenítés.",
+      },
+      {
+        q: "Igaz, hogy a piszkos klíma többet fogyaszt?",
+        a: "Igen. A lepenészedett szűrő és az eltömődött párologtató akadályozza a légáramlást, így a klímának sokkal többet kell dolgoznia ugyanazért a hűtésért – ez érezhetően megnöveli az áramfogyasztást. Egy alapos tisztítás sok esetben visszahozza az eredeti, gazdaságos működést.",
+      },
       {
         q: "Milyen gyakran kell karbantartani a klímát?",
         a: "Évente legalább egyszer, ideálisan a hűtési szezon előtt (tavasszal). Intenzív használatnál évi kétszer is ajánlott.",
@@ -205,21 +222,22 @@ export const services: Service[] = [
     metaTitle: "Klíma javítás és hibakeresés Kecskeméten – minden márka | Kecskemét Klíma",
     heroKicker: "Javítás",
     heroLead:
-      "Nem hűt, jégként áll a beltéri egység, csöpög vagy hibakódot ír ki? Pontos diagnosztikával feltárjuk az okot és szakszerűen elhárítjuk – bármely márkán.",
+      "Nem hűt a klíma, jégként áll a beltéri egység, csöpög vagy hibakódot ír ki? Pontos diagnosztikával és profi szivárgásvizsgálattal feltárjuk az okot, és szakszerűen elhárítjuk – bármely klímamárkán.",
     overviewTitle: "Megkeressük a hiba okát – nem csak a tünetet kezeljük",
     overview:
-      "A klímahibák mögött sokféle ok állhat: hűtőközeg-szivárgás, elektronikai hiba, eltömődött rendszer vagy elhasználódott alkatrész. Modern diagnosztikával pontosan behatároljuk a problémát, elmagyarázzuk mi történt, és a javítás előtt átlátható árajánlatot adunk – hogy ne érje meglepetés.",
+      "A hibakeresés nagy része két problémára vezethető vissza. Az egyik, amikor nem folyik le rendesen a kondenzvíz: az elvezető eltömődik, mert a klíma régóta nincs rendesen karbantartva, és a felgyűlt víz a beltéri egységből a falra vagy a padlóra csöpög. A másik, amikor lassan elszökik a hűtőközeg (a „gáz”) a rendszerből egy szivárgáson keresztül – ilyenkor a klíma egyre gyengébben, végül alig hűt. Emellett persze előfordul elektronikai hiba, eltömődött szűrő vagy elhasználódott alkatrész is. A szivárgást elektronikus szivárgásvizsgálattal és nyomáspróbával pontosan behatároljuk, mielőtt drágán, feleslegesen töltenénk fel a rendszert. Modern diagnosztikával, minőségi munkával megkeressük a valódi okot, elmagyarázzuk mi történt, és a javítás előtt átlátható árajánlatot adunk – hogy ne érje meglepetés.",
     benefits: [
-      { title: "Pontos diagnosztika", text: "Hibakód-olvasás és mérés alapján a valódi okot keressük meg." },
-      { title: "Minden márka", text: "Márkafüggetlenül javítunk – Daikintől a Gree-ig." },
-      { title: "Ár munka előtt", text: "A javítás megkezdése előtt tudja, mennyibe kerül." },
+      { title: "Precíz szivárgásvizsgálat", text: "Elektronikus szivárgáskeresés és nyomáspróba – megtaláljuk, hol szökik a hűtőközeg, nem csak utántöltünk." },
+      { title: "Pontos diagnosztika", text: "Hibakód-olvasás és mérés alapján a valódi okot keressük meg, minden klímamárkán." },
+      { title: "Ár a munka előtt", text: "A javítás megkezdése előtt tudja, mennyibe kerül – rejtett költség nélkül." },
       { title: "Garancia az alkatrészre", text: "A cserélt alkatrészekre és a munkára jótállást adunk." },
     ],
     includedTitle: "Mit tartalmaz a javítás?",
     included: [
       "Teljes körű hibafeltárás és hibakód-diagnosztika",
       "Szivárgásvizsgálat és tömörség-ellenőrzés",
-      "Hűtőközeg-utántöltés szükség szerint",
+      "Eldugult kondenzvíz-elvezetés átmosása, csöpögés megszüntetése",
+      "Hűtőközeg-utántöltés a szivárgás megszüntetése után",
       "Elektromos és elektronikai ellenőrzés",
       "Alkatrészcsere (ventilátor, panel, érzékelők)",
       "Javítás utáni próbaüzem és ellenőrzés",
@@ -233,9 +251,10 @@ export const services: Service[] = [
     signalsTitle: "Hívjon minket, ha a klíma…",
     signals: [
       "Nem hűt vagy nem fűt megfelelően",
+      "Hűt ugyan, de nem eléggé – gyengült a hűtés az előző évekhez képest",
+      "Vizet csöpög vagy folyik a beltéri egységből (eldugult kondenzvíz-elvezetés)",
       "Jeges, dér képződik a beltéri vagy kültéri egységen",
       "Szokatlan zajt, zörgést vagy búgást ad",
-      "Vizet csöpög a beltéri egységből",
       "Hibakódot villog vagy magától kikapcsol",
       "Kellemetlen, égett vagy dohos szagot áraszt",
     ],
@@ -251,6 +270,26 @@ export const services: Service[] = [
         a: "Gyakori ok a hűtőközeg-hiány (szivárgás miatt), az eltömődött szűrő, vagy elektronikai hiba. Pontos okot a helyszíni diagnosztika mutat meg.",
       },
       {
+        q: "Miért nem hűt eléggé a klíma?",
+        a: "Ha a klíma megy, de nem hűt eléggé, annak leggyakoribb oka, hogy lassan elszivárgott a hűtőközeg egy része (kevés a „gáz”), vagy hogy az eltömődött, koszos szűrő és párologtató akadályozza a légáramlást. Emellett a rosszul (alul)méretezett készülék, a nyitva hagyott ajtók-ablakok vagy az erős napsütés is okozhatja. A helyszíni bevizsgálás és a nyomásmérés pontosan megmutatja, melyikről van szó – és a szivárgás megszüntetése után újra rendesen hűt.",
+      },
+      {
+        q: "Miből tudom, hogy elfogyott / kevés a klíma gáza?",
+        a: "Árulkodó jel, ha a klíma egyre gyengébben hűt, hosszabb ideig kell mennie ugyanahhoz a hőmérséklethez, dér vagy jég jelenik meg a beltéri egység csövein, sziszegő-bugyborékoló hangot ad, vagy hibakódot ír ki. Biztosat viszont csak nyomásméréssel lehet mondani. Fontos: a gáz nem „fogy el” magától – ha kevés, az szinte mindig szivárgást jelent, ezért utántöltés előtt mindig szivárgásvizsgálatot végzünk.",
+      },
+      {
+        q: "Meg tudom-e javítani a klímát házilag?",
+        a: "A szűrők kivétele és kimosása, illetve a beltéri egység elérhető felületeinek finom letörlése nyugodtan elvégezhető otthon – ez sokat segít. A hűtőközeggel járó munka (szivárgáskeresés, gáztöltés, vákuumozás) viszont zárt rendszert, F-gáz képesítést és speciális műszereket igényel, ezért jogszabály szerint is csak szakember végezheti. A kondenzvíz-elvezetés eldugulását szintén jobb szakemberre bízni, mert a nem megfelelő bontás kárt okozhat a készülékben.",
+      },
+      {
+        q: "Mit tehetek, ha folyik / csöpög a beltéri egységből a kondenzvíz?",
+        a: "A csöpögés legtöbbször azt jelenti, hogy eldugult a kondenzvíz-elvezető cső vagy a csepptálca – jellemzően algásodás, por és elmaradt karbantartás miatt. Első lépésként kapcsolja ki a klímát, hogy ne folyjon tovább a víz a falra vagy a bútorra. A szűrők kimosása néha segít, de a valódi megoldás az elvezető szakszerű átmosása/kitisztítása és a lejtés ellenőrzése. Ezt egy karbantartás keretében gyorsan megoldjuk, és utána nem csöpög tovább.",
+      },
+      {
+        q: "Elszökött a gáz a klímából – elég csak utántölteni?",
+        a: "Önmagában a hűtőközeg utántöltése csak tüneti kezelés: ha szivárog a rendszer, a gáz újra elszökik. Ezért először mindig szivárgásvizsgálatot végzünk (elektronikus szivárgáskeresés + nyomáspróba), megkeressük és megszüntetjük a szivárgás okát, és csak utána töltjük fel szabályosan – így tartós lesz a javítás.",
+      },
+      {
         q: "Megéri javítani, vagy inkább cseréljem?",
         a: "A bevizsgálás után őszintén megmondjuk. Ha a javítás nem gazdaságos, elmondjuk, és segítünk az új készülék kiválasztásában is.",
       },
@@ -258,63 +297,73 @@ export const services: Service[] = [
   },
   {
     id: "beuzemeles",
-    title: "Beüzemelés & felülvizsgálat",
-    short: "Szakszerű üzembe helyezés",
+    title: "Beüzemelés & szivárgáskezelés",
+    short: "Szakszerű üzembe helyezés és tömörség",
     description:
-      "Megvette a klímát, de telepítés kell hozzá? Beüzemeljük, gáztöltést végzünk és leellenőrizzük a teljes rendszert.",
+      "Megvette vagy máshol vásárolta a klímát, esetleg költözésnél áthelyezné? Szakszerűen beüzemeljük: vákuumozás, gáztöltés, valamint alapos szivárgásvizsgálat és -kezelés a teljes rendszeren.",
     points: [
-      "Vákuumozás és gáztöltés",
-      "Teljes rendszer-felülvizsgálat",
-      "Működés- és tömörségi teszt",
+      "Vákuumozás és pontos gáztöltés",
+      "Szivárgásvizsgálat és szivárgáskezelés",
+      "Máshol vett vagy áthelyezett klíma beüzemelése",
       "Számla és jótállás minden munkára",
     ],
     icon: "commission",
     accent: "#2DD4BF",
-    metaTitle: "Klíma beüzemelés és felülvizsgálat Kecskeméten | Kecskemét Klíma",
+    metaTitle: "Klíma beüzemelés és szivárgáskezelés Kecskeméten | Kecskemét Klíma",
     heroKicker: "Beüzemelés",
     heroLead:
-      "Már megvan a klíma és a csövezés? Szakszerűen beüzemeljük: vákuumozás, gáztöltés, tömörség- és működésteszt – hogy a rendszer hibátlanul és sokáig működjön.",
-    overviewTitle: "A helyes beüzemelés dönti el a klíma élettartamát",
+      "Már megvan a klíma és a csövezés, máshol vásárolta, vagy költözésnél áthelyezné? Szakszerűen beüzemeljük: vákuumozás, pontos gáztöltés, tömörség- és működésteszt, és ha kell, szivárgásvizsgálat és -kezelés – hogy a rendszer hibátlanul és sokáig, minőségi munkával működjön.",
+    overviewTitle: "A helyes beüzemelés és a tömör rendszer dönti el a klíma élettartamát",
     overview:
-      "A beüzemelés nem csupán a bekapcsolás. A rendszer megfelelő vákuumozása, a pontos hűtőközeg-mennyiség és a tömörség ellenőrzése nélkül a klíma gyengén hűt, sokat fogyaszt, és idő előtt tönkremehet. Mi mindent szabályosan, mérésekkel dokumentálva végzünk el.",
+      "A beüzemelés nem csupán a bekapcsolás. A rendszer megfelelő vákuumozása, a pontos hűtőközeg-mennyiség és a tömörség ellenőrzése nélkül a klíma gyengén hűt, sokat fogyaszt, és idő előtt tönkremehet. A leggyakoribb rejtett hiba a szivárgás: ha a hűtőközeg lassan elszökik a rendszerből, a klíma egyre gyengébben hűt. Ezért a beüzemeléshez minden esetben szivárgásvizsgálat is tartozik – megkeressük és megszüntetjük a szivárgás okát, és csak tömör rendszert töltünk fel. Ugyanígy szakszerűen beüzemeljük a máshol vásárolt, vagy a költözésnél áthelyezett klímát is. Mindent szabályosan, mérésekkel dokumentálva, minőségi kivitelben végzünk el – itt nem érdemes kockáztatni.",
     benefits: [
       { title: "Szabályos vákuumozás", text: "A nedvesség és levegő eltávolítása a rendszerből – ez alapozza meg a hosszú élettartamot." },
       { title: "Pontos gáztöltés", text: "A gyári előírás szerinti hűtőközeg-mennyiség a hatékony hűtésért." },
-      { title: "Tömörség-ellenőrzés", text: "Kiszűrjük a szivárgásokat, mielőtt gondot okoznának." },
-      { title: "Dokumentált átadás", text: "Működésteszt, számla és jótállás – papíron is." },
+      { title: "Szivárgásvizsgálat és -kezelés", text: "Elektronikus szivárgáskereséssel és nyomáspróbával megkeressük, hol szökik a hűtőközeg, és megszüntetjük a szivárgást – nem csak feltöltjük a rendszert." },
+      { title: "Máshol vett & áthelyezett klíma", text: "A nem tőlünk vásárolt, vagy költözésnél áthelyezett készüléket is szakszerűen beüzemeljük és dokumentáljuk." },
     ],
     includedTitle: "Mit tartalmaz a beüzemelés?",
     included: [
       "A csatlakozások és a csövezés ellenőrzése",
       "Rendszer-vákuumozás",
       "Hűtőközeg-feltöltés / -kiegészítés",
-      "Tömörségi (szivárgás-) vizsgálat",
+      "Szivárgásvizsgálat és tömörség-ellenőrzés",
+      "Szivárgás esetén a hiba behatárolása és kezelése",
       "Teljes működésteszt hűtés és fűtés módban",
       "Betanítás, számla és jótállás",
     ],
     steps: [
-      { title: "Egyeztetés", text: "Átnézzük, milyen készülék és milyen csövezés van már kész." },
-      { title: "Ellenőrzés", text: "Megvizsgáljuk a csatlakozásokat és a rendszer állapotát." },
-      { title: "Beüzemelés", text: "Vákuumozás, gáztöltés, tömörség- és működésteszt." },
+      { title: "Egyeztetés", text: "Átnézzük, milyen készülék és milyen csövezés van már kész, vagy honnan helyeznénk át a klímát." },
+      { title: "Ellenőrzés", text: "Megvizsgáljuk a csatlakozásokat, a rendszer állapotát és a tömörséget." },
+      { title: "Beüzemelés", text: "Vákuumozás, gáztöltés, szivárgásvizsgálat és működésteszt." },
       { title: "Átadás", text: "Bemutatjuk a működést, átadjuk a számlát és a jótállást." },
     ],
     signalsTitle: "Erre van szüksége, ha…",
     signals: [
       "Megvette a klímát, de telepítés/beüzemelés kell hozzá",
+      "Máshol (pl. áruházban, interneten) vásárolta a klímát, és keres valakit, aki felszereli és beüzemeli",
       "Elkészült a csövezés, csak a szakszerű indítás hiányzik",
-      "Költözésnél áthelyezett klímát kell újraindítani",
-      "Bizonytalan benne, hogy a rendszer szabályosan lett feltöltve",
+      "Költözésnél egy meglévő klímát kell leszerelni és új helyen újra beüzemelni (áthelyezés)",
+      "Gyanítja, hogy szivárog a rendszer, vagy bizonytalan benne, hogy szabályosan lett-e feltöltve",
     ],
     priceNote:
-      "A beüzemelés ára a rendszer típusától és a helyszíni adottságoktól függ. Kérjen ajánlatot – a munka előtt pontos árat mondunk.",
+      "A beüzemelés és a szivárgáskezelés ára a rendszer típusától és a helyszíni adottságoktól függ. Kérjen ajánlatot – a munka előtt pontos árat mondunk.",
     faqs: [
       {
         q: "Miért fontos a vákuumozás?",
         a: "A vákuumozás eltávolítja a nedvességet és a levegőt a rendszerből. Enélkül a hűtőközeg elszennyeződik, a klíma rosszul hűt és idő előtt meghibásodhat.",
       },
       {
-        q: "Beüzemelik a magam által vásárolt klímát is?",
-        a: "Igen. Ha megvan a készülék és a szükséges kiépítés, szakszerűen beüzemeljük és dokumentáljuk a munkát.",
+        q: "Beüzemelik a máshol vagy általam vásárolt klímát is?",
+        a: "Igen. Nem baj, ha nem tőlünk vette a készüléket – ha megvan a klíma és a szükséges kiépítés, szakszerűen felszereljük, beüzemeljük, elvégezzük a szivárgásvizsgálatot, és dokumentáljuk a munkát.",
+      },
+      {
+        q: "Áthelyezik a meglévő, máshol felszerelt klímámat?",
+        a: "Igen. Költözésnél vagy átalakításnál a már felszerelt klímát szakszerűen leszereljük, az új helyszínen újra felszereljük, majd vákuumozzuk, feltöltjük és szivárgásvizsgálattal ellenőrizzük – hogy az áthelyezett készülék is hibátlanul működjön.",
+      },
+      {
+        q: "Mit jelent a szivárgáskezelés a beüzemelésnél?",
+        a: "Mielőtt feltöltenénk a rendszert, elektronikus szivárgáskereséssel és nyomáspróbával ellenőrizzük a tömörséget. Ha szivárgást találunk, megkeressük és megszüntetjük az okát, és csak ezután töltjük fel szabályosan – így nem szökik el újra a drága hűtőközeg.",
       },
       {
         q: "Kapok jótállást a beüzemelésre?",
@@ -333,28 +382,36 @@ export const stats = [
 
 export const differentiators = [
   {
+    title: "Akár 10 év garancia",
+    text: "Válasszon olyan prémium klímát, amelyre akár 10 év garanciát is adunk – hosszú távú nyugalom, nem csak egy szezonra.",
+  },
+  {
     title: "Garancia + számla",
     text: "Minden elvégzett munkára jótállást és számlát adunk – nálunk nincs rejtett költség.",
   },
   {
     title: "Gyors kiszállás",
-    text: "Kecskeméten és 30 km-es körzetében rövid határidővel, megbízható időpontokkal dolgozunk.",
+    text: "Kecskeméten és 30 km-es körzetében rövid határidővel, megbízható időpontokkal szereljük a klímát.",
   },
   {
     title: "Átlátható ár",
-    text: "A munka megkezdése előtt pontos, világos árajánlatot kap – meglepetések nélkül.",
+    text: "A munka megkezdése előtt pontos, világos árajánlatot kap a klímára – meglepetések nélkül.",
   },
   {
-    title: "Személyes felelősség",
-    text: "„Személy szerint én állok a munkám mögött.” – Polyák Zoltán, klímaszerelő mester.",
+    title: "Prémium, márkafüggetlen szerviz",
+    text: "A legnépszerűbb prémium klímamárkák (Daikin, Mitsubishi, Gree, LG, Panasonic és társai) készülékeit telepítjük, karbantartjuk és javítjuk.",
   },
   {
-    title: "Márkafüggetlen szerviz",
-    text: "A legnépszerűbb gyártók készülékeit telepítjük, karbantartjuk és javítjuk.",
+    title: "Precíz szivárgásvizsgálat",
+    text: "Elektronikus szivárgáskereséssel és nyomáspróbával megtaláljuk, hol szökik a hűtőközeg – nem csak utántöltünk, hanem megszüntetjük a szivárgás okát.",
+  },
+  {
+    title: "Minőség, amivel nem kockáztat",
+    text: "Egy klíma évekre szól – a hibás szereléssel a készülék és a fala bánja. Ne kockáztasson: válasszon tapasztalt, precíz szakembert, aki minőségi, dokumentált munkát ad.",
   },
   {
     title: "Tiszta, egészséges levegő",
-    text: "Professzionális tisztítás és fertőtlenítés az allergénmentes, friss otthonért.",
+    text: "Professzionális klímatisztítás és fertőtlenítés az allergénmentes, penészmentes, friss otthonért.",
   },
 ];
 
@@ -391,8 +448,27 @@ export const brands = [
   "Gree",
   "Fujitsu",
   "Midea",
-  "Haier",
+  "AUX",
+  "Polár",
 ];
+
+/**
+ * Brand logos for the marquee / logo walls. The PNG-ket a public/brands
+ * mappában tároljuk (világos háttéren jelennek meg, fehér csempén).
+ */
+export const brandLogos = [
+  { name: "Daikin", src: "/brands/daikin.png" },
+  { name: "Mitsubishi Electric", src: "/brands/mitsubishi.png" },
+  { name: "Toshiba", src: "/brands/toshiba.png" },
+  { name: "Panasonic", src: "/brands/panasonic.png" },
+  { name: "LG", src: "/brands/lg.png" },
+  { name: "Samsung", src: "/brands/samsung.png" },
+  { name: "Gree", src: "/brands/gree.png" },
+  { name: "Fujitsu", src: "/brands/fujitsu.png" },
+  { name: "Midea", src: "/brands/midea.png" },
+  { name: "AUX", src: "/brands/aux-brand.png" },
+  { name: "Polár", src: "/brands/polar.png" },
+] as const;
 
 export const serviceAreas = [
   "Kecskemét",
@@ -408,8 +484,24 @@ export const serviceAreas = [
 
 export const faqs = [
   {
+    q: "Ingyenes a helyszíni felmérés?",
+    a: "Igen, a helyszíni felmérés teljesen ingyenes és kötelezettségmentes. Kimegyünk, felmérjük a helyiséget és az adottságokat, majd pontos, tételes árajánlatot adunk a klímára – Önnek pedig semmilyen kötelezettsége nem keletkezik.",
+  },
+  {
+    q: "Hány év garanciát adnak a klímára?",
+    a: "A munkánkra minden esetben jótállást és számlát adunk. Emellett bizonyos prémium klímákra a gyártói feltételek teljesülése esetén akár 10 év garancia is igényelhető – a felmérésnél szívesen megmutatjuk, melyik típussal érhető el a leghosszabb garancia.",
+  },
+  {
+    q: "Milyen klímamárkákkal dolgoznak?",
+    a: "Márkafüggetlenek vagyunk: telepítjük, karbantartjuk és javítjuk a legnépszerűbb prémium klímamárkákat, többek között a Daikin, Mitsubishi Electric, Toshiba, Panasonic, LG, Samsung, Gree, Fujitsu, Midea, AUX és Polár készülékeket is.",
+  },
+  {
+    q: "Mennyi ideig tart egy klíma telepítése?",
+    a: "Egy átlagos split klíma szakszerű telepítése jellemzően néhány óra – a pontos idő a helyszíni adottságoktól és a cső­vezeték hosszától függ. Multi-split rendszereknél ez több is lehet. A felméréskor reális időpontot tudunk mondani.",
+  },
+  {
     q: "Mennyibe kerül egy klíma telepítése?",
-    a: "Az ár a készülék típusától, a beltéri és kültéri egység távolságától és a helyszíni adottságoktól függ. Helyszíni vagy telefonos felmérés után pontos, átlátható árajánlatot adunk – a munka megkezdése előtt.",
+    a: "Az ár a klíma típusától, a beltéri és kültéri egység távolságától és a helyszíni adottságoktól függ. Az ingyenes helyszíni vagy telefonos felmérés után pontos, átlátható árajánlatot adunk – a munka megkezdése előtt.",
   },
   {
     q: "Milyen gyakran kell karbantartani a klímát?",
@@ -418,6 +510,30 @@ export const faqs = [
   {
     q: "Bármely márkát javítanak?",
     a: "Igen, márkafüggetlenül dolgozunk. A legnépszerűbb gyártók (Daikin, Mitsubishi, Toshiba, Panasonic, LG, Samsung, Gree és mások) készülékeit telepítjük, karbantartjuk és javítjuk.",
+  },
+  {
+    q: "Miért nem hűt eléggé a klíma?",
+    a: "Ha a klíma megy, de nem hűt eléggé, annak leggyakoribb oka, hogy lassan elszivárgott a hűtőközeg egy része (kevés a „gáz”), vagy hogy az eltömődött, koszos szűrő és párologtató akadályozza a légáramlást. A helyszíni bevizsgálás és a nyomásmérés pontosan megmutatja az okot, a szivárgás megszüntetése után pedig újra rendesen hűt.",
+  },
+  {
+    q: "Miből tudom, hogy elfogyott vagy kevés a klíma gáza?",
+    a: "Árulkodó jel, ha a klíma egyre gyengébben hűt, dér vagy jég jelenik meg a beltéri egység csövein, sziszegő hangot ad, vagy hibakódot ír ki. Biztosat csak nyomásméréssel lehet mondani. A gáz nem fogy el magától – ha kevés, az szinte mindig szivárgást jelent, ezért utántöltés előtt mindig szivárgásvizsgálatot végzünk.",
+  },
+  {
+    q: "Meg tudom-e javítani a klímát házilag?",
+    a: "A szűrők kimosása és a beltéri egység letörlése nyugodtan elvégezhető otthon. A hűtőközeggel járó munka (szivárgáskeresés, gáztöltés, vákuumozás) viszont F-gáz képesítést és speciális műszereket igényel, ezért jogszabály szerint is csak szakember végezheti – ahogy az eldugult kondenzvíz-elvezetés szakszerű tisztítását is.",
+  },
+  {
+    q: "Mit tehetek, ha folyik vagy csöpög a klímából a víz?",
+    a: "A csöpögés legtöbbször eldugult kondenzvíz-elvezetést jelent (alga, por, elmaradt karbantartás miatt). Kapcsolja ki a klímát, hogy ne folyjon tovább a víz, majd hívjon minket: egy karbantartás keretében átmossuk az elvezetőt és a csepptálcát, ellenőrizzük a lejtést, és utána nem csöpög tovább.",
+  },
+  {
+    q: "Felszerelik a máshol vásárolt klímát? Áthelyezik a meglévőt?",
+    a: "Igen. Ha máshol (áruházban, interneten) vásárolta a készüléket, szívesen felszereljük és beüzemeljük. Költözésnél vagy átalakításnál a már felszerelt klímát is áthelyezzük: leszereljük, új helyen felszereljük, majd vákuumozzuk, feltöltjük és szivárgásvizsgálattal ellenőrizzük.",
+  },
+  {
+    q: "Végeznek szivárgásvizsgálatot?",
+    a: "Igen, ez a munkánk fontos része. Elektronikus szivárgáskereséssel és nyomáspróbával pontosan behatároljuk, hol szökik a hűtőközeg. Így nem feleslegesen töltjük fel a rendszert: előbb megszüntetjük a szivárgás okát, és csak tömör rendszert töltünk fel – így tartós a javítás.",
   },
   {
     q: "Ad garanciát és számlát a munkára?",
@@ -433,45 +549,59 @@ export const faqs = [
 export const testimonials = [
   {
     quote:
-      "Gyors és precíz munka. A klíma másnapra már működött, és minden tiszta maradt utána. Csak ajánlani tudom!",
+      "Daikin split klímát szereltek fel a nappaliba. Zoltán pontosan, a megbeszélt időben érkezett, a rézcsövet szépen, rejtve vezette el a falban, és utána kitakarított maga után. Az előre adott árajánlathoz képest egy forinttal sem lett drágább.",
     name: "Kovács Zoltán",
-    location: "Kecskemét",
+    location: "Kecskemét, Széchenyiváros",
     initials: "KZ",
   },
   {
     quote:
-      "Segítettek kiválasztani a lakásunkhoz illő megfelelő típust, korrekt áron. Az árajánlatban nem volt rejtett költség.",
+      "Sokáig halogattam a klíma miatti falfúrást, teljesen feleslegesen. Reggel 8-ra jöttek, délre már ment a Mitsubishi a hálóban. Nem a legdrágábbat akarták rám sózni, hanem a szoba méretéhez ajánlottak típust.",
     name: "Nagy Andrea",
-    location: "Kecskemét",
+    location: "Kecskemét, Katonatelep",
     initials: "NA",
   },
   {
     quote:
-      "Évek óta velük karbantartatom a klímámat. Megbízható, pontos és korrekt szakember – végre valaki, akire lehet számítani.",
+      "Harmadik éve velük karbantartatom a két beltéri egységet. Mindig ők szólnak, mikor esedékes, a szűrő- és kondenzcső-tisztítás után érezhetően jobban hűt és nincs az a dohos szag. Végre egy szakember, akire lehet számítani.",
     name: "Szabó Péter",
     location: "Lajosmizse",
     initials: "SZP",
   },
   {
     quote:
-      "A nyári hőségben két napon belül kijöttek és beüzemelték a klímát. Profi, tiszta munka, korrekt áron.",
+      "A júliusi hőségben hívtam őket, és a nagy dömping ellenére két napon belül kijöttek. A magam vásárolta Gree klímát üzemelték be – levákuumozták, feltöltötték, és előttem tesztelték le a hűtést és a tömörséget. Számlát és jótállást is kaptam.",
     name: "Tóth Gábor",
     location: "Kerekegyháza",
     initials: "TG",
   },
   {
     quote:
-      "A régi klímánk folyton csöpögött – fél óra alatt megtalálta a hibát, azóta tökéletesen működik. Ajánlom mindenkinek!",
+      "A 8 éves klímánk csöpögött és büdös volt. Zoltán megtalálta, hogy eldugult a kondenzvíz-elvezető, kitisztította és lefertőtlenítette az egész beltérit. Nagyjából fél óra volt az egész, és teljesen korrekt árat kért érte.",
     name: "Kiss Mónika",
-    location: "Kecskemét",
+    location: "Kecskemét, Széchenyivárosi ltp.",
     initials: "KM",
   },
   {
     quote:
-      "Multi-split rendszert telepítettek az egész házba. Végig egyeztettek velünk, minden határidőt tartottak.",
+      "Multi-split rendszert kértünk három szobába, egy kültéri egységgel. Előtte kijött felmérni, mindent nyugodtan végigbeszéltünk, és a megbeszélt határidőre pontosan elkészült. Nem hagyott maga után koszt, a régi kartondobozokat is elvitte.",
     name: "Varga László",
     location: "Helvécia",
     initials: "VL",
+  },
+  {
+    quote:
+      "A klímánk hibakódot dobott, más cég csak hetek múlvára adott időpontot. Ők másnap kijöttek, kiderült, hogy csak egy érzékelő ment tönkre – kicserélték garanciával, nem akartak új gépet eladni. Ez a hozzáállás ma ritka.",
+    name: "Fekete István",
+    location: "Kecskemét, Műkertváros",
+    initials: "FI",
+  },
+  {
+    quote:
+      "Panasonic klímát ajánlott a lakás mérete és a tájolás alapján, végig türelmesen elmagyarázta, miért azt. Az árajánlatban tételesen benne volt anyag és munkadíj, semmi rejtett költség. Azóta is halkan, tökéletesen működik.",
+    name: "Balogh Krisztina",
+    location: "Nagykőrös",
+    initials: "BK",
   },
 ];
 
@@ -481,5 +611,6 @@ export const navLinks = [
   { href: "/rolunk/", label: "Rólunk" },
   { href: "/hol-dolgozunk/", label: "Hol dolgozunk" },
   { href: "/gyik/", label: "GYIK" },
+  { href: "/idopontfoglalas/", label: "Időpontfoglalás" },
   { href: "/kapcsolat/", label: "Kapcsolat" },
 ];

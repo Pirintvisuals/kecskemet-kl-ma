@@ -161,9 +161,10 @@ export default function ContactPage() {
                 Írjon nekünk
               </h2>
               <p className="mt-2 mb-6 text-muted">
-                Töltse ki az űrlapot, és hamarosan jelentkezünk.
+                Töltse ki az űrlapot – minél több részletet ad meg, annál
+                pontosabb árajánlatot tudunk adni. Hamarosan jelentkezünk.
               </p>
-              <ContactForm withService />
+              <ContactForm withService detailed />
             </div>
           </Reveal>
         </div>

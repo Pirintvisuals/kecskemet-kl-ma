@@ -1,8 +1,8 @@
 import {
+  BadgeCheck,
   ShieldCheck,
   Zap,
   Receipt,
-  UserCheck,
   Layers,
   Leaf,
   type LucideIcon,
@@ -11,7 +11,7 @@ import { differentiators } from "@/lib/site";
 import SectionHeading from "./SectionHeading";
 import Reveal from "./Reveal";
 
-const icons: LucideIcon[] = [ShieldCheck, Zap, Receipt, UserCheck, Layers, Leaf];
+const icons: LucideIcon[] = [BadgeCheck, ShieldCheck, Zap, Receipt, Layers, Leaf];
 const iconColors = ["#38bdf8", "#38bdf8", "#38bdf8", "#38bdf8", "#38bdf8", "#38bdf8"];
 
 export default function WhyUs() {
@@ -29,7 +29,7 @@ export default function WhyUs() {
               <span className="text-brand-300">mögötte is állunk</span>
             </>
           }
-          subtitle="Egy megbízható helyi szakember, aki személyesen felel a munkájáért. Ez a különbség, amit érezni fog."
+          subtitle="Prémium klímák, akár 10 év garanciával, egy megbízható helyi szakembertől, aki személyesen felel a munkájáért. Ez a különbség, amit érezni fog."
         />
 
         <div className="mt-14 grid gap-5 sm:grid-cols-2 md:grid-cols-3">

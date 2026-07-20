@@ -23,14 +23,14 @@ export default function Services() {
     <section id="szolgaltatasok" className="relative py-24 sm:py-28">
       <div className="mx-auto max-w-7xl px-6">
         <SectionHeading
-          eyebrow="Szolgáltatások"
+          eyebrow="Klíma szolgáltatások"
           title={
             <>
-              Mindent egy helyről a{" "}
-              <span className="text-brand-300">tökéletes klímáért</span>
+              Minden, ami <span className="text-brand-300">klíma</span> – egy
+              megbízható kézből
             </>
           }
-          subtitle="A megfelelő készülék kiválasztásától a beüzemelésen át a rendszeres karbantartásig – egy megbízható szakembertől."
+          subtitle="Klímatelepítés, klímakarbantartás, klímajavítás és beüzemelés Kecskeméten és környékén. A megfelelő klíma kiválasztásától a rendszeres karbantartásig – egy szakembertől."
         />
 
         <div className="mt-14 grid gap-5 md:grid-cols-2">

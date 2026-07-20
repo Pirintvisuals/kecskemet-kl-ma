@@ -17,18 +17,22 @@ export type BrandModel = {
 export type Brand = {
   slug: string;
   name: string;
+  logo: string; // /brands/*.png
   accent: string;
   tagline: string;
   metaTitle: string;
   intro: string;
   strengths: string[];
   models: BrandModel[];
+  /** Optional highlighted note (e.g. hosszú garancia) shown kiemelten. */
+  highlight?: string;
 };
 
 export const brandPages: Brand[] = [
   {
     slug: "daikin",
     name: "Daikin",
+    logo: "/brands/daikin.png",
     accent: "#0A6CD4",
     tagline: "A klímatechnika japán etalonja",
     metaTitle: "Daikin klímák Kecskeméten – telepítés és szerviz | Kecskemét Klíma",
@@ -45,42 +49,43 @@ export const brandPages: Brand[] = [
         name: "Sensira",
         positioning: "Belépőszint",
         description:
-          "Kedvező árú, megbízható választás azoknak, akik jó ár-érték arányú Daikin klímát keresnek.",
-        features: ["Kedvező ár", "Halk működés", "Megbízható"],
+          "Kedvező árú, megbízható választás azoknak, akik jó ár-érték arányú Daikin klímát keresnek. Inverteres kompresszor a gazdaságos üzemért, halk működés és a Daikin bevált minősége – a legkedvezőbb belépő a japán klímavilágba.",
+        features: ["Kedvező ár", "Halk működés", "Inverteres", "Megbízható"],
       },
       {
         name: "Comfora",
         positioning: "Kényelmi",
         description:
-          "Kiegyensúlyozott, mindennapi kényelmet nyújtó modell, jó hatásfokkal és opcionális WiFi-vezérléssel.",
-        features: ["Jó hatásfok", "WiFi opció", "Csendes"],
+          "Kiegyensúlyozott, mindennapi kényelmet nyújtó modell jó hatásfokkal és opcionális WiFi-vezérléssel. Stabil hűtés és fűtés, csendes üzem – ideális választás, ha a jó ár és a megbízható komfort a fontos.",
+        features: ["Jó hatásfok", "WiFi opció", "Csendes", "Jó fűtés"],
       },
       {
         name: "Perfera",
         positioning: "Prémium",
         description:
-          "Csúcskategóriás energiahatékonyság és kiváló fűtési teljesítmény alacsony külső hőmérsékleten is, beépített WiFi-vel.",
-        features: ["Csúcs energiaosztály", "Erős fűtés télen", "Beépített WiFi"],
+          "Csúcskategóriás energiahatékonyság és kiváló fűtési teljesítmény alacsony külső hőmérsékleten is, beépített WiFi-vel. Kifinomult légterelés, nagyon halk üzem – a Daikin technológiai csúcsa a mindennapokra.",
+        features: ["Csúcs energiaosztály", "Erős fűtés télen", "Beépített WiFi", "Nagyon halk"],
       },
       {
         name: "Emura",
         positioning: "Dizájn ikon",
         description:
-          "Elegáns, fém hatású előlap és letisztult formavilág – a Daikin dizájn-zászlóshajója.",
-        features: ["Prémium dizájn", "Halk", "Magas hatásfok"],
+          "Elegáns, fém hatású előlap és letisztult formavilág – a Daikin dizájn-zászlóshajója. A prémium megjelenés mögött magas hatásfok, intelligens érzékelők és teljes okosvezérlés áll.",
+        features: ["Prémium dizájn", "Érzékelős légterelés", "Halk", "Magas hatásfok"],
       },
       {
         name: "Stylish",
         positioning: "Kompakt dizájn",
         description:
-          "Vékony, modern forma kiváló légáramlással és intelligens érzékelőkkel, WiFi-vezérléssel.",
-        features: ["Kompakt forma", "Érzékelős", "WiFi vezérlés"],
+          "Vékony, modern forma kiváló légáramlással és intelligens érzékelőkkel, WiFi-vezérléssel. Kompakt kültéri egység, tiszta levegőt adó szűrés – dizájnos prémium egy meglepően kis helyen.",
+        features: ["Kompakt forma", "Érzékelős", "WiFi vezérlés", "Magas hatásfok"],
       },
     ],
   },
   {
     slug: "mitsubishi-electric",
     name: "Mitsubishi Electric",
+    logo: "/brands/mitsubishi.png",
     accent: "#E0483B",
     tagline: "Prémium japán minőség, hosszú élettartam",
     metaTitle: "Mitsubishi Electric klímák Kecskeméten – telepítés | Kecskemét Klíma",
@@ -97,87 +102,107 @@ export const brandPages: Brand[] = [
         name: "MSZ-HR",
         positioning: "Belépő modell",
         description:
-          "Megbízható alapfelszereltségű készülék azoknak, akik a Mitsubishi minőségét kedvező áron keresik.",
-        features: ["Megbízható", "Kedvező ár", "Halk"],
+          "Megbízható alapfelszereltségű készülék azoknak, akik a Mitsubishi minőségét kedvező áron keresik. Inverteres, gazdaságos üzem és a gyártó ismert tartóssága – jó minőségű belépő, ami sokáig szolgál.",
+        features: ["Megbízható", "Kedvező ár", "Inverteres", "Halk"],
       },
       {
         name: "MSZ-AY",
         positioning: "Kényelmi széria",
         description:
-          "Kiegyensúlyozott hatásfok és komfort, továbbfejlesztett működéssel és csendes üzemmel.",
-        features: ["Jó hatásfok", "Csendes", "WiFi opció"],
+          "Kiegyensúlyozott hatásfok és komfort továbbfejlesztett működéssel, csendes üzemmel és jó fűtési teljesítménnyel. WiFi-vel vezérelhető, kifinomult légterelés – a mindennapok megbízható kényelme.",
+        features: ["Jó hatásfok", "Csendes", "WiFi opció", "Jó téli fűtés"],
       },
       {
         name: "MSZ-LN Design",
         positioning: "Prémium dizájn",
         description:
-          "Matt és fényes színekben elérhető dizájnmodell, érzékelővel vezérelt légtereléssel és magas hatásfokkal.",
-        features: ["Dizájn színek", "Érzékelős légterelés", "Csúcs hatásfok"],
+          "Matt és fényes színekben elérhető dizájnmodell, érzékelővel vezérelt légtereléssel, fejlett szűréssel és csúcs energiaosztállyal. Ahol a klíma a lakberendezés része – prémium minőség és megjelenés együtt.",
+        features: ["Dizájn színek", "Érzékelős légterelés", "Csúcs hatásfok", "Fejlett szűrés"],
       },
       {
         name: "MSZ-EF Kirigamine Zen",
         positioning: "Dizájn prémium",
         description:
-          "Letisztult, lapos előlapú prémium modell, amely elegánsan illeszkedik a modern otthonokba.",
-        features: ["Elegáns forma", "Halk", "Magas energiaosztály"],
+          "Letisztult, lapos előlapú prémium modell, amely elegánsan illeszkedik a modern otthonokba. Nagyon halk üzem, magas energiaosztály és a Mitsubishi Electric precíz japán minősége – csendben, feltűnésmentesen a legjobb.",
+        features: ["Elegáns lapos forma", "Nagyon halk", "Magas energiaosztály", "Japán minőség"],
       },
     ],
   },
   {
     slug: "gree",
     name: "Gree",
+    logo: "/brands/gree.png",
     accent: "#16A34A",
-    tagline: "Kiváló ár-érték arány, erős fűtés",
-    metaTitle: "Gree klímák Kecskeméten – telepítés és szerviz | Kecskemét Klíma",
+    tagline: "Kiváló ár-érték, erős fűtés – akár 10 év garanciával",
+    metaTitle: "Gree klímák Kecskeméten – telepítés, szerviz, akár 10 év garancia | Kecskemét Klíma",
+    highlight:
+      "A Gree prémium klímákra – a gyártói regisztráció és a feltételek teljesülése esetén – akár 10 év garancia is igényelhető. Hosszú távú nyugalom, nem csak egy szezonra.",
     intro:
-      "A Gree a világ egyik legnagyobb klímagyártója, amely kedvező árú, mégis jól felszerelt készülékeivel rendkívül népszerű. Több modellje kiemelkedő fűtési teljesítményt nyújt, így egész évben gazdaságos megoldás lehet.",
+      "A Gree a világ legnagyobb klímagyártója, amely évente több tízmillió készüléket állít elő – a kedvező árú, mégis kiválóan felszerelt modelljei miatt Magyarországon is az egyik legnépszerűbb választás. Több modellje kimagasló fűtési teljesítményt nyújt hőszivattyús üzemben, így egész évben gazdaságos. A legnagyobb előnye azonban a nyugalom: a prémium Gree klímákra a feltételek teljesülése esetén akár 10 év garancia is igényelhető – mi pedig hivatalos szakszervizként végig a partnerei maradunk a telepítéstől a karbantartáson át a garanciális ügyintézésig.",
     strengths: [
-      "Kiváló ár-érték arány",
-      "Erős fűtési teljesítmény hőszivattyús modelleknél",
-      "Széles, jól felszerelt kínálat",
-      "WiFi-vezérlés több modellnél",
+      "Akár 10 év garancia a prémium Gree klímákra (a feltételek teljesülése esetén)",
+      "Kiváló ár-érték arány – prémium tudás elérhető áron",
+      "Erős fűtési teljesítmény hőszivattyús modelleknél, télen is",
+      "Fejlett inverteres kompresszor, halk és energiatakarékos működés",
+      "WiFi-vezérlés és okos funkciók a legtöbb modellnél",
+      "Széles kínálat: belépőtől a prémium dizájn készülékekig",
     ],
     models: [
       {
         name: "Pular",
         positioning: "Népszerű kényelmi",
         description:
-          "Az egyik legkedveltebb Gree modell: jó felszereltség, WiFi és kedvező ár egyben.",
-        features: ["WiFi", "Jó ár-érték", "Csendes"],
+          "Az egyik legkedveltebb Gree modell Magyarországon: erős fűtési teljesítmény hőszivattyús üzemben, beépített WiFi-vezérlés és kiváló ár-érték arány egyben. Modern inverteres kompresszorával halkan, energiatakarékosan működik, és R32 hűtőközeggel dolgozik – ideális választás lakásba és házba egyaránt, ha megbízható mindenest keres.",
+        features: ["Beépített WiFi", "Erős téli fűtés", "Inverteres, R32", "Jó ár-érték"],
       },
       {
         name: "Fairy",
-        positioning: "Modern kényelem",
+        positioning: "Modern dizájn",
         description:
-          "Letisztult megjelenés, halk működés és beépített WiFi a mindennapi kényelemért.",
-        features: ["Modern forma", "WiFi", "Halk"],
+          "Letisztult, elegáns előlap, kifejezetten halk működés és beépített WiFi – a Fairy a mindennapi kényelmet prémium hangulattal ötvözi. Inverteres, energiatakarékos üzem, jó fűtési teljesítménnyel: ott a legjobb választás, ahol a klíma megjelenése is számít, de nem szeretne prémium árat fizetni.",
+        features: ["Dizájnos, lapos forma", "Beépített WiFi", "Halk, inverteres üzem", "Jó hatásfok"],
       },
       {
         name: "Amber",
         positioning: "Prémium hőszivattyú",
         description:
-          "Erős fűtési teljesítményre optimalizált prémium modell, amely a hidegebb napokon is hatékony.",
-        features: ["Erős fűtés télen", "Prémium", "Magas hatásfok"],
+          "Erős fűtésre optimalizált prémium modell, amely a hidegebb téli napokon is hatékonyan fűt – valódi alternatíva a klímafűtésre. Alacsony külső hőmérsékleten is stabil teljesítményt ad, magas energiaosztállyal és beépített WiFi-vel. Ha a klímát télen is komolyan használná fűtésre, ez a Gree csúcsragadozója.",
+        features: ["Kiváló téli fűtés", "Magas energiaosztály", "Beépített WiFi", "Prémium"],
+      },
+      {
+        name: "Comfort X",
+        positioning: "Kiegyensúlyozott kényelmi",
+        description:
+          "A klasszikus Gree kényelmi széria: kiegyensúlyozott hűtés-fűtés, inverteres, R32-es működés és jó energiahatékonyság megfizethető áron. Halk beltéri egység, WiFi-vezérelhetőség és megbízható, bevált technika – kiváló belépő a prémium Gree világába.",
+        features: ["Inverteres, R32", "WiFi-vezérelhető", "Jó energiaosztály", "Kedvező ár"],
       },
       {
         name: "Bora",
         positioning: "Megbízható klasszikus",
         description:
-          "Bevált, gazdaságos modell, amely megbízható hűtést és fűtést nyújt kedvező áron.",
-        features: ["Gazdaságos", "Megbízható", "WiFi opció"],
+          "Bevált, gazdaságos modell, amely megbízható hűtést és fűtést nyújt kedvező áron. Egyszerű, tartós felépítés, inverteres működés és WiFi-vel bővíthető vezérlés – annak, aki a jól bevált, problémamentes megoldást keresi.",
+        features: ["Gazdaságos", "Megbízható", "Inverteres", "WiFi opció"],
       },
       {
         name: "Lomo",
         positioning: "Kedvező belépő",
         description:
-          "Egyszerű, megbízható belépő modell azoknak, akiknek a jó alapfunkciók a fontosak.",
-        features: ["Kedvező ár", "Egyszerű", "Megbízható"],
+          "Egyszerű, megbízható belépő modell azoknak, akiknek a jó alapfunkciók és a kedvező ár a legfontosabb. Inverteres kompresszor a gazdaságos üzemért, letisztult megjelenés, és a Gree bevált megbízhatósága – a legkedvezőbb út egy jó minőségű klímához.",
+        features: ["Kedvező ár", "Inverteres", "Egyszerű", "Megbízható"],
+      },
+      {
+        name: "Clivia",
+        positioning: "Prémium dizájn",
+        description:
+          "Fém hatású, exkluzív előlapú prémium Gree modell erős teljesítménnyel – ha a klíma dizájnelem is a lakásban. Csúcskategóriás anyaghasználat, kifinomult, halk működés, magas energiaosztály és teljes okosvezérlés WiFi-n keresztül. A Gree kínálatának dizájn-zászlóshajója.",
+        features: ["Prémium fém dizájn", "Erős teljesítmény", "Csúcs energiaosztály", "Okosvezérlés WiFi-vel"],
       },
     ],
   },
   {
     slug: "lg",
     name: "LG",
+    logo: "/brands/lg.png",
     accent: "#C2185B",
     tagline: "Dual Inverter technológia, halk működés",
     metaTitle: "LG klímák Kecskeméten – telepítés és szerviz | Kecskemét Klíma",
@@ -194,35 +219,36 @@ export const brandPages: Brand[] = [
         name: "Standard Plus",
         positioning: "Kiváló ár-érték",
         description:
-          "Népszerű alapmodell Dual Inverter kompresszorral – csendes, gazdaságos, megbízható.",
-        features: ["Dual Inverter", "Csendes", "Jó ár-érték"],
+          "Népszerű alapmodell Dual Inverter kompresszorral – csendes, gazdaságos, megbízható. Gyorsan eléri a kívánt hőmérsékletet, WiFi-vel vezérelhető, és tartós LG minőséget ad kedvező áron.",
+        features: ["Dual Inverter", "Csendes", "WiFi", "Jó ár-érték"],
       },
       {
         name: "Silence",
         positioning: "Halk működés",
         description:
-          "Extra csendes üzemre optimalizált modell azoknak, akiknek a nyugalom a legfontosabb.",
-        features: ["Extra halk", "Energiatakarékos", "WiFi"],
+          "Extra csendes üzemre optimalizált modell azoknak, akiknek a nyugalom a legfontosabb – hálószobába, gyerekszobába ideális. Dual Inverter kompresszor, energiatakarékos működés és beépített WiFi.",
+        features: ["Extra halk", "Dual Inverter", "Energiatakarékos", "WiFi"],
       },
       {
         name: "Artcool",
         positioning: "Dizájn",
         description:
-          "Prémium megjelenésű dizájnmodell, amely stílusos elemként illeszkedik a lakásba.",
-        features: ["Prémium dizájn", "Dual Inverter", "WiFi"],
+          "Prémium megjelenésű dizájnmodell, amely stílusos elemként illeszkedik a lakásba. A látvány mögött Dual Inverter teljesítmény, magas hatásfok és teljes okosvezérlés áll – dizájn és tudás egyben.",
+        features: ["Prémium dizájn", "Dual Inverter", "WiFi", "Magas hatásfok"],
       },
       {
         name: "Dualcool Premium",
         positioning: "Prémium teljesítmény",
         description:
-          "Erős hűtési és fűtési teljesítmény, prémium felszereltséggel és tisztább levegőt adó megoldásokkal.",
-        features: ["Erős teljesítmény", "Prémium", "Tiszta levegő"],
+          "Erős hűtési és fűtési teljesítmény prémium felszereltséggel és tisztább levegőt adó megoldásokkal. Alacsony hőmérsékleten is hatékonyan fűt, halk és energiatakarékos – csúcskategóriás LG a mindennapokra.",
+        features: ["Erős teljesítmény", "Erős téli fűtés", "Prémium", "Tiszta levegő"],
       },
     ],
   },
   {
     slug: "panasonic",
     name: "Panasonic",
+    logo: "/brands/panasonic.png",
     accent: "#4F46E5",
     tagline: "Tiszta levegő nanoe™ technológiával",
     metaTitle: "Panasonic klímák Kecskeméten – telepítés és szerviz | Kecskemét Klíma",
@@ -239,22 +265,93 @@ export const brandPages: Brand[] = [
         name: "TZ Compact",
         positioning: "Kedvező belépő",
         description:
-          "Jó ár-értékű, megbízható belépő modell a mindennapi hűtéshez és fűtéshez.",
-        features: ["Jó ár-érték", "Megbízható", "WiFi opció"],
+          "Jó ár-értékű, megbízható belépő modell a mindennapi hűtéshez és fűtéshez. Inverteres, gazdaságos üzem, halk működés és WiFi-vel bővíthető vezérlés – a Panasonic minősége elérhető áron.",
+        features: ["Jó ár-érték", "Inverteres", "Megbízható", "WiFi opció"],
       },
       {
         name: "Etherea (Z)",
         positioning: "Prémium, tiszta levegő",
         description:
-          "Prémium modell nanoe™ X levegőtisztítással, magas hatásfokkal és elegáns megjelenéssel.",
-        features: ["nanoe™ X légtisztítás", "Csúcs hatásfok", "Elegáns dizájn"],
+          "Prémium modell nanoe™ X levegőtisztítással, amely frissebb, tisztább beltéri levegőt ad – ideális allergiásoknak. Csúcs energiaosztály, nagyon halk üzem és elegáns, lapos megjelenés.",
+        features: ["nanoe™ X légtisztítás", "Csúcs hatásfok", "Nagyon halk", "Elegáns dizájn"],
       },
       {
         name: "PZ",
         positioning: "Kényelmi széria",
         description:
-          "Kiegyensúlyozott középkategóriás modell, amely jó egyensúlyt teremt az ár és a tudás között.",
-        features: ["Kiegyensúlyozott", "Csendes", "WiFi opció"],
+          "Kiegyensúlyozott középkategóriás modell, amely jó egyensúlyt teremt az ár és a tudás között. Csendes, energiatakarékos működés, jó fűtési teljesítmény és WiFi-vezérelhetőség – a megbízható közép­kategória.",
+        features: ["Kiegyensúlyozott", "Csendes", "WiFi opció", "Jó fűtés"],
+      },
+    ],
+  },
+  {
+    slug: "aux",
+    name: "AUX",
+    logo: "/brands/aux-brand.png",
+    accent: "#0EA5E9",
+    tagline: "Okos klímák verhetetlen ár-érték aránnyal",
+    metaTitle: "AUX klímák Kecskeméten – telepítés és szerviz | Kecskemét Klíma",
+    intro:
+      "Az AUX a világ egyik legnagyobb klímagyártója, amely számos ismert márkának is beszállítója. Saját készülékei kifejezetten kedvező áron kínálnak modern, inverteres technológiát, WiFi-vezérlést és megbízható hűtés-fűtés teljesítményt – ideális választás, ha jó ár-értékű, okos klímát keres.",
+    strengths: [
+      "Kimagasló ár-érték arány",
+      "Modern inverteres technológia, energiatakarékos üzem",
+      "WiFi-vezérlés és okos funkciók több modellnél",
+      "Megbízható hűtés és fűtés hőszivattyús üzemben",
+    ],
+    models: [
+      {
+        name: "Q-Smart Plus",
+        positioning: "Népszerű okos modell",
+        description:
+          "Kedvező árú, jól felszerelt modell beépített WiFi-vel és jó hatásfokkal – a mindennapi kényelemért. Inverteres, R32-es működés, megbízható hűtés-fűtés hőszivattyús üzemben, verhetetlen ár-érték aránnyal.",
+        features: ["Beépített WiFi", "Inverteres, R32", "Jó hatásfok", "Kedvező ár"],
+      },
+      {
+        name: "Freedom",
+        positioning: "Kényelmi széria",
+        description:
+          "Kiegyensúlyozott hűtés-fűtés megbízható inverteres működéssel és csendes üzemmel. Jó fűtési teljesítmény télen is, WiFi-vel bővíthető okosvezérlés – kényelmes és gazdaságos a mindennapokra.",
+        features: ["Inverter", "Csendes", "Jó téli fűtés", "WiFi opció"],
+      },
+      {
+        name: "J-Smart",
+        positioning: "Dizájn kényelem",
+        description:
+          "Letisztult megjelenés, okos vezérlés és jó energiaosztály egy elérhető árú készülékben. Halk, energiatakarékos üzem és beépített WiFi – dizájnos okosklíma, ami nem terheli meg a pénztárcát.",
+        features: ["Dizájnos", "Okos vezérlés, WiFi", "Energiatakarékos", "Halk"],
+      },
+    ],
+  },
+  {
+    slug: "polar",
+    name: "Polár",
+    logo: "/brands/polar.png",
+    accent: "#2563EB",
+    tagline: "Elérhető árú, megbízható klímák a mindennapokra",
+    metaTitle: "Polár klímák Kecskeméten – telepítés és szerviz | Kecskemét Klíma",
+    intro:
+      "A Polár klímák a jó ár-érték arányukról és egyszerű, megbízható működésükről ismertek. Kiváló választás, ha megfizethető áron szeretne hatékony hűtést és fűtést – mi pedig szakszerűen telepítjük, beüzemeljük és karbantartjuk a készülékeket, garanciával és számlával.",
+    strengths: [
+      "Elérhető ár, kedvező belépő a klímavilágba",
+      "Egyszerű, megbízható működés",
+      "Inverteres modellek energiatakarékos üzemmel",
+      "Teljes körű helyi szerviz és garancia",
+    ],
+    models: [
+      {
+        name: "Comfort Inverter",
+        positioning: "Kedvező kényelmi",
+        description:
+          "Megfizethető, inverteres modell, amely gazdaságos hűtést és fűtést nyújt a mindennapokra. Halk működés, egyszerű kezelés és megbízható alaptechnika – kiváló belépő az inverteres klímák világába kedvező áron.",
+        features: ["Inverter", "Gazdaságos", "Halk", "Kedvező ár"],
+      },
+      {
+        name: "Standard",
+        positioning: "Egyszerű belépő",
+        description:
+          "Letisztult, megbízható belépő klíma azoknak, akiknek a jó alapfunkciók a fontosak. Egyszerű, tartós felépítés és megfizethető ár – a leggyorsabb út egy hatékony, jó minőségű hűtéshez.",
+        features: ["Egyszerű", "Megbízható", "Hatékony hűtés", "Kedvező ár"],
       },
     ],
   },

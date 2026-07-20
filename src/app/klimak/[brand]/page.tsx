@@ -88,14 +88,24 @@ export default async function BrandPage({
             </nav>
 
             <Reveal>
-              <span
-                className="inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-wider"
-                style={{ color: accent, backgroundColor: `${accent}1a`, border: `1px solid ${accent}40` }}
-              >
-                <Snowflake className="h-3.5 w-3.5" />
-                Klímamárka
-              </span>
-              <h1 className="mt-5 font-display text-4xl font-extrabold leading-[1.08] tracking-tight text-white sm:text-5xl">
+              <div className="mb-6 flex items-center gap-4">
+                <span className="flex h-16 w-36 items-center justify-center rounded-2xl bg-white/95 px-5 ring-1 ring-white/10">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={b.logo}
+                    alt={`${b.name} klíma logó`}
+                    className="max-h-10 w-auto max-w-full object-contain"
+                  />
+                </span>
+                <span
+                  className="inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-wider"
+                  style={{ color: accent, backgroundColor: `${accent}1a`, border: `1px solid ${accent}40` }}
+                >
+                  <Snowflake className="h-3.5 w-3.5" />
+                  Klímamárka
+                </span>
+              </div>
+              <h1 className="font-display text-4xl font-extrabold leading-[1.08] tracking-tight text-white sm:text-5xl">
                 {b.name} klímák
                 <span className="text-muted"> Kecskeméten</span>
               </h1>
@@ -105,6 +115,21 @@ export default async function BrandPage({
               <p className="mt-4 max-w-xl text-lg leading-relaxed text-muted">
                 {b.intro}
               </p>
+
+              {b.highlight && (
+                <div
+                  className="mt-6 flex items-start gap-3 rounded-2xl border p-4"
+                  style={{ borderColor: `${accent}40`, background: `${accent}12` }}
+                >
+                  <span
+                    className="mt-0.5 grid h-8 w-8 shrink-0 place-items-center rounded-lg font-display text-xs font-bold"
+                    style={{ backgroundColor: `${accent}26`, color: accent }}
+                  >
+                    10
+                  </span>
+                  <p className="text-[15px] leading-relaxed text-brand-50">{b.highlight}</p>
+                </div>
+              )}
 
               <div className="mt-9 flex flex-wrap items-center gap-4">
                 <a
@@ -183,7 +208,7 @@ export default async function BrandPage({
                 <div className="group flex h-full flex-col rounded-3xl border border-white/8 bg-navy-800/50 p-5 sm:p-7 transition-all duration-300 hover:-translate-y-1 hover:bg-navy-800/80">
                   <div className="flex items-center justify-between gap-3">
                     <h3 className="font-display text-2xl font-bold text-white">
-                      {m.name}
+                      {b.name} {m.name}
                     </h3>
                     <span
                       className="rounded-full px-2.5 py-1 text-xs font-semibold"

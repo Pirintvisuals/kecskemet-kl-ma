@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import TrustBar from "@/components/TrustBar";
 import Services from "@/components/Services";
+import BookingBar from "@/components/BookingBar";
 import Stats from "@/components/Stats";
 import WhyUs from "@/components/WhyUs";
 import Process from "@/components/Process";
@@ -57,11 +58,22 @@ export default function Home() {
         <Hero />
         <TrustBar />
         <Services />
+
+        {/* Booking form high on the page */}
+        <section id="foglalas" className="relative py-8">
+          <div className="mx-auto max-w-5xl px-6">
+            <BookingBar
+              title="Kérjen időpontot a klímájához még ma"
+              subtitle="Telepítés, karbantartás, javítás vagy beüzemelés – hagyja itt az adatait, és visszahívjuk."
+            />
+          </div>
+        </section>
+
         <Stats />
+        <Testimonials />
         <WhyUs />
         <Process />
         <Gallery />
-        <Testimonials />
         <ServiceArea />
         <Faq />
         <ContactCTA />

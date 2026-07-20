@@ -13,6 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/hol-dolgozunk",
     "/gyik",
     "/rolunk",
+    "/idopontfoglalas",
     "/kapcsolat",
     "/klimak",
     "/impresszum",

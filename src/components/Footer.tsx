@@ -1,11 +1,17 @@
 import Image from "next/image";
 import { Phone, Mail } from "lucide-react";
 import { navLinks, services, site } from "@/lib/site";
+import BookingBar from "./BookingBar";
 
 export default function Footer() {
   const year = new Date().getFullYear();
   return (
     <footer className="relative border-t border-white/8 bg-navy-950 pt-16 pb-8">
+      {/* Booking form on every page */}
+      <div className="mx-auto mb-16 max-w-7xl px-6">
+        <BookingBar />
+      </div>
+
       <div className="mx-auto max-w-7xl px-6">
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
           {/* Brand */}

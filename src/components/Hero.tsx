@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, type Variants } from "framer-motion";
-import { Phone, ArrowRight, ShieldCheck, Snowflake, Wind } from "lucide-react";
+import { Phone, ArrowRight, ShieldCheck, Snowflake, Wind, CalendarCheck, BadgeCheck } from "lucide-react";
 import AuroraBackground from "./AuroraBackground";
 import ClimatePanel from "./ClimatePanel";
 import ImagePlaceholder from "./ImagePlaceholder";
@@ -70,9 +70,10 @@ export default function Hero() {
           >
             Nyáron <span className="font-semibold text-ice">kellemes hűvös</span>,
             télen <span className="font-semibold text-warm-400">otthonos meleg</span>.
-            Prémium klímaszerelés, karbantartás és javítás Kecskeméten – egy
+            Prémium klímaszerelés, klímatisztítás és javítás Kecskeméten – egy
             megbízható szakembertől,{" "}
-            <span className="text-brand-100">garanciával és számlával.</span>
+            <span className="text-brand-100">garanciával és számlával, akár 10 év
+            klímagaranciával.</span>
           </motion.p>
 
           {/* CTAs */}
@@ -90,10 +91,11 @@ export default function Hero() {
               </a>
             </span>
             <a
-              href="#szolgaltatasok"
-              className="glass-strong group inline-flex items-center gap-2 rounded-full px-6 py-3.5 font-semibold text-brand-50 transition-all duration-200 hover:border-warm-400/50 hover:text-white cursor-pointer"
+              href="/idopontfoglalas/"
+              className="glass-strong group inline-flex items-center gap-2 rounded-full px-6 py-3.5 font-semibold text-brand-50 transition-all duration-200 hover:border-brand-400/60 hover:text-white cursor-pointer"
             >
-              Szolgáltatásaink
+              <CalendarCheck className="h-5 w-5 text-brand-300" />
+              Időpontfoglalás
               <ArrowRight className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
             </a>
           </motion.div>
@@ -104,8 +106,9 @@ export default function Hero() {
             className="mt-9 flex flex-wrap gap-x-6 gap-y-3 text-sm text-muted"
           >
             {[
+              { icon: BadgeCheck, label: "Akár 10 év garancia" },
               { icon: ShieldCheck, label: "Garancia + számla" },
-              { icon: Snowflake, label: "Márkafüggetlen szerviz" },
+              { icon: Snowflake, label: "Prémium, márkafüggetlen klímaszerviz" },
               { icon: Wind, label: "Átlátható ár" },
             ].map(({ icon: Icon, label }) => (
               <li key={label} className="inline-flex items-center gap-2">

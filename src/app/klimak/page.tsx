@@ -8,9 +8,9 @@ import CtaBand from "@/components/CtaBand";
 import { brandPages } from "@/lib/brands";
 
 export const metadata: Metadata = {
-  title: { absolute: "Klímamárkák Kecskeméten – Daikin, Mitsubishi, Gree, LG, Panasonic | Kecskemét Klíma" },
+  title: { absolute: "Klímamárkák Kecskeméten – Daikin, Mitsubishi, Gree, LG, Panasonic, AUX, Polár | Kecskemét Klíma" },
   description:
-    "Márkafüggetlen klímaszerelés Kecskeméten. Ismerje meg a telepített klímamárkákat és típusaikat: Daikin, Mitsubishi Electric, Gree, LG, Panasonic.",
+    "Márkafüggetlen prémium klímaszerelés Kecskeméten. Ismerje meg a telepített klímamárkákat és típusaikat: Daikin, Mitsubishi Electric, Gree (akár 10 év garancia), LG, Panasonic, AUX, Polár és társai.",
   openGraph: {
     title: "Klímamárkák | Kecskemét Klíma",
     description: "A legnépszerűbb klímamárkák telepítése és szervize Kecskeméten.",
@@ -69,17 +69,26 @@ export default function BrandsIndex() {
                     className="pointer-events-none absolute -right-16 -top-16 h-40 w-40 rounded-full opacity-0 blur-3xl transition-opacity duration-500 group-hover:opacity-100"
                     style={{ background: `${b.accent}33` }}
                   />
-                  <div className="relative flex items-center justify-between">
-                    <h2 className="font-display text-2xl font-bold text-white">
-                      {b.name}
-                    </h2>
+                  <div className="relative flex items-center justify-between gap-4">
+                    <span className="flex h-16 w-32 items-center justify-center rounded-2xl bg-white/95 px-4 ring-1 ring-white/10">
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img
+                        src={b.logo}
+                        alt={`${b.name} klíma logó`}
+                        loading="lazy"
+                        className="max-h-10 w-auto max-w-full object-contain"
+                      />
+                    </span>
                     <span
-                      className="grid h-10 w-10 place-items-center rounded-full"
+                      className="grid h-10 w-10 shrink-0 place-items-center rounded-full"
                       style={{ backgroundColor: `${b.accent}1f`, color: b.accent }}
                     >
                       <ArrowRight className="h-5 w-5 transition-transform duration-200 group-hover:translate-x-0.5" />
                     </span>
                   </div>
+                  <h2 className="relative mt-4 font-display text-2xl font-bold text-white">
+                    {b.name}
+                  </h2>
                   <p className="relative mt-1 text-sm font-medium" style={{ color: b.accent }}>
                     {b.tagline}
                   </p>
