@@ -10,6 +10,12 @@ import {
   Sparkles,
   Stethoscope,
   Gauge,
+  Wifi,
+  Flame,
+  Leaf,
+  Wind,
+  Thermometer,
+  Volume2,
   type LucideIcon,
 } from "lucide-react";
 import Navbar from "@/components/Navbar";
@@ -17,6 +23,7 @@ import Footer from "@/components/Footer";
 import Reveal from "@/components/Reveal";
 import AuroraBackground from "@/components/AuroraBackground";
 import ClimateVisual from "@/components/ClimateVisual";
+import ImagePlaceholder from "@/components/ImagePlaceholder";
 import CtaBand from "@/components/CtaBand";
 import { brandPages, brandBySlug } from "@/lib/brands";
 import { services, site } from "@/lib/site";
@@ -45,6 +52,15 @@ const serviceIcon: Record<string, LucideIcon> = {
   maintain: Sparkles,
   repair: Stethoscope,
   commission: Gauge,
+};
+
+const techIcon: Record<string, LucideIcon> = {
+  wifi: Wifi,
+  flame: Flame,
+  leaf: Leaf,
+  wind: Wind,
+  thermometer: Thermometer,
+  volume: Volume2,
 };
 
 export default async function BrandPage({
@@ -182,6 +198,140 @@ export default async function BrandPage({
           </div>
         </div>
       </section>
+
+      {/* ---------------- FEATURED SERIES (rich showcase) ---------------- */}
+      {b.featuredSeries && (
+        <section className="relative py-16">
+          <div
+            className="pointer-events-none absolute inset-x-0 top-0 h-px"
+            style={{ background: `linear-gradient(90deg, transparent, ${accent}55, transparent)` }}
+          />
+          <div className="mx-auto max-w-7xl px-6">
+            {/* header + hero image */}
+            <div className="grid grid-cols-1 items-center gap-10 md:grid-cols-[1fr_0.95fr]">
+              <Reveal>
+                <span
+                  className="inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-wider"
+                  style={{ color: accent, backgroundColor: `${accent}1a`, border: `1px solid ${accent}40` }}
+                >
+                  <Snowflake className="h-3.5 w-3.5" />
+                  Kiemelt széria
+                </span>
+                <h2 className="mt-4 font-display text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
+                  {b.name} {b.featuredSeries.name}
+                </h2>
+                <p className="mt-2 text-lg font-medium" style={{ color: accent }}>
+                  {b.featuredSeries.tagline}
+                </p>
+                <p className="mt-4 max-w-xl text-lg leading-relaxed text-muted">
+                  {b.featuredSeries.intro}
+                </p>
+                <a
+                  href="/kapcsolat/"
+                  className="mt-7 inline-flex items-center gap-2 rounded-full px-6 py-3.5 font-semibold text-white transition-all duration-200 hover:-translate-y-0.5"
+                  style={{ backgroundColor: accent }}
+                >
+                  Ajánlatot kérek a {b.featuredSeries.name} szériára
+                  <ArrowRight className="h-4 w-4" />
+                </a>
+              </Reveal>
+
+              <Reveal delay={0.08}>
+                {b.featuredSeries.image ? (
+                  // eslint-disable-next-line @next/next/no-img-element
+                  <img
+                    src={b.featuredSeries.image}
+                    alt={`${b.name} ${b.featuredSeries.name} klíma`}
+                    className="w-full rounded-3xl object-cover"
+                  />
+                ) : (
+                  <ImagePlaceholder
+                    label={`${b.name} ${b.featuredSeries.name}`}
+                    hint="A beltéri egység fényképe kerül ide"
+                    minH="min-h-[300px]"
+                  />
+                )}
+              </Reveal>
+            </div>
+
+            {/* capacity / kW variants */}
+            <Reveal className="mt-14">
+              <h3 className="font-display text-xl font-bold text-white">
+                Elérhető teljesítmények
+              </h3>
+              <p className="mt-1 text-sm text-muted">
+                A megfelelő méretet a helyiség alapján a felmérésen közösen választjuk ki – a szobaméret csak tájékoztató.
+              </p>
+            </Reveal>
+            <div className="mt-6 grid gap-4 sm:grid-cols-2 md:grid-cols-4">
+              {b.featuredSeries.capacities.map((c, i) => (
+                <Reveal key={c.model} delay={(i % 4) * 0.06}>
+                  <div className="flex h-full flex-col rounded-3xl border border-white/8 bg-navy-800/50 p-6 transition-all duration-300 hover:-translate-y-1 hover:bg-navy-800/80">
+                    <span className="font-display text-3xl font-extrabold text-white">
+                      {c.power}
+                    </span>
+                    <span className="mt-1 text-sm font-medium" style={{ color: accent }}>
+                      {c.room}
+                    </span>
+                    <span className="mt-4 rounded-lg bg-navy-950/50 px-2.5 py-1 font-mono text-[11px] text-muted">
+                      {c.model}
+                    </span>
+                  </div>
+                </Reveal>
+              ))}
+            </div>
+
+            {/* technology blocks */}
+            <div className="mt-8 grid gap-4 sm:grid-cols-2 md:grid-cols-3">
+              {b.featuredSeries.technologies.map((t, i) => {
+                const Icon = techIcon[t.icon] ?? Check;
+                return (
+                  <Reveal key={t.title} delay={(i % 3) * 0.06}>
+                    <div className="flex h-full flex-col rounded-3xl border border-white/8 bg-navy-800/40 p-6">
+                      <span
+                        className="grid h-11 w-11 place-items-center rounded-xl"
+                        style={{ backgroundColor: `${accent}1a`, color: accent }}
+                      >
+                        <Icon className="h-5 w-5" />
+                      </span>
+                      <h4 className="mt-4 font-display text-lg font-bold text-white">
+                        {t.title}
+                      </h4>
+                      <p className="mt-2 text-[15px] leading-relaxed text-muted">
+                        {t.text}
+                      </p>
+                    </div>
+                  </Reveal>
+                );
+              })}
+            </div>
+
+            {/* spec strip */}
+            <Reveal className="mt-8">
+              <div className="overflow-hidden rounded-3xl border border-white/8 bg-navy-800/40">
+                <div className="border-b border-white/8 px-6 py-4">
+                  <h3 className="font-display text-lg font-bold text-white">
+                    {b.name} {b.featuredSeries.name} – főbb jellemzők
+                  </h3>
+                </div>
+                <dl className="grid grid-cols-1 sm:grid-cols-2">
+                  {b.featuredSeries.specs.map((s, i) => (
+                    <div
+                      key={s.label}
+                      className={`flex items-center justify-between gap-4 px-6 py-3.5 text-sm ${
+                        i % 2 === 0 ? "sm:border-r sm:border-white/8" : ""
+                      } border-b border-white/8`}
+                    >
+                      <dt className="text-muted">{s.label}</dt>
+                      <dd className="text-right font-semibold text-brand-50">{s.value}</dd>
+                    </div>
+                  ))}
+                </dl>
+              </div>
+            </Reveal>
+          </div>
+        </section>
+      )}
 
       {/* ---------------- MODELS ---------------- */}
       <section className="relative py-16">

@@ -14,6 +14,21 @@ export type BrandModel = {
   features: string[];
 };
 
+/** A highlighted product line shown in a rich, catalogue-style block. */
+export type FeaturedSeries = {
+  name: string; // e.g. "Comfort Pro"
+  tagline: string; // short marketing headline
+  intro: string; // 2–3 sentence description
+  /** Real photo slot – drop the image path here when supplied. */
+  image?: string;
+  /** Capacity variants (kW). Room size is an approximate rule-of-thumb guide. */
+  capacities: { power: string; model: string; room: string }[];
+  /** Feature / technology blocks with an icon key (see techIcon map on the page). */
+  technologies: { icon: string; title: string; text: string }[];
+  /** Compact key–value spec strip. */
+  specs: { label: string; value: string }[];
+};
+
 export type Brand = {
   slug: string;
   name: string;
@@ -26,6 +41,8 @@ export type Brand = {
   models: BrandModel[];
   /** Optional highlighted note (e.g. hosszú garancia) shown kiemelten. */
   highlight?: string;
+  /** Optional rich showcase of one flagship series (currently Gree Comfort Pro). */
+  featuredSeries?: FeaturedSeries;
 };
 
 export const brandPages: Brand[] = [
@@ -137,6 +154,60 @@ export const brandPages: Brand[] = [
     metaTitle: "Gree klímák Kecskeméten – telepítés, szerviz, akár 10 év garancia | Kecskemét Klíma",
     highlight:
       "A Gree prémium klímákra – a gyártói regisztráció és a feltételek teljesülése esetén – akár 10 év garancia is igényelhető. Hosszú távú nyugalom, nem csak egy szezonra.",
+    featuredSeries: {
+      name: "Comfort Pro",
+      tagline: "Stílusra tervezve",
+      intro:
+        "A Gree egyik legnépszerűbb lakossági szériája: téliesített kivitel, erős fűtés akár -25 °C-ig, gyárilag beépített WiFi-vezérlés és hideg plazma légtisztítás – kiváló ár-érték arányban. Ideális választás lakásba és házba, ha megbízható, energiatakarékos, egész évben használható klímát keres.",
+      capacities: [
+        { power: "2,7 kW", model: "GWH09ACCXB-K6DNA1G", room: "kb. 25 m²-ig" },
+        { power: "3,5 kW", model: "GWH12ACCXD-K6DNA1D", room: "kb. 35 m²-ig" },
+        { power: "5,3 kW", model: "GWH18ACDXF-K6DNA1D", room: "kb. 50 m²-ig" },
+        { power: "7,1 kW", model: "GWH24ACEXF-K6DNA1A", room: "kb. 70 m²-ig" },
+      ],
+      technologies: [
+        {
+          icon: "wifi",
+          title: "Gyári WiFi + okosvezérlés",
+          text: "Beépített WiFi (2,4 GHz) és a GREE+ mobilapp – vezérelje bárhonnan. Google Home és Amazon Alexa hangvezérléssel is kompatibilis.",
+        },
+        {
+          icon: "flame",
+          title: "Erős fűtés akár -25 °C-ig",
+          text: "Téliesített kivitel kompresszorház- és csepptálca-fűtéssel, így hőszivattyús üzemben a hidegebb téli napokon is hatékonyan fűt.",
+        },
+        {
+          icon: "leaf",
+          title: "Hideg plazma légtisztítás",
+          text: "A Cold Plasma szűrő megköti a port, pollent és a szennyeződéseket – frissebb, tisztább beltéri levegő, allergiásoknak is jó választás.",
+        },
+        {
+          icon: "wind",
+          title: "3D légáramlás",
+          text: "Automata fel-le és jobbra-balra lamellamozgás egyenletesen, huzatmentesen teríti szét a levegőt a teljes helyiségben.",
+        },
+        {
+          icon: "thermometer",
+          title: "I FEEL funkció",
+          text: "A távirányítóba épített hőmérő alapján a klíma az Ön közelében mért hőmérséklethez igazítja a működést – ott legyen kellemes, ahol Ön van.",
+        },
+        {
+          icon: "volume",
+          title: "Extra halk üzem",
+          text: "Kifejezetten csendes működésre tervezve – hálószobába és gyerekszobába is ideális, éjszaka sem zavaró.",
+        },
+      ],
+      specs: [
+        { label: "Energiaosztály", value: "akár A++" },
+        { label: "Hűtőközeg", value: "R32 (környezetbarát)" },
+        { label: "Technológia", value: "inverteres" },
+        { label: "Fűtés", value: "-25 °C külső hőmérsékletig" },
+        { label: "WiFi", value: "gyárilag beépített (2,4 GHz)" },
+        { label: "Fagyvédelem", value: "8 °C-os alapfűtés funkció" },
+        { label: "Garancia", value: "a feltételek teljesülése esetén akár 10 év" },
+        { label: "H-tarifa", value: "igényelhető" },
+      ],
+    },
     intro:
       "A Gree a világ legnagyobb klímagyártója, amely évente több tízmillió készüléket állít elő – a kedvező árú, mégis kiválóan felszerelt modelljei miatt Magyarországon is az egyik legnépszerűbb választás. Több modellje kimagasló fűtési teljesítményt nyújt hőszivattyús üzemben, így egész évben gazdaságos. A legnagyobb előnye azonban a nyugalom: a prémium Gree klímákra a feltételek teljesülése esetén akár 10 év garancia is igényelhető – mi pedig hivatalos szakszervizként végig a partnerei maradunk a telepítéstől a karbantartáson át a garanciális ügyintézésig.",
     strengths: [
