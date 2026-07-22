@@ -24,6 +24,7 @@ import Reveal from "@/components/Reveal";
 import AuroraBackground from "@/components/AuroraBackground";
 import ClimateVisual from "@/components/ClimateVisual";
 import ImagePlaceholder from "@/components/ImagePlaceholder";
+import Photo from "@/components/Photo";
 import CtaBand from "@/components/CtaBand";
 import { brandPages, brandBySlug } from "@/lib/brands";
 import { services, site } from "@/lib/site";
@@ -198,6 +199,40 @@ export default async function BrandPage({
           </div>
         </div>
       </section>
+
+      {/* ---------------- REFERENCE PHOTOS ---------------- */}
+      {b.photos && b.photos.length > 0 && (
+        <section className="relative py-16">
+          <div
+            className="pointer-events-none absolute inset-x-0 top-0 h-px"
+            style={{ background: `linear-gradient(90deg, transparent, ${accent}55, transparent)` }}
+          />
+          <div className="mx-auto max-w-7xl px-6">
+            <Reveal className="mx-auto max-w-2xl text-center">
+              <span
+                className="inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-wider"
+                style={{ color: accent, backgroundColor: `${accent}1a`, border: `1px solid ${accent}40` }}
+              >
+                Referenciák
+              </span>
+              <h2 className="mt-4 font-display text-3xl font-bold tracking-tight text-white sm:text-4xl">
+                {b.name} klímák, amiket mi szereltünk be
+              </h2>
+              <p className="mt-4 text-lg leading-relaxed text-muted">
+                Valódi {b.name} beszereléseink Kecskemétről és környékéről – bel- és
+                kültéri egységek, szakszerű, esztétikus kivitelben.
+              </p>
+            </Reveal>
+            <div className="mt-12 grid gap-5 sm:grid-cols-2">
+              {b.photos.map((p, i) => (
+                <Reveal key={p.src} delay={(i % 2) * 0.08}>
+                  <Photo src={p.src} alt={p.alt} className="aspect-[4/3]" />
+                </Reveal>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* ---------------- FEATURED SERIES (rich showcase) ---------------- */}
       {b.featuredSeries && (

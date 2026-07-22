@@ -4,7 +4,7 @@ import { motion, type Variants } from "framer-motion";
 import { Phone, ArrowRight, ShieldCheck, Snowflake, Wind, CalendarCheck, BadgeCheck } from "lucide-react";
 import AuroraBackground from "./AuroraBackground";
 import ClimatePanel from "./ClimatePanel";
-import ImagePlaceholder from "./ImagePlaceholder";
+import Photo from "./Photo";
 import { WavyBackground } from "./ui/wavy-background";
 import { site } from "@/lib/site";
 
@@ -150,12 +150,11 @@ export default function Hero() {
           transition={{ duration: 1, ease: [0.22, 1, 0.36, 1], delay: 0.3 }}
           className="relative hidden md:block"
         >
-          <ImagePlaceholder
-            label="Beszerelt klíma egy nappaliban"
-            hint="Valódi referenciafotó a munkáiról"
-            minH="min-h-[34rem]"
-            align="top"
-            className="w-full"
+          <Photo
+            src="/photos/belteri-aux-nappali.jpg"
+            alt="Beszerelt AUX beltéri klíma egység egy kecskeméti lakásban"
+            priority
+            className="h-[34rem] w-full"
           />
           {/* floating live control over the photo's lower-left corner */}
           <div className="absolute -bottom-6 -left-8 w-[56%] min-w-[15rem]">

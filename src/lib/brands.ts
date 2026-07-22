@@ -43,6 +43,8 @@ export type Brand = {
   highlight?: string;
   /** Optional rich showcase of one flagship series (currently Gree Comfort Pro). */
   featuredSeries?: FeaturedSeries;
+  /** Optional real reference photos of this brand's installed units. */
+  photos?: { src: string; alt: string }[];
 };
 
 export const brandPages: Brand[] = [
@@ -393,6 +395,10 @@ export const brandPages: Brand[] = [
         features: ["Dizájnos", "Okos vezérlés, WiFi", "Energiatakarékos", "Halk"],
       },
     ],
+    photos: [
+      { src: "/photos/belteri-aux-halo.jpg", alt: "Beszerelt AUX beltéri klíma egység hálószobában" },
+      { src: "/photos/kulteri-aux-oldal.jpg", alt: "AUX kültéri klíma egység homlokzati rögzítéssel" },
+    ],
   },
   {
     slug: "polar",
@@ -424,6 +430,10 @@ export const brandPages: Brand[] = [
           "Letisztult, megbízható belépő klíma azoknak, akiknek a jó alapfunkciók a fontosak. Egyszerű, tartós felépítés és megfizethető ár – a leggyorsabb út egy hatékony, jó minőségű hűtéshez.",
         features: ["Egyszerű", "Megbízható", "Hatékony hűtés", "Kedvező ár"],
       },
+    ],
+    photos: [
+      { src: "/photos/belteri-polar-nappali.jpg", alt: "Beszerelt Polár beltéri klíma egység nappaliban" },
+      { src: "/photos/kulteri-polar-kozeli.jpg", alt: "Polár kültéri klíma egység közeli nézetben" },
     ],
   },
 ];
