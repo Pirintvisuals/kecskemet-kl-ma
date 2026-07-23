@@ -18,9 +18,17 @@ import Reveal from "@/components/Reveal";
 import ClimateVisual from "@/components/ClimateVisual";
 import ServiceFaq from "@/components/ServiceFaq";
 import CtaBand from "@/components/CtaBand";
-import BeforeAfter from "@/components/BeforeAfter";
+import Photo from "@/components/Photo";
 import AuroraBackground from "@/components/AuroraBackground";
 import { services, site } from "@/lib/site";
+
+/** Commercial-licensed stock photo (Pexels) per service type. */
+const workPhoto: Record<string, { src: string; alt: string }> = {
+  install: { src: "/photos/stock-nappali-1.jpg", alt: "Modern nappaliba szerelt beltéri klíma egység" },
+  maintain: { src: "/photos/stock-szereles-1.jpg", alt: "Klímaszerelő karbantartás közben, nyomásmérővel" },
+  repair: { src: "/photos/stock-javitas.jpg", alt: "Klíma kültéri egység javítása, hibakeresés" },
+  commission: { src: "/photos/stock-beuzemeles.jpg", alt: "Klíma beüzemelése nyomásmérő műszerrel" },
+};
 
 export function generateStaticParams() {
   return services.map((s) => ({ slug: s.id }));
@@ -271,7 +279,11 @@ export default async function ServicePage({
           </Reveal>
           <Reveal>
             <div className="mx-auto max-w-4xl">
-              <BeforeAfter />
+              <Photo
+                src={(workPhoto[s.icon] ?? workPhoto.install).src}
+                alt={(workPhoto[s.icon] ?? workPhoto.install).alt}
+                className="aspect-[16/10]"
+              />
             </div>
           </Reveal>
         </div>

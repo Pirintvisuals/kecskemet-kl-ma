@@ -6,6 +6,7 @@ import Services from "@/components/Services";
 import BookingBar from "@/components/BookingBar";
 import Stats from "@/components/Stats";
 import WhyUs from "@/components/WhyUs";
+import WorkBand from "@/components/WorkBand";
 import Process from "@/components/Process";
 import Gallery from "@/components/Gallery";
 import Testimonials from "@/components/Testimonials";
@@ -70,6 +71,7 @@ export default function Home() {
         </section>
 
         <Stats />
+        <WorkBand />
         <Testimonials />
         <WhyUs />
         <Process />

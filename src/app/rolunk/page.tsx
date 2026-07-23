@@ -18,7 +18,7 @@ import Footer from "@/components/Footer";
 import Reveal from "@/components/Reveal";
 import AuroraBackground from "@/components/AuroraBackground";
 import AboutVisual from "@/components/AboutVisual";
-import ImagePlaceholder from "@/components/ImagePlaceholder";
+import Photo from "@/components/Photo";
 import Stats from "@/components/Stats";
 import CtaBand from "@/components/CtaBand";
 import { differentiators, services, site } from "@/lib/site";
@@ -145,10 +145,10 @@ export default function AboutPage() {
           {/* photo + quote + quick facts */}
           <Reveal delay={0.1}>
             <div className="space-y-6">
-              <ImagePlaceholder
-                label="Polyák Zoltán munka közben / céges autó"
-                hint="Team- vagy portréfotó egyenruhában"
-                minH="min-h-[240px]"
+              <Photo
+                src="/photos/stock-szereles-2.jpg"
+                alt="Klímaszerelő szakember munka közben, precíz beszerelés"
+                className="aspect-[4/3]"
               />
               <div className="relative overflow-hidden rounded-3xl border border-brand-400/20 bg-navy-800/60 p-8">
                 <Quote className="absolute -right-2 -top-2 h-20 w-20 text-brand-500/10" />

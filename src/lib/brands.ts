@@ -159,6 +159,7 @@ export const brandPages: Brand[] = [
     featuredSeries: {
       name: "Comfort Pro",
       tagline: "Stílusra tervezve",
+      image: "/photos/stock-nappali-2.jpg",
       intro:
         "A Gree egyik legnépszerűbb lakossági szériája: téliesített kivitel, erős fűtés akár -25 °C-ig, gyárilag beépített WiFi-vezérlés és hideg plazma légtisztítás – kiváló ár-érték arányban. Ideális választás lakásba és házba, ha megbízható, energiatakarékos, egész évben használható klímát keres.",
       capacities: [
