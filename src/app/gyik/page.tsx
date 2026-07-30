@@ -4,7 +4,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Reveal from "@/components/Reveal";
 import AuroraBackground from "@/components/AuroraBackground";
-import Faq from "@/components/Faq";
+import FaqExplorer from "@/components/FaqExplorer";
 import CtaBand from "@/components/CtaBand";
 
 export const metadata: Metadata = {
@@ -55,8 +55,8 @@ export default function GyikPage() {
         </div>
       </section>
 
-      {/* ---- FAQ ACCORDION ---- */}
-      <Faq />
+      {/* ---- SEARCHABLE FAQ EXPLORER ---- */}
+      <FaqExplorer />
 
       {/* ---- CTA ---- */}
       <CtaBand

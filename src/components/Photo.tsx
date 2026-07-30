@@ -10,12 +10,18 @@ export default function Photo({
   className = "",
   imgClassName = "",
   priority = false,
+  fit = "cover",
+  objectPosition,
 }: {
   src: string;
   alt: string;
   className?: string;
   imgClassName?: string;
   priority?: boolean;
+  /** "cover" fills the frame (may crop); "contain" shows the entire image. */
+  fit?: "cover" | "contain";
+  /** Focal point for "cover" crops, e.g. "center 25%" — keeps the AC in view. */
+  objectPosition?: string;
 }) {
   return (
     <div
@@ -26,7 +32,8 @@ export default function Photo({
         src={src}
         alt={alt}
         loading={priority ? "eager" : "lazy"}
-        className={`h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04] ${imgClassName}`}
+        style={objectPosition ? { objectPosition } : undefined}
+        className={`h-full w-full ${fit === "contain" ? "object-contain" : "object-cover"} transition-transform duration-700 ease-out group-hover:scale-[1.04] ${imgClassName}`}
       />
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-navy-950/35 via-transparent to-transparent" />
       <div className="pointer-events-none absolute inset-0 rounded-2xl ring-1 ring-inset ring-white/10" />

@@ -102,7 +102,7 @@ export default function BookingBar({
           <p className="mt-1 text-sm text-muted">{subtitle}</p>
         </div>
         <a
-          href="/idopontfoglalas/"
+          href="/kapcsolat/#foglalas"
           className="mt-2 text-sm font-medium text-brand-300 transition-colors hover:text-white sm:mt-0 cursor-pointer"
         >
           Részletes foglalás →

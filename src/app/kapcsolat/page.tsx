@@ -7,26 +7,43 @@ import {
   User,
   ChevronRight,
   ShieldCheck,
-  Zap,
-  MessageSquare,
+  BadgeCheck,
+  CalendarCheck,
 } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Reveal from "@/components/Reveal";
 import AuroraBackground from "@/components/AuroraBackground";
-import ContactForm from "@/components/ContactForm";
+import BookingContactTabs from "@/components/BookingContactTabs";
 import ServiceArea from "@/components/ServiceArea";
 import MapEmbed from "@/components/MapEmbed";
-import { site } from "@/lib/site";
+import { processSteps, serviceAreas, site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: { absolute: "Kapcsolat – Kérjen ingyenes árajánlatot | Kecskemét Klíma" },
+  title: {
+    absolute:
+      "Kapcsolat & időpontfoglalás – Kérjen ingyenes árajánlatot | Kecskemét Klíma",
+  },
   description:
-    "Lépjen kapcsolatba a Kecskemét Klímával. Hívjon a +36 30 260 57 56 számon, vagy küldjön üzenetet – gyors kiszállás Kecskeméten és 30 km-es körzetében.",
+    "Foglaljon klímaszerelőt online, vagy kérjen ingyenes árajánlatot. Hívjon a +36 30 260 57 56 számon, válasszon időpontot a naptárból, vagy küldjön üzenetet – gyors kiszállás Kecskeméten és 30 km-es körzetében.",
   openGraph: {
-    title: "Kapcsolat | Kecskemét Klíma",
-    description: "Hívjon vagy írjon – ingyenes árajánlat, gyors kiszállás Kecskeméten.",
+    title: "Kapcsolat & időpontfoglalás | Kecskemét Klíma",
+    description:
+      "Foglaljon időpontot a naptárból, vagy írjon nekünk – ingyenes árajánlat, gyors kiszállás Kecskeméten.",
     locale: "hu_HU",
+  },
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  serviceType: "Klímaszerelés – kapcsolat és időpontfoglalás",
+  provider: { "@type": "HVACBusiness", name: site.brand, telephone: site.phone },
+  areaServed: serviceAreas.map((a) => ({ "@type": "City", name: a })),
+  availableChannel: {
+    "@type": "ServiceChannel",
+    serviceUrl: "https://kecskemetklima.hu/kapcsolat/",
+    servicePhone: site.phone,
   },
 };
 
@@ -39,19 +56,17 @@ export default function ContactPage() {
     { icon: User, label: "Kapcsolattartó", value: site.owner, hint: "Klímaszerelő mester" },
   ];
 
-  const promises = [
-    { icon: Zap, text: "Gyors kiszállás, megbízható időpontokkal" },
-    { icon: ShieldCheck, text: "Garancia és számla minden munkára" },
-    { icon: MessageSquare, text: "Átlátható árajánlat a munka előtt" },
-  ];
-
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Navbar />
 
       {/* ---------------- HERO ---------------- */}
-      <section className="relative overflow-hidden pt-32 pb-16">
-        <AuroraBackground />
+      <section className="relative overflow-hidden pt-32 pb-14">
+        <AuroraBackground dense />
         <div className="relative z-10 mx-auto max-w-4xl px-6 text-center">
           <nav
             aria-label="Morzsamenü"
@@ -61,24 +76,25 @@ export default function ContactPage() {
               Főoldal
             </a>
             <ChevronRight className="h-3.5 w-3.5" />
-            <span className="text-brand-300">Kapcsolat</span>
+            <span className="text-brand-300">Kapcsolat &amp; foglalás</span>
           </nav>
 
           <Reveal>
             <span className="inline-flex items-center gap-2 rounded-full border border-brand-400/25 bg-brand-500/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-brand-200">
-              <Phone className="h-3.5 w-3.5" />
-              Kapcsolat
+              <CalendarCheck className="h-3.5 w-3.5" />
+              Kapcsolat &amp; időpontfoglalás
             </span>
             <h1 className="mt-5 font-display text-4xl font-extrabold leading-[1.08] tracking-tight text-white sm:text-5xl">
-              Lépjen velünk <span className="text-brand-300">kapcsolatba</span>
+              Foglaljon időpontot, vagy{" "}
+              <span className="text-brand-300">kérjen árajánlatot</span>
             </h1>
             <p className="mx-auto mt-5 max-w-2xl text-lg leading-relaxed text-muted">
-              Kérdése van, vagy ingyenes árajánlatot szeretne? Hívjon telefonon a
-              leggyorsabb válaszért, vagy küldjön üzenetet az űrlapon – hamarosan
-              felvesszük Önnel a kapcsolatot.
+              Egy helyen minden: válasszon időpontot a naptárból, írjon nekünk
+              üzenetet, vagy hívjon telefonon a leggyorsabb válaszért. A
+              foglalást telefonon visszaigazoljuk.
             </p>
 
-            {/* Big quick actions */}
+            {/* Quick actions */}
             <div className="mx-auto mt-9 flex max-w-xl flex-col gap-4 sm:flex-row">
               <a
                 href={site.phoneHref}
@@ -88,85 +104,109 @@ export default function ContactPage() {
                 {site.phone}
               </a>
               <a
-                href={site.emailHref}
+                href="#foglalas"
                 className="glass-strong flex flex-1 items-center justify-center gap-2.5 rounded-2xl px-6 py-4 font-semibold text-brand-50 transition-colors duration-200 hover:text-white cursor-pointer"
               >
-                <Mail className="h-5 w-5" />
-                E-mail írása
+                <CalendarCheck className="h-5 w-5" />
+                Időpontfoglalás
               </a>
             </div>
           </Reveal>
         </div>
       </section>
 
-      {/* ---------------- DETAILS + FORM ---------------- */}
-      <section className="relative py-16">
-        <div className="mx-auto grid max-w-7xl items-start gap-10 px-6 lg:grid-cols-2">
-          {/* Left: details */}
+      {/* ---------------- BOOKING/CONTACT TABS + ASIDE ---------------- */}
+      <section id="foglalas" className="relative scroll-mt-24 pb-16">
+        <div className="mx-auto grid max-w-7xl items-start gap-8 px-6 lg:grid-cols-[1.4fr_0.6fr]">
+          {/* Tabs: calendar booking OR message form */}
           <Reveal>
-            <div>
-              <h2 className="font-display text-2xl font-bold text-white">
-                Elérhetőségek
-              </h2>
-              <p className="mt-2 text-muted">
-                Minden csatorna egy helyen – ahogy Önnek a legkényelmesebb.
-              </p>
+            <BookingContactTabs />
+          </Reveal>
 
-              <div className="mt-6 grid gap-3 sm:grid-cols-2">
-                {details.map((d) => {
-                  const Inner = (
-                    <div className="flex h-full items-start gap-3 rounded-2xl border border-white/8 bg-navy-800/50 p-4 transition-colors hover:border-brand-400/40">
-                      <div className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-brand-500/15 text-brand-200 ring-1 ring-brand-400/20">
-                        <d.icon className="h-5 w-5" />
+          {/* Aside */}
+          <div className="space-y-6">
+            {/* Contact details */}
+            <Reveal delay={0.05}>
+              <div className="glass rounded-3xl p-6">
+                <h2 className="font-display text-lg font-bold text-white">
+                  Elérhetőségek
+                </h2>
+                <ul className="mt-4 space-y-3">
+                  {details.map((d) => {
+                    const Inner = (
+                      <div className="flex items-start gap-3">
+                        <span className="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-brand-500/15 text-brand-200 ring-1 ring-brand-400/20">
+                          <d.icon className="h-4 w-4" />
+                        </span>
+                        <div className="min-w-0">
+                          <p className="text-xs uppercase tracking-wide text-muted">
+                            {d.label}
+                          </p>
+                          <p className="font-semibold text-white">{d.value}</p>
+                          <p className="text-xs text-brand-300">{d.hint}</p>
+                        </div>
                       </div>
-                      <div className="min-w-0">
-                        <p className="text-xs uppercase tracking-wide text-muted">
-                          {d.label}
-                        </p>
-                        <p className="font-semibold text-white">{d.value}</p>
-                        <p className="text-xs text-brand-300">{d.hint}</p>
-                      </div>
-                    </div>
-                  );
-                  return d.href ? (
-                    <a key={d.label} href={d.href} className="cursor-pointer">
-                      {Inner}
-                    </a>
-                  ) : (
-                    <div key={d.label}>{Inner}</div>
-                  );
-                })}
+                    );
+                    return (
+                      <li key={d.label}>
+                        {d.href ? (
+                          <a href={d.href} className="block cursor-pointer">
+                            {Inner}
+                          </a>
+                        ) : (
+                          Inner
+                        )}
+                      </li>
+                    );
+                  })}
+                </ul>
               </div>
+            </Reveal>
 
-              {/* Promises */}
-              <div className="mt-6 rounded-2xl border border-white/8 bg-navy-800/40 p-6">
-                <ul className="grid gap-3">
-                  {promises.map((p) => (
-                    <li key={p.text} className="flex items-center gap-3 text-brand-100/90">
-                      <span className="grid h-8 w-8 shrink-0 place-items-center rounded-lg bg-brand-500/15 text-brand-300">
-                        <p.icon className="h-4 w-4" />
+            {/* What happens next */}
+            <Reveal delay={0.1}>
+              <div className="glass rounded-3xl p-6">
+                <h3 className="font-display text-lg font-bold text-white">
+                  Mi történik ezután?
+                </h3>
+                <ol className="mt-4 space-y-4">
+                  {processSteps.map((s) => (
+                    <li key={s.step} className="flex gap-3.5">
+                      <span className="grid h-8 w-8 shrink-0 place-items-center rounded-lg bg-brand-500/15 font-display text-sm font-bold text-brand-300 ring-1 ring-brand-400/20">
+                        {s.step}
                       </span>
-                      {p.text}
+                      <div>
+                        <p className="font-semibold text-white">{s.title}</p>
+                        <p className="text-sm text-muted">{s.text}</p>
+                      </div>
+                    </li>
+                  ))}
+                </ol>
+              </div>
+            </Reveal>
+
+            {/* Assurances */}
+            <Reveal delay={0.15}>
+              <div className="glass rounded-3xl p-6">
+                <ul className="space-y-2.5">
+                  {[
+                    "Ingyenes, kötelezettségmentes felmérés",
+                    "Garancia és számla minden munkára",
+                    "Átlátható árajánlat a munka előtt",
+                  ].map((t) => (
+                    <li key={t} className="flex items-start gap-2.5 text-sm text-brand-100/90">
+                      {t.includes("Garancia") ? (
+                        <ShieldCheck className="mt-0.5 h-4 w-4 shrink-0 text-mint" />
+                      ) : (
+                        <BadgeCheck className="mt-0.5 h-4 w-4 shrink-0 text-mint" />
+                      )}
+                      {t}
                     </li>
                   ))}
                 </ul>
               </div>
-            </div>
-          </Reveal>
-
-          {/* Right: form */}
-          <Reveal delay={0.1}>
-            <div className="glass-strong rounded-3xl p-7 sm:p-8">
-              <h2 className="font-display text-2xl font-bold text-white">
-                Írjon nekünk
-              </h2>
-              <p className="mt-2 mb-6 text-muted">
-                Töltse ki az űrlapot – minél több részletet ad meg, annál
-                pontosabb árajánlatot tudunk adni. Hamarosan jelentkezünk.
-              </p>
-              <ContactForm withService detailed />
-            </div>
-          </Reveal>
+            </Reveal>
+          </div>
         </div>
       </section>
 

@@ -482,64 +482,91 @@ export const serviceAreas = [
   "Kadafalva",
 ];
 
-export const faqs = [
+export type Faq = { q: string; a: string; category: string };
+
+/** Categories used by the GYIK explorer (order defines the filter chips). */
+export const faqCategories = [
+  "Ár & felmérés",
+  "Telepítés",
+  "Karbantartás",
+  "Javítás & hibák",
+  "Garancia",
+  "Általános",
+] as const;
+
+export const faqs: Faq[] = [
   {
+    category: "Ár & felmérés",
     q: "Ingyenes a helyszíni felmérés?",
     a: "Igen, a helyszíni felmérés teljesen ingyenes és kötelezettségmentes. Kimegyünk, felmérjük a helyiséget és az adottságokat, majd pontos, tételes árajánlatot adunk a klímára – Önnek pedig semmilyen kötelezettsége nem keletkezik.",
   },
   {
+    category: "Garancia",
     q: "Hány év garanciát adnak a klímára?",
     a: "A munkánkra minden esetben jótállást és számlát adunk. Emellett bizonyos prémium klímákra a gyártói feltételek teljesülése esetén akár 10 év garancia is igényelhető – a felmérésnél szívesen megmutatjuk, melyik típussal érhető el a leghosszabb garancia.",
   },
   {
+    category: "Általános",
     q: "Milyen klímamárkákkal dolgoznak?",
     a: "Márkafüggetlenek vagyunk: telepítjük, karbantartjuk és javítjuk a legnépszerűbb prémium klímamárkákat, többek között a Daikin, Mitsubishi Electric, Toshiba, Panasonic, LG, Samsung, Gree, Fujitsu, Midea, AUX és Polár készülékeket is.",
   },
   {
+    category: "Telepítés",
     q: "Mennyi ideig tart egy klíma telepítése?",
     a: "Egy átlagos split klíma szakszerű telepítése jellemzően néhány óra – a pontos idő a helyszíni adottságoktól és a cső­vezeték hosszától függ. Multi-split rendszereknél ez több is lehet. A felméréskor reális időpontot tudunk mondani.",
   },
   {
+    category: "Ár & felmérés",
     q: "Mennyibe kerül egy klíma telepítése?",
     a: "Az ár a klíma típusától, a beltéri és kültéri egység távolságától és a helyszíni adottságoktól függ. Az ingyenes helyszíni vagy telefonos felmérés után pontos, átlátható árajánlatot adunk – a munka megkezdése előtt.",
   },
   {
+    category: "Karbantartás",
     q: "Milyen gyakran kell karbantartani a klímát?",
     a: "Ajánlott évente legalább egyszer, a szezon előtt elvégeztetni a tisztítást és fertőtlenítést. Ez biztosítja a higiénikus levegőt, az alacsonyabb áramfogyasztást és a hosszú élettartamot.",
   },
   {
+    category: "Javítás & hibák",
     q: "Bármely márkát javítanak?",
     a: "Igen, márkafüggetlenül dolgozunk. A legnépszerűbb gyártók (Daikin, Mitsubishi, Toshiba, Panasonic, LG, Samsung, Gree és mások) készülékeit telepítjük, karbantartjuk és javítjuk.",
   },
   {
+    category: "Javítás & hibák",
     q: "Miért nem hűt eléggé a klíma?",
     a: "Ha a klíma megy, de nem hűt eléggé, annak leggyakoribb oka, hogy lassan elszivárgott a hűtőközeg egy része (kevés a „gáz”), vagy hogy az eltömődött, koszos szűrő és párologtató akadályozza a légáramlást. A helyszíni bevizsgálás és a nyomásmérés pontosan megmutatja az okot, a szivárgás megszüntetése után pedig újra rendesen hűt.",
   },
   {
+    category: "Javítás & hibák",
     q: "Miből tudom, hogy elfogyott vagy kevés a klíma gáza?",
     a: "Árulkodó jel, ha a klíma egyre gyengébben hűt, dér vagy jég jelenik meg a beltéri egység csövein, sziszegő hangot ad, vagy hibakódot ír ki. Biztosat csak nyomásméréssel lehet mondani. A gáz nem fogy el magától – ha kevés, az szinte mindig szivárgást jelent, ezért utántöltés előtt mindig szivárgásvizsgálatot végzünk.",
   },
   {
+    category: "Javítás & hibák",
     q: "Meg tudom-e javítani a klímát házilag?",
     a: "A szűrők kimosása és a beltéri egység letörlése nyugodtan elvégezhető otthon. A hűtőközeggel járó munka (szivárgáskeresés, gáztöltés, vákuumozás) viszont F-gáz képesítést és speciális műszereket igényel, ezért jogszabály szerint is csak szakember végezheti – ahogy az eldugult kondenzvíz-elvezetés szakszerű tisztítását is.",
   },
   {
+    category: "Javítás & hibák",
     q: "Mit tehetek, ha folyik vagy csöpög a klímából a víz?",
     a: "A csöpögés legtöbbször eldugult kondenzvíz-elvezetést jelent (alga, por, elmaradt karbantartás miatt). Kapcsolja ki a klímát, hogy ne folyjon tovább a víz, majd hívjon minket: egy karbantartás keretében átmossuk az elvezetőt és a csepptálcát, ellenőrizzük a lejtést, és utána nem csöpög tovább.",
   },
   {
+    category: "Telepítés",
     q: "Felszerelik a máshol vásárolt klímát? Áthelyezik a meglévőt?",
     a: "Igen. Ha máshol (áruházban, interneten) vásárolta a készüléket, szívesen felszereljük és beüzemeljük. Költözésnél vagy átalakításnál a már felszerelt klímát is áthelyezzük: leszereljük, új helyen felszereljük, majd vákuumozzuk, feltöltjük és szivárgásvizsgálattal ellenőrizzük.",
   },
   {
+    category: "Javítás & hibák",
     q: "Végeznek szivárgásvizsgálatot?",
     a: "Igen, ez a munkánk fontos része. Elektronikus szivárgáskereséssel és nyomáspróbával pontosan behatároljuk, hol szökik a hűtőközeg. Így nem feleslegesen töltjük fel a rendszert: előbb megszüntetjük a szivárgás okát, és csak tömör rendszert töltünk fel – így tartós a javítás.",
   },
   {
+    category: "Garancia",
     q: "Ad garanciát és számlát a munkára?",
     a: "Természetesen. Minden elvégzett munkára jótállást és számlát biztosítunk – ez nálunk alapvető.",
   },
   {
+    category: "Általános",
     q: "Mennyi idő alatt tudnak kijönni?",
     a: "Kecskeméten és 30 km-es körzetében rövid határidővel vállaljuk a kiszállást. Hívjon a pontos időpontért!",
   },
@@ -605,12 +632,21 @@ export const testimonials = [
   },
 ];
 
+// Top navbar — "Hol dolgozunk" removed; "Időpontfoglalás" merged into Kapcsolat.
 export const navLinks = [
+  { href: "/szolgaltatasok/", label: "Szolgáltatások" },
+  { href: "/klimak/", label: "Márkák" },
+  { href: "/rolunk/", label: "Rólunk" },
+  { href: "/gyik/", label: "GYIK" },
+  { href: "/kapcsolat/", label: "Kapcsolat & foglalás" },
+];
+
+// Footer keeps the fuller sitemap, including the still-live "Hol dolgozunk" page.
+export const footerLinks = [
   { href: "/szolgaltatasok/", label: "Szolgáltatások" },
   { href: "/klimak/", label: "Márkák" },
   { href: "/rolunk/", label: "Rólunk" },
   { href: "/hol-dolgozunk/", label: "Hol dolgozunk" },
   { href: "/gyik/", label: "GYIK" },
-  { href: "/idopontfoglalas/", label: "Időpontfoglalás" },
-  { href: "/kapcsolat/", label: "Kapcsolat" },
+  { href: "/kapcsolat/", label: "Kapcsolat & foglalás" },
 ];

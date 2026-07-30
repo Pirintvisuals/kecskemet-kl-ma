@@ -91,7 +91,7 @@ export default function Hero() {
               </a>
             </span>
             <a
-              href="/idopontfoglalas/"
+              href="/kapcsolat/#foglalas"
               className="glass-strong group inline-flex items-center gap-2 rounded-full px-6 py-3.5 font-semibold text-brand-50 transition-all duration-200 hover:border-brand-400/60 hover:text-white cursor-pointer"
             >
               <CalendarCheck className="h-5 w-5 text-brand-300" />

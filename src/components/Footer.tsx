@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Phone, Mail } from "lucide-react";
-import { navLinks, services, site } from "@/lib/site";
+import { footerLinks, services, site } from "@/lib/site";
 import BookingBar from "./BookingBar";
 
 export default function Footer() {
@@ -40,7 +40,7 @@ export default function Footer() {
               Oldal
             </h4>
             <ul className="mt-4 space-y-2.5">
-              {navLinks.map((l) => (
+              {footerLinks.map((l) => (
                 <li key={l.href}>
                   <a
                     href={l.href}
