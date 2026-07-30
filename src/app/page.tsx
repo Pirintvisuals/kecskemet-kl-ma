@@ -77,7 +77,7 @@ export default function Home() {
         <Process />
         <Gallery />
         <ServiceArea />
-        <Faq />
+        <Faq limit={6} />
         <ContactCTA />
       </main>
       <Footer />

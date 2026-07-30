@@ -24,10 +24,10 @@ import { services, site } from "@/lib/site";
 
 /** Commercial-licensed stock photo (Pexels) per service type. */
 const workPhoto: Record<string, { src: string; alt: string }> = {
-  install: { src: "/photos/stock-nappali-1.jpg", alt: "Modern nappaliba szerelt beltéri klíma egység" },
-  maintain: { src: "/photos/stock-szereles-1.jpg", alt: "Klímaszerelő karbantartás közben, nyomásmérővel" },
-  repair: { src: "/photos/stock-javitas.jpg", alt: "Klíma kültéri egység javítása, hibakeresés" },
-  commission: { src: "/photos/stock-beuzemeles.jpg", alt: "Klíma beüzemelése nyomásmérő műszerrel" },
+  install: { src: "/photos/klima-belteri-nappali.jpg", alt: "Modern nappaliba szerelt beltéri klíma egység" },
+  maintain: { src: "/photos/klima-karbantartas.jpg", alt: "Kültéri klíma egység karbantartás és tisztítás előtt" },
+  repair: { src: "/photos/klima-javitas.jpg", alt: "Klíma kültéri egység javítása, hibakeresés" },
+  commission: { src: "/photos/klima-szereles.jpg", alt: "Klíma bekötése és beüzemelése a kültéri egységen" },
 };
 
 export function generateStaticParams() {

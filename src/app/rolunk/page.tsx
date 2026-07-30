@@ -146,8 +146,8 @@ export default function AboutPage() {
           <Reveal delay={0.1}>
             <div className="space-y-6">
               <Photo
-                src="/photos/stock-szereles-2.jpg"
-                alt="Klímaszerelő szakember munka közben, precíz beszerelés"
+                src="/photos/klima-belteri-halo.jpg"
+                alt="Esztétikus, precíz klíma beszerelés – rejtett vezetékkel"
                 className="aspect-[4/3]"
               />
               <div className="relative overflow-hidden rounded-3xl border border-brand-400/20 bg-navy-800/60 p-8">

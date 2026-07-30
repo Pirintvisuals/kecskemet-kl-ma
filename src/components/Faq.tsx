@@ -7,8 +7,9 @@ import { faqs } from "@/lib/site";
 import SectionHeading from "./SectionHeading";
 import Reveal from "./Reveal";
 
-export default function Faq() {
+export default function Faq({ limit }: { limit?: number }) {
   const [open, setOpen] = useState<number | null>(0);
+  const list = limit ? faqs.slice(0, limit) : faqs;
 
   return (
     <section id="gyik" className="relative py-24 sm:py-28">
@@ -20,7 +21,7 @@ export default function Faq() {
         />
 
         <div className="mt-12 space-y-3">
-          {faqs.map((f, i) => {
+          {list.map((f, i) => {
             const isOpen = open === i;
             return (
               <Reveal key={f.q} delay={i * 0.05}>
@@ -67,6 +68,17 @@ export default function Faq() {
             );
           })}
         </div>
+
+        {limit && faqs.length > limit && (
+          <div className="mt-8 text-center">
+            <a
+              href="/gyik/"
+              className="inline-flex items-center gap-2 rounded-full border border-white/15 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-white/5 cursor-pointer"
+            >
+              Összes kérdés megtekintése ({faqs.length})
+            </a>
+          </div>
+        )}
       </div>
     </section>
   );

@@ -23,12 +23,12 @@ export default function WorkBand() {
           <Reveal>
             <div className="grid grid-cols-5 grid-rows-6 gap-4 sm:h-[30rem]">
               <Photo
-                src="/photos/stock-szereles-1.jpg"
-                alt="Klímaszerelő szakember munka közben, nyomásmérővel"
+                src="/photos/klima-szereles.jpg"
+                alt="Klímaszerelő szakember munka közben a kültéri egységen"
                 className="col-span-3 row-span-6 h-full"
               />
               <Photo
-                src="/photos/stock-nappali-1.jpg"
+                src="/photos/klima-belteri-nappali.jpg"
                 alt="Modern nappaliba szerelt beltéri klíma egység"
                 className="col-span-2 row-span-6 h-full"
               />

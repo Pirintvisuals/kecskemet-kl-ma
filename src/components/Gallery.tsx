@@ -3,14 +3,14 @@ import SectionHeading from "./SectionHeading";
 import Reveal from "./Reveal";
 import Photo from "./Photo";
 
+// Real, own installation photos (the client's actual work) — do not replace.
 const shots = [
-  { src: "/photos/pexels-1.jpg", label: "Split klíma beltéri egység – hálószoba", span: "sm:col-span-2 sm:row-span-2", minH: "min-h-[300px] sm:min-h-full", pos: "center 28%" },
-  { src: "/photos/pexels-5.jpg", label: "Kültéri egység telepítése – szakszerű bekötés", span: "sm:row-span-2", minH: "min-h-[300px] sm:min-h-full", pos: "center" },
-  { src: "/photos/pexels-3.jpg", label: "Beltéri egység – nappali", span: "", minH: "min-h-[200px]", pos: "left 30%" },
-  { src: "/photos/pexels-4.jpg", label: "Beltéri egység – üzlethelyiség", span: "", minH: "min-h-[200px]", pos: "center top" },
-  { src: "/photos/pexels-6.jpg", label: "Kültéri egység javítása és karbantartása", span: "", minH: "min-h-[200px]", pos: "center" },
-  { src: "/photos/pexels-2.jpg", label: "Beltéri egység – esztétikus elhelyezés", span: "", minH: "min-h-[200px]", pos: "right 25%" },
-  { src: "/photos/pexels-7.jpg", label: "Kültéri egység – tisztítás és karbantartás", span: "sm:col-span-2", minH: "min-h-[200px]", pos: "center" },
+  { src: "/photos/belteri-aux-nappali.jpg", label: "AUX beltéri egység – lakótér", span: "sm:col-span-2 sm:row-span-2", minH: "min-h-[300px] sm:min-h-full" },
+  { src: "/photos/kulteri-aux-homlokzat.jpg", label: "AUX kültéri egység – homlokzat", span: "", minH: "min-h-[200px]" },
+  { src: "/photos/kulteri-polar-eresz.jpg", label: "Kültéri egység – eresz alatti rögzítés", span: "", minH: "min-h-[200px]" },
+  { src: "/photos/belteri-polar-nyitott.jpg", label: "Polár beltéri egység", span: "", minH: "min-h-[200px]" },
+  { src: "/photos/kulteri-polar-tavoli.jpg", label: "Polár kültéri egység – homlokzat", span: "", minH: "min-h-[200px]" },
+  { src: "/photos/belteri-polar-fal.jpg", label: "Polár beltéri egység – nappali", span: "", minH: "min-h-[200px]" },
 ];
 
 export default function Gallery() {
@@ -38,7 +38,7 @@ export default function Gallery() {
                 src={s.src}
                 alt={s.label}
                 className="h-full"
-                objectPosition={s.pos}
+                fit="contain"
               />
             </Reveal>
           ))}
