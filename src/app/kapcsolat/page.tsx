@@ -17,6 +17,8 @@ import AuroraBackground from "@/components/AuroraBackground";
 import BookingContactTabs from "@/components/BookingContactTabs";
 import ServiceArea from "@/components/ServiceArea";
 import MapEmbed from "@/components/MapEmbed";
+import Photo from "@/components/Photo";
+import GoogleReviews from "@/components/GoogleReviews";
 import { processSteps, serviceAreas, site } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -205,6 +207,20 @@ export default function ContactPage() {
                   ))}
                 </ul>
               </div>
+            </Reveal>
+
+            {/* Real work photo */}
+            <Reveal delay={0.18}>
+              <Photo
+                src="/photos/belteri-aux-nappali.jpg"
+                alt="Saját beszerelésünk – beltéri klíma egység egy kecskeméti lakásban"
+                className="aspect-[4/3]"
+              />
+            </Reveal>
+
+            {/* Google reviews */}
+            <Reveal delay={0.22}>
+              <GoogleReviews compact />
             </Reveal>
           </div>
         </div>

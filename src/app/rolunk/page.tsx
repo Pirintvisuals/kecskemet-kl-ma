@@ -20,6 +20,7 @@ import AuroraBackground from "@/components/AuroraBackground";
 import AboutVisual from "@/components/AboutVisual";
 import Photo from "@/components/Photo";
 import Stats from "@/components/Stats";
+import Credentials from "@/components/Credentials";
 import CtaBand from "@/components/CtaBand";
 import { differentiators, services, site } from "@/lib/site";
 
@@ -178,6 +179,34 @@ export default function AboutPage() {
 
       {/* ---------------- STATS ---------------- */}
       <Stats />
+
+      {/* ---------------- CREDENTIALS ---------------- */}
+      <Credentials />
+
+      {/* ---------------- RECENT WORK ---------------- */}
+      <section className="relative py-16">
+        <div className="mx-auto max-w-7xl px-6">
+          <Reveal className="mb-10 text-center">
+            <span className="inline-flex items-center gap-2 rounded-full border border-brand-400/25 bg-brand-500/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-brand-200">
+              Munkáinkból
+            </span>
+            <h2 className="mt-4 font-display text-3xl font-bold tracking-tight text-white sm:text-4xl">
+              Néhány saját beszerelésünk
+            </h2>
+          </Reveal>
+          <div className="grid gap-4 sm:grid-cols-3">
+            {[
+              { src: "/photos/kulteri-aux-homlokzat.jpg", alt: "Kültéri klíma egység esztétikus homlokzati rögzítése" },
+              { src: "/photos/belteri-polar-nappali.jpg", alt: "Nappaliba szerelt beltéri klíma egység" },
+              { src: "/photos/kulteri-polar-kozeli.jpg", alt: "Precízen bekötött kültéri klíma egység közelről" },
+            ].map((p, i) => (
+              <Reveal key={p.src} delay={i * 0.08}>
+                <Photo src={p.src} alt={p.alt} className="aspect-[4/3]" />
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
 
       {/* ---------------- VALUES ---------------- */}
       <section className="relative py-24">

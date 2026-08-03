@@ -70,10 +70,8 @@ export default function Hero() {
           >
             Nyáron <span className="font-semibold text-ice">kellemes hűvös</span>,
             télen <span className="font-semibold text-warm-400">otthonos meleg</span>.
-            Prémium klímaszerelés, klímatisztítás és javítás Kecskeméten – egy
-            megbízható szakembertől,{" "}
-            <span className="text-brand-100">garanciával és számlával, akár 10 év
-            klímagaranciával.</span>
+            Prémium klímaszerelés Kecskeméten – egy megbízható szakembertől,{" "}
+            <span className="text-brand-100">garanciával és számlával.</span>
           </motion.p>
 
           {/* CTAs */}
@@ -124,8 +122,8 @@ export default function Hero() {
             className="mt-8 flex flex-wrap items-center gap-x-8 gap-y-4 border-t border-white/8 pt-6"
           >
             {[
-              { value: "500+", label: "telepített klíma" },
-              { value: "4.8★", label: "Google értékelés" },
+              { value: "200+", label: "telepített klíma" },
+              { value: "10 év", label: "garancia" },
               { value: "15+", label: "év tapasztalat" },
             ].map((s) => (
               <div key={s.label} className="flex items-baseline gap-2">

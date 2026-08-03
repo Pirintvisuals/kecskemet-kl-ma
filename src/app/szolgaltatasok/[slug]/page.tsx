@@ -30,6 +30,14 @@ const workPhoto: Record<string, { src: string; alt: string }> = {
   commission: { src: "/photos/klima-szereles.jpg", alt: "Klíma bekötése és beüzemelése a kültéri egységen" },
 };
 
+/** A second, real own-work photo shown next to the illustrative one. */
+const ownPhoto: Record<string, { src: string; alt: string }> = {
+  install: { src: "/photos/belteri-aux-nappali.jpg", alt: "Saját beszerelésünk – beltéri egység rejtett vezetékkel" },
+  maintain: { src: "/photos/belteri-polar-nyitott.jpg", alt: "Beltéri klíma egység tisztítás közben, nyitott burkolattal" },
+  repair: { src: "/photos/kulteri-polar-kozeli.jpg", alt: "Kültéri klíma egység közelről – szakszerű bekötés" },
+  commission: { src: "/photos/kulteri-aux-homlokzat.jpg", alt: "Beüzemelt kültéri klíma egység a homlokzaton" },
+};
+
 export function generateStaticParams() {
   return services.map((s) => ({ slug: s.id }));
 }
@@ -278,11 +286,16 @@ export default async function ServicePage({
             </h2>
           </Reveal>
           <Reveal>
-            <div className="mx-auto max-w-4xl">
+            <div className="mx-auto grid max-w-5xl gap-4 sm:grid-cols-2">
               <Photo
                 src={(workPhoto[s.icon] ?? workPhoto.install).src}
                 alt={(workPhoto[s.icon] ?? workPhoto.install).alt}
-                className="aspect-[16/10]"
+                className="aspect-[4/3]"
+              />
+              <Photo
+                src={(ownPhoto[s.icon] ?? ownPhoto.install).src}
+                alt={(ownPhoto[s.icon] ?? ownPhoto.install).alt}
+                className="aspect-[4/3]"
               />
             </div>
           </Reveal>

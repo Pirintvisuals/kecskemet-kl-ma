@@ -5,11 +5,13 @@ import TrustBar from "@/components/TrustBar";
 import Services from "@/components/Services";
 import BookingBar from "@/components/BookingBar";
 import Stats from "@/components/Stats";
+import Credentials from "@/components/Credentials";
 import WhyUs from "@/components/WhyUs";
 import WorkBand from "@/components/WorkBand";
 import Process from "@/components/Process";
 import Gallery from "@/components/Gallery";
 import Testimonials from "@/components/Testimonials";
+import GoogleReviews from "@/components/GoogleReviews";
 import ServiceArea from "@/components/ServiceArea";
 import Faq from "@/components/Faq";
 import ContactCTA from "@/components/ContactCTA";
@@ -71,8 +73,10 @@ export default function Home() {
         </section>
 
         <Stats />
+        <Credentials />
         <WorkBand />
         <Testimonials />
+        <GoogleReviews />
         <WhyUs />
         <Process />
         <Gallery />

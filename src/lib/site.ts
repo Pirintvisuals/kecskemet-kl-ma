@@ -17,6 +17,11 @@ export const site = {
   address: "6000 Kecskemét, Számadó u. 25.",
   hours: "H–P 8:00–17:00 · Hétvégén zárva",
   serviceRadiusKm: 30,
+  // Google listing (customer-provided). Opens the business on Google, where
+  // visitors can read and leave reviews. Replace with the clean "Megosztás"
+  // link from the Google Cégprofil for a pinpoint write-review URL.
+  googleUrl:
+    "https://www.google.com/search?q=kl%C3%ADma+kecskem%C3%A9t&rlz=1C1YTUH_huHU1067HU1068&oq=kl%C3%ADma+kecsk&gs_lcrp=EgZjaHJvbWUqCQgAECMYJxjwBTIJCAAQIxgnGPAFMgYIARBFGDkyCAgCEAAYFhgeMggIAxAAGBYYHjIICAQQABgWGB4yBggFEEUYPDIGCAYQRRg8MgYIBxBFGDzSAQgyMTI4ajBqN6gCALACAA&sourceid=chrome&source=chrome.ob&ie=UTF-8#sv=CAwS9wEKBmxjbF9wdhIuCgNwdnESJ0NnMHZaeTh4TVc1dWJYcHJaRGszSWd3S0JtdHN3NjF0WVJBQ0dBTRJ9CgNscWkSdkNoRnJiTU90YldFZ2EyVmpjMnRsYmNPcGRFaW40cUtfMHJTQWdBaGFHeEFBR0FFaUVXdHN3NjF0WVNCclpXTnphMlZ0dzZsME1nSm9kWG9LUzJWamMydGxiY09wZEpJQkQyaDJZV05mWTI5dWRISmhZM1J2Y2cSEgoDdGJzEgtscmY6ITNzSUFFPRIWCgFxEhFrbMOtbWEga2Vjc2tlbcOpdBoSbG9jYWwtcGxhY2Utdmlld2VyGAogweSt4wU",
 } as const;
 
 export type Service = {
@@ -374,11 +379,39 @@ export const services: Service[] = [
 ];
 
 export const stats = [
-  { value: "500+", label: "Telepített és javított klíma" },
-  { value: "4.8★", label: "Google értékelés" },
+  { value: "200+", label: "Telepített és karbantartott klíma" },
+  { value: "10 év", label: "Garancia a prémium klímákra" },
   { value: "15+", label: "Év szakmai tapasztalat" },
   { value: "30 km", label: "Kecskemét körzetében" },
 ];
+
+/**
+ * Credentials / trust strip — real qualifications and guarantees the business
+ * already states in its copy (no invented numbers). Shown on the homepage and
+ * the About page. Icon keys map to lucide icons in <Credentials />.
+ */
+export const credentials = [
+  {
+    icon: "cert",
+    title: "F-gázos képesítés",
+    text: "A hűtőközeggel végzett munkát jogszabály szerint csak F-gáz jogosultsággal végezzük.",
+  },
+  {
+    icon: "master",
+    title: "Klímaszerelő mester",
+    text: "Szakképzett mester, 15+ év fűtés- és klímatechnikai tapasztalattal.",
+  },
+  {
+    icon: "warranty",
+    title: "Garancia + számla",
+    text: "Minden elvégzett munkára írásos jótállást és számlát adunk.",
+  },
+  {
+    icon: "brands",
+    title: "Márkafüggetlen szerviz",
+    text: "A legnépszerűbb prémium gyártók készülékeit telepítjük és javítjuk.",
+  },
+] as const;
 
 export const differentiators = [
   {
