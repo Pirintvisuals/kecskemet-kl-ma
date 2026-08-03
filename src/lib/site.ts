@@ -17,11 +17,10 @@ export const site = {
   address: "6000 Kecskemét, Számadó u. 25.",
   hours: "H–P 8:00–17:00 · Hétvégén zárva",
   serviceRadiusKm: 30,
-  // Google listing (customer-provided). Opens the business on Google, where
-  // visitors can read and leave reviews. Replace with the clean "Megosztás"
-  // link from the Google Cégprofil for a pinpoint write-review URL.
+  // Google listing (Hírös Klímatechnika) reviews panel — customer-provided.
+  // Opens the business on Google where visitors can read and leave reviews.
   googleUrl:
-    "https://www.google.com/search?q=kl%C3%ADma+kecskem%C3%A9t&rlz=1C1YTUH_huHU1067HU1068&oq=kl%C3%ADma+kecsk&gs_lcrp=EgZjaHJvbWUqCQgAECMYJxjwBTIJCAAQIxgnGPAFMgYIARBFGDkyCAgCEAAYFhgeMggIAxAAGBYYHjIICAQQABgWGB4yBggFEEUYPDIGCAYQRRg8MgYIBxBFGDzSAQgyMTI4ajBqN6gCALACAA&sourceid=chrome&source=chrome.ob&ie=UTF-8#sv=CAwS9wEKBmxjbF9wdhIuCgNwdnESJ0NnMHZaeTh4TVc1dWJYcHJaRGszSWd3S0JtdHN3NjF0WVJBQ0dBTRJ9CgNscWkSdkNoRnJiTU90YldFZ2EyVmpjMnRsYmNPcGRFaW40cUtfMHJTQWdBaGFHeEFBR0FFaUVXdHN3NjF0WVNCclpXTnphMlZ0dzZsME1nSm9kWG9LUzJWamMydGxiY09wZEpJQkQyaDJZV05mWTI5dWRISmhZM1J2Y2cSEgoDdGJzEgtscmY6ITNzSUFFPRIWCgFxEhFrbMOtbWEga2Vjc2tlbcOpdBoSbG9jYWwtcGxhY2Utdmlld2VyGAogweSt4wU",
+    "https://www.google.com/search?q=H%C3%ADr%C3%B6s+Kl%C3%ADmatechnika+-+Kl%C3%ADmatelep%C3%ADt%C3%A9s,+kl%C3%ADmaszerel%C3%A9s+%C3%A9s+karbantart%C3%A1s+Reviews&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxI2MTcwMrM0tjQ1MjYwtTQwMjax2MDI-Iox1OPw2qLD24oVvHMOr81NLElNzsjLzE5U0IUL5KQWHF5bcnhlsY5CNliouCq1KDUHKKAAwtmJRUmJeSWJRSWHFxYrBKWWZaaWFy9ipY25AG26lVrKAAAA&rldimm=4702693952305902348&tbm=lcl&hl=en-HU&sa=X#lkt=LocalPoiReviews",
 } as const;
 
 export type Service = {
