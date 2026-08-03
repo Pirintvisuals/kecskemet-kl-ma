@@ -39,7 +39,6 @@ export default function Gallery() {
                 alt={s.label}
                 className="h-full"
                 fit="cover"
-                objectPosition="center"
               />
             </Reveal>
           ))}

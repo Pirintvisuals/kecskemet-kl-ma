@@ -7,6 +7,7 @@ import {
   type LucideIcon,
 } from "lucide-react";
 import { services, type Service } from "@/lib/site";
+import { focusFor } from "@/lib/photoFocus";
 import SectionHeading from "./SectionHeading";
 import Reveal from "./Reveal";
 
@@ -51,12 +52,13 @@ export default function Services() {
                   style={{ ["--accent" as string]: s.accent }}
                 >
                   {/* real work photo */}
-                  <div className="relative h-44 w-full overflow-hidden">
+                  <div className="relative aspect-[4/3] w-full overflow-hidden sm:aspect-[16/11]">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
                       src={cardPhoto[s.icon]}
                       alt={`${s.title} – saját munkánk`}
                       loading="lazy"
+                      style={{ objectPosition: focusFor(cardPhoto[s.icon]) }}
                       className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                     />
                     <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-navy-800 via-navy-800/30 to-transparent" />
