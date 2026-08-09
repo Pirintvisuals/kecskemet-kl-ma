@@ -557,11 +557,11 @@ export default async function BrandPage({
                     ))}
                   </ul>
                   <a
-                    href="/kapcsolat/"
+                    href={m.slug ? `/klimak/${b.slug}/${m.slug}/` : "/kapcsolat/"}
                     className="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold transition-colors"
                     style={{ color: accent }}
                   >
-                    Érdeklődöm erről a típusról
+                    {m.slug ? "Részletek erről a típusról" : "Érdeklődöm erről a típusról"}
                     <ArrowRight className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
                   </a>
                 </div>

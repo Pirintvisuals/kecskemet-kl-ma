@@ -7,6 +7,16 @@
  * installs — then this list is trivial to extend to every brand.
  */
 
+/** Rich, standalone detail page content for a single model. */
+export type ModelDetail = {
+  tagline: string;
+  overview: string;
+  highlights: { icon: string; title: string; text: string }[];
+  bestFor: string[];
+  specs: { label: string; value: string }[];
+  faq?: { q: string; a: string }[];
+};
+
 export type BrandModel = {
   name: string;
   positioning: string;
@@ -14,6 +24,9 @@ export type BrandModel = {
   summary?: string;
   description: string;
   features: string[];
+  /** If present (with `detail`), the model gets its own subpage at /klimak/<brand>/<slug>/. */
+  slug?: string;
+  detail?: ModelDetail;
 };
 
 /** A highlighted product line shown in a rich, catalogue-style block. */
@@ -237,6 +250,37 @@ export const brandPages: Brand[] = [
         description:
           "Erős hőszivattyús fűtés, beépített WiFi és halk, energiatakarékos inverter – R32 hűtőközeggel.",
         features: ["Beépített WiFi", "Erős téli fűtés", "Inverteres, R32", "Jó ár-érték"],
+        slug: "pular",
+        detail: {
+          tagline: "A legnépszerűbb Gree mindenes – erős fűtés, gyári WiFi, kiváló ár-érték",
+          overview:
+            "A Pular az egyik legkedveltebb Gree modell Magyarországon, és nem véletlenül: mindent tud, amit egy otthoni klímától elvárhat, mégis kedvező áron. Modern inverteres kompresszorral halkan és energiatakarékosan hűt, hőszivattyús üzemben pedig a hidegebb napokon is erős fűtést ad. Gyárilag beépített WiFi-vel telefonról bárhonnan vezérelhető, és a környezetbarát R32 hűtőközeggel dolgozik – ideális első klíma lakásba és házba egyaránt.",
+          highlights: [
+            { icon: "wifi", title: "Gyári WiFi + GREE+ app", text: "Telefonról, a világ bármely pontjáról vezérelhető; Google Home és Alexa kompatibilis." },
+            { icon: "flame", title: "Erős téli fűtés", text: "Hőszivattyús üzemben a hidegebb napokon is hatékonyan fűt – kiegészítheti vagy kiválthatja a fűtést." },
+            { icon: "leaf", title: "R32 hűtőközeg", text: "Környezetbarát gáz, jobb energiahatékonyság, alacsonyabb üzemköltség." },
+            { icon: "volume", title: "Halk, energiatakarékos", text: "Inverteres kompresszor – csendes működés és alacsony fogyasztás." },
+          ],
+          bestFor: [
+            "Lakás vagy családi ház fő helyisége (nappali, hálószoba)",
+            "Aki egyszerre keres jó hűtést és erős téli fűtést",
+            "Aki megbízható, jó ár-értékű „mindenest” szeretne",
+          ],
+          specs: [
+            { label: "Kategória", value: "Népszerű kényelmi" },
+            { label: "Technológia", value: "inverteres" },
+            { label: "Hűtőközeg", value: "R32 (környezetbarát)" },
+            { label: "WiFi", value: "gyárilag beépített" },
+            { label: "Fűtés", value: "erős, hőszivattyús üzem" },
+            { label: "Energiaosztály", value: "akár A++" },
+            { label: "Teljesítmény", value: "több méretben – a felmérésen választjuk ki" },
+            { label: "Garancia", value: "a feltételek teljesülése esetén akár 10 év" },
+          ],
+          faq: [
+            { q: "Alkalmas a Pular téli fűtésre?", a: "Igen. Hőszivattyús üzemben a hidegebb téli napokon is hatékonyan fűt, így a fűtési szezon nagy részében kiválthatja vagy kiegészítheti a hagyományos fűtést." },
+            { q: "Vezérelhető telefonról?", a: "Igen, gyárilag beépített WiFi-vel a GREE+ ingyenes alkalmazásból bárhonnan irányítható, és okosotthon-rendszerbe is integrálható." },
+          ],
+        },
       },
       {
         name: "Fairy",
@@ -245,6 +289,37 @@ export const brandPages: Brand[] = [
         description:
           "Letisztult, lapos előlap és kifejezetten halk üzem, beépített WiFi-vel – prémium hangulat prémium ár nélkül.",
         features: ["Dizájnos, lapos forma", "Beépített WiFi", "Halk, inverteres üzem", "Jó hatásfok"],
+        slug: "fairy",
+        detail: {
+          tagline: "Letisztult dizájn és extra halk üzem – prémium hangulat prémium ár nélkül",
+          overview:
+            "A Fairy azoknak készült, akiknek a klíma megjelenése is fontos. Letisztult, lapos előlapja elegánsan illeszkedik a modern otthonokba, működése pedig kifejezetten halk – hálószobába és nappaliba egyaránt ideális. A dizájn mögött energiatakarékos inverteres technológia, jó fűtési teljesítmény és gyári WiFi áll, mindezt a prémium modelleknél kedvezőbb áron.",
+          highlights: [
+            { icon: "sparkles", title: "Letisztult dizájn", text: "Lapos, elegáns előlap, ami illeszkedik a modern otthon berendezéséhez." },
+            { icon: "volume", title: "Extra halk üzem", text: "Kifejezetten csendes működés – hálószobába, gyerekszobába is ideális." },
+            { icon: "wifi", title: "Gyári WiFi", text: "GREE+ alkalmazással bárhonnan vezérelhető, hangvezérléssel is." },
+            { icon: "leaf", title: "Energiatakarékos, R32", text: "Inverteres, gazdaságos üzem környezetbarát hűtőközeggel." },
+          ],
+          bestFor: [
+            "Nappali vagy hálószoba, ahol számít a megjelenés",
+            "Aki halk, dizájnos klímát szeretne",
+            "Aki prémium hangulatot keres, de nem prémium áron",
+          ],
+          specs: [
+            { label: "Kategória", value: "Modern dizájn" },
+            { label: "Technológia", value: "inverteres" },
+            { label: "Hűtőközeg", value: "R32 (környezetbarát)" },
+            { label: "WiFi", value: "gyárilag beépített" },
+            { label: "Üzem", value: "kifejezetten halk" },
+            { label: "Energiaosztály", value: "akár A++" },
+            { label: "Teljesítmény", value: "több méretben – a felmérésen választjuk ki" },
+            { label: "Garancia", value: "a feltételek teljesülése esetén akár 10 év" },
+          ],
+          faq: [
+            { q: "Mennyire halk a Fairy?", a: "Kifejezetten csendes működésre tervezték, ezért hálószobába és gyerekszobába is jó választás – éjszaka sem zavaró." },
+            { q: "Illik a modern lakásba?", a: "Igen, letisztult, lapos előlapja pont azért készült, hogy dizájnelemként illeszkedjen a modern otthonokba." },
+          ],
+        },
       },
       {
         name: "Amber",
@@ -253,6 +328,37 @@ export const brandPages: Brand[] = [
         description:
           "Alacsony külső hőmérsékleten is stabil, erős fűtés magas energiaosztállyal – a Gree fűtési csúcsragadozója.",
         features: ["Kiváló téli fűtés", "Magas energiaosztály", "Beépített WiFi", "Prémium"],
+        slug: "amber",
+        detail: {
+          tagline: "Fűtésre optimalizált prémium modell – a Gree csúcsragadozója télre",
+          overview:
+            "Az Amber a Gree fűtési zászlóshajója: kifejezetten arra tervezték, hogy alacsony külső hőmérsékleten is stabil, erős fűtést adjon. Ha a klímát télen komolyan használná fűtésre – akár a fő fűtési rendszer kiváltására vagy kiegészítésére –, ez a legjobb választás a kínálatból. Magas energiaosztály, gyári WiFi és a Gree teljes okostudása jár hozzá.",
+          highlights: [
+            { icon: "flame", title: "Kiváló téli fűtés", text: "Alacsony külső hőmérsékleten is stabil, erős fűtési teljesítmény." },
+            { icon: "gauge", title: "Magas energiaosztály", text: "Csúcskategóriás hatásfok – gazdaságos üzem egész évben." },
+            { icon: "wifi", title: "Gyári WiFi + okosvezérlés", text: "GREE+ app, Google Home és Alexa támogatással." },
+            { icon: "shield", title: "Akár 10 év garancia", text: "Prémium modell – a feltételek teljesülése esetén hosszú garanciával." },
+          ],
+          bestFor: [
+            "Klímafűtés fő vagy kiegészítő fűtésként",
+            "Rosszabbul szigetelt vagy hidegebb helyiségek",
+            "Aki télen is maximális fűtési teljesítményt vár",
+          ],
+          specs: [
+            { label: "Kategória", value: "Prémium hőszivattyú" },
+            { label: "Technológia", value: "inverteres" },
+            { label: "Hűtőközeg", value: "R32 (környezetbarát)" },
+            { label: "WiFi", value: "gyárilag beépített" },
+            { label: "Fűtés", value: "kiváló, alacsony hőmérsékleten is stabil" },
+            { label: "Energiaosztály", value: "csúcskategóriás (akár A++)" },
+            { label: "Teljesítmény", value: "több méretben – a felmérésen választjuk ki" },
+            { label: "Garancia", value: "a feltételek teljesülése esetén akár 10 év" },
+          ],
+          faq: [
+            { q: "Kiválthatja az Amber a gázfűtést?", a: "Sok otthonban igen, vagy jelentősen kiegészítheti. Az Ambert kifejezetten erős, alacsony hőmérsékleten is stabil fűtésre tervezték – a pontos megtérülést a felmérésen mondjuk meg." },
+            { q: "Miben több, mint az alapmodellek?", a: "Az Amber fűtésre optimalizált prémium modell: alacsony külső hőmérsékleten is erősebb, stabilabb fűtést ad, magasabb energiaosztállyal." },
+          ],
+        },
       },
       {
         name: "Comfort X",
@@ -261,6 +367,36 @@ export const brandPages: Brand[] = [
         description:
           "Kiegyensúlyozott hűtés-fűtés, inverteres R32-es működés és jó hatásfok, megfizethető áron.",
         features: ["Inverteres, R32", "WiFi-vezérelhető", "Jó energiaosztály", "Kedvező ár"],
+        slug: "comfort-x",
+        detail: {
+          tagline: "Kiegyensúlyozott kényelmi modell – kiváló belépő a prémium Gree világába",
+          overview:
+            "A Comfort X a klasszikus Gree kényelmi széria: kiegyensúlyozott hűtés és fűtés, inverteres R32-es működés és jó energiahatékonyság megfizethető áron. Halk beltéri egység, WiFi-vezérelhetőség és bevált, megbízható technika – ideális első klíma, ha jó minőséget szeretne felár nélkül.",
+          highlights: [
+            { icon: "snowflake", title: "Kiegyensúlyozott hűtés-fűtés", text: "Stabil teljesítmény a mindennapokra, minden évszakban." },
+            { icon: "leaf", title: "Inverteres, R32", text: "Gazdaságos üzem környezetbarát hűtőközeggel." },
+            { icon: "wifi", title: "WiFi-vezérelhető", text: "GREE+ alkalmazással kényelmesen irányítható." },
+            { icon: "piggybank", title: "Kedvező ár", text: "Prémium Gree tudás megfizethető belépő áron." },
+          ],
+          bestFor: [
+            "Első klíma lakásba vagy házba",
+            "Aki jó ár-érték arányt keres",
+            "Mindennapi, kiegyensúlyozott komfort",
+          ],
+          specs: [
+            { label: "Kategória", value: "Kiegyensúlyozott kényelmi" },
+            { label: "Technológia", value: "inverteres" },
+            { label: "Hűtőközeg", value: "R32 (környezetbarát)" },
+            { label: "WiFi", value: "vezérelhető (opció)" },
+            { label: "Fűtés", value: "hőszivattyús üzem" },
+            { label: "Energiaosztály", value: "jó (akár A++)" },
+            { label: "Teljesítmény", value: "több méretben – a felmérésen választjuk ki" },
+            { label: "Garancia", value: "a feltételek teljesülése esetén akár 10 év" },
+          ],
+          faq: [
+            { q: "Jó első klímának?", a: "Igen, a Comfort X kifejezetten kiváló belépő: kiegyensúlyozott hűtés-fűtés, bevált technika és jó ár-érték arány – felesleges felár nélkül." },
+          ],
+        },
       },
       {
         name: "Bora",
@@ -269,6 +405,33 @@ export const brandPages: Brand[] = [
         description:
           "Egyszerű, tartós, gazdaságos hűtés-fűtés, WiFi-vel bővíthető vezérléssel.",
         features: ["Gazdaságos", "Megbízható", "Inverteres", "WiFi opció"],
+        slug: "bora",
+        detail: {
+          tagline: "Bevált, gazdaságos klasszikus – a problémamentes megoldás",
+          overview:
+            "A Bora annak készült, aki a jól bevált, egyszerű és megbízható megoldást keresi. Gazdaságos hűtést és fűtést nyújt kedvező áron, egyszerű, tartós felépítéssel és inverteres működéssel. WiFi-vel bővíthető vezérlés és R32 hűtőközeg – minden, ami a mindennapokhoz kell, felesleges bonyolítás nélkül.",
+          highlights: [
+            { icon: "gauge", title: "Gazdaságos üzem", text: "Inverteres technológia – alacsony fogyasztás, kiszámítható rezsi." },
+            { icon: "shield", title: "Megbízható, tartós", text: "Egyszerű, bevált felépítés, hosszú élettartam." },
+            { icon: "wifi", title: "WiFi-vel bővíthető", text: "Okosvezérlés a GREE+ alkalmazással, igény esetén." },
+            { icon: "leaf", title: "R32 hűtőközeg", text: "Környezetbarát gáz, jó energiahatékonyság." },
+          ],
+          bestFor: [
+            "Aki egyszerű, problémamentes klímát szeretne",
+            "Másodlagos helyiségek, dolgozószoba",
+            "Kedvező árú, megbízható alapfelszereltség",
+          ],
+          specs: [
+            { label: "Kategória", value: "Megbízható klasszikus" },
+            { label: "Technológia", value: "inverteres" },
+            { label: "Hűtőközeg", value: "R32 (környezetbarát)" },
+            { label: "WiFi", value: "opcióként bővíthető" },
+            { label: "Fűtés", value: "hőszivattyús üzem" },
+            { label: "Energiaosztály", value: "jó" },
+            { label: "Teljesítmény", value: "több méretben – a felmérésen választjuk ki" },
+            { label: "Garancia", value: "a feltételek teljesülése esetén akár 10 év" },
+          ],
+        },
       },
       {
         name: "Lomo",
@@ -277,6 +440,33 @@ export const brandPages: Brand[] = [
         description:
           "Kedvező árú, inverteres belépő modell letisztult megjelenéssel és bevált Gree megbízhatósággal.",
         features: ["Kedvező ár", "Inverteres", "Egyszerű", "Megbízható"],
+        slug: "lomo",
+        detail: {
+          tagline: "Kedvező belépő modell – a legjobb út egy jó minőségű klímához",
+          overview:
+            "A Lomo a legkedvezőbb belépő a Gree világába: egyszerű, megbízható modell azoknak, akiknek a jó alapfunkciók és a kedvező ár a legfontosabb. Inverteres kompresszorral gazdaságosan üzemel, letisztult megjelenésű, és mögötte ott a Gree bevált megbízhatósága – jó minőség a legkedvezőbb áron.",
+          highlights: [
+            { icon: "piggybank", title: "Legkedvezőbb ár", text: "A legjobb belépő egy jó minőségű klímához." },
+            { icon: "gauge", title: "Inverteres, gazdaságos", text: "Alacsony fogyasztás, kiszámítható üzem." },
+            { icon: "snowflake", title: "Jó alapfunkciók", text: "Mindent tud, ami a mindennapi komforthoz kell." },
+            { icon: "shield", title: "Bevált Gree megbízhatóság", text: "A világ legnagyobb klímagyártójának minősége." },
+          ],
+          bestFor: [
+            "Kisebb helyiségek, hálószoba",
+            "Aki a legkedvezőbb áron szeretne klímát",
+            "Első klíma szűkebb büdzsével",
+          ],
+          specs: [
+            { label: "Kategória", value: "Kedvező belépő" },
+            { label: "Technológia", value: "inverteres" },
+            { label: "Hűtőközeg", value: "R32 (környezetbarát)" },
+            { label: "WiFi", value: "opcióként bővíthető" },
+            { label: "Fűtés", value: "hőszivattyús üzem" },
+            { label: "Energiaosztály", value: "jó" },
+            { label: "Teljesítmény", value: "több méretben – a felmérésen választjuk ki" },
+            { label: "Garancia", value: "a feltételek teljesülése esetén akár 10 év" },
+          ],
+        },
       },
       {
         name: "Clivia",
@@ -284,6 +474,33 @@ export const brandPages: Brand[] = [
         description:
           "Fém hatású, exkluzív előlapú prémium Gree modell erős teljesítménnyel – ha a klíma dizájnelem is a lakásban. Csúcskategóriás anyaghasználat, kifinomult, halk működés, magas energiaosztály és teljes okosvezérlés WiFi-n keresztül. A Gree kínálatának dizájn-zászlóshajója.",
         features: ["Prémium fém dizájn", "Erős teljesítmény", "Csúcs energiaosztály", "Okosvezérlés WiFi-vel"],
+        slug: "clivia",
+        detail: {
+          tagline: "Fém hatású prémium dizájn erős teljesítménnyel – a Gree zászlóshajója",
+          overview:
+            "A Clivia a Gree kínálatának dizájn-zászlóshajója: exkluzív, fém hatású előlap, csúcskategóriás anyaghasználat és erős teljesítmény egyben. Kifinomult, halk működés, magas energiaosztály és teljes okosvezérlés WiFi-n keresztül – ha a klíma egyben dizájnelem is a lakásban, ez a legjobb választás.",
+          highlights: [
+            { icon: "sparkles", title: "Prémium fém dizájn", text: "Exkluzív, fém hatású előlap – dizájnelem a lakásban." },
+            { icon: "gauge", title: "Erős teljesítmény", text: "Csúcskategóriás hűtés-fűtés, magas energiaosztállyal." },
+            { icon: "wifi", title: "Teljes okosvezérlés", text: "GREE+ app, Google Home és Alexa támogatással." },
+            { icon: "shield", title: "Akár 10 év garancia", text: "Prémium modell, hosszú távú nyugalommal." },
+          ],
+          bestFor: [
+            "Reprezentatív nappali, ahol számít a megjelenés",
+            "Aki prémium dizájnt és erős tudást keres egyben",
+            "Igényes otthon, ahol a klíma is lakberendezési elem",
+          ],
+          specs: [
+            { label: "Kategória", value: "Prémium dizájn" },
+            { label: "Technológia", value: "inverteres" },
+            { label: "Hűtőközeg", value: "R32 (környezetbarát)" },
+            { label: "WiFi", value: "gyárilag beépített" },
+            { label: "Kivitel", value: "fém hatású, exkluzív előlap" },
+            { label: "Energiaosztály", value: "csúcskategóriás (akár A++)" },
+            { label: "Teljesítmény", value: "több méretben – a felmérésen választjuk ki" },
+            { label: "Garancia", value: "a feltételek teljesülése esetén akár 10 év" },
+          ],
+        },
       },
     ],
     video: {
@@ -554,3 +771,19 @@ export const brandPages: Brand[] = [
 
 export const brandBySlug = (slug: string) =>
   brandPages.find((b) => b.slug === slug);
+
+/** Look up a single model (and its brand) by brand + model slug. */
+export const modelBySlug = (brandSlug: string, modelSlug: string) => {
+  const brand = brandBySlug(brandSlug);
+  if (!brand) return undefined;
+  const model = brand.models.find((m) => m.slug === modelSlug);
+  if (!model || !model.detail) return undefined;
+  return { brand, model };
+};
+
+/** All (brand, model) pairs that have a standalone detail page. */
+export const modelPages = brandPages.flatMap((b) =>
+  b.models
+    .filter((m) => m.slug && m.detail)
+    .map((m) => ({ brand: b.slug, model: m.slug as string })),
+);
