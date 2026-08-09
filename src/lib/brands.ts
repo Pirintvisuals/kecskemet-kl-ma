@@ -88,38 +88,225 @@ export const brandPages: Brand[] = [
       {
         name: "Sensira",
         positioning: "Belépőszint",
+        summary: "Kedvező árú, megbízható belépő a Daikin világába.",
         description:
-          "Kedvező árú, megbízható választás azoknak, akik jó ár-érték arányú Daikin klímát keresnek. Inverteres kompresszor a gazdaságos üzemért, halk működés és a Daikin bevált minősége – a legkedvezőbb belépő a japán klímavilágba.",
+          "Inverteres kompresszor a gazdaságos üzemért, halk működés és a Daikin bevált minősége – a legkedvezőbb áron.",
         features: ["Kedvező ár", "Halk működés", "Inverteres", "Megbízható"],
+        slug: "sensira",
+        detail: {
+          tagline: "A legkedvezőbb belépő a japán Daikin minőségbe",
+          overview:
+            "A Sensira a Daikin belépő modellje: kedvező árú, megbízható választás azoknak, akik jó ár-érték arányt keresnek. Inverteres kompresszorral gazdaságosan hűt és fűt, halkan üzemel, és a Daikin bevált minőségét adja a legkedvezőbb áron.",
+          highlights: [
+            { icon: "piggybank", title: "Kedvező ár", text: "A legjobb belépő a japán Daikin minőségbe." },
+            { icon: "gauge", title: "Inverteres, gazdaságos", text: "Alacsony fogyasztás, kiszámítható üzem." },
+            { icon: "volume", title: "Halk működés", text: "Csendes beltéri egység a mindennapokra." },
+            { icon: "shield", title: "Daikin megbízhatóság", text: "A világ egyik vezető gyártójának minősége." },
+          ],
+          bestFor: ["Első klíma kedvező áron", "Lakás, hálószoba", "Aki bevált japán minőséget keres olcsón"],
+          specs: [
+            { label: "Kategória", value: "Belépőszint" },
+            { label: "Technológia", value: "inverteres" },
+            { label: "Hűtőközeg", value: "R32 (környezetbarát)" },
+            { label: "WiFi", value: "opcióként (adapterrel)" },
+            { label: "Fűtés", value: "hőszivattyús üzem" },
+            { label: "Energiaosztály", value: "jó" },
+            { label: "Teljesítmény", value: "több méretben – a felmérésen választjuk ki" },
+            { label: "Garancia", value: "gyártói jótállás + teljes körű helyi szerviz" },
+          ],
+        },
       },
       {
         name: "Comfora",
         positioning: "Kényelmi",
+        summary: "Kiegyensúlyozott mindennapi komfort, WiFi-opcióval.",
         description:
-          "Kiegyensúlyozott, mindennapi kényelmet nyújtó modell jó hatásfokkal és opcionális WiFi-vezérléssel. Stabil hűtés és fűtés, csendes üzem – ideális választás, ha a jó ár és a megbízható komfort a fontos.",
+          "Jó hatásfok, stabil hűtés-fűtés és csendes üzem, opcionális WiFi-vezérléssel.",
         features: ["Jó hatásfok", "WiFi opció", "Csendes", "Jó fűtés"],
+        slug: "comfora",
+        detail: {
+          tagline: "Kiegyensúlyozott kényelmi modell jó hatásfokkal",
+          overview:
+            "A Comfora a Daikin kiegyensúlyozott kényelmi modellje: jó hatásfok, stabil hűtés és fűtés, csendes üzem és opcionális WiFi-vezérlés. Ideális választás, ha a megbízható mindennapi komfort és a jó ár a fontos.",
+          highlights: [
+            { icon: "gauge", title: "Jó hatásfok", text: "Gazdaságos, kiegyensúlyozott üzem egész évben." },
+            { icon: "wifi", title: "WiFi opció", text: "A Daikin Onecta alkalmazással bővíthető vezérlés." },
+            { icon: "volume", title: "Csendes üzem", text: "Halk működés nappaliba és hálószobába." },
+            { icon: "flame", title: "Jó téli fűtés", text: "Megbízható hőszivattyús fűtés a hidegben is." },
+          ],
+          bestFor: ["Nappali, hálószoba", "Mindennapi kiegyensúlyozott komfort", "Aki jó ár-értéket keres"],
+          specs: [
+            { label: "Kategória", value: "Kényelmi" },
+            { label: "Technológia", value: "inverteres" },
+            { label: "Hűtőközeg", value: "R32 (környezetbarát)" },
+            { label: "WiFi", value: "opcióként (adapterrel)" },
+            { label: "Fűtés", value: "hőszivattyús üzem, jó teljesítmény" },
+            { label: "Energiaosztály", value: "jó (akár A++)" },
+            { label: "Teljesítmény", value: "több méretben – a felmérésen választjuk ki" },
+            { label: "Garancia", value: "gyártói jótállás + teljes körű helyi szerviz" },
+          ],
+        },
       },
       {
         name: "Perfera",
         positioning: "Prémium",
+        summary: "Csúcs energiahatékonyság és erős téli fűtés.",
         description:
-          "Csúcskategóriás energiahatékonyság és kiváló fűtési teljesítmény alacsony külső hőmérsékleten is, beépített WiFi-vel. Kifinomult légterelés, nagyon halk üzem – a Daikin technológiai csúcsa a mindennapokra.",
+          "Csúcskategóriás hatásfok, erős fűtés alacsony hőmérsékleten is, beépített WiFi-vel és Flash Streamer légtisztítással.",
         features: ["Csúcs energiaosztály", "Erős fűtés télen", "Beépített WiFi", "Nagyon halk"],
+        slug: "perfera",
+        detail: {
+          tagline: "A Daikin technológiai csúcsa – erős fűtés, beépített WiFi",
+          overview:
+            "A Perfera a Daikin prémium modellje: csúcskategóriás energiahatékonyság, kiváló fűtési teljesítmény alacsony külső hőmérsékleten is, beépített WiFi-vel és Flash Streamer légtisztítással. Kifinomult légterelés, nagyon halk üzem – a Daikin legjobbja a mindennapokra.",
+          highlights: [
+            { icon: "flame", title: "Erős fűtés télen", text: "Alacsony külső hőmérsékleten is hatékony hőszivattyús fűtés." },
+            { icon: "gauge", title: "Csúcs energiaosztály", text: "Kiemelkedő hatásfok – gazdaságos üzem egész évben." },
+            { icon: "sparkles", title: "Flash Streamer légtisztítás", text: "Lebontja a szagokat, allergéneket, szennyeződéseket." },
+            { icon: "wifi", title: "Beépített WiFi", text: "Daikin Onecta app, okosotthon-integrációval." },
+          ],
+          bestFor: ["Klímafűtés fő vagy kiegészítő fűtésként", "Aki a legjobb hatásfokot keresi", "Egész éves prémium komfort"],
+          specs: [
+            { label: "Kategória", value: "Prémium" },
+            { label: "Technológia", value: "inverteres" },
+            { label: "Hűtőközeg", value: "R32 (környezetbarát)" },
+            { label: "WiFi", value: "gyárilag beépített" },
+            { label: "Fűtés", value: "kiváló, alacsony hőmérsékleten is stabil" },
+            { label: "Légtisztítás", value: "Flash Streamer" },
+            { label: "Energiaosztály", value: "csúcskategóriás" },
+            { label: "Garancia", value: "gyártói jótállás + teljes körű helyi szerviz" },
+          ],
+          faq: [
+            { q: "Jó a Perfera téli fűtésre?", a: "Igen, kifejezetten erős fűtésre optimalizált: alacsony külső hőmérsékleten is hatékonyan fűt hőszivattyús üzemben, magas energiaosztállyal." },
+          ],
+        },
       },
       {
         name: "Emura",
         positioning: "Dizájn ikon",
+        summary: "A Daikin dizájn-zászlóshajója.",
         description:
-          "Elegáns, fém hatású előlap és letisztult formavilág – a Daikin dizájn-zászlóshajója. A prémium megjelenés mögött magas hatásfok, intelligens érzékelők és teljes okosvezérlés áll.",
+          "Elegáns, fém hatású előlap prémium tudással: magas hatásfok, intelligens érzékelők és teljes okosvezérlés.",
         features: ["Prémium dizájn", "Érzékelős légterelés", "Halk", "Magas hatásfok"],
+        slug: "emura",
+        detail: {
+          tagline: "Elegáns fém hatású előlap, prémium tudással",
+          overview:
+            "Az Emura a Daikin dizájn-zászlóshajója: elegáns, fém hatású előlap és letisztult formavilág. A prémium megjelenés mögött magas hatásfok, intelligens érzékelők, Flash Streamer légtisztítás és teljes okosvezérlés áll.",
+          highlights: [
+            { icon: "sparkles", title: "Prémium dizájn", text: "Fém hatású, elegáns előlap – dizájnelem a lakásban." },
+            { icon: "thermometer", title: "Érzékelős légterelés", text: "Oda irányítja a levegőt, ahol valóban tartózkodik." },
+            { icon: "volume", title: "Nagyon halk", text: "Kifinomult, csendes működés éjszaka is." },
+            { icon: "wifi", title: "Teljes okosvezérlés", text: "Daikin Onecta app és okosotthon-integráció." },
+          ],
+          bestFor: ["Reprezentatív nappali", "Ahol a klíma dizájnelem is", "Igényes otthon"],
+          specs: [
+            { label: "Kategória", value: "Dizájn ikon" },
+            { label: "Technológia", value: "inverteres" },
+            { label: "Hűtőközeg", value: "R32 (környezetbarát)" },
+            { label: "WiFi", value: "gyárilag beépített" },
+            { label: "Kivitel", value: "fém hatású, prémium előlap" },
+            { label: "Energiaosztály", value: "magas (akár A++)" },
+            { label: "Teljesítmény", value: "több méretben – a felmérésen választjuk ki" },
+            { label: "Garancia", value: "gyártói jótállás + teljes körű helyi szerviz" },
+          ],
+        },
       },
       {
         name: "Stylish",
         positioning: "Kompakt dizájn",
+        summary: "Dizájnos prémium meglepően kis helyen.",
         description:
-          "Vékony, modern forma kiváló légáramlással és intelligens érzékelőkkel, WiFi-vezérléssel. Kompakt kültéri egység, tiszta levegőt adó szűrés – dizájnos prémium egy meglepően kis helyen.",
+          "Vékony, modern forma kiváló légáramlással, intelligens érzékelőkkel és WiFi-vezérléssel, kompakt kültéri egységgel.",
         features: ["Kompakt forma", "Érzékelős", "WiFi vezérlés", "Magas hatásfok"],
+        slug: "stylish",
+        detail: {
+          tagline: "Vékony, modern forma kiváló légáramlással",
+          overview:
+            "A Stylish vékony, modern formájú prémium modell kiváló légáramlással, intelligens érzékelőkkel és WiFi-vezérléssel. Kompakt kültéri egység, tiszta levegőt adó szűrés – prémium tudás egy meglepően kis helyen.",
+          highlights: [
+            { icon: "sparkles", title: "Kompakt dizájn", text: "Vékony, modern beltéri egység kis helyre is." },
+            { icon: "wind", title: "Kiváló légáramlás", text: "Erős, egyenletes légterelés a kompakt méret ellenére." },
+            { icon: "thermometer", title: "Intelligens érzékelők", text: "Célzott, energiatakarékos légterelés." },
+            { icon: "wifi", title: "WiFi vezérlés", text: "Daikin Onecta app, bárhonnan irányítható." },
+          ],
+          bestFor: ["Kisebb helyiségek", "Ahol kompakt kültéri egység kell", "Dizájnigényes, kisebb terek"],
+          specs: [
+            { label: "Kategória", value: "Kompakt dizájn" },
+            { label: "Technológia", value: "inverteres" },
+            { label: "Hűtőközeg", value: "R32 (környezetbarát)" },
+            { label: "WiFi", value: "gyárilag beépített" },
+            { label: "Kivitel", value: "vékony, kompakt beltéri és kültéri" },
+            { label: "Energiaosztály", value: "magas (akár A++)" },
+            { label: "Teljesítmény", value: "több méretben – a felmérésen választjuk ki" },
+            { label: "Garancia", value: "gyártói jótállás + teljes körű helyi szerviz" },
+          ],
+        },
       },
+    ],
+    video: {
+      id: "fu3_vt14sKE",
+      title: "Ismerje meg a Daikin Emura dizájnklímát",
+      text: "A Daikin hivatalos termékvideója a dizájnról és a technológiáról. Kérdése van egy adott modellről? Hívjon, segítünk a választásban.",
+    },
+    infoSections: [
+      {
+        icon: "gauge",
+        title: "Csúcskategóriás energiahatékonyság",
+        lead: "Alacsony rezsi, környezetbarát üzem.",
+        points: [
+          "Környezetbarát R32 hűtőközeg",
+          "Kiemelkedő energiahatékonyság a prémium modelleknél",
+          "Inverteres kompresszor a gazdaságos üzemért",
+        ],
+      },
+      {
+        icon: "wind",
+        title: "Coandă-effektus légterelés",
+        lead: "Huzatmentes, egyenletes komfort.",
+        points: [
+          "A levegőt a plafon mentén tereli szét",
+          "Nincs közvetlen, hideg légáram",
+          "Egyenletes hőmérséklet az egész szobában",
+        ],
+      },
+      {
+        icon: "sparkles",
+        title: "Flash Streamer légtisztítás",
+        lead: "Tisztább beltéri levegő a prémium modelleknél.",
+        points: [
+          "Lebontja a szagokat és szennyeződéseket",
+          "Allergéneket, penészt is kezel",
+          "Frissebb levegő egész évben",
+        ],
+      },
+      {
+        icon: "wifi",
+        title: "Daikin Onecta app + okosvezérlés",
+        lead: "Vezérelje a klímát telefonról, bárhonnan.",
+        points: [
+          "Ki-be, hőmérséklet, időzítés az appból",
+          "Okosotthon- és hangvezérlés-integráció",
+          "Energiafogyasztás követése",
+        ],
+      },
+      {
+        icon: "volume",
+        title: "Rendkívül halk üzem",
+        lead: "Alig hallható működés éjszaka is.",
+        points: [
+          "Kiemelkedően csendes beltéri egység",
+          "Halk kültéri működés",
+          "Hálószobába, gyerekszobába is ideális",
+        ],
+      },
+    ],
+    faq: [
+      { q: "Melyik Daikin modell a legjobb fűtésre?", a: "A Perfera kifejezetten erős fűtésre optimalizált: alacsony külső hőmérsékleten is hatékonyan fűt hőszivattyús üzemben. A pontos választást a felmérésen segítünk." },
+      { q: "Vezérelhető a Daikin klíma telefonról?", a: "Igen, a Daikin Onecta alkalmazással a WiFi-s modellek bárhonnan vezérelhetők, és okosotthon-rendszerbe is integrálhatók." },
+      { q: "Mi az a Flash Streamer?", a: "A Daikin saját légtisztító technológiája, amely lebontja a szagokat, allergéneket és szennyeződéseket – frissebb, tisztább beltéri levegőt adva." },
+      { q: "Milyen hűtőközeggel működnek a Daikin klímák?", a: "A jelenlegi Daikin készülékek a környezetbarát R32 hűtőközeggel üzemelnek." },
+      { q: "Mennyibe kerül egy Daikin klíma beszerelve?", a: "Az ár a modelltől, teljesítménytől és a beszerelés körülményeitől függ. Kérjen ingyenes felmérést és pontos árajánlatot – a kiszállás díjmentes." },
     ],
   },
   {
@@ -141,31 +328,194 @@ export const brandPages: Brand[] = [
       {
         name: "MSZ-HR",
         positioning: "Belépő modell",
+        summary: "Japán minőség kedvező áron.",
         description:
-          "Megbízható alapfelszereltségű készülék azoknak, akik a Mitsubishi minőségét kedvező áron keresik. Inverteres, gazdaságos üzem és a gyártó ismert tartóssága – jó minőségű belépő, ami sokáig szolgál.",
+          "Megbízható alapfelszereltség, inverteres gazdaságos üzem és a gyártó ismert tartóssága – jó minőségű belépő, ami sokáig szolgál.",
         features: ["Megbízható", "Kedvező ár", "Inverteres", "Halk"],
+        slug: "msz-hr",
+        detail: {
+          tagline: "Megbízható belépő a Mitsubishi Electric minőségbe",
+          overview:
+            "Az MSZ-HR a Mitsubishi Electric belépő modellje: megbízható alapfelszereltség azoknak, akik a japán minőséget kedvező áron keresik. Inverteres, gazdaságos üzem és a gyártó ismert tartóssága – jó minőségű belépő, ami sokáig szolgál.",
+          highlights: [
+            { icon: "piggybank", title: "Kedvező ár", text: "Japán minőség a legkedvezőbb belépő szinten." },
+            { icon: "shield", title: "Japán tartósság", text: "Precíz gyártás, hosszú, problémamentes élettartam." },
+            { icon: "gauge", title: "Inverteres, gazdaságos", text: "Alacsony fogyasztás, kiszámítható üzem." },
+            { icon: "volume", title: "Halk működés", text: "Csendes beltéri egység a mindennapokra." },
+          ],
+          bestFor: ["Első klíma megbízható minőséggel", "Lakás, hálószoba", "Aki tartós, halk klímát keres kedvező áron"],
+          specs: [
+            { label: "Kategória", value: "Belépő modell" },
+            { label: "Technológia", value: "inverteres" },
+            { label: "Hűtőközeg", value: "R32 (környezetbarát)" },
+            { label: "WiFi", value: "opcióként (MELCloud)" },
+            { label: "Fűtés", value: "hőszivattyús üzem" },
+            { label: "Energiaosztály", value: "jó" },
+            { label: "Teljesítmény", value: "több méretben – a felmérésen választjuk ki" },
+            { label: "Garancia", value: "gyártói jótállás + teljes körű helyi szerviz" },
+          ],
+        },
       },
       {
         name: "MSZ-AY",
         positioning: "Kényelmi széria",
+        summary: "Kiegyensúlyozott kényelem, jó téli fűtéssel.",
         description:
-          "Kiegyensúlyozott hatásfok és komfort továbbfejlesztett működéssel, csendes üzemmel és jó fűtési teljesítménnyel. WiFi-vel vezérelhető, kifinomult légterelés – a mindennapok megbízható kényelme.",
+          "Kiegyensúlyozott hatásfok és komfort csendes üzemmel, jó fűtési teljesítménnyel és WiFi-vezérléssel.",
         features: ["Jó hatásfok", "Csendes", "WiFi opció", "Jó téli fűtés"],
+        slug: "msz-ay",
+        detail: {
+          tagline: "A mindennapok megbízható kényelme, WiFi-vel",
+          overview:
+            "Az MSZ-AY kiegyensúlyozott hatásfokot és komfortot ad továbbfejlesztett működéssel, csendes üzemmel és jó fűtési teljesítménnyel. WiFi-vel vezérelhető, kifinomult légterelés – a mindennapok megbízható kényelme.",
+          highlights: [
+            { icon: "gauge", title: "Jó hatásfok", text: "Gazdaságos, kiegyensúlyozott üzem egész évben." },
+            { icon: "volume", title: "Csendes üzem", text: "Halk működés nappaliba és hálószobába." },
+            { icon: "wifi", title: "WiFi vezérlés", text: "MELCloud alkalmazás, bárhonnan irányítható." },
+            { icon: "flame", title: "Jó téli fűtés", text: "Megbízható hőszivattyús fűtés a hidegben is." },
+          ],
+          bestFor: ["Nappali, hálószoba", "Mindennapi kiegyensúlyozott komfort", "Aki jó fűtési teljesítményt is vár"],
+          specs: [
+            { label: "Kategória", value: "Kényelmi széria" },
+            { label: "Technológia", value: "inverteres" },
+            { label: "Hűtőközeg", value: "R32 (környezetbarát)" },
+            { label: "WiFi", value: "vezérelhető (MELCloud)" },
+            { label: "Fűtés", value: "hőszivattyús, jó teljesítmény" },
+            { label: "Energiaosztály", value: "jó (akár A++)" },
+            { label: "Teljesítmény", value: "több méretben – a felmérésen választjuk ki" },
+            { label: "Garancia", value: "gyártói jótállás + teljes körű helyi szerviz" },
+          ],
+        },
       },
       {
         name: "MSZ-LN Design",
         positioning: "Prémium dizájn",
+        summary: "Ahol a klíma a lakberendezés része.",
         description:
-          "Matt és fényes színekben elérhető dizájnmodell, érzékelővel vezérelt légtereléssel, fejlett szűréssel és csúcs energiaosztállyal. Ahol a klíma a lakberendezés része – prémium minőség és megjelenés együtt.",
+          "Matt és fényes színekben elérhető dizájnmodell érzékelős légtereléssel, Plasma Quad Plus szűréssel és csúcs energiaosztállyal.",
         features: ["Dizájn színek", "Érzékelős légterelés", "Csúcs hatásfok", "Fejlett szűrés"],
+        slug: "msz-ln",
+        detail: {
+          tagline: "Prémium dizájn színek, érzékelős légterelés, csúcs hatásfok",
+          overview:
+            "Az MSZ-LN Design a Mitsubishi Electric dizájn-zászlóshajója: matt és fényes színekben elérhető, érzékelővel vezérelt légtereléssel, Plasma Quad Plus szűréssel és csúcs energiaosztállyal. Ahol a klíma a lakberendezés része – prémium minőség és megjelenés együtt.",
+          highlights: [
+            { icon: "sparkles", title: "Prémium dizájn színek", text: "Matt és fényes kivitel, ami illeszkedik az otthonhoz." },
+            { icon: "thermometer", title: "Érzékelős légterelés", text: "A 3D érzékelő oda irányítja a levegőt, ahol vagy." },
+            { icon: "gauge", title: "Csúcs hatásfok", text: "Kiemelkedő energiaosztály, gazdaságos üzem." },
+            { icon: "flame", title: "Erős fűtés", text: "Alacsony hőmérsékleten is stabil hőszivattyús fűtés." },
+          ],
+          bestFor: ["Reprezentatív nappali", "Ahol a klíma dizájnelem is", "Aki csúcstudást és megjelenést is akar"],
+          specs: [
+            { label: "Kategória", value: "Prémium dizájn" },
+            { label: "Technológia", value: "inverteres" },
+            { label: "Hűtőközeg", value: "R32 (környezetbarát)" },
+            { label: "WiFi", value: "gyárilag beépített (MELCloud)" },
+            { label: "Szűrés", value: "Plasma Quad Plus" },
+            { label: "Energiaosztály", value: "csúcskategóriás" },
+            { label: "Teljesítmény", value: "több méretben – a felmérésen választjuk ki" },
+            { label: "Garancia", value: "gyártói jótállás + teljes körű helyi szerviz" },
+          ],
+          faq: [
+            { q: "Milyen színekben kapható az MSZ-LN?", a: "Matt és fényes kivitelben is elérhető, több színben, hogy dizájnelemként illeszkedjen az otthonához. A pontos elérhető színekben segítünk." },
+          ],
+        },
       },
       {
         name: "MSZ-EF Kirigamine Zen",
         positioning: "Dizájn prémium",
+        summary: "Csendben, feltűnésmentesen a legjobb.",
         description:
-          "Letisztult, lapos előlapú prémium modell, amely elegánsan illeszkedik a modern otthonokba. Nagyon halk üzem, magas energiaosztály és a Mitsubishi Electric precíz japán minősége – csendben, feltűnésmentesen a legjobb.",
+          "Letisztult, lapos előlapú prémium modell, nagyon halk üzemmel, magas energiaosztállyal és precíz japán minőséggel.",
         features: ["Elegáns lapos forma", "Nagyon halk", "Magas energiaosztály", "Japán minőség"],
+        slug: "msz-ef",
+        detail: {
+          tagline: "Letisztult, lapos prémium előlap, nagyon halk üzemmel",
+          overview:
+            "Az MSZ-EF Kirigamine Zen letisztult, lapos előlapú prémium modell, amely elegánsan illeszkedik a modern otthonokba. Nagyon halk üzem, magas energiaosztály és a Mitsubishi Electric precíz japán minősége – csendben, feltűnésmentesen a legjobb.",
+          highlights: [
+            { icon: "sparkles", title: "Elegáns lapos forma", text: "Letisztult előlap, ami észrevétlenül illeszkedik." },
+            { icon: "volume", title: "Nagyon halk", text: "A piac egyik legcsendesebb beltéri egysége." },
+            { icon: "gauge", title: "Magas energiaosztály", text: "Gazdaságos, kiemelkedő hatásfokú üzem." },
+            { icon: "shield", title: "Japán minőség", text: "Precíz gyártás, hosszú élettartam." },
+          ],
+          bestFor: ["Modern, letisztult otthon", "Hálószoba, ahol a csend fontos", "Aki elegáns, feltűnésmentes prémiumot keres"],
+          specs: [
+            { label: "Kategória", value: "Dizájn prémium" },
+            { label: "Technológia", value: "inverteres" },
+            { label: "Hűtőközeg", value: "R32 (környezetbarát)" },
+            { label: "WiFi", value: "opcióként (MELCloud)" },
+            { label: "Kivitel", value: "lapos, elegáns előlap" },
+            { label: "Energiaosztály", value: "magas (akár A++)" },
+            { label: "Teljesítmény", value: "több méretben – a felmérésen választjuk ki" },
+            { label: "Garancia", value: "gyártói jótállás + teljes körű helyi szerviz" },
+          ],
+        },
       },
+    ],
+    video: {
+      id: "jWfVjeJ3TNI",
+      title: "Mitsubishi Electric Kirigamine – prémium japán klíma",
+      text: "A Mitsubishi Electric hivatalos videója a Kirigamine dizájnszériáról és technológiáról. Kérdése van? Hívjon, segítünk a választásban.",
+    },
+    infoSections: [
+      {
+        icon: "shield",
+        title: "Precíz japán minőség",
+        lead: "Hosszú élettartam, kiszámítható működés.",
+        points: [
+          "Kiemelkedő gyártási minőség és tartósság",
+          "Megbízható, sok éves problémamentes üzem",
+          "Prémium anyagok, gondos összeszerelés",
+        ],
+      },
+      {
+        icon: "flame",
+        title: "Erős téli fűtés",
+        lead: "Hatékony hőszivattyús fűtés a hidegben is.",
+        points: [
+          "Alacsony külső hőmérsékleten is stabil",
+          "Gyors felfűtés",
+          "Klímafűtésre is kiválóan alkalmas",
+        ],
+      },
+      {
+        icon: "sparkles",
+        title: "Plasma Quad Plus szűrés",
+        lead: "Tisztább, egészségesebb beltéri levegő.",
+        points: [
+          "Port, pollent, baktériumot is megköt",
+          "Allergiásoknak jó választás",
+          "Frissebb levegő egész évben",
+        ],
+      },
+      {
+        icon: "thermometer",
+        title: "3D i-see érzékelő",
+        lead: "Érzékeli, hol tartózkodnak a lakók.",
+        points: [
+          "Célzott vagy kímélő légterelés",
+          "Energiatakarékos, ha üres a szoba",
+          "Egyenletes, huzatmentes hőérzet",
+        ],
+      },
+      {
+        icon: "wifi",
+        title: "MELCloud okosvezérlés",
+        lead: "Vezérelje a klímát telefonról, bárhonnan.",
+        points: [
+          "Ki-be, hőmérséklet, időzítés az appból",
+          "Okosotthon-integráció",
+          "Több egység egy alkalmazásban",
+        ],
+      },
+    ],
+    faq: [
+      { q: "Miért prémium árú a Mitsubishi Electric?", a: "A magasabb ár a precíz japán gyártásból és a hosszú élettartamból fakad – cserébe az egyik legmegbízhatóbb és legcsendesebb klímát adja, hosszú távon kiszámítható üzemmel." },
+      { q: "Alkalmas téli fűtésre?", a: "Igen, több modellje erős, alacsony külső hőmérsékleten is stabil fűtést ad hőszivattyús üzemben – klímafűtésre is kiválóan használható." },
+      { q: "Vezérelhető telefonról?", a: "Igen, a MELCloud alkalmazással a WiFi-s modellek bárhonnan vezérelhetők, és okosotthon-rendszerbe is integrálhatók." },
+      { q: "Mi az a Plasma Quad Plus?", a: "A Mitsubishi Electric fejlett légszűrő rendszere, amely port, pollent és baktériumokat is megköt – tisztább beltéri levegőért." },
+      { q: "Mennyibe kerül beszerelve?", a: "Az ár a modelltől, teljesítménytől és a beszerelés körülményeitől függ. Kérjen ingyenes felmérést és pontos árajánlatot – a kiszállás díjmentes." },
     ],
   },
   {
@@ -623,31 +973,194 @@ export const brandPages: Brand[] = [
       {
         name: "Standard Plus",
         positioning: "Kiváló ár-érték",
+        summary: "Népszerű, csendes, jó ár-értékű alapmodell.",
         description:
-          "Népszerű alapmodell Dual Inverter kompresszorral – csendes, gazdaságos, megbízható. Gyorsan eléri a kívánt hőmérsékletet, WiFi-vel vezérelhető, és tartós LG minőséget ad kedvező áron.",
+          "Dual Inverter kompresszor – csendes, gazdaságos, megbízható. Gyors hűtés, WiFi-vezérlés, tartós LG minőség kedvező áron.",
         features: ["Dual Inverter", "Csendes", "WiFi", "Jó ár-érték"],
+        slug: "standard-plus",
+        detail: {
+          tagline: "Dual Inverter kompresszor kedvező áron",
+          overview:
+            "Az LG Standard Plus népszerű alapmodell Dual Inverter kompresszorral: csendes, gazdaságos, megbízható. Gyorsan eléri a kívánt hőmérsékletet, WiFi-vel vezérelhető, és tartós LG minőséget ad kedvező áron.",
+          highlights: [
+            { icon: "gauge", title: "Dual Inverter", text: "Csendes, energiatakarékos, gyors hűtés – akár 10 év kompresszor garancia." },
+            { icon: "volume", title: "Csendes üzem", text: "Halk működés nappaliba és hálószobába." },
+            { icon: "wifi", title: "WiFi vezérlés", text: "LG ThinQ alkalmazás, bárhonnan irányítható." },
+            { icon: "piggybank", title: "Jó ár-érték", text: "Tartós LG minőség kedvező belépő áron." },
+          ],
+          bestFor: ["Első klíma jó ár-értékkel", "Lakás, nappali, hálószoba", "Aki csendes, gazdaságos klímát keres"],
+          specs: [
+            { label: "Kategória", value: "Kiváló ár-érték" },
+            { label: "Technológia", value: "Dual Inverter" },
+            { label: "Hűtőközeg", value: "R32 (környezetbarát)" },
+            { label: "WiFi", value: "gyárilag beépített (ThinQ)" },
+            { label: "Kompresszor garancia", value: "akár 10 év (gyártói feltételek szerint)" },
+            { label: "Energiaosztály", value: "jó (akár A++)" },
+            { label: "Teljesítmény", value: "több méretben – a felmérésen választjuk ki" },
+            { label: "Garancia", value: "gyártói jótállás + teljes körű helyi szerviz" },
+          ],
+        },
       },
       {
         name: "Silence",
         positioning: "Halk működés",
+        summary: "A nyugalom bajnoka – hálószobába ideális.",
         description:
-          "Extra csendes üzemre optimalizált modell azoknak, akiknek a nyugalom a legfontosabb – hálószobába, gyerekszobába ideális. Dual Inverter kompresszor, energiatakarékos működés és beépített WiFi.",
+          "Extra csendes üzemre optimalizált Dual Inverter modell, energiatakarékos működéssel és beépített WiFi-vel.",
         features: ["Extra halk", "Dual Inverter", "Energiatakarékos", "WiFi"],
+        slug: "silence",
+        detail: {
+          tagline: "Extra halk üzem Dual Inverterrel",
+          overview:
+            "Az LG Silence extra csendes üzemre optimalizált modell azoknak, akiknek a nyugalom a legfontosabb – hálószobába, gyerekszobába ideális. Dual Inverter kompresszor, energiatakarékos működés és beépített WiFi.",
+          highlights: [
+            { icon: "volume", title: "Extra halk", text: "Kifejezetten csendes üzem – éjszaka sem zavaró." },
+            { icon: "gauge", title: "Energiatakarékos", text: "Dual Inverter kompresszor – alacsony fogyasztás." },
+            { icon: "wifi", title: "Beépített WiFi", text: "LG ThinQ alkalmazás, bárhonnan irányítható." },
+            { icon: "snowflake", title: "Gyors hűtés", text: "Gyorsan eléri a kívánt hőmérsékletet." },
+          ],
+          bestFor: ["Hálószoba, gyerekszoba", "Ahol a csend a legfontosabb", "Aki halk, gazdaságos klímát keres"],
+          specs: [
+            { label: "Kategória", value: "Halk működés" },
+            { label: "Technológia", value: "Dual Inverter" },
+            { label: "Hűtőközeg", value: "R32 (környezetbarát)" },
+            { label: "WiFi", value: "gyárilag beépített (ThinQ)" },
+            { label: "Üzem", value: "extra halk" },
+            { label: "Kompresszor garancia", value: "akár 10 év (gyártói feltételek szerint)" },
+            { label: "Teljesítmény", value: "több méretben – a felmérésen választjuk ki" },
+            { label: "Garancia", value: "gyártói jótállás + teljes körű helyi szerviz" },
+          ],
+        },
       },
       {
         name: "Artcool",
         positioning: "Dizájn",
+        summary: "Dizájn és Dual Inverter tudás egyben.",
         description:
-          "Prémium megjelenésű dizájnmodell, amely stílusos elemként illeszkedik a lakásba. A látvány mögött Dual Inverter teljesítmény, magas hatásfok és teljes okosvezérlés áll – dizájn és tudás egyben.",
+          "Prémium megjelenésű dizájnmodell Dual Inverter teljesítménnyel, magas hatásfokkal és teljes okosvezérléssel.",
         features: ["Prémium dizájn", "Dual Inverter", "WiFi", "Magas hatásfok"],
+        slug: "artcool",
+        detail: {
+          tagline: "Prémium dizájnmodell teljes okosvezérléssel",
+          overview:
+            "Az LG Artcool prémium megjelenésű dizájnmodell, amely stílusos elemként illeszkedik a lakásba. A látvány mögött Dual Inverter teljesítmény, magas hatásfok és teljes okosvezérlés áll – dizájn és tudás egyben.",
+          highlights: [
+            { icon: "sparkles", title: "Prémium dizájn", text: "Stílusos elem, ami illeszkedik a lakás berendezéséhez." },
+            { icon: "gauge", title: "Dual Inverter", text: "Magas hatásfok, csendes, tartós működés." },
+            { icon: "wifi", title: "Teljes okosvezérlés", text: "LG ThinQ app és okosotthon-integráció." },
+            { icon: "snowflake", title: "Gyors hűtés", text: "Gyorsan eléri a kívánt hőmérsékletet." },
+          ],
+          bestFor: ["Reprezentatív nappali", "Ahol a klíma dizájnelem is", "Aki dizájnt és tudást is akar"],
+          specs: [
+            { label: "Kategória", value: "Dizájn" },
+            { label: "Technológia", value: "Dual Inverter" },
+            { label: "Hűtőközeg", value: "R32 (környezetbarát)" },
+            { label: "WiFi", value: "gyárilag beépített (ThinQ)" },
+            { label: "Kivitel", value: "prémium dizájn előlap" },
+            { label: "Kompresszor garancia", value: "akár 10 év (gyártói feltételek szerint)" },
+            { label: "Energiaosztály", value: "magas (akár A++)" },
+            { label: "Garancia", value: "gyártói jótállás + teljes körű helyi szerviz" },
+          ],
+        },
       },
       {
         name: "Dualcool Premium",
         positioning: "Prémium teljesítmény",
+        summary: "Csúcskategóriás LG erős fűtéssel, tiszta levegővel.",
         description:
-          "Erős hűtési és fűtési teljesítmény prémium felszereltséggel és tisztább levegőt adó megoldásokkal. Alacsony hőmérsékleten is hatékonyan fűt, halk és energiatakarékos – csúcskategóriás LG a mindennapokra.",
+          "Erős hűtés-fűtés prémium felszereltséggel és tisztább levegőt adó megoldásokkal, alacsony hőmérsékleten is hatékony fűtéssel.",
         features: ["Erős teljesítmény", "Erős téli fűtés", "Prémium", "Tiszta levegő"],
+        slug: "dualcool-premium",
+        detail: {
+          tagline: "Erős hűtés-fűtés, tisztább levegő, prémium felszereltség",
+          overview:
+            "Az LG Dualcool Premium erős hűtési és fűtési teljesítményt ad prémium felszereltséggel és tisztább levegőt adó megoldásokkal. Alacsony hőmérsékleten is hatékonyan fűt, halk és energiatakarékos – csúcskategóriás LG a mindennapokra.",
+          highlights: [
+            { icon: "flame", title: "Erős téli fűtés", text: "Alacsony külső hőmérsékleten is hatékony fűtés." },
+            { icon: "gauge", title: "Dual Inverter, csúcs hatásfok", text: "Erős teljesítmény, gazdaságos üzem." },
+            { icon: "sparkles", title: "Tisztább levegő", text: "Ionizátoros/légtisztító megoldások a prémium modellben." },
+            { icon: "wifi", title: "Okosvezérlés", text: "LG ThinQ app, bárhonnan irányítható." },
+          ],
+          bestFor: ["Klímafűtés fő vagy kiegészítő fűtésként", "Nagyobb terek", "Aki csúcstudást és tiszta levegőt akar"],
+          specs: [
+            { label: "Kategória", value: "Prémium teljesítmény" },
+            { label: "Technológia", value: "Dual Inverter" },
+            { label: "Hűtőközeg", value: "R32 (környezetbarát)" },
+            { label: "WiFi", value: "gyárilag beépített (ThinQ)" },
+            { label: "Fűtés", value: "erős, alacsony hőmérsékleten is stabil" },
+            { label: "Kompresszor garancia", value: "akár 10 év (gyártói feltételek szerint)" },
+            { label: "Energiaosztály", value: "csúcskategóriás" },
+            { label: "Garancia", value: "gyártói jótállás + teljes körű helyi szerviz" },
+          ],
+          faq: [
+            { q: "Jó a Dualcool Premium téli fűtésre?", a: "Igen, erős, alacsony külső hőmérsékleten is stabil fűtést ad hőszivattyús üzemben – klímafűtésre is kiválóan használható." },
+          ],
+        },
       },
+    ],
+    video: {
+      id: "eD1eVl8pv74",
+      title: "LG DUALCOOL – intelligens hűtés Dual Inverterrel",
+      text: "Az LG hivatalos videója a DUALCOOL szériáról és a Dual Inverter technológiáról. Kérdése van? Hívjon, segítünk a választásban.",
+    },
+    infoSections: [
+      {
+        icon: "gauge",
+        title: "Dual Inverter kompresszor",
+        lead: "Csendes, energiatakarékos, tartós.",
+        points: [
+          "Akár 10 év garancia a kompresszorra (gyártói feltételek szerint)",
+          "Jelentős energiamegtakarítás az inverter nélküli klímákhoz képest",
+          "Gyors hűtés és gyors felfűtés",
+        ],
+      },
+      {
+        icon: "volume",
+        title: "Halk működés",
+        lead: "Kifejezetten csendes üzem.",
+        points: [
+          "Alacsony zajszintre optimalizált beltéri egység",
+          "A Silence modell extra halk",
+          "Hálószobába, gyerekszobába is ideális",
+        ],
+      },
+      {
+        icon: "sparkles",
+        title: "Tisztább beltéri levegő",
+        lead: "Légtisztító megoldások a prémium modelleknél.",
+        points: [
+          "Megköti a port és szennyeződéseket",
+          "Frissebb, egészségesebb levegő",
+          "Allergiásoknak is jó választás",
+        ],
+      },
+      {
+        icon: "wifi",
+        title: "LG ThinQ okosvezérlés",
+        lead: "Vezérelje a klímát telefonról, bárhonnan.",
+        points: [
+          "Ki-be, hőmérséklet, időzítés az appból",
+          "Okosotthon- és hangvezérlés-integráció",
+          "Energiafogyasztás követése",
+        ],
+      },
+      {
+        icon: "flame",
+        title: "Hatékony téli fűtés",
+        lead: "Gazdaságos hőszivattyús fűtés a hidegben.",
+        points: [
+          "Alacsony külső hőmérsékleten is működik",
+          "Gyors felfűtés",
+          "A prémium modellek erős fűtésre optimalizáltak",
+        ],
+      },
+    ],
+    faq: [
+      { q: "Igaz, hogy 10 év garancia van a kompresszorra?", a: "Igen, az LG a Dual Inverter kompresszorra akár 10 év garanciát ad (a gyártói feltételek szerint) – ez a technológia tartósságát jelzi. A készülék többi részére a gyártói jótállás vonatkozik." },
+      { q: "Mit jelent a Dual Inverter?", a: "Az LG saját kompresszortechnológiája, amely a hőmérséklethez igazítja a fordulatszámot – így csendesebb, energiatakarékosabb, és gyorsabban éri el a kívánt hőmérsékletet." },
+      { q: "Melyik LG a legcsendesebb?", a: "A Silence modell kifejezetten extra halk üzemre optimalizált – hálószobába, gyerekszobába ideális." },
+      { q: "Vezérelhető telefonról?", a: "Igen, az LG ThinQ alkalmazással a WiFi-s modellek bárhonnan vezérelhetők, és okosotthon-rendszerbe is integrálhatók." },
+      { q: "Mennyibe kerül beszerelve?", a: "Az ár a modelltől, teljesítménytől és a beszerelés körülményeitől függ. Kérjen ingyenes felmérést és pontos árajánlatot – a kiszállás díjmentes." },
     ],
   },
   {
@@ -669,24 +1182,163 @@ export const brandPages: Brand[] = [
       {
         name: "TZ Compact",
         positioning: "Kedvező belépő",
+        summary: "A Panasonic minősége elérhető áron.",
         description:
-          "Jó ár-értékű, megbízható belépő modell a mindennapi hűtéshez és fűtéshez. Inverteres, gazdaságos üzem, halk működés és WiFi-vel bővíthető vezérlés – a Panasonic minősége elérhető áron.",
+          "Jó ár-értékű, megbízható belépő inverteres működéssel, halk üzemmel és WiFi-vel bővíthető vezérléssel.",
         features: ["Jó ár-érték", "Inverteres", "Megbízható", "WiFi opció"],
+        slug: "tz-compact",
+        detail: {
+          tagline: "Jó ár-értékű, megbízható belépő",
+          overview:
+            "A Panasonic TZ Compact jó ár-értékű, megbízható belépő modell a mindennapi hűtéshez és fűtéshez. Inverteres, gazdaságos üzem, halk működés és WiFi-vel bővíthető vezérlés – a Panasonic minősége elérhető áron.",
+          highlights: [
+            { icon: "piggybank", title: "Jó ár-érték", text: "A Panasonic bevált minősége kedvező belépő áron." },
+            { icon: "gauge", title: "Inverteres, gazdaságos", text: "Alacsony fogyasztás, kiszámítható üzem." },
+            { icon: "volume", title: "Halk működés", text: "Csendes beltéri egység a mindennapokra." },
+            { icon: "wifi", title: "WiFi opció", text: "Comfort Cloud alkalmazással bővíthető vezérlés." },
+          ],
+          bestFor: ["Első klíma kedvező áron", "Lakás, hálószoba", "Aki megbízható belépőt keres"],
+          specs: [
+            { label: "Kategória", value: "Kedvező belépő" },
+            { label: "Technológia", value: "inverteres" },
+            { label: "Hűtőközeg", value: "R32 (környezetbarát)" },
+            { label: "WiFi", value: "opcióként (Comfort Cloud)" },
+            { label: "Fűtés", value: "hőszivattyús üzem" },
+            { label: "Energiaosztály", value: "jó" },
+            { label: "Teljesítmény", value: "több méretben – a felmérésen választjuk ki" },
+            { label: "Garancia", value: "gyártói jótállás + teljes körű helyi szerviz" },
+          ],
+        },
       },
       {
         name: "Etherea (Z)",
         positioning: "Prémium, tiszta levegő",
+        summary: "Prémium csúcs nanoe™ X légtisztítással.",
         description:
-          "Prémium modell nanoe™ X levegőtisztítással, amely frissebb, tisztább beltéri levegőt ad – ideális allergiásoknak. Csúcs energiaosztály, nagyon halk üzem és elegáns, lapos megjelenés.",
+          "Prémium modell nanoe™ X levegőtisztítással, csúcs energiaosztállyal, nagyon halk üzemmel és elegáns, lapos megjelenéssel.",
         features: ["nanoe™ X légtisztítás", "Csúcs hatásfok", "Nagyon halk", "Elegáns dizájn"],
+        slug: "etherea",
+        detail: {
+          tagline: "Tiszta levegő, csúcs hatásfok, elegáns dizájn",
+          overview:
+            "A Panasonic Etherea (Z) prémium modell nanoe™ X levegőtisztítással, amely frissebb, tisztább beltéri levegőt ad – ideális allergiásoknak. Csúcs energiaosztály, nagyon halk üzem és elegáns, lapos megjelenés.",
+          highlights: [
+            { icon: "sparkles", title: "nanoe™ X légtisztítás", text: "Folyamatosan tisztább, egészségesebb beltéri levegő." },
+            { icon: "gauge", title: "Csúcs hatásfok", text: "Kiemelkedő energiaosztály, gazdaságos üzem." },
+            { icon: "volume", title: "Nagyon halk", text: "Kifinomult, csendes működés éjszaka is." },
+            { icon: "wind", title: "Aerowings légterelés", text: "Pontos, huzatmentes légáram a szobában." },
+          ],
+          bestFor: ["Allergiás vagy egészségtudatos családok", "Reprezentatív nappali, hálószoba", "Aki tiszta levegőt és csúcstudást akar"],
+          specs: [
+            { label: "Kategória", value: "Prémium, tiszta levegő" },
+            { label: "Technológia", value: "inverteres" },
+            { label: "Hűtőközeg", value: "R32 (környezetbarát)" },
+            { label: "WiFi", value: "gyárilag beépített (Comfort Cloud)" },
+            { label: "Légtisztítás", value: "nanoe™ X" },
+            { label: "Energiaosztály", value: "csúcskategóriás" },
+            { label: "Teljesítmény", value: "több méretben – a felmérésen választjuk ki" },
+            { label: "Garancia", value: "gyártói jótállás + teljes körű helyi szerviz" },
+          ],
+          faq: [
+            { q: "Miért jó allergiásoknak az Etherea?", a: "A nanoe™ X légtisztítás folyamatosan semlegesíti a szagokat, és kezeli az allergéneket, baktériumokat, penészt – tisztább, egészségesebb beltéri levegőt adva." },
+          ],
+        },
       },
       {
         name: "PZ",
         positioning: "Kényelmi széria",
+        summary: "Megbízható középkategória, jó fűtéssel.",
         description:
-          "Kiegyensúlyozott középkategóriás modell, amely jó egyensúlyt teremt az ár és a tudás között. Csendes, energiatakarékos működés, jó fűtési teljesítmény és WiFi-vezérelhetőség – a megbízható közép­kategória.",
+          "Kiegyensúlyozott középkategóriás modell csendes, energiatakarékos működéssel, jó fűtéssel és WiFi-vezérléssel.",
         features: ["Kiegyensúlyozott", "Csendes", "WiFi opció", "Jó fűtés"],
+        slug: "pz",
+        detail: {
+          tagline: "Kiegyensúlyozott ár és tudás",
+          overview:
+            "A Panasonic PZ kiegyensúlyozott középkategóriás modell, amely jó egyensúlyt teremt az ár és a tudás között. Csendes, energiatakarékos működés, jó fűtési teljesítmény és WiFi-vezérelhetőség – a megbízható középkategória.",
+          highlights: [
+            { icon: "gauge", title: "Jó hatásfok", text: "Gazdaságos, kiegyensúlyozott üzem egész évben." },
+            { icon: "volume", title: "Csendes üzem", text: "Halk működés nappaliba és hálószobába." },
+            { icon: "wifi", title: "WiFi vezérlés", text: "Comfort Cloud alkalmazás, bárhonnan irányítható." },
+            { icon: "flame", title: "Jó téli fűtés", text: "Megbízható hőszivattyús fűtés a hidegben is." },
+          ],
+          bestFor: ["Nappali, hálószoba", "Aki jó ár-tudás egyensúlyt keres", "Mindennapi megbízható komfort"],
+          specs: [
+            { label: "Kategória", value: "Kényelmi széria" },
+            { label: "Technológia", value: "inverteres" },
+            { label: "Hűtőközeg", value: "R32 (környezetbarát)" },
+            { label: "WiFi", value: "vezérelhető (Comfort Cloud)" },
+            { label: "Fűtés", value: "hőszivattyús, jó teljesítmény" },
+            { label: "Energiaosztály", value: "jó (akár A++)" },
+            { label: "Teljesítmény", value: "több méretben – a felmérésen választjuk ki" },
+            { label: "Garancia", value: "gyártói jótállás + teljes körű helyi szerviz" },
+          ],
+        },
       },
+    ],
+    video: {
+      id: "wufrW8NXEFs",
+      title: "Panasonic Etherea – nanoe™ X légtisztítás",
+      text: "A Panasonic hivatalos videója az Etherea szériáról és a nanoe™ X levegőtisztító technológiáról. Kérdése van? Hívjon, segítünk a választásban.",
+    },
+    infoSections: [
+      {
+        icon: "sparkles",
+        title: "nanoe™ X légtisztítás",
+        lead: "Folyamatosan tisztább beltéri levegő.",
+        points: [
+          "Semlegesíti a szagokat és allergéneket",
+          "Baktériumokat, penészt is kezel",
+          "Akkor is működik, ha a klíma nem hűt vagy fűt",
+        ],
+      },
+      {
+        icon: "wind",
+        title: "Aerowings kettős légterelő",
+        lead: "Pontos, huzatmentes légáram.",
+        points: [
+          "Két külön mozgó lamella",
+          "A levegőt oda irányítja, ahová kell",
+          "Nincs közvetlen hideg légáram",
+        ],
+      },
+      {
+        icon: "thermometer",
+        title: "Okos, energiatakarékos érzékelés",
+        lead: "Automatikusan spórol, ha nincs terhelés.",
+        points: [
+          "Érzékeli a mozgást és a napfényt",
+          "Visszaszabályoz, ha üres a szoba",
+          "Alacsonyabb rezsi",
+        ],
+      },
+      {
+        icon: "wifi",
+        title: "Comfort Cloud okosvezérlés",
+        lead: "Vezérelje a klímát telefonról, bárhonnan.",
+        points: [
+          "Ki-be, hőmérséklet, időzítés az appból",
+          "Okosotthon-integráció",
+          "Több egység egy alkalmazásban",
+        ],
+      },
+      {
+        icon: "leaf",
+        title: "R32 + jó hatásfok",
+        lead: "Környezetbarát, gazdaságos üzem.",
+        points: [
+          "Környezetbarát R32 hűtőközeg",
+          "Inverteres kompresszor a gazdaságos üzemért",
+          "Alacsony üzemköltség",
+        ],
+      },
+    ],
+    faq: [
+      { q: "Mi az a nanoe™ X?", a: "A Panasonic szabadalmaztatott légtisztító technológiája, amely hidroxil-gyököket használva folyamatosan tisztítja a levegőt: semlegesíti a szagokat, kezeli a baktériumokat, allergéneket, penészt – akkor is, ha a klíma épp nem hűt vagy fűt." },
+      { q: "Jó a Panasonic allergiásoknak?", a: "Igen, a nanoe™ X-es modellek kifejezetten ajánlottak allergiásoknak és egészségtudatos családoknak a tisztább beltéri levegő miatt." },
+      { q: "Vezérelhető telefonról?", a: "Igen, a Panasonic Comfort Cloud alkalmazással a WiFi-s modellek bárhonnan vezérelhetők, és okosotthon-rendszerbe is integrálhatók." },
+      { q: "Melyik a legjobb Panasonic modell?", a: "Az Etherea (Z) a prémium csúcs: nanoe™ X légtisztítás, csúcs energiaosztály és nagyon halk üzem. A pontos választást a felmérésen segítjük." },
+      { q: "Mennyibe kerül beszerelve?", a: "Az ár a modelltől, teljesítménytől és a beszerelés körülményeitől függ. Kérjen ingyenes felmérést és pontos árajánlatot – a kiszállás díjmentes." },
     ],
   },
   {
@@ -708,24 +1360,150 @@ export const brandPages: Brand[] = [
       {
         name: "Q-Smart Plus",
         positioning: "Népszerű okos modell",
+        summary: "Verhetetlen ár-értékű okosklíma.",
         description:
-          "Kedvező árú, jól felszerelt modell beépített WiFi-vel és jó hatásfokkal – a mindennapi kényelemért. Inverteres, R32-es működés, megbízható hűtés-fűtés hőszivattyús üzemben, verhetetlen ár-érték aránnyal.",
+          "Beépített WiFi, jó hatásfok, inverteres R32-es működés és megbízható hűtés-fűtés hőszivattyús üzemben – kedvező áron.",
         features: ["Beépített WiFi", "Inverteres, R32", "Jó hatásfok", "Kedvező ár"],
+        slug: "q-smart-plus",
+        detail: {
+          tagline: "Beépített WiFi, jó hatásfok, kedvező ár",
+          overview:
+            "Az AUX Q-Smart Plus kedvező árú, jól felszerelt modell beépített WiFi-vel és jó hatásfokkal. Inverteres, R32-es működés, megbízható hűtés-fűtés hőszivattyús üzemben, verhetetlen ár-érték aránnyal – a mindennapi kényelemért.",
+          highlights: [
+            { icon: "wifi", title: "Beépített WiFi", text: "Okostelefonról, ingyenes alkalmazással vezérelhető." },
+            { icon: "leaf", title: "Inverteres, R32", text: "Környezetbarát hűtőközeg, gazdaságos üzem." },
+            { icon: "gauge", title: "Jó hatásfok", text: "Energiatakarékos működés, alacsony rezsi." },
+            { icon: "piggybank", title: "Kedvező ár", text: "Modern felszereltség verhetetlen ár-érték aránnyal." },
+          ],
+          bestFor: ["Első okosklíma kedvező áron", "Lakás, nappali, hálószoba", "Aki modern felszereltséget akar olcsón"],
+          specs: [
+            { label: "Kategória", value: "Népszerű okos modell" },
+            { label: "Technológia", value: "inverteres" },
+            { label: "Hűtőközeg", value: "R32 (környezetbarát)" },
+            { label: "WiFi", value: "gyárilag beépített" },
+            { label: "Fűtés", value: "hőszivattyús üzem" },
+            { label: "Energiaosztály", value: "jó" },
+            { label: "Teljesítmény", value: "több méretben – a felmérésen választjuk ki" },
+            { label: "Garancia", value: "gyártói jótállás + teljes körű helyi szerviz" },
+          ],
+        },
       },
       {
         name: "Freedom",
         positioning: "Kényelmi széria",
+        summary: "Kiegyensúlyozott komfort, jó téli fűtéssel.",
         description:
-          "Kiegyensúlyozott hűtés-fűtés megbízható inverteres működéssel és csendes üzemmel. Jó fűtési teljesítmény télen is, WiFi-vel bővíthető okosvezérlés – kényelmes és gazdaságos a mindennapokra.",
+          "Kiegyensúlyozott hűtés-fűtés megbízható inverteres működéssel, csendes üzemmel és WiFi-vel bővíthető okosvezérléssel.",
         features: ["Inverter", "Csendes", "Jó téli fűtés", "WiFi opció"],
+        slug: "freedom",
+        detail: {
+          tagline: "Megbízható kényelem, WiFi-vel bővíthető",
+          overview:
+            "Az AUX Freedom kiegyensúlyozott hűtés-fűtést ad megbízható inverteres működéssel és csendes üzemmel. Jó fűtési teljesítmény télen is, WiFi-vel bővíthető okosvezérlés – kényelmes és gazdaságos a mindennapokra.",
+          highlights: [
+            { icon: "gauge", title: "Inverteres, gazdaságos", text: "Alacsony fogyasztás, kiszámítható üzem." },
+            { icon: "volume", title: "Csendes üzem", text: "Halk működés nappaliba és hálószobába." },
+            { icon: "flame", title: "Jó téli fűtés", text: "Megbízható hőszivattyús fűtés a hidegben is." },
+            { icon: "wifi", title: "WiFi opció", text: "Okosvezérléssel bővíthető, bárhonnan irányítható." },
+          ],
+          bestFor: ["Nappali, hálószoba", "Mindennapi kiegyensúlyozott komfort", "Aki jó téli fűtést is vár"],
+          specs: [
+            { label: "Kategória", value: "Kényelmi széria" },
+            { label: "Technológia", value: "inverteres" },
+            { label: "Hűtőközeg", value: "R32 (környezetbarát)" },
+            { label: "WiFi", value: "opcióként bővíthető" },
+            { label: "Fűtés", value: "hőszivattyús, jó teljesítmény" },
+            { label: "Energiaosztály", value: "jó" },
+            { label: "Teljesítmény", value: "több méretben – a felmérésen választjuk ki" },
+            { label: "Garancia", value: "gyártói jótállás + teljes körű helyi szerviz" },
+          ],
+        },
       },
       {
         name: "J-Smart",
         positioning: "Dizájn kényelem",
+        summary: "Dizájnos okosklíma, ami nem terheli a pénztárcát.",
         description:
-          "Letisztult megjelenés, okos vezérlés és jó energiaosztály egy elérhető árú készülékben. Halk, energiatakarékos üzem és beépített WiFi – dizájnos okosklíma, ami nem terheli meg a pénztárcát.",
+          "Letisztult megjelenés, okos vezérlés és jó energiaosztály elérhető áron, halk üzemmel és beépített WiFi-vel.",
         features: ["Dizájnos", "Okos vezérlés, WiFi", "Energiatakarékos", "Halk"],
+        slug: "j-smart",
+        detail: {
+          tagline: "Letisztult dizájn, okos vezérlés, jó energiaosztály",
+          overview:
+            "Az AUX J-Smart letisztult megjelenést, okos vezérlést és jó energiaosztályt ad egy elérhető árú készülékben. Halk, energiatakarékos üzem és beépített WiFi – dizájnos okosklíma, ami nem terheli meg a pénztárcát.",
+          highlights: [
+            { icon: "sparkles", title: "Dizájnos megjelenés", text: "Letisztult előlap, ami illeszkedik a modern otthonhoz." },
+            { icon: "wifi", title: "Okos vezérlés, WiFi", text: "Beépített WiFi, telefonról bárhonnan irányítható." },
+            { icon: "gauge", title: "Energiatakarékos", text: "Jó energiaosztály, gazdaságos üzem." },
+            { icon: "volume", title: "Halk működés", text: "Csendes beltéri egység a mindennapokra." },
+          ],
+          bestFor: ["Ahol a megjelenés is számít", "Modern lakás, hálószoba", "Aki dizájnt és okos funkciókat akar olcsón"],
+          specs: [
+            { label: "Kategória", value: "Dizájn kényelem" },
+            { label: "Technológia", value: "inverteres" },
+            { label: "Hűtőközeg", value: "R32 (környezetbarát)" },
+            { label: "WiFi", value: "gyárilag beépített" },
+            { label: "Kivitel", value: "letisztult, dizájnos előlap" },
+            { label: "Energiaosztály", value: "jó" },
+            { label: "Teljesítmény", value: "több méretben – a felmérésen választjuk ki" },
+            { label: "Garancia", value: "gyártói jótállás + teljes körű helyi szerviz" },
+          ],
+        },
       },
+    ],
+    video: {
+      id: "u_sA544tosI",
+      title: "AUX Delta – H-tarifás okosklíma bemutató",
+      text: "Bemutatóvideó az AUX Delta szériáról és a H-tarifás fűtési megtakarításról. Kérdése van? Hívjon, segítünk a választásban.",
+    },
+    infoSections: [
+      {
+        icon: "piggybank",
+        title: "Verhetetlen ár-érték",
+        lead: "Prémium tudás a legkedvezőbb áron.",
+        points: [
+          "A világ egyik legnagyobb klímagyártója",
+          "Számos ismert márka OEM-beszállítója",
+          "Modern felszereltség márkafelár nélkül",
+        ],
+      },
+      {
+        icon: "flame",
+        title: "H-tarifás modellek – téli megtakarítás",
+        lead: "Kedvezményes fűtési árammal olcsóbb fűtés.",
+        points: [
+          "H-tarifás készülékek elérhetők",
+          "Kedvezményes áram a fűtési szezonban",
+          "Az igénylésben és ügyintézésben segítünk",
+        ],
+      },
+      {
+        icon: "wifi",
+        title: "Okosvezérlés alkalmazással",
+        lead: "Vezérelje a klímát telefonról, bárhonnan.",
+        points: [
+          "Beépített WiFi a legtöbb modellnél",
+          "Ki-be, hőmérséklet, időzítés az appból",
+          "Okosotthon-integráció",
+        ],
+      },
+      {
+        icon: "leaf",
+        title: "Inverteres, R32",
+        lead: "Környezetbarát, gazdaságos üzem.",
+        points: [
+          "Környezetbarát R32 hűtőközeg",
+          "Inverteres kompresszor a gazdaságos üzemért",
+          "Megbízható hűtés és fűtés hőszivattyús üzemben",
+        ],
+      },
+    ],
+    faq: [
+      { q: "Miért ilyen kedvező az AUX ára?", a: "Az AUX a világ egyik legnagyobb klímagyártója, amely számos ismert márkának is beszállítója. A saját készülékei ugyanazt a modern, inverteres technológiát adják, csak márkafelár nélkül – ezért verhetetlen az ár-érték arányuk." },
+      { q: "Mi az a H-tarifa?", a: "Kedvezményes elektromos fűtési tarifa. A H-tarifás AUX modellekkel a fűtési szezonban jelentősen csökkenthető a fűtésre fordított áram költsége – az igénylésben segítünk." },
+      { q: "Vezérelhető telefonról?", a: "Igen, a WiFi-s AUX modellek okostelefonról, ingyenes alkalmazással bárhonnan vezérelhetők, és okosotthon-rendszerbe is integrálhatók." },
+      { q: "Megbízhatók az AUX klímák?", a: "Igen. Az AUX hatalmas gyártói háttérrel és modern, inverteres technológiával dolgozik – mi pedig szakszerűen telepítjük és karbantartjuk, garanciával és számlával." },
+      { q: "Mennyibe kerül beszerelve?", a: "Az ár a modelltől, teljesítménytől és a beszerelés körülményeitől függ. Kérjen ingyenes felmérést és pontos árajánlatot – a kiszállás díjmentes." },
     ],
     photos: [
       { src: "/photos/belteri-aux-halo.jpg", alt: "Beszerelt AUX beltéri klíma egység hálószobában" },
@@ -751,17 +1529,118 @@ export const brandPages: Brand[] = [
       {
         name: "Comfort Inverter",
         positioning: "Kedvező kényelmi",
+        summary: "Kiváló belépő az inverteres klímákhoz.",
         description:
-          "Megfizethető, inverteres modell, amely gazdaságos hűtést és fűtést nyújt a mindennapokra. Halk működés, egyszerű kezelés és megbízható alaptechnika – kiváló belépő az inverteres klímák világába kedvező áron.",
+          "Megfizethető inverteres modell, gazdaságos hűtés-fűtéssel, halk működéssel és egyszerű kezeléssel.",
         features: ["Inverter", "Gazdaságos", "Halk", "Kedvező ár"],
+        slug: "comfort-inverter",
+        detail: {
+          tagline: "Megfizethető inverteres hűtés-fűtés a mindennapokra",
+          overview:
+            "A Polár Comfort Inverter megfizethető, inverteres modell, amely gazdaságos hűtést és fűtést nyújt a mindennapokra. Halk működés, egyszerű kezelés és megbízható alaptechnika – kiváló belépő az inverteres klímák világába kedvező áron.",
+          highlights: [
+            { icon: "gauge", title: "Inverteres, gazdaságos", text: "Alacsony fogyasztás, kiszámítható üzem." },
+            { icon: "volume", title: "Halk működés", text: "Csendes beltéri egység a mindennapokra." },
+            { icon: "leaf", title: "R32 hűtőközeg", text: "Környezetbarát gáz, jó energiahatékonyság." },
+            { icon: "piggybank", title: "Kedvező ár", text: "Kiváló belépő az inverteres klímák világába." },
+          ],
+          bestFor: ["Első inverteres klíma kedvező áron", "Lakás, hálószoba", "Aki gazdaságos, egyszerű klímát keres"],
+          specs: [
+            { label: "Kategória", value: "Kedvező kényelmi" },
+            { label: "Technológia", value: "inverteres" },
+            { label: "Hűtőközeg", value: "R32 (környezetbarát)" },
+            { label: "WiFi", value: "opcióként" },
+            { label: "Fűtés", value: "hőszivattyús üzem" },
+            { label: "Energiaosztály", value: "jó" },
+            { label: "Teljesítmény", value: "több méretben – a felmérésen választjuk ki" },
+            { label: "Garancia", value: "gyártói jótállás + teljes körű helyi szerviz" },
+          ],
+        },
       },
       {
         name: "Standard",
         positioning: "Egyszerű belépő",
+        summary: "A leggyorsabb út egy jó minőségű hűtéshez.",
         description:
-          "Letisztult, megbízható belépő klíma azoknak, akiknek a jó alapfunkciók a fontosak. Egyszerű, tartós felépítés és megfizethető ár – a leggyorsabb út egy hatékony, jó minőségű hűtéshez.",
+          "Letisztult, megbízható belépő klíma jó alapfunkciókkal, egyszerű, tartós felépítéssel és megfizethető árral.",
         features: ["Egyszerű", "Megbízható", "Hatékony hűtés", "Kedvező ár"],
+        slug: "standard",
+        detail: {
+          tagline: "Egyszerű, megbízható belépő klíma",
+          overview:
+            "A Polár Standard letisztult, megbízható belépő klíma azoknak, akiknek a jó alapfunkciók a fontosak. Egyszerű, tartós felépítés és megfizethető ár – a leggyorsabb út egy hatékony, jó minőségű hűtéshez.",
+          highlights: [
+            { icon: "piggybank", title: "Legkedvezőbb ár", text: "A leggyorsabb út egy jó minőségű klímához." },
+            { icon: "shield", title: "Megbízható, tartós", text: "Egyszerű, bevált felépítés, hosszú élettartam." },
+            { icon: "snowflake", title: "Hatékony hűtés", text: "Gyors, megbízható hűtés a mindennapokra." },
+            { icon: "volume", title: "Egyszerű kezelés", text: "Letisztult, könnyen kezelhető működés." },
+          ],
+          bestFor: ["Kisebb helyiségek, hálószoba", "Aki a legkedvezőbb áron akar klímát", "Egyszerű, problémamentes megoldás"],
+          specs: [
+            { label: "Kategória", value: "Egyszerű belépő" },
+            { label: "Technológia", value: "egyszerű, bevált alaptechnika" },
+            { label: "Hűtőközeg", value: "R32 (környezetbarát)" },
+            { label: "WiFi", value: "opcióként" },
+            { label: "Hűtés-fűtés", value: "hatékony, megbízható" },
+            { label: "Energiaosztály", value: "jó" },
+            { label: "Teljesítmény", value: "több méretben – a felmérésen választjuk ki" },
+            { label: "Garancia", value: "gyártói jótállás + teljes körű helyi szerviz" },
+          ],
+        },
       },
+    ],
+    video: {
+      id: "wj-wMRKPvq0",
+      title: "Ismerd meg a POLAR klímákat",
+      text: "A Polár hivatalos bemutatóvideója a klímákról. Kérdése van egy modellel kapcsolatban? Hívjon, segítünk a választásban.",
+    },
+    infoSections: [
+      {
+        icon: "piggybank",
+        title: "Elérhető ár, kedvező belépő",
+        lead: "A legjobb út egy jó klímához olcsón.",
+        points: [
+          "Megfizethető inverteres modellek",
+          "Jó minőség márkafelár nélkül",
+          "Gyors, egyszerű beszerelés",
+        ],
+      },
+      {
+        icon: "leaf",
+        title: "Inverteres, R32",
+        lead: "Gazdaságos, környezetbarát üzem.",
+        points: [
+          "Környezetbarát R32 hűtőközeg",
+          "Inverteres kompresszor a spórolásért",
+          "Alacsony üzemköltség",
+        ],
+      },
+      {
+        icon: "volume",
+        title: "Halk, egyszerű kezelés",
+        lead: "Csendes működés, könnyű vezérlés.",
+        points: [
+          "Halk beltéri egység",
+          "Egyszerű, letisztult kezelés",
+          "WiFi-vel bővíthető több modellnél",
+        ],
+      },
+      {
+        icon: "shield",
+        title: "Teljes körű helyi szerviz és garancia",
+        lead: "Telepítés, karbantartás, garancia egy helyen.",
+        points: [
+          "Szakszerű beszerelés és beüzemelés",
+          "Rendszeres karbantartás",
+          "Garanciális ügyintézés helyben",
+        ],
+      },
+    ],
+    faq: [
+      { q: "Megbízhatók a Polár klímák?", a: "Igen. A Polár klímák egyszerű, bevált technikára épülnek, és jó ár-érték arányt adnak. Mi pedig szakszerűen telepítjük, beüzemeljük és karbantartjuk őket, garanciával és számlával." },
+      { q: "Van inverteres Polár modell?", a: "Igen, a Comfort Inverter gazdaságos inverteres hűtést és fűtést ad – kiváló belépő az inverteres klímák világába kedvező áron." },
+      { q: "Milyen hűtőközeggel működnek?", a: "A jelenlegi Polár készülékek a környezetbarát R32 hűtőközeggel üzemelnek." },
+      { q: "Mennyibe kerül beszerelve?", a: "Az ár a modelltől, teljesítménytől és a beszerelés körülményeitől függ. Kérjen ingyenes felmérést és pontos árajánlatot – a kiszállás díjmentes." },
     ],
     photos: [
       { src: "/photos/belteri-polar-nappali.jpg", alt: "Beszerelt Polár beltéri klíma egység nappaliban" },
