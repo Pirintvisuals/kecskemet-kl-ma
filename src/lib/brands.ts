@@ -233,7 +233,7 @@ export const brandPages: Brand[] = [
       ],
     },
     intro:
-      "A Gree a világ legnagyobb klímagyártója, amely évente több tízmillió készüléket állít elő – a kedvező árú, mégis kiválóan felszerelt modelljei miatt Magyarországon is az egyik legnépszerűbb választás. Több modellje kimagasló fűtési teljesítményt nyújt hőszivattyús üzemben, így egész évben gazdaságos. A legnagyobb előnye azonban a nyugalom: a prémium Gree klímákra a feltételek teljesülése esetén akár 10 év garancia is igényelhető – mi pedig hivatalos szakszervizként végig a partnerei maradunk a telepítéstől a karbantartáson át a garanciális ügyintézésig.",
+      "A Gree a világ legnagyobb klímagyártója: kedvező árú, mégis kiválóan felszerelt modelljei miatt itthon is az egyik legnépszerűbb választás. Több modellje kimagasló hőszivattyús fűtést ad, így egész évben gazdaságos – mi pedig hivatalos szakszervizként a telepítéstől a garanciális ügyintézésig végig a partnerei maradunk.",
     strengths: [
       "Akár 10 év garancia a prémium Gree klímákra (a feltételek teljesülése esetén)",
       "Kiváló ár-érték arány – prémium tudás elérhető áron",
@@ -471,8 +471,9 @@ export const brandPages: Brand[] = [
       {
         name: "Clivia",
         positioning: "Prémium dizájn",
+        summary: "Ha a klíma dizájnelem is a lakásban.",
         description:
-          "Fém hatású, exkluzív előlapú prémium Gree modell erős teljesítménnyel – ha a klíma dizájnelem is a lakásban. Csúcskategóriás anyaghasználat, kifinomult, halk működés, magas energiaosztály és teljes okosvezérlés WiFi-n keresztül. A Gree kínálatának dizájn-zászlóshajója.",
+          "Fém hatású, exkluzív előlap, csúcskategóriás anyaghasználat és erős teljesítmény – a Gree dizájn-zászlóshajója.",
         features: ["Prémium fém dizájn", "Erős teljesítmény", "Csúcs energiaosztály", "Okosvezérlés WiFi-vel"],
         slug: "clivia",
         detail: {

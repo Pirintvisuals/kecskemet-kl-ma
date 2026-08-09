@@ -526,7 +526,10 @@ export default async function BrandPage({
           <div className="mt-14 grid gap-5 sm:grid-cols-2 md:grid-cols-3">
             {b.models.map((m, i) => (
               <Reveal key={m.name} delay={(i % 3) * 0.08}>
-                <div className="group flex h-full flex-col rounded-3xl border border-white/8 bg-navy-800/50 p-5 sm:p-7 transition-all duration-300 hover:-translate-y-1 hover:bg-navy-800/80">
+                <a
+                  href={m.slug ? `/klimak/${b.slug}/${m.slug}/` : "/kapcsolat/"}
+                  className="group flex h-full flex-col rounded-3xl border border-white/8 bg-navy-800/50 p-5 sm:p-7 transition-all duration-300 hover:-translate-y-1 hover:bg-navy-800/80 cursor-pointer"
+                >
                   <div className="flex items-center justify-between gap-3">
                     <h3 className="font-display text-2xl font-bold text-white">
                       {b.name} {m.name}
@@ -543,9 +546,6 @@ export default async function BrandPage({
                       {m.summary}
                     </p>
                   )}
-                  <p className="mt-2 flex-1 text-sm leading-relaxed text-muted">
-                    {m.description}
-                  </p>
                   <ul className="mt-5 flex flex-wrap gap-2">
                     {m.features.map((f) => (
                       <li
@@ -556,15 +556,14 @@ export default async function BrandPage({
                       </li>
                     ))}
                   </ul>
-                  <a
-                    href={m.slug ? `/klimak/${b.slug}/${m.slug}/` : "/kapcsolat/"}
-                    className="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold transition-colors"
+                  <span
+                    className="mt-auto inline-flex items-center gap-1.5 pt-6 text-sm font-semibold transition-colors"
                     style={{ color: accent }}
                   >
                     {m.slug ? "Részletek erről a típusról" : "Érdeklődöm erről a típusról"}
                     <ArrowRight className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
-                  </a>
-                </div>
+                  </span>
+                </a>
               </Reveal>
             ))}
           </div>
