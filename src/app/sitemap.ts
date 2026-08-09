@@ -15,6 +15,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/rolunk",
     "/kapcsolat",
     "/klimak",
+    "/blog",
     "/impresszum",
     "/adatkezeles",
   ];

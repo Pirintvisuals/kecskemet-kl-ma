@@ -1,0 +1,16 @@
+# Kecskemét Klíma – Blog (Apache / cPanel)
+Options -Indexes
+DirectoryIndex index.php
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /blog/
+
+    # Valós fájl vagy mappa marad érintetlen
+    RewriteCond %{REQUEST_FILENAME} -f [OR]
+    RewriteCond %{REQUEST_FILENAME} -d
+    RewriteRule ^ - [L]
+
+    # Szép bejegyzés-URL: /blog/bejegyzes/{slug}/ -> post.php?slug={slug}
+    RewriteRule ^bejegyzes/([a-z0-9-]+)/?$ post.php?slug=$1 [L,QSA]
+</IfModule>

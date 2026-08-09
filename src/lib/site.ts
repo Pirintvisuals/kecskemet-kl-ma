@@ -670,6 +670,7 @@ export const navLinks = [
   { href: "/klimak/", label: "Márkák" },
   { href: "/rolunk/", label: "Rólunk" },
   { href: "/gyik/", label: "GYIK" },
+  { href: "/blog/", label: "Blog" },
   { href: "/kapcsolat/", label: "Kapcsolat & foglalás" },
 ];
 
@@ -680,5 +681,6 @@ export const footerLinks = [
   { href: "/rolunk/", label: "Rólunk" },
   { href: "/hol-dolgozunk/", label: "Hol dolgozunk" },
   { href: "/gyik/", label: "GYIK" },
+  { href: "/blog/", label: "Blog" },
   { href: "/kapcsolat/", label: "Kapcsolat & foglalás" },
 ];
