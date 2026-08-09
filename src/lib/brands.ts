@@ -1512,13 +1512,13 @@ export const brandPages: Brand[] = [
   },
   {
     slug: "polar",
-    name: "Polár",
+    name: "Polar",
     logo: "/brands/polar.png",
     accent: "#2563EB",
     tagline: "Elérhető árú, megbízható klímák a mindennapokra",
-    metaTitle: "Polár klímák Kecskeméten – telepítés és szerviz | Kecskemét Klíma",
+    metaTitle: "Polar klímák Kecskeméten – telepítés és szerviz | Kecskemét Klíma",
     intro:
-      "A Polár klímák a jó ár-érték arányukról és egyszerű, megbízható működésükről ismertek. Kiváló választás, ha megfizethető áron szeretne hatékony hűtést és fűtést – mi pedig szakszerűen telepítjük, beüzemeljük és karbantartjuk a készülékeket, garanciával és számlával.",
+      "A Polar klímák a jó ár-érték arányukról és egyszerű, megbízható működésükről ismertek. Kiváló választás, ha megfizethető áron szeretne hatékony hűtést és fűtést – mi pedig szakszerűen telepítjük, beüzemeljük és karbantartjuk a készülékeket, garanciával és számlával.",
     strengths: [
       "Elérhető ár, kedvező belépő a klímavilágba",
       "Egyszerű, megbízható működés",
@@ -1537,7 +1537,7 @@ export const brandPages: Brand[] = [
         detail: {
           tagline: "Megfizethető inverteres hűtés-fűtés a mindennapokra",
           overview:
-            "A Polár Comfort Inverter megfizethető, inverteres modell, amely gazdaságos hűtést és fűtést nyújt a mindennapokra. Halk működés, egyszerű kezelés és megbízható alaptechnika – kiváló belépő az inverteres klímák világába kedvező áron.",
+            "A Polar Comfort Inverter megfizethető, inverteres modell, amely gazdaságos hűtést és fűtést nyújt a mindennapokra. Halk működés, egyszerű kezelés és megbízható alaptechnika – kiváló belépő az inverteres klímák világába kedvező áron.",
           highlights: [
             { icon: "gauge", title: "Inverteres, gazdaságos", text: "Alacsony fogyasztás, kiszámítható üzem." },
             { icon: "volume", title: "Halk működés", text: "Csendes beltéri egység a mindennapokra." },
@@ -1568,7 +1568,7 @@ export const brandPages: Brand[] = [
         detail: {
           tagline: "Egyszerű, megbízható belépő klíma",
           overview:
-            "A Polár Standard letisztult, megbízható belépő klíma azoknak, akiknek a jó alapfunkciók a fontosak. Egyszerű, tartós felépítés és megfizethető ár – a leggyorsabb út egy hatékony, jó minőségű hűtéshez.",
+            "A Polar Standard letisztult, megbízható belépő klíma azoknak, akiknek a jó alapfunkciók a fontosak. Egyszerű, tartós felépítés és megfizethető ár – a leggyorsabb út egy hatékony, jó minőségű hűtéshez.",
           highlights: [
             { icon: "piggybank", title: "Legkedvezőbb ár", text: "A leggyorsabb út egy jó minőségű klímához." },
             { icon: "shield", title: "Megbízható, tartós", text: "Egyszerű, bevált felépítés, hosszú élettartam." },
@@ -1592,7 +1592,7 @@ export const brandPages: Brand[] = [
     video: {
       id: "wj-wMRKPvq0",
       title: "Ismerd meg a POLAR klímákat",
-      text: "A Polár hivatalos bemutatóvideója a klímákról. Kérdése van egy modellel kapcsolatban? Hívjon, segítünk a választásban.",
+      text: "A Polar hivatalos bemutatóvideója a klímákról. Kérdése van egy modellel kapcsolatban? Hívjon, segítünk a választásban.",
     },
     infoSections: [
       {
@@ -1637,14 +1637,14 @@ export const brandPages: Brand[] = [
       },
     ],
     faq: [
-      { q: "Megbízhatók a Polár klímák?", a: "Igen. A Polár klímák egyszerű, bevált technikára épülnek, és jó ár-érték arányt adnak. Mi pedig szakszerűen telepítjük, beüzemeljük és karbantartjuk őket, garanciával és számlával." },
-      { q: "Van inverteres Polár modell?", a: "Igen, a Comfort Inverter gazdaságos inverteres hűtést és fűtést ad – kiváló belépő az inverteres klímák világába kedvező áron." },
-      { q: "Milyen hűtőközeggel működnek?", a: "A jelenlegi Polár készülékek a környezetbarát R32 hűtőközeggel üzemelnek." },
+      { q: "Megbízhatók a Polar klímák?", a: "Igen. A Polar klímák egyszerű, bevált technikára épülnek, és jó ár-érték arányt adnak. Mi pedig szakszerűen telepítjük, beüzemeljük és karbantartjuk őket, garanciával és számlával." },
+      { q: "Van inverteres Polar modell?", a: "Igen, a Comfort Inverter gazdaságos inverteres hűtést és fűtést ad – kiváló belépő az inverteres klímák világába kedvező áron." },
+      { q: "Milyen hűtőközeggel működnek?", a: "A jelenlegi Polar készülékek a környezetbarát R32 hűtőközeggel üzemelnek." },
       { q: "Mennyibe kerül beszerelve?", a: "Az ár a modelltől, teljesítménytől és a beszerelés körülményeitől függ. Kérjen ingyenes felmérést és pontos árajánlatot – a kiszállás díjmentes." },
     ],
     photos: [
-      { src: "/photos/belteri-polar-nappali.jpg", alt: "Beszerelt Polár beltéri klíma egység nappaliban" },
-      { src: "/photos/kulteri-polar-kozeli.jpg", alt: "Polár kültéri klíma egység közeli nézetben" },
+      { src: "/photos/belteri-polar-nappali.jpg", alt: "Beszerelt Polar beltéri klíma egység nappaliban" },
+      { src: "/photos/kulteri-polar-kozeli.jpg", alt: "Polar kültéri klíma egység közeli nézetben" },
     ],
   },
 ];

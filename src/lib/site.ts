@@ -481,7 +481,7 @@ export const brands = [
   "Fujitsu",
   "Midea",
   "AUX",
-  "Polár",
+  "Polar",
 ];
 
 /**
@@ -499,7 +499,7 @@ export const brandLogos = [
   { name: "Fujitsu", src: "/brands/fujitsu.png" },
   { name: "Midea", src: "/brands/midea.png" },
   { name: "AUX", src: "/brands/aux-brand.png" },
-  { name: "Polár", src: "/brands/polar.png" },
+  { name: "Polar", src: "/brands/polar.png" },
 ] as const;
 
 export const serviceAreas = [
@@ -540,7 +540,7 @@ export const faqs: Faq[] = [
   {
     category: "Általános",
     q: "Milyen klímamárkákkal dolgoznak?",
-    a: "Márkafüggetlenek vagyunk: telepítjük, karbantartjuk és javítjuk a legnépszerűbb prémium klímamárkákat, többek között a Daikin, Mitsubishi Electric, Toshiba, Panasonic, LG, Samsung, Gree, Fujitsu, Midea, AUX és Polár készülékeket is.",
+    a: "Márkafüggetlenek vagyunk: telepítjük, karbantartjuk és javítjuk a legnépszerűbb prémium klímamárkákat, többek között a Daikin, Mitsubishi Electric, Toshiba, Panasonic, LG, Samsung, Gree, Fujitsu, Midea, AUX és Polar készülékeket is.",
   },
   {
     category: "Telepítés",

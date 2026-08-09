@@ -8,9 +8,9 @@ const shots = [
   { src: "/photos/belteri-aux-nappali.jpg", label: "AUX beltéri egység – lakótér", span: "sm:col-span-2 sm:row-span-2", minH: "min-h-[300px] sm:min-h-full" },
   { src: "/photos/kulteri-aux-homlokzat.jpg", label: "AUX kültéri egység – homlokzat", span: "", minH: "min-h-[200px]" },
   { src: "/photos/kulteri-polar-eresz.jpg", label: "Kültéri egység – eresz alatti rögzítés", span: "", minH: "min-h-[200px]" },
-  { src: "/photos/belteri-polar-nyitott.jpg", label: "Polár beltéri egység", span: "", minH: "min-h-[200px]" },
-  { src: "/photos/kulteri-polar-tavoli.jpg", label: "Polár kültéri egység – homlokzat", span: "", minH: "min-h-[200px]" },
-  { src: "/photos/belteri-polar-fal.jpg", label: "Polár beltéri egység – nappali", span: "", minH: "min-h-[200px]" },
+  { src: "/photos/belteri-polar-nyitott.jpg", label: "Polar beltéri egység", span: "", minH: "min-h-[200px]" },
+  { src: "/photos/kulteri-polar-tavoli.jpg", label: "Polar kültéri egység – homlokzat", span: "", minH: "min-h-[200px]" },
+  { src: "/photos/belteri-polar-fal.jpg", label: "Polar beltéri egység – nappali", span: "", minH: "min-h-[200px]" },
 ];
 
 export default function Gallery() {
