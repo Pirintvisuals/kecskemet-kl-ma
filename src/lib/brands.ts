@@ -10,6 +10,8 @@
 export type BrandModel = {
   name: string;
   positioning: string;
+  /** Optional bold one-liner takeaway ("Kinek jó") shown kiemelten. */
+  summary?: string;
   description: string;
   features: string[];
 };
@@ -48,7 +50,7 @@ export type Brand = {
   /** Optional embedded YouTube presentation video (id = the ?v= part). */
   video?: { id: string; title: string; text?: string };
   /** Optional in-depth explainer blocks (e.g. R32 hűtőközeg, H-tarifa). */
-  infoSections?: { icon: string; title: string; text: string }[];
+  infoSections?: { icon: string; title: string; lead: string; points: string[] }[];
   /** Optional brand-specific FAQ. */
   faq?: { q: string; a: string }[];
 };
@@ -231,43 +233,49 @@ export const brandPages: Brand[] = [
       {
         name: "Pular",
         positioning: "Népszerű kényelmi",
+        summary: "Megbízható mindenes lakásba és házba.",
         description:
-          "Az egyik legkedveltebb Gree modell Magyarországon: erős fűtési teljesítmény hőszivattyús üzemben, beépített WiFi-vezérlés és kiváló ár-érték arány egyben. Modern inverteres kompresszorával halkan, energiatakarékosan működik, és R32 hűtőközeggel dolgozik – ideális választás lakásba és házba egyaránt, ha megbízható mindenest keres.",
+          "Erős hőszivattyús fűtés, beépített WiFi és halk, energiatakarékos inverter – R32 hűtőközeggel.",
         features: ["Beépített WiFi", "Erős téli fűtés", "Inverteres, R32", "Jó ár-érték"],
       },
       {
         name: "Fairy",
         positioning: "Modern dizájn",
+        summary: "Ha a klíma megjelenése is számít.",
         description:
-          "Letisztult, elegáns előlap, kifejezetten halk működés és beépített WiFi – a Fairy a mindennapi kényelmet prémium hangulattal ötvözi. Inverteres, energiatakarékos üzem, jó fűtési teljesítménnyel: ott a legjobb választás, ahol a klíma megjelenése is számít, de nem szeretne prémium árat fizetni.",
+          "Letisztult, lapos előlap és kifejezetten halk üzem, beépített WiFi-vel – prémium hangulat prémium ár nélkül.",
         features: ["Dizájnos, lapos forma", "Beépített WiFi", "Halk, inverteres üzem", "Jó hatásfok"],
       },
       {
         name: "Amber",
         positioning: "Prémium hőszivattyú",
+        summary: "Ha télen komolyan fűtene a klímával.",
         description:
-          "Erős fűtésre optimalizált prémium modell, amely a hidegebb téli napokon is hatékonyan fűt – valódi alternatíva a klímafűtésre. Alacsony külső hőmérsékleten is stabil teljesítményt ad, magas energiaosztállyal és beépített WiFi-vel. Ha a klímát télen is komolyan használná fűtésre, ez a Gree csúcsragadozója.",
+          "Alacsony külső hőmérsékleten is stabil, erős fűtés magas energiaosztállyal – a Gree fűtési csúcsragadozója.",
         features: ["Kiváló téli fűtés", "Magas energiaosztály", "Beépített WiFi", "Prémium"],
       },
       {
         name: "Comfort X",
         positioning: "Kiegyensúlyozott kényelmi",
+        summary: "Kiváló belépő a prémium Gree világába.",
         description:
-          "A klasszikus Gree kényelmi széria: kiegyensúlyozott hűtés-fűtés, inverteres, R32-es működés és jó energiahatékonyság megfizethető áron. Halk beltéri egység, WiFi-vezérelhetőség és megbízható, bevált technika – kiváló belépő a prémium Gree világába.",
+          "Kiegyensúlyozott hűtés-fűtés, inverteres R32-es működés és jó hatásfok, megfizethető áron.",
         features: ["Inverteres, R32", "WiFi-vezérelhető", "Jó energiaosztály", "Kedvező ár"],
       },
       {
         name: "Bora",
         positioning: "Megbízható klasszikus",
+        summary: "A jól bevált, problémamentes megoldás.",
         description:
-          "Bevált, gazdaságos modell, amely megbízható hűtést és fűtést nyújt kedvező áron. Egyszerű, tartós felépítés, inverteres működés és WiFi-vel bővíthető vezérlés – annak, aki a jól bevált, problémamentes megoldást keresi.",
+          "Egyszerű, tartós, gazdaságos hűtés-fűtés, WiFi-vel bővíthető vezérléssel.",
         features: ["Gazdaságos", "Megbízható", "Inverteres", "WiFi opció"],
       },
       {
         name: "Lomo",
         positioning: "Kedvező belépő",
+        summary: "A legkedvezőbb út egy jó minőségű klímához.",
         description:
-          "Egyszerű, megbízható belépő modell azoknak, akiknek a jó alapfunkciók és a kedvező ár a legfontosabb. Inverteres kompresszor a gazdaságos üzemért, letisztult megjelenés, és a Gree bevált megbízhatósága – a legkedvezőbb út egy jó minőségű klímához.",
+          "Kedvező árú, inverteres belépő modell letisztult megjelenéssel és bevált Gree megbízhatósággal.",
         features: ["Kedvező ár", "Inverteres", "Egyszerű", "Megbízható"],
       },
       {
@@ -287,38 +295,62 @@ export const brandPages: Brand[] = [
       {
         icon: "leaf",
         title: "Környezetbarát R32 hűtőközeg",
-        text:
-          "A Gree készülékek az új, környezetbarát R32 hűtőközeggel üzemelnek, amely globálisan felváltja a korábbi R410a gázt. Az R32-nek nincs ózonkárosító hatása (ODP = 0), globális felmelegedési potenciálja (GWP) pedig 675 – jóval alacsonyabb az R410a 2088-as értékénél. Ráadásul hatékonyabb hőátadása révén kevesebb hűtőközeggel is jobb energiahatékonyságot ér el.",
+        lead: "Jövőálló, környezetbarát gáz – kevesebb terhelés, jobb hatásfok.",
+        points: [
+          "Nincs ózonkárosító hatása (ODP = 0)",
+          "GWP 675 – az R410a 2088-as értékének harmada",
+          "Hatékonyabb hőátadás, jobb energiahatékonyság",
+        ],
       },
       {
         icon: "piggybank",
-        title: "H-tarifa: akár 50% megtakarítás télen",
-        text:
-          "A H-tarifás Gree modellek megfelelnek a kedvezményes elektromos fűtési tarifa igénylési feltételeinek. Ezzel október 15. és április 15. között akár 50%-ot is megtakaríthat a fűtésre fordított áram költségén – így a Gree klímafűtés a hidegebb hónapokban is kifejezetten gazdaságos. Az igénylés feltételeiben és az ügyintézésben szívesen segítünk.",
+        title: "H-tarifa: télen akár feleannyi rezsi",
+        lead: "Kedvezményes fűtési áram a fűtési szezonra.",
+        points: [
+          "Akár 50% megtakarítás a fűtési áram költségén",
+          "Október 15. – április 15. között érvényes",
+          "Az igénylésben és ügyintézésben segítünk",
+        ],
       },
       {
         icon: "wifi",
         title: "GREE+ okosalkalmazás és hangvezérlés",
-        text:
-          "A WiFi-s Gree berendezések okostelefonról, a világ bármely pontjáról vezérelhetők az ingyenes GREE+ applikációval – ki- és bekapcsolás, hőmérséklet, időzítés mind egy érintésre. Az alkalmazással a klíma Google Home vagy Amazon Alexa okosotthon-rendszerbe is integrálható, így akár hangparanccsal is irányítható.",
+        lead: "Vezérelje a klímát telefonról, bárhonnan a világon.",
+        points: [
+          "Ingyenes GREE+ app: ki-be, hőmérséklet, időzítés",
+          "Google Home és Amazon Alexa kompatibilis",
+          "Akár hangparanccsal is irányítható",
+        ],
       },
       {
         icon: "globe",
         title: "A világ legnagyobb klímagyártója",
-        text:
-          "A Gree a világ legnagyobb klímagyártója, amely évente több tízmillió készüléket állít elő, és számos más ismert márkának is beszállítója. Saját fejlesztésű inverteres kompresszorai és több évtizedes gyártási tapasztalata a kedvező ár mögött is stabil, kiszámítható minőséget adnak – ezért lett Magyarországon is az egyik legnépszerűbb választás.",
+        lead: "Stabil, kiszámítható minőség kedvező áron.",
+        points: [
+          "Évente több tízmillió legyártott készülék",
+          "Számos más ismert márkának is beszállítója",
+          "Saját fejlesztésű inverteres kompresszorok",
+        ],
       },
       {
         icon: "shield",
-        title: "Akár 10 év garancia – nyugalom hosszú távra",
-        text:
-          "A prémium Gree klímákra a gyártói regisztráció elvégzése és a feltételek teljesülése esetén akár 10 év garancia is igényelhető. Hivatalos szakszervizként a regisztrációban, a rendszeres karbantartásban és a garanciális ügyintézésben is végig Ön mellett állunk – nem csak beszereljük, hosszú távon gondozzuk is a készülékét.",
+        title: "Akár 10 év garancia",
+        lead: "Nyugalom hosszú távra, nem csak egy szezonra.",
+        points: [
+          "Gyártói regisztráció + feltételek teljesülése esetén",
+          "Hivatalos szakszervizként mi intézzük",
+          "Beszereléstől a karbantartásig végig Ön mellett",
+        ],
       },
       {
         icon: "thermometer",
-        title: "I FEEL – ott legyen kellemes, ahol Ön van",
-        text:
-          "A Gree vezeték nélküli távirányítójába termosztát van építve: az I FEEL funkció bekapcsolásakor a klíma nem a beltéri egységnél, hanem az Ön közelében – a távirányítónál – mért hőmérséklethez igazítja a működését. Így pontosan ott lesz kellemes a hőérzet, ahol Ön tartózkodik.",
+        title: "I FEEL komfortérzékelés",
+        lead: "Ott legyen kellemes, ahol Ön van – nem a fal mellett.",
+        points: [
+          "A távirányítóba épített hőmérő méri a hőmérsékletet",
+          "A klíma az Ön közelében mért értékhez igazít",
+          "Egyenletes, huzatmentes hőérzet",
+        ],
       },
     ],
     faq: [

@@ -481,9 +481,20 @@ export default async function BrandPage({
                       <h3 className="mt-5 font-display text-xl font-bold text-white">
                         {info.title}
                       </h3>
-                      <p className="mt-3 text-[15px] leading-relaxed text-muted">
-                        {info.text}
+                      <p className="mt-2 text-[15px] font-medium leading-relaxed text-brand-50">
+                        {info.lead}
                       </p>
+                      <ul className="mt-4 space-y-2.5">
+                        {info.points.map((pt) => (
+                          <li key={pt} className="flex items-start gap-2.5 text-sm text-muted">
+                            <Check
+                              className="mt-0.5 h-4 w-4 shrink-0"
+                              style={{ color: accent }}
+                            />
+                            <span>{pt}</span>
+                          </li>
+                        ))}
+                      </ul>
                     </div>
                   </Reveal>
                 );
@@ -527,7 +538,12 @@ export default async function BrandPage({
                       {m.positioning}
                     </span>
                   </div>
-                  <p className="mt-4 flex-1 text-[15px] leading-relaxed text-muted">
+                  {m.summary && (
+                    <p className="mt-3 text-[15px] font-semibold text-brand-50">
+                      {m.summary}
+                    </p>
+                  )}
+                  <p className="mt-2 flex-1 text-sm leading-relaxed text-muted">
                     {m.description}
                   </p>
                   <ul className="mt-5 flex flex-wrap gap-2">
