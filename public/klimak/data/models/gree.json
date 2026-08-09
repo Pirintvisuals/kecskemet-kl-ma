@@ -1,0 +1,121 @@
+[
+  {
+    "id": "pular",
+    "slug": "pular",
+    "name": "Pular",
+    "positioning": "Népszerű kényelmi",
+    "summary": "Megbízható mindenes lakásba és házba.",
+    "features": [
+      "Beépített WiFi",
+      "Erős téli fűtés",
+      "Inverteres, R32",
+      "Jó ár-érték"
+    ],
+    "image": "",
+    "body": "A Pular az egyik legkedveltebb Gree modell Magyarországon, és nem véletlenül: mindent tud, amit egy otthoni klímától elvárhat, mégis kedvező áron. Modern inverteres kompresszorral halkan és energiatakarékosan hűt, hőszivattyús üzemben pedig a hidegebb napokon is erős fűtést ad. Gyárilag beépített WiFi-vel telefonról bárhonnan vezérelhető, és a környezetbarát R32 hűtőközeggel dolgozik – ideális első klíma lakásba és házba egyaránt.\n\n## Főbb előnyök\n\n- **Gyári WiFi + GREE+ app:** Telefonról, a világ bármely pontjáról vezérelhető; Google Home és Alexa kompatibilis.\n- **Erős téli fűtés:** Hőszivattyús üzemben a hidegebb napokon is hatékonyan fűt – kiegészítheti vagy kiválthatja a fűtést.\n- **R32 hűtőközeg:** Környezetbarát gáz, jobb energiahatékonyság, alacsonyabb üzemköltség.\n- **Halk, energiatakarékos:** Inverteres kompresszor – csendes működés és alacsony fogyasztás.\n\n## Kinek ajánljuk?\n\n- Lakás vagy családi ház fő helyisége (nappali, hálószoba)\n- Aki egyszerre keres jó hűtést és erős téli fűtést\n- Aki megbízható, jó ár-értékű „mindenest” szeretne\n\n## Főbb jellemzők\n\n- **Kategória:** Népszerű kényelmi\n- **Technológia:** inverteres\n- **Hűtőközeg:** R32 (környezetbarát)\n- **WiFi:** gyárilag beépített\n- **Fűtés:** erős, hőszivattyús üzem\n- **Energiaosztály:** akár A++\n- **Teljesítmény:** több méretben – a felmérésen választjuk ki\n- **Garancia:** a feltételek teljesülése esetén akár 10 év\n\n## Gyakori kérdések\n\n### Alkalmas a Pular téli fűtésre?\n\nIgen. Hőszivattyús üzemben a hidegebb téli napokon is hatékonyan fűt, így a fűtési szezon nagy részében kiválthatja vagy kiegészítheti a hagyományos fűtést.\n\n### Vezérelhető telefonról?\n\nIgen, gyárilag beépített WiFi-vel a GREE+ ingyenes alkalmazásból bárhonnan irányítható, és okosotthon-rendszerbe is integrálható.",
+    "order": 0,
+    "published": true
+  },
+  {
+    "id": "fairy",
+    "slug": "fairy",
+    "name": "Fairy",
+    "positioning": "Modern dizájn",
+    "summary": "Ha a klíma megjelenése is számít.",
+    "features": [
+      "Dizájnos, lapos forma",
+      "Beépített WiFi",
+      "Halk, inverteres üzem",
+      "Jó hatásfok"
+    ],
+    "image": "",
+    "body": "A Fairy azoknak készült, akiknek a klíma megjelenése is fontos. Letisztult, lapos előlapja elegánsan illeszkedik a modern otthonokba, működése pedig kifejezetten halk – hálószobába és nappaliba egyaránt ideális. A dizájn mögött energiatakarékos inverteres technológia, jó fűtési teljesítmény és gyári WiFi áll, mindezt a prémium modelleknél kedvezőbb áron.\n\n## Főbb előnyök\n\n- **Letisztult dizájn:** Lapos, elegáns előlap, ami illeszkedik a modern otthon berendezéséhez.\n- **Extra halk üzem:** Kifejezetten csendes működés – hálószobába, gyerekszobába is ideális.\n- **Gyári WiFi:** GREE+ alkalmazással bárhonnan vezérelhető, hangvezérléssel is.\n- **Energiatakarékos, R32:** Inverteres, gazdaságos üzem környezetbarát hűtőközeggel.\n\n## Kinek ajánljuk?\n\n- Nappali vagy hálószoba, ahol számít a megjelenés\n- Aki halk, dizájnos klímát szeretne\n- Aki prémium hangulatot keres, de nem prémium áron\n\n## Főbb jellemzők\n\n- **Kategória:** Modern dizájn\n- **Technológia:** inverteres\n- **Hűtőközeg:** R32 (környezetbarát)\n- **WiFi:** gyárilag beépített\n- **Üzem:** kifejezetten halk\n- **Energiaosztály:** akár A++\n- **Teljesítmény:** több méretben – a felmérésen választjuk ki\n- **Garancia:** a feltételek teljesülése esetén akár 10 év\n\n## Gyakori kérdések\n\n### Mennyire halk a Fairy?\n\nKifejezetten csendes működésre tervezték, ezért hálószobába és gyerekszobába is jó választás – éjszaka sem zavaró.\n\n### Illik a modern lakásba?\n\nIgen, letisztult, lapos előlapja pont azért készült, hogy dizájnelemként illeszkedjen a modern otthonokba.",
+    "order": 1,
+    "published": true
+  },
+  {
+    "id": "amber",
+    "slug": "amber",
+    "name": "Amber",
+    "positioning": "Prémium hőszivattyú",
+    "summary": "Ha télen komolyan fűtene a klímával.",
+    "features": [
+      "Kiváló téli fűtés",
+      "Magas energiaosztály",
+      "Beépített WiFi",
+      "Prémium"
+    ],
+    "image": "",
+    "body": "Az Amber a Gree fűtési zászlóshajója: kifejezetten arra tervezték, hogy alacsony külső hőmérsékleten is stabil, erős fűtést adjon. Ha a klímát télen komolyan használná fűtésre – akár a fő fűtési rendszer kiváltására vagy kiegészítésére –, ez a legjobb választás a kínálatból. Magas energiaosztály, gyári WiFi és a Gree teljes okostudása jár hozzá.\n\n## Főbb előnyök\n\n- **Kiváló téli fűtés:** Alacsony külső hőmérsékleten is stabil, erős fűtési teljesítmény.\n- **Magas energiaosztály:** Csúcskategóriás hatásfok – gazdaságos üzem egész évben.\n- **Gyári WiFi + okosvezérlés:** GREE+ app, Google Home és Alexa támogatással.\n- **Akár 10 év garancia:** Prémium modell – a feltételek teljesülése esetén hosszú garanciával.\n\n## Kinek ajánljuk?\n\n- Klímafűtés fő vagy kiegészítő fűtésként\n- Rosszabbul szigetelt vagy hidegebb helyiségek\n- Aki télen is maximális fűtési teljesítményt vár\n\n## Főbb jellemzők\n\n- **Kategória:** Prémium hőszivattyú\n- **Technológia:** inverteres\n- **Hűtőközeg:** R32 (környezetbarát)\n- **WiFi:** gyárilag beépített\n- **Fűtés:** kiváló, alacsony hőmérsékleten is stabil\n- **Energiaosztály:** csúcskategóriás (akár A++)\n- **Teljesítmény:** több méretben – a felmérésen választjuk ki\n- **Garancia:** a feltételek teljesülése esetén akár 10 év\n\n## Gyakori kérdések\n\n### Kiválthatja az Amber a gázfűtést?\n\nSok otthonban igen, vagy jelentősen kiegészítheti. Az Ambert kifejezetten erős, alacsony hőmérsékleten is stabil fűtésre tervezték – a pontos megtérülést a felmérésen mondjuk meg.\n\n### Miben több, mint az alapmodellek?\n\nAz Amber fűtésre optimalizált prémium modell: alacsony külső hőmérsékleten is erősebb, stabilabb fűtést ad, magasabb energiaosztállyal.",
+    "order": 2,
+    "published": true
+  },
+  {
+    "id": "comfort-x",
+    "slug": "comfort-x",
+    "name": "Comfort X",
+    "positioning": "Kiegyensúlyozott kényelmi",
+    "summary": "Kiváló belépő a prémium Gree világába.",
+    "features": [
+      "Inverteres, R32",
+      "WiFi-vezérelhető",
+      "Jó energiaosztály",
+      "Kedvező ár"
+    ],
+    "image": "",
+    "body": "A Comfort X a klasszikus Gree kényelmi széria: kiegyensúlyozott hűtés és fűtés, inverteres R32-es működés és jó energiahatékonyság megfizethető áron. Halk beltéri egység, WiFi-vezérelhetőség és bevált, megbízható technika – ideális első klíma, ha jó minőséget szeretne felár nélkül.\n\n## Főbb előnyök\n\n- **Kiegyensúlyozott hűtés-fűtés:** Stabil teljesítmény a mindennapokra, minden évszakban.\n- **Inverteres, R32:** Gazdaságos üzem környezetbarát hűtőközeggel.\n- **WiFi-vezérelhető:** GREE+ alkalmazással kényelmesen irányítható.\n- **Kedvező ár:** Prémium Gree tudás megfizethető belépő áron.\n\n## Kinek ajánljuk?\n\n- Első klíma lakásba vagy házba\n- Aki jó ár-érték arányt keres\n- Mindennapi, kiegyensúlyozott komfort\n\n## Főbb jellemzők\n\n- **Kategória:** Kiegyensúlyozott kényelmi\n- **Technológia:** inverteres\n- **Hűtőközeg:** R32 (környezetbarát)\n- **WiFi:** vezérelhető (opció)\n- **Fűtés:** hőszivattyús üzem\n- **Energiaosztály:** jó (akár A++)\n- **Teljesítmény:** több méretben – a felmérésen választjuk ki\n- **Garancia:** a feltételek teljesülése esetén akár 10 év\n\n## Gyakori kérdések\n\n### Jó első klímának?\n\nIgen, a Comfort X kifejezetten kiváló belépő: kiegyensúlyozott hűtés-fűtés, bevált technika és jó ár-érték arány – felesleges felár nélkül.",
+    "order": 3,
+    "published": true
+  },
+  {
+    "id": "bora",
+    "slug": "bora",
+    "name": "Bora",
+    "positioning": "Megbízható klasszikus",
+    "summary": "A jól bevált, problémamentes megoldás.",
+    "features": [
+      "Gazdaságos",
+      "Megbízható",
+      "Inverteres",
+      "WiFi opció"
+    ],
+    "image": "",
+    "body": "A Bora annak készült, aki a jól bevált, egyszerű és megbízható megoldást keresi. Gazdaságos hűtést és fűtést nyújt kedvező áron, egyszerű, tartós felépítéssel és inverteres működéssel. WiFi-vel bővíthető vezérlés és R32 hűtőközeg – minden, ami a mindennapokhoz kell, felesleges bonyolítás nélkül.\n\n## Főbb előnyök\n\n- **Gazdaságos üzem:** Inverteres technológia – alacsony fogyasztás, kiszámítható rezsi.\n- **Megbízható, tartós:** Egyszerű, bevált felépítés, hosszú élettartam.\n- **WiFi-vel bővíthető:** Okosvezérlés a GREE+ alkalmazással, igény esetén.\n- **R32 hűtőközeg:** Környezetbarát gáz, jó energiahatékonyság.\n\n## Kinek ajánljuk?\n\n- Aki egyszerű, problémamentes klímát szeretne\n- Másodlagos helyiségek, dolgozószoba\n- Kedvező árú, megbízható alapfelszereltség\n\n## Főbb jellemzők\n\n- **Kategória:** Megbízható klasszikus\n- **Technológia:** inverteres\n- **Hűtőközeg:** R32 (környezetbarát)\n- **WiFi:** opcióként bővíthető\n- **Fűtés:** hőszivattyús üzem\n- **Energiaosztály:** jó\n- **Teljesítmény:** több méretben – a felmérésen választjuk ki\n- **Garancia:** a feltételek teljesülése esetén akár 10 év",
+    "order": 4,
+    "published": true
+  },
+  {
+    "id": "lomo",
+    "slug": "lomo",
+    "name": "Lomo",
+    "positioning": "Kedvező belépő",
+    "summary": "A legkedvezőbb út egy jó minőségű klímához.",
+    "features": [
+      "Kedvező ár",
+      "Inverteres",
+      "Egyszerű",
+      "Megbízható"
+    ],
+    "image": "",
+    "body": "A Lomo a legkedvezőbb belépő a Gree világába: egyszerű, megbízható modell azoknak, akiknek a jó alapfunkciók és a kedvező ár a legfontosabb. Inverteres kompresszorral gazdaságosan üzemel, letisztult megjelenésű, és mögötte ott a Gree bevált megbízhatósága – jó minőség a legkedvezőbb áron.\n\n## Főbb előnyök\n\n- **Legkedvezőbb ár:** A legjobb belépő egy jó minőségű klímához.\n- **Inverteres, gazdaságos:** Alacsony fogyasztás, kiszámítható üzem.\n- **Jó alapfunkciók:** Mindent tud, ami a mindennapi komforthoz kell.\n- **Bevált Gree megbízhatóság:** A világ legnagyobb klímagyártójának minősége.\n\n## Kinek ajánljuk?\n\n- Kisebb helyiségek, hálószoba\n- Aki a legkedvezőbb áron szeretne klímát\n- Első klíma szűkebb büdzsével\n\n## Főbb jellemzők\n\n- **Kategória:** Kedvező belépő\n- **Technológia:** inverteres\n- **Hűtőközeg:** R32 (környezetbarát)\n- **WiFi:** opcióként bővíthető\n- **Fűtés:** hőszivattyús üzem\n- **Energiaosztály:** jó\n- **Teljesítmény:** több méretben – a felmérésen választjuk ki\n- **Garancia:** a feltételek teljesülése esetén akár 10 év",
+    "order": 5,
+    "published": true
+  },
+  {
+    "id": "clivia",
+    "slug": "clivia",
+    "name": "Clivia",
+    "positioning": "Prémium dizájn",
+    "summary": "Ha a klíma dizájnelem is a lakásban.",
+    "features": [
+      "Prémium fém dizájn",
+      "Erős teljesítmény",
+      "Csúcs energiaosztály",
+      "Okosvezérlés WiFi-vel"
+    ],
+    "image": "",
+    "body": "A Clivia a Gree kínálatának dizájn-zászlóshajója: exkluzív, fém hatású előlap, csúcskategóriás anyaghasználat és erős teljesítmény egyben. Kifinomult, halk működés, magas energiaosztály és teljes okosvezérlés WiFi-n keresztül – ha a klíma egyben dizájnelem is a lakásban, ez a legjobb választás.\n\n## Főbb előnyök\n\n- **Prémium fém dizájn:** Exkluzív, fém hatású előlap – dizájnelem a lakásban.\n- **Erős teljesítmény:** Csúcskategóriás hűtés-fűtés, magas energiaosztállyal.\n- **Teljes okosvezérlés:** GREE+ app, Google Home és Alexa támogatással.\n- **Akár 10 év garancia:** Prémium modell, hosszú távú nyugalommal.\n\n## Kinek ajánljuk?\n\n- Reprezentatív nappali, ahol számít a megjelenés\n- Aki prémium dizájnt és erős tudást keres egyben\n- Igényes otthon, ahol a klíma is lakberendezési elem\n\n## Főbb jellemzők\n\n- **Kategória:** Prémium dizájn\n- **Technológia:** inverteres\n- **Hűtőközeg:** R32 (környezetbarát)\n- **WiFi:** gyárilag beépített\n- **Kivitel:** fém hatású, exkluzív előlap\n- **Energiaosztály:** csúcskategóriás (akár A++)\n- **Teljesítmény:** több méretben – a felmérésen választjuk ki\n- **Garancia:** a feltételek teljesülése esetén akár 10 év",
+    "order": 6,
+    "published": true
+  }
+]

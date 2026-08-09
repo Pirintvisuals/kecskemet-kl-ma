@@ -176,10 +176,13 @@ function post_save(array $data): string
         'updated'   => date('c'),
     ];
 
-    file_put_contents(
-        BLOG_DATA . '/' . $id . '.json',
-        json_encode($post, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT)
+    $json = json_encode(
+        $post,
+        JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT | JSON_INVALID_UTF8_SUBSTITUTE
     );
+    if ($json !== false) {
+        file_put_contents(BLOG_DATA . '/' . $id . '.json', $json);
+    }
     return $id;
 }
 

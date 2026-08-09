@@ -1,0 +1,12 @@
+# A feltöltött modellképek elérhetők, de itt semmilyen szkript nem futhat.
+<FilesMatch "\.(php|phtml|php3|php4|php5|php7|phps|pl|py|cgi|asp|aspx|sh)$">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Order allow,deny
+        Deny from all
+    </IfModule>
+</FilesMatch>
+php_flag engine off
+Options -ExecCGI -Indexes

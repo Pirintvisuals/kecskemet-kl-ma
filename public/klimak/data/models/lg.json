@@ -1,0 +1,70 @@
+[
+  {
+    "id": "standard-plus",
+    "slug": "standard-plus",
+    "name": "Standard Plus",
+    "positioning": "Kiváló ár-érték",
+    "summary": "Népszerű, csendes, jó ár-értékű alapmodell.",
+    "features": [
+      "Dual Inverter",
+      "Csendes",
+      "WiFi",
+      "Jó ár-érték"
+    ],
+    "image": "",
+    "body": "Az LG Standard Plus népszerű alapmodell Dual Inverter kompresszorral: csendes, gazdaságos, megbízható. Gyorsan eléri a kívánt hőmérsékletet, WiFi-vel vezérelhető, és tartós LG minőséget ad kedvező áron.\n\n## Főbb előnyök\n\n- **Dual Inverter:** Csendes, energiatakarékos, gyors hűtés – akár 10 év kompresszor garancia.\n- **Csendes üzem:** Halk működés nappaliba és hálószobába.\n- **WiFi vezérlés:** LG ThinQ alkalmazás, bárhonnan irányítható.\n- **Jó ár-érték:** Tartós LG minőség kedvező belépő áron.\n\n## Kinek ajánljuk?\n\n- Első klíma jó ár-értékkel\n- Lakás, nappali, hálószoba\n- Aki csendes, gazdaságos klímát keres\n\n## Főbb jellemzők\n\n- **Kategória:** Kiváló ár-érték\n- **Technológia:** Dual Inverter\n- **Hűtőközeg:** R32 (környezetbarát)\n- **WiFi:** gyárilag beépített (ThinQ)\n- **Kompresszor garancia:** akár 10 év (gyártói feltételek szerint)\n- **Energiaosztály:** jó (akár A++)\n- **Teljesítmény:** több méretben – a felmérésen választjuk ki\n- **Garancia:** gyártói jótállás + teljes körű helyi szerviz",
+    "order": 0,
+    "published": true
+  },
+  {
+    "id": "silence",
+    "slug": "silence",
+    "name": "Silence",
+    "positioning": "Halk működés",
+    "summary": "A nyugalom bajnoka – hálószobába ideális.",
+    "features": [
+      "Extra halk",
+      "Dual Inverter",
+      "Energiatakarékos",
+      "WiFi"
+    ],
+    "image": "",
+    "body": "Az LG Silence extra csendes üzemre optimalizált modell azoknak, akiknek a nyugalom a legfontosabb – hálószobába, gyerekszobába ideális. Dual Inverter kompresszor, energiatakarékos működés és beépített WiFi.\n\n## Főbb előnyök\n\n- **Extra halk:** Kifejezetten csendes üzem – éjszaka sem zavaró.\n- **Energiatakarékos:** Dual Inverter kompresszor – alacsony fogyasztás.\n- **Beépített WiFi:** LG ThinQ alkalmazás, bárhonnan irányítható.\n- **Gyors hűtés:** Gyorsan eléri a kívánt hőmérsékletet.\n\n## Kinek ajánljuk?\n\n- Hálószoba, gyerekszoba\n- Ahol a csend a legfontosabb\n- Aki halk, gazdaságos klímát keres\n\n## Főbb jellemzők\n\n- **Kategória:** Halk működés\n- **Technológia:** Dual Inverter\n- **Hűtőközeg:** R32 (környezetbarát)\n- **WiFi:** gyárilag beépített (ThinQ)\n- **Üzem:** extra halk\n- **Kompresszor garancia:** akár 10 év (gyártói feltételek szerint)\n- **Teljesítmény:** több méretben – a felmérésen választjuk ki\n- **Garancia:** gyártói jótállás + teljes körű helyi szerviz",
+    "order": 1,
+    "published": true
+  },
+  {
+    "id": "artcool",
+    "slug": "artcool",
+    "name": "Artcool",
+    "positioning": "Dizájn",
+    "summary": "Dizájn és Dual Inverter tudás egyben.",
+    "features": [
+      "Prémium dizájn",
+      "Dual Inverter",
+      "WiFi",
+      "Magas hatásfok"
+    ],
+    "image": "",
+    "body": "Az LG Artcool prémium megjelenésű dizájnmodell, amely stílusos elemként illeszkedik a lakásba. A látvány mögött Dual Inverter teljesítmény, magas hatásfok és teljes okosvezérlés áll – dizájn és tudás egyben.\n\n## Főbb előnyök\n\n- **Prémium dizájn:** Stílusos elem, ami illeszkedik a lakás berendezéséhez.\n- **Dual Inverter:** Magas hatásfok, csendes, tartós működés.\n- **Teljes okosvezérlés:** LG ThinQ app és okosotthon-integráció.\n- **Gyors hűtés:** Gyorsan eléri a kívánt hőmérsékletet.\n\n## Kinek ajánljuk?\n\n- Reprezentatív nappali\n- Ahol a klíma dizájnelem is\n- Aki dizájnt és tudást is akar\n\n## Főbb jellemzők\n\n- **Kategória:** Dizájn\n- **Technológia:** Dual Inverter\n- **Hűtőközeg:** R32 (környezetbarát)\n- **WiFi:** gyárilag beépített (ThinQ)\n- **Kivitel:** prémium dizájn előlap\n- **Kompresszor garancia:** akár 10 év (gyártói feltételek szerint)\n- **Energiaosztály:** magas (akár A++)\n- **Garancia:** gyártói jótállás + teljes körű helyi szerviz",
+    "order": 2,
+    "published": true
+  },
+  {
+    "id": "dualcool-premium",
+    "slug": "dualcool-premium",
+    "name": "Dualcool Premium",
+    "positioning": "Prémium teljesítmény",
+    "summary": "Csúcskategóriás LG erős fűtéssel, tiszta levegővel.",
+    "features": [
+      "Erős teljesítmény",
+      "Erős téli fűtés",
+      "Prémium",
+      "Tiszta levegő"
+    ],
+    "image": "",
+    "body": "Az LG Dualcool Premium erős hűtési és fűtési teljesítményt ad prémium felszereltséggel és tisztább levegőt adó megoldásokkal. Alacsony hőmérsékleten is hatékonyan fűt, halk és energiatakarékos – csúcskategóriás LG a mindennapokra.\n\n## Főbb előnyök\n\n- **Erős téli fűtés:** Alacsony külső hőmérsékleten is hatékony fűtés.\n- **Dual Inverter, csúcs hatásfok:** Erős teljesítmény, gazdaságos üzem.\n- **Tisztább levegő:** Ionizátoros/légtisztító megoldások a prémium modellben.\n- **Okosvezérlés:** LG ThinQ app, bárhonnan irányítható.\n\n## Kinek ajánljuk?\n\n- Klímafűtés fő vagy kiegészítő fűtésként\n- Nagyobb terek\n- Aki csúcstudást és tiszta levegőt akar\n\n## Főbb jellemzők\n\n- **Kategória:** Prémium teljesítmény\n- **Technológia:** Dual Inverter\n- **Hűtőközeg:** R32 (környezetbarát)\n- **WiFi:** gyárilag beépített (ThinQ)\n- **Fűtés:** erős, alacsony hőmérsékleten is stabil\n- **Kompresszor garancia:** akár 10 év (gyártói feltételek szerint)\n- **Energiaosztály:** csúcskategóriás\n- **Garancia:** gyártói jótállás + teljes körű helyi szerviz\n\n## Gyakori kérdések\n\n### Jó a Dualcool Premium téli fűtésre?\n\nIgen, erős, alacsony külső hőmérsékleten is stabil fűtést ad hőszivattyús üzemben – klímafűtésre is kiválóan használható.",
+    "order": 3,
+    "published": true
+  }
+]

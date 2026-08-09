@@ -1,0 +1,784 @@
+[
+  {
+    "slug": "daikin",
+    "name": "Daikin",
+    "logo": "/brands/daikin.png",
+    "accent": "#0A6CD4",
+    "tagline": "A klímatechnika japán etalonja",
+    "metaTitle": "Daikin klímák Kecskeméten – telepítés és szerviz | Kecskemét Klíma",
+    "intro": "A Daikin a világ egyik vezető klímagyártója, amely a megbízhatóságáról, halk működéséről és kimagasló energiahatékonyságáról ismert. A belépő szintű készülékektől a prémium, dizájnos modellekig minden igényre kínál megoldást – mi pedig szakszerűen telepítjük és karbantartjuk mindegyiket.",
+    "strengths": [
+      "Kiváló energiahatékonyság, alacsony üzemeltetési költség",
+      "Rendkívül halk beltéri egységek",
+      "Hatékony fűtés hőszivattyús üzemben, télen is",
+      "Széles kínálat a belépőtől a prémium dizájnig"
+    ],
+    "highlight": null,
+    "video": {
+      "id": "fu3_vt14sKE",
+      "title": "Ismerje meg a Daikin Emura dizájnklímát",
+      "text": "A Daikin hivatalos termékvideója a dizájnról és a technológiáról. Kérdése van egy adott modellről? Hívjon, segítünk a választásban."
+    },
+    "infoSections": [
+      {
+        "icon": "gauge",
+        "title": "Csúcskategóriás energiahatékonyság",
+        "lead": "Alacsony rezsi, környezetbarát üzem.",
+        "points": [
+          "Környezetbarát R32 hűtőközeg",
+          "Kiemelkedő energiahatékonyság a prémium modelleknél",
+          "Inverteres kompresszor a gazdaságos üzemért"
+        ]
+      },
+      {
+        "icon": "wind",
+        "title": "Coandă-effektus légterelés",
+        "lead": "Huzatmentes, egyenletes komfort.",
+        "points": [
+          "A levegőt a plafon mentén tereli szét",
+          "Nincs közvetlen, hideg légáram",
+          "Egyenletes hőmérséklet az egész szobában"
+        ]
+      },
+      {
+        "icon": "sparkles",
+        "title": "Flash Streamer légtisztítás",
+        "lead": "Tisztább beltéri levegő a prémium modelleknél.",
+        "points": [
+          "Lebontja a szagokat és szennyeződéseket",
+          "Allergéneket, penészt is kezel",
+          "Frissebb levegő egész évben"
+        ]
+      },
+      {
+        "icon": "wifi",
+        "title": "Daikin Onecta app + okosvezérlés",
+        "lead": "Vezérelje a klímát telefonról, bárhonnan.",
+        "points": [
+          "Ki-be, hőmérséklet, időzítés az appból",
+          "Okosotthon- és hangvezérlés-integráció",
+          "Energiafogyasztás követése"
+        ]
+      },
+      {
+        "icon": "volume",
+        "title": "Rendkívül halk üzem",
+        "lead": "Alig hallható működés éjszaka is.",
+        "points": [
+          "Kiemelkedően csendes beltéri egység",
+          "Halk kültéri működés",
+          "Hálószobába, gyerekszobába is ideális"
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Melyik Daikin modell a legjobb fűtésre?",
+        "a": "A Perfera kifejezetten erős fűtésre optimalizált: alacsony külső hőmérsékleten is hatékonyan fűt hőszivattyús üzemben. A pontos választást a felmérésen segítünk."
+      },
+      {
+        "q": "Vezérelhető a Daikin klíma telefonról?",
+        "a": "Igen, a Daikin Onecta alkalmazással a WiFi-s modellek bárhonnan vezérelhetők, és okosotthon-rendszerbe is integrálhatók."
+      },
+      {
+        "q": "Mi az a Flash Streamer?",
+        "a": "A Daikin saját légtisztító technológiája, amely lebontja a szagokat, allergéneket és szennyeződéseket – frissebb, tisztább beltéri levegőt adva."
+      },
+      {
+        "q": "Milyen hűtőközeggel működnek a Daikin klímák?",
+        "a": "A jelenlegi Daikin készülékek a környezetbarát R32 hűtőközeggel üzemelnek."
+      },
+      {
+        "q": "Mennyibe kerül egy Daikin klíma beszerelve?",
+        "a": "Az ár a modelltől, teljesítménytől és a beszerelés körülményeitől függ. Kérjen ingyenes felmérést és pontos árajánlatot – a kiszállás díjmentes."
+      }
+    ],
+    "featuredSeries": null,
+    "photos": null
+  },
+  {
+    "slug": "mitsubishi-electric",
+    "name": "Mitsubishi Electric",
+    "logo": "/brands/mitsubishi.png",
+    "accent": "#E0483B",
+    "tagline": "Prémium japán minőség, hosszú élettartam",
+    "metaTitle": "Mitsubishi Electric klímák Kecskeméten – telepítés | Kecskemét Klíma",
+    "intro": "A Mitsubishi Electric klímák a tartósságukról, precíz gyártásukról és kiemelkedően halk működésükről híresek. A gyártó a megbízhatóságot a fejlett légterelési és szűrési megoldásokkal ötvözi – ideális választás, ha hosszú távra tervez.",
+    "strengths": [
+      "Kiemelkedő gyártási minőség és élettartam",
+      "Nagyon halk, kifinomult működés",
+      "Fejlett légterelés és szűrés",
+      "Elegáns, dizájnos prémium modellek"
+    ],
+    "highlight": null,
+    "video": {
+      "id": "jWfVjeJ3TNI",
+      "title": "Mitsubishi Electric Kirigamine – prémium japán klíma",
+      "text": "A Mitsubishi Electric hivatalos videója a Kirigamine dizájnszériáról és technológiáról. Kérdése van? Hívjon, segítünk a választásban."
+    },
+    "infoSections": [
+      {
+        "icon": "shield",
+        "title": "Precíz japán minőség",
+        "lead": "Hosszú élettartam, kiszámítható működés.",
+        "points": [
+          "Kiemelkedő gyártási minőség és tartósság",
+          "Megbízható, sok éves problémamentes üzem",
+          "Prémium anyagok, gondos összeszerelés"
+        ]
+      },
+      {
+        "icon": "flame",
+        "title": "Erős téli fűtés",
+        "lead": "Hatékony hőszivattyús fűtés a hidegben is.",
+        "points": [
+          "Alacsony külső hőmérsékleten is stabil",
+          "Gyors felfűtés",
+          "Klímafűtésre is kiválóan alkalmas"
+        ]
+      },
+      {
+        "icon": "sparkles",
+        "title": "Plasma Quad Plus szűrés",
+        "lead": "Tisztább, egészségesebb beltéri levegő.",
+        "points": [
+          "Port, pollent, baktériumot is megköt",
+          "Allergiásoknak jó választás",
+          "Frissebb levegő egész évben"
+        ]
+      },
+      {
+        "icon": "thermometer",
+        "title": "3D i-see érzékelő",
+        "lead": "Érzékeli, hol tartózkodnak a lakók.",
+        "points": [
+          "Célzott vagy kímélő légterelés",
+          "Energiatakarékos, ha üres a szoba",
+          "Egyenletes, huzatmentes hőérzet"
+        ]
+      },
+      {
+        "icon": "wifi",
+        "title": "MELCloud okosvezérlés",
+        "lead": "Vezérelje a klímát telefonról, bárhonnan.",
+        "points": [
+          "Ki-be, hőmérséklet, időzítés az appból",
+          "Okosotthon-integráció",
+          "Több egység egy alkalmazásban"
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Miért prémium árú a Mitsubishi Electric?",
+        "a": "A magasabb ár a precíz japán gyártásból és a hosszú élettartamból fakad – cserébe az egyik legmegbízhatóbb és legcsendesebb klímát adja, hosszú távon kiszámítható üzemmel."
+      },
+      {
+        "q": "Alkalmas téli fűtésre?",
+        "a": "Igen, több modellje erős, alacsony külső hőmérsékleten is stabil fűtést ad hőszivattyús üzemben – klímafűtésre is kiválóan használható."
+      },
+      {
+        "q": "Vezérelhető telefonról?",
+        "a": "Igen, a MELCloud alkalmazással a WiFi-s modellek bárhonnan vezérelhetők, és okosotthon-rendszerbe is integrálhatók."
+      },
+      {
+        "q": "Mi az a Plasma Quad Plus?",
+        "a": "A Mitsubishi Electric fejlett légszűrő rendszere, amely port, pollent és baktériumokat is megköt – tisztább beltéri levegőért."
+      },
+      {
+        "q": "Mennyibe kerül beszerelve?",
+        "a": "Az ár a modelltől, teljesítménytől és a beszerelés körülményeitől függ. Kérjen ingyenes felmérést és pontos árajánlatot – a kiszállás díjmentes."
+      }
+    ],
+    "featuredSeries": null,
+    "photos": null
+  },
+  {
+    "slug": "gree",
+    "name": "Gree",
+    "logo": "/brands/gree.png",
+    "accent": "#16A34A",
+    "tagline": "Kiváló ár-érték, erős fűtés – akár 10 év garanciával",
+    "metaTitle": "Gree klímák Kecskeméten – telepítés, szerviz, akár 10 év garancia | Kecskemét Klíma",
+    "intro": "A Gree a világ legnagyobb klímagyártója: kedvező árú, mégis kiválóan felszerelt modelljei miatt itthon is az egyik legnépszerűbb választás. Több modellje kimagasló hőszivattyús fűtést ad, így egész évben gazdaságos – mi pedig hivatalos szakszervizként a telepítéstől a garanciális ügyintézésig végig a partnerei maradunk.",
+    "strengths": [
+      "Akár 10 év garancia a prémium Gree klímákra (a feltételek teljesülése esetén)",
+      "Kiváló ár-érték arány – prémium tudás elérhető áron",
+      "Erős fűtési teljesítmény hőszivattyús modelleknél, télen is",
+      "Fejlett inverteres kompresszor, halk és energiatakarékos működés",
+      "WiFi-vezérlés és okos funkciók a legtöbb modellnél",
+      "Széles kínálat: belépőtől a prémium dizájn készülékekig"
+    ],
+    "highlight": "A Gree prémium klímákra – a gyártói regisztráció és a feltételek teljesülése esetén – akár 10 év garancia is igényelhető. Hosszú távú nyugalom, nem csak egy szezonra.",
+    "video": {
+      "id": "uNRCooqHTes",
+      "title": "Ismerje meg a Gree klímákat működés közben",
+      "text": "A gyártó bemutatóvideója a Gree technológiáról és a lakossági szériákról. Ha kérdése van egy adott modellel kapcsolatban, hívjon – készséggel segítünk a választásban."
+    },
+    "infoSections": [
+      {
+        "icon": "leaf",
+        "title": "Környezetbarát R32 hűtőközeg",
+        "lead": "Jövőálló, környezetbarát gáz – kevesebb terhelés, jobb hatásfok.",
+        "points": [
+          "Nincs ózonkárosító hatása (ODP = 0)",
+          "GWP 675 – az R410a 2088-as értékének harmada",
+          "Hatékonyabb hőátadás, jobb energiahatékonyság"
+        ]
+      },
+      {
+        "icon": "piggybank",
+        "title": "H-tarifa: télen akár feleannyi rezsi",
+        "lead": "Kedvezményes fűtési áram a fűtési szezonra.",
+        "points": [
+          "Akár 50% megtakarítás a fűtési áram költségén",
+          "Október 15. – április 15. között érvényes",
+          "Az igénylésben és ügyintézésben segítünk"
+        ]
+      },
+      {
+        "icon": "wifi",
+        "title": "GREE+ okosalkalmazás és hangvezérlés",
+        "lead": "Vezérelje a klímát telefonról, bárhonnan a világon.",
+        "points": [
+          "Ingyenes GREE+ app: ki-be, hőmérséklet, időzítés",
+          "Google Home és Amazon Alexa kompatibilis",
+          "Akár hangparanccsal is irányítható"
+        ]
+      },
+      {
+        "icon": "globe",
+        "title": "A világ legnagyobb klímagyártója",
+        "lead": "Stabil, kiszámítható minőség kedvező áron.",
+        "points": [
+          "Évente több tízmillió legyártott készülék",
+          "Számos más ismert márkának is beszállítója",
+          "Saját fejlesztésű inverteres kompresszorok"
+        ]
+      },
+      {
+        "icon": "shield",
+        "title": "Akár 10 év garancia",
+        "lead": "Nyugalom hosszú távra, nem csak egy szezonra.",
+        "points": [
+          "Gyártói regisztráció + feltételek teljesülése esetén",
+          "Hivatalos szakszervizként mi intézzük",
+          "Beszereléstől a karbantartásig végig Ön mellett"
+        ]
+      },
+      {
+        "icon": "thermometer",
+        "title": "I FEEL komfortérzékelés",
+        "lead": "Ott legyen kellemes, ahol Ön van – nem a fal mellett.",
+        "points": [
+          "A távirányítóba épített hőmérő méri a hőmérsékletet",
+          "A klíma az Ön közelében mért értékhez igazít",
+          "Egyenletes, huzatmentes hőérzet"
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Alkalmas-e a Gree klíma téli fűtésre?",
+        "a": "Igen. A téliesített modellek kompresszorház- és csepptálca-fűtéssel készülnek, így hőszivattyús üzemben akár -25 °C-os külső hőmérsékletig is hatékonyan fűtenek. A fűtési szezon nagy részében kiválthatják vagy kiegészíthetik a hagyományos fűtést."
+      },
+      {
+        "q": "Tényleg igényelhető 10 év garancia?",
+        "a": "A prémium Gree modellekre a gyártói regisztráció elvégzése és a feltételek – például a rendszeres szakszervizes karbantartás – teljesülése esetén akár 10 év garancia is igényelhető. Ebben teljes körűen segítünk."
+      },
+      {
+        "q": "Mi az a H-tarifa, és mennyit spórolhatok vele?",
+        "a": "A H-tarifa egy kedvezményes elektromos áramtarifa fűtési célra. A megfelelő, feltételeknek megfelelő Gree modellekkel október 15. és április 15. között akár 50%-kal is csökkenthető a fűtésre fordított áram költsége."
+      },
+      {
+        "q": "Vezérelhető a Gree klíma telefonról?",
+        "a": "Igen. A WiFi-s modellek az ingyenes GREE+ alkalmazással a világ bármely pontjáról vezérelhetők, és Google Home vagy Amazon Alexa okosotthon-rendszerbe is integrálhatók."
+      },
+      {
+        "q": "Milyen hűtőközeggel működnek a Gree klímák?",
+        "a": "A jelenlegi Gree készülékek a környezetbarát, ózonbarát (ODP = 0) R32 hűtőközeggel üzemelnek, amelynek a globális felmelegedési potenciálja is jóval alacsonyabb a korábbi R410a gázénál."
+      },
+      {
+        "q": "Mennyibe kerül egy Gree klíma beszerelve?",
+        "a": "Az ár a kiválasztott modelltől, a szükséges teljesítménytől és a beszerelés körülményeitől függ. Kérjen ingyenes helyszíni felmérést és pontos árajánlatot – a kiszállás és a felmérés díjmentes."
+      }
+    ],
+    "featuredSeries": {
+      "name": "Comfort Pro",
+      "tagline": "Stílusra tervezve",
+      "image": "/photos/klima-belteri-szoba.jpg",
+      "intro": "A Gree egyik legnépszerűbb lakossági szériája: téliesített kivitel, erős fűtés akár -25 °C-ig, gyárilag beépített WiFi-vezérlés és hideg plazma légtisztítás – kiváló ár-érték arányban. Ideális választás lakásba és házba, ha megbízható, energiatakarékos, egész évben használható klímát keres.",
+      "capacities": [
+        {
+          "power": "2,7 kW",
+          "model": "GWH09ACCXB-K6DNA1G",
+          "room": "kb. 25 m²-ig"
+        },
+        {
+          "power": "3,5 kW",
+          "model": "GWH12ACCXD-K6DNA1D",
+          "room": "kb. 35 m²-ig"
+        },
+        {
+          "power": "5,3 kW",
+          "model": "GWH18ACDXF-K6DNA1D",
+          "room": "kb. 50 m²-ig"
+        },
+        {
+          "power": "7,1 kW",
+          "model": "GWH24ACEXF-K6DNA1A",
+          "room": "kb. 70 m²-ig"
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "wifi",
+          "title": "Gyári WiFi + okosvezérlés",
+          "text": "Beépített WiFi (2,4 GHz) és a GREE+ mobilapp – vezérelje bárhonnan. Google Home és Amazon Alexa hangvezérléssel is kompatibilis."
+        },
+        {
+          "icon": "flame",
+          "title": "Erős fűtés akár -25 °C-ig",
+          "text": "Téliesített kivitel kompresszorház- és csepptálca-fűtéssel, így hőszivattyús üzemben a hidegebb téli napokon is hatékonyan fűt."
+        },
+        {
+          "icon": "leaf",
+          "title": "Hideg plazma légtisztítás",
+          "text": "A Cold Plasma szűrő megköti a port, pollent és a szennyeződéseket – frissebb, tisztább beltéri levegő, allergiásoknak is jó választás."
+        },
+        {
+          "icon": "wind",
+          "title": "3D légáramlás",
+          "text": "Automata fel-le és jobbra-balra lamellamozgás egyenletesen, huzatmentesen teríti szét a levegőt a teljes helyiségben."
+        },
+        {
+          "icon": "thermometer",
+          "title": "I FEEL funkció",
+          "text": "A távirányítóba épített hőmérő alapján a klíma az Ön közelében mért hőmérséklethez igazítja a működést – ott legyen kellemes, ahol Ön van."
+        },
+        {
+          "icon": "volume",
+          "title": "Extra halk üzem",
+          "text": "Kifejezetten csendes működésre tervezve – hálószobába és gyerekszobába is ideális, éjszaka sem zavaró."
+        }
+      ],
+      "specs": [
+        {
+          "label": "Energiaosztály",
+          "value": "akár A++"
+        },
+        {
+          "label": "Hűtőközeg",
+          "value": "R32 (környezetbarát)"
+        },
+        {
+          "label": "Technológia",
+          "value": "inverteres"
+        },
+        {
+          "label": "Fűtés",
+          "value": "-25 °C külső hőmérsékletig"
+        },
+        {
+          "label": "WiFi",
+          "value": "gyárilag beépített (2,4 GHz)"
+        },
+        {
+          "label": "Fagyvédelem",
+          "value": "8 °C-os alapfűtés funkció"
+        },
+        {
+          "label": "Garancia",
+          "value": "a feltételek teljesülése esetén akár 10 év"
+        },
+        {
+          "label": "H-tarifa",
+          "value": "igényelhető"
+        }
+      ]
+    },
+    "photos": null
+  },
+  {
+    "slug": "lg",
+    "name": "LG",
+    "logo": "/brands/lg.png",
+    "accent": "#C2185B",
+    "tagline": "Dual Inverter technológia, halk működés",
+    "metaTitle": "LG klímák Kecskeméten – telepítés és szerviz | Kecskemét Klíma",
+    "intro": "Az LG klímák a Dual Inverter kompresszoruknak köszönhetően csendesek, energiatakarékosak és gyorsan elérik a kívánt hőmérsékletet. A kínálat a kiváló ár-értékű alapmodellektől a dizájnos prémium készülékekig terjed.",
+    "strengths": [
+      "Dual Inverter – csendes és energiatakarékos",
+      "Gyors hűtés és fűtés",
+      "Tartós, jó minőségű kompresszor",
+      "Dizájnos prémium modellek (Artcool)"
+    ],
+    "highlight": null,
+    "video": {
+      "id": "eD1eVl8pv74",
+      "title": "LG DUALCOOL – intelligens hűtés Dual Inverterrel",
+      "text": "Az LG hivatalos videója a DUALCOOL szériáról és a Dual Inverter technológiáról. Kérdése van? Hívjon, segítünk a választásban."
+    },
+    "infoSections": [
+      {
+        "icon": "gauge",
+        "title": "Dual Inverter kompresszor",
+        "lead": "Csendes, energiatakarékos, tartós.",
+        "points": [
+          "Akár 10 év garancia a kompresszorra (gyártói feltételek szerint)",
+          "Jelentős energiamegtakarítás az inverter nélküli klímákhoz képest",
+          "Gyors hűtés és gyors felfűtés"
+        ]
+      },
+      {
+        "icon": "volume",
+        "title": "Halk működés",
+        "lead": "Kifejezetten csendes üzem.",
+        "points": [
+          "Alacsony zajszintre optimalizált beltéri egység",
+          "A Silence modell extra halk",
+          "Hálószobába, gyerekszobába is ideális"
+        ]
+      },
+      {
+        "icon": "sparkles",
+        "title": "Tisztább beltéri levegő",
+        "lead": "Légtisztító megoldások a prémium modelleknél.",
+        "points": [
+          "Megköti a port és szennyeződéseket",
+          "Frissebb, egészségesebb levegő",
+          "Allergiásoknak is jó választás"
+        ]
+      },
+      {
+        "icon": "wifi",
+        "title": "LG ThinQ okosvezérlés",
+        "lead": "Vezérelje a klímát telefonról, bárhonnan.",
+        "points": [
+          "Ki-be, hőmérséklet, időzítés az appból",
+          "Okosotthon- és hangvezérlés-integráció",
+          "Energiafogyasztás követése"
+        ]
+      },
+      {
+        "icon": "flame",
+        "title": "Hatékony téli fűtés",
+        "lead": "Gazdaságos hőszivattyús fűtés a hidegben.",
+        "points": [
+          "Alacsony külső hőmérsékleten is működik",
+          "Gyors felfűtés",
+          "A prémium modellek erős fűtésre optimalizáltak"
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Igaz, hogy 10 év garancia van a kompresszorra?",
+        "a": "Igen, az LG a Dual Inverter kompresszorra akár 10 év garanciát ad (a gyártói feltételek szerint) – ez a technológia tartósságát jelzi. A készülék többi részére a gyártói jótállás vonatkozik."
+      },
+      {
+        "q": "Mit jelent a Dual Inverter?",
+        "a": "Az LG saját kompresszortechnológiája, amely a hőmérséklethez igazítja a fordulatszámot – így csendesebb, energiatakarékosabb, és gyorsabban éri el a kívánt hőmérsékletet."
+      },
+      {
+        "q": "Melyik LG a legcsendesebb?",
+        "a": "A Silence modell kifejezetten extra halk üzemre optimalizált – hálószobába, gyerekszobába ideális."
+      },
+      {
+        "q": "Vezérelhető telefonról?",
+        "a": "Igen, az LG ThinQ alkalmazással a WiFi-s modellek bárhonnan vezérelhetők, és okosotthon-rendszerbe is integrálhatók."
+      },
+      {
+        "q": "Mennyibe kerül beszerelve?",
+        "a": "Az ár a modelltől, teljesítménytől és a beszerelés körülményeitől függ. Kérjen ingyenes felmérést és pontos árajánlatot – a kiszállás díjmentes."
+      }
+    ],
+    "featuredSeries": null,
+    "photos": null
+  },
+  {
+    "slug": "panasonic",
+    "name": "Panasonic",
+    "logo": "/brands/panasonic.png",
+    "accent": "#4F46E5",
+    "tagline": "Tiszta levegő nanoe™ technológiával",
+    "metaTitle": "Panasonic klímák Kecskeméten – telepítés és szerviz | Kecskemét Klíma",
+    "intro": "A Panasonic klímák megbízhatóságukról és a levegőtisztító megoldásaikról ismertek. A prémium modellek nanoe™ X technológiája segít frissebb, tisztább beltéri levegőt biztosítani – ideális allergiásoknak és egészségtudatos családoknak.",
+    "strengths": [
+      "nanoe™ X levegőtisztítás a prémium modelleknél",
+      "Megbízható, tartós működés",
+      "Jó energiahatékonyság",
+      "Kiegyensúlyozott ár-érték kínálat"
+    ],
+    "highlight": null,
+    "video": {
+      "id": "wufrW8NXEFs",
+      "title": "Panasonic Etherea – nanoe™ X légtisztítás",
+      "text": "A Panasonic hivatalos videója az Etherea szériáról és a nanoe™ X levegőtisztító technológiáról. Kérdése van? Hívjon, segítünk a választásban."
+    },
+    "infoSections": [
+      {
+        "icon": "sparkles",
+        "title": "nanoe™ X légtisztítás",
+        "lead": "Folyamatosan tisztább beltéri levegő.",
+        "points": [
+          "Semlegesíti a szagokat és allergéneket",
+          "Baktériumokat, penészt is kezel",
+          "Akkor is működik, ha a klíma nem hűt vagy fűt"
+        ]
+      },
+      {
+        "icon": "wind",
+        "title": "Aerowings kettős légterelő",
+        "lead": "Pontos, huzatmentes légáram.",
+        "points": [
+          "Két külön mozgó lamella",
+          "A levegőt oda irányítja, ahová kell",
+          "Nincs közvetlen hideg légáram"
+        ]
+      },
+      {
+        "icon": "thermometer",
+        "title": "Okos, energiatakarékos érzékelés",
+        "lead": "Automatikusan spórol, ha nincs terhelés.",
+        "points": [
+          "Érzékeli a mozgást és a napfényt",
+          "Visszaszabályoz, ha üres a szoba",
+          "Alacsonyabb rezsi"
+        ]
+      },
+      {
+        "icon": "wifi",
+        "title": "Comfort Cloud okosvezérlés",
+        "lead": "Vezérelje a klímát telefonról, bárhonnan.",
+        "points": [
+          "Ki-be, hőmérséklet, időzítés az appból",
+          "Okosotthon-integráció",
+          "Több egység egy alkalmazásban"
+        ]
+      },
+      {
+        "icon": "leaf",
+        "title": "R32 + jó hatásfok",
+        "lead": "Környezetbarát, gazdaságos üzem.",
+        "points": [
+          "Környezetbarát R32 hűtőközeg",
+          "Inverteres kompresszor a gazdaságos üzemért",
+          "Alacsony üzemköltség"
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Mi az a nanoe™ X?",
+        "a": "A Panasonic szabadalmaztatott légtisztító technológiája, amely hidroxil-gyököket használva folyamatosan tisztítja a levegőt: semlegesíti a szagokat, kezeli a baktériumokat, allergéneket, penészt – akkor is, ha a klíma épp nem hűt vagy fűt."
+      },
+      {
+        "q": "Jó a Panasonic allergiásoknak?",
+        "a": "Igen, a nanoe™ X-es modellek kifejezetten ajánlottak allergiásoknak és egészségtudatos családoknak a tisztább beltéri levegő miatt."
+      },
+      {
+        "q": "Vezérelhető telefonról?",
+        "a": "Igen, a Panasonic Comfort Cloud alkalmazással a WiFi-s modellek bárhonnan vezérelhetők, és okosotthon-rendszerbe is integrálhatók."
+      },
+      {
+        "q": "Melyik a legjobb Panasonic modell?",
+        "a": "Az Etherea (Z) a prémium csúcs: nanoe™ X légtisztítás, csúcs energiaosztály és nagyon halk üzem. A pontos választást a felmérésen segítjük."
+      },
+      {
+        "q": "Mennyibe kerül beszerelve?",
+        "a": "Az ár a modelltől, teljesítménytől és a beszerelés körülményeitől függ. Kérjen ingyenes felmérést és pontos árajánlatot – a kiszállás díjmentes."
+      }
+    ],
+    "featuredSeries": null,
+    "photos": null
+  },
+  {
+    "slug": "aux",
+    "name": "AUX",
+    "logo": "/brands/aux-brand.png",
+    "accent": "#0EA5E9",
+    "tagline": "Okos klímák verhetetlen ár-érték aránnyal",
+    "metaTitle": "AUX klímák Kecskeméten – telepítés és szerviz | Kecskemét Klíma",
+    "intro": "Az AUX a világ egyik legnagyobb klímagyártója, amely számos ismert márkának is beszállítója. Saját készülékei kifejezetten kedvező áron kínálnak modern, inverteres technológiát, WiFi-vezérlést és megbízható hűtés-fűtés teljesítményt – ideális választás, ha jó ár-értékű, okos klímát keres.",
+    "strengths": [
+      "Kimagasló ár-érték arány",
+      "Modern inverteres technológia, energiatakarékos üzem",
+      "WiFi-vezérlés és okos funkciók több modellnél",
+      "Megbízható hűtés és fűtés hőszivattyús üzemben"
+    ],
+    "highlight": null,
+    "video": {
+      "id": "u_sA544tosI",
+      "title": "AUX Delta – H-tarifás okosklíma bemutató",
+      "text": "Bemutatóvideó az AUX Delta szériáról és a H-tarifás fűtési megtakarításról. Kérdése van? Hívjon, segítünk a választásban."
+    },
+    "infoSections": [
+      {
+        "icon": "piggybank",
+        "title": "Verhetetlen ár-érték",
+        "lead": "Prémium tudás a legkedvezőbb áron.",
+        "points": [
+          "A világ egyik legnagyobb klímagyártója",
+          "Számos ismert márka OEM-beszállítója",
+          "Modern felszereltség márkafelár nélkül"
+        ]
+      },
+      {
+        "icon": "flame",
+        "title": "H-tarifás modellek – téli megtakarítás",
+        "lead": "Kedvezményes fűtési árammal olcsóbb fűtés.",
+        "points": [
+          "H-tarifás készülékek elérhetők",
+          "Kedvezményes áram a fűtési szezonban",
+          "Az igénylésben és ügyintézésben segítünk"
+        ]
+      },
+      {
+        "icon": "wifi",
+        "title": "Okosvezérlés alkalmazással",
+        "lead": "Vezérelje a klímát telefonról, bárhonnan.",
+        "points": [
+          "Beépített WiFi a legtöbb modellnél",
+          "Ki-be, hőmérséklet, időzítés az appból",
+          "Okosotthon-integráció"
+        ]
+      },
+      {
+        "icon": "leaf",
+        "title": "Inverteres, R32",
+        "lead": "Környezetbarát, gazdaságos üzem.",
+        "points": [
+          "Környezetbarát R32 hűtőközeg",
+          "Inverteres kompresszor a gazdaságos üzemért",
+          "Megbízható hűtés és fűtés hőszivattyús üzemben"
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Miért ilyen kedvező az AUX ára?",
+        "a": "Az AUX a világ egyik legnagyobb klímagyártója, amely számos ismert márkának is beszállítója. A saját készülékei ugyanazt a modern, inverteres technológiát adják, csak márkafelár nélkül – ezért verhetetlen az ár-érték arányuk."
+      },
+      {
+        "q": "Mi az a H-tarifa?",
+        "a": "Kedvezményes elektromos fűtési tarifa. A H-tarifás AUX modellekkel a fűtési szezonban jelentősen csökkenthető a fűtésre fordított áram költsége – az igénylésben segítünk."
+      },
+      {
+        "q": "Vezérelhető telefonról?",
+        "a": "Igen, a WiFi-s AUX modellek okostelefonról, ingyenes alkalmazással bárhonnan vezérelhetők, és okosotthon-rendszerbe is integrálhatók."
+      },
+      {
+        "q": "Megbízhatók az AUX klímák?",
+        "a": "Igen. Az AUX hatalmas gyártói háttérrel és modern, inverteres technológiával dolgozik – mi pedig szakszerűen telepítjük és karbantartjuk, garanciával és számlával."
+      },
+      {
+        "q": "Mennyibe kerül beszerelve?",
+        "a": "Az ár a modelltől, teljesítménytől és a beszerelés körülményeitől függ. Kérjen ingyenes felmérést és pontos árajánlatot – a kiszállás díjmentes."
+      }
+    ],
+    "featuredSeries": null,
+    "photos": [
+      {
+        "src": "/photos/belteri-aux-halo.jpg",
+        "alt": "Beszerelt AUX beltéri klíma egység hálószobában"
+      },
+      {
+        "src": "/photos/kulteri-aux-oldal.jpg",
+        "alt": "AUX kültéri klíma egység homlokzati rögzítéssel"
+      }
+    ]
+  },
+  {
+    "slug": "polar",
+    "name": "Polár",
+    "logo": "/brands/polar.png",
+    "accent": "#2563EB",
+    "tagline": "Elérhető árú, megbízható klímák a mindennapokra",
+    "metaTitle": "Polár klímák Kecskeméten – telepítés és szerviz | Kecskemét Klíma",
+    "intro": "A Polár klímák a jó ár-érték arányukról és egyszerű, megbízható működésükről ismertek. Kiváló választás, ha megfizethető áron szeretne hatékony hűtést és fűtést – mi pedig szakszerűen telepítjük, beüzemeljük és karbantartjuk a készülékeket, garanciával és számlával.",
+    "strengths": [
+      "Elérhető ár, kedvező belépő a klímavilágba",
+      "Egyszerű, megbízható működés",
+      "Inverteres modellek energiatakarékos üzemmel",
+      "Teljes körű helyi szerviz és garancia"
+    ],
+    "highlight": null,
+    "video": {
+      "id": "wj-wMRKPvq0",
+      "title": "Ismerd meg a POLAR klímákat",
+      "text": "A Polár hivatalos bemutatóvideója a klímákról. Kérdése van egy modellel kapcsolatban? Hívjon, segítünk a választásban."
+    },
+    "infoSections": [
+      {
+        "icon": "piggybank",
+        "title": "Elérhető ár, kedvező belépő",
+        "lead": "A legjobb út egy jó klímához olcsón.",
+        "points": [
+          "Megfizethető inverteres modellek",
+          "Jó minőség márkafelár nélkül",
+          "Gyors, egyszerű beszerelés"
+        ]
+      },
+      {
+        "icon": "leaf",
+        "title": "Inverteres, R32",
+        "lead": "Gazdaságos, környezetbarát üzem.",
+        "points": [
+          "Környezetbarát R32 hűtőközeg",
+          "Inverteres kompresszor a spórolásért",
+          "Alacsony üzemköltség"
+        ]
+      },
+      {
+        "icon": "volume",
+        "title": "Halk, egyszerű kezelés",
+        "lead": "Csendes működés, könnyű vezérlés.",
+        "points": [
+          "Halk beltéri egység",
+          "Egyszerű, letisztult kezelés",
+          "WiFi-vel bővíthető több modellnél"
+        ]
+      },
+      {
+        "icon": "shield",
+        "title": "Teljes körű helyi szerviz és garancia",
+        "lead": "Telepítés, karbantartás, garancia egy helyen.",
+        "points": [
+          "Szakszerű beszerelés és beüzemelés",
+          "Rendszeres karbantartás",
+          "Garanciális ügyintézés helyben"
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Megbízhatók a Polár klímák?",
+        "a": "Igen. A Polár klímák egyszerű, bevált technikára épülnek, és jó ár-érték arányt adnak. Mi pedig szakszerűen telepítjük, beüzemeljük és karbantartjuk őket, garanciával és számlával."
+      },
+      {
+        "q": "Van inverteres Polár modell?",
+        "a": "Igen, a Comfort Inverter gazdaságos inverteres hűtést és fűtést ad – kiváló belépő az inverteres klímák világába kedvező áron."
+      },
+      {
+        "q": "Milyen hűtőközeggel működnek?",
+        "a": "A jelenlegi Polár készülékek a környezetbarát R32 hűtőközeggel üzemelnek."
+      },
+      {
+        "q": "Mennyibe kerül beszerelve?",
+        "a": "Az ár a modelltől, teljesítménytől és a beszerelés körülményeitől függ. Kérjen ingyenes felmérést és pontos árajánlatot – a kiszállás díjmentes."
+      }
+    ],
+    "featuredSeries": null,
+    "photos": [
+      {
+        "src": "/photos/belteri-polar-nappali.jpg",
+        "alt": "Beszerelt Polár beltéri klíma egység nappaliban"
+      },
+      {
+        "src": "/photos/kulteri-polar-kozeli.jpg",
+        "alt": "Polár kültéri klíma egység közeli nézetben"
+      }
+    ]
+  }
+]

@@ -1,0 +1,87 @@
+[
+  {
+    "id": "sensira",
+    "slug": "sensira",
+    "name": "Sensira",
+    "positioning": "Belépőszint",
+    "summary": "Kedvező árú, megbízható belépő a Daikin világába.",
+    "features": [
+      "Kedvező ár",
+      "Halk működés",
+      "Inverteres",
+      "Megbízható"
+    ],
+    "image": "",
+    "body": "A Sensira a Daikin belépő modellje: kedvező árú, megbízható választás azoknak, akik jó ár-érték arányt keresnek. Inverteres kompresszorral gazdaságosan hűt és fűt, halkan üzemel, és a Daikin bevált minőségét adja a legkedvezőbb áron.\n\n## Főbb előnyök\n\n- **Kedvező ár:** A legjobb belépő a japán Daikin minőségbe.\n- **Inverteres, gazdaságos:** Alacsony fogyasztás, kiszámítható üzem.\n- **Halk működés:** Csendes beltéri egység a mindennapokra.\n- **Daikin megbízhatóság:** A világ egyik vezető gyártójának minősége.\n\n## Kinek ajánljuk?\n\n- Első klíma kedvező áron\n- Lakás, hálószoba\n- Aki bevált japán minőséget keres olcsón\n\n## Főbb jellemzők\n\n- **Kategória:** Belépőszint\n- **Technológia:** inverteres\n- **Hűtőközeg:** R32 (környezetbarát)\n- **WiFi:** opcióként (adapterrel)\n- **Fűtés:** hőszivattyús üzem\n- **Energiaosztály:** jó\n- **Teljesítmény:** több méretben – a felmérésen választjuk ki\n- **Garancia:** gyártói jótállás + teljes körű helyi szerviz",
+    "order": 0,
+    "published": true
+  },
+  {
+    "id": "comfora",
+    "slug": "comfora",
+    "name": "Comfora",
+    "positioning": "Kényelmi",
+    "summary": "Kiegyensúlyozott mindennapi komfort, WiFi-opcióval.",
+    "features": [
+      "Jó hatásfok",
+      "WiFi opció",
+      "Csendes",
+      "Jó fűtés"
+    ],
+    "image": "",
+    "body": "A Comfora a Daikin kiegyensúlyozott kényelmi modellje: jó hatásfok, stabil hűtés és fűtés, csendes üzem és opcionális WiFi-vezérlés. Ideális választás, ha a megbízható mindennapi komfort és a jó ár a fontos.\n\n## Főbb előnyök\n\n- **Jó hatásfok:** Gazdaságos, kiegyensúlyozott üzem egész évben.\n- **WiFi opció:** A Daikin Onecta alkalmazással bővíthető vezérlés.\n- **Csendes üzem:** Halk működés nappaliba és hálószobába.\n- **Jó téli fűtés:** Megbízható hőszivattyús fűtés a hidegben is.\n\n## Kinek ajánljuk?\n\n- Nappali, hálószoba\n- Mindennapi kiegyensúlyozott komfort\n- Aki jó ár-értéket keres\n\n## Főbb jellemzők\n\n- **Kategória:** Kényelmi\n- **Technológia:** inverteres\n- **Hűtőközeg:** R32 (környezetbarát)\n- **WiFi:** opcióként (adapterrel)\n- **Fűtés:** hőszivattyús üzem, jó teljesítmény\n- **Energiaosztály:** jó (akár A++)\n- **Teljesítmény:** több méretben – a felmérésen választjuk ki\n- **Garancia:** gyártói jótállás + teljes körű helyi szerviz",
+    "order": 1,
+    "published": true
+  },
+  {
+    "id": "perfera",
+    "slug": "perfera",
+    "name": "Perfera",
+    "positioning": "Prémium",
+    "summary": "Csúcs energiahatékonyság és erős téli fűtés.",
+    "features": [
+      "Csúcs energiaosztály",
+      "Erős fűtés télen",
+      "Beépített WiFi",
+      "Nagyon halk"
+    ],
+    "image": "",
+    "body": "A Perfera a Daikin prémium modellje: csúcskategóriás energiahatékonyság, kiváló fűtési teljesítmény alacsony külső hőmérsékleten is, beépített WiFi-vel és Flash Streamer légtisztítással. Kifinomult légterelés, nagyon halk üzem – a Daikin legjobbja a mindennapokra.\n\n## Főbb előnyök\n\n- **Erős fűtés télen:** Alacsony külső hőmérsékleten is hatékony hőszivattyús fűtés.\n- **Csúcs energiaosztály:** Kiemelkedő hatásfok – gazdaságos üzem egész évben.\n- **Flash Streamer légtisztítás:** Lebontja a szagokat, allergéneket, szennyeződéseket.\n- **Beépített WiFi:** Daikin Onecta app, okosotthon-integrációval.\n\n## Kinek ajánljuk?\n\n- Klímafűtés fő vagy kiegészítő fűtésként\n- Aki a legjobb hatásfokot keresi\n- Egész éves prémium komfort\n\n## Főbb jellemzők\n\n- **Kategória:** Prémium\n- **Technológia:** inverteres\n- **Hűtőközeg:** R32 (környezetbarát)\n- **WiFi:** gyárilag beépített\n- **Fűtés:** kiváló, alacsony hőmérsékleten is stabil\n- **Légtisztítás:** Flash Streamer\n- **Energiaosztály:** csúcskategóriás\n- **Garancia:** gyártói jótállás + teljes körű helyi szerviz\n\n## Gyakori kérdések\n\n### Jó a Perfera téli fűtésre?\n\nIgen, kifejezetten erős fűtésre optimalizált: alacsony külső hőmérsékleten is hatékonyan fűt hőszivattyús üzemben, magas energiaosztállyal.",
+    "order": 2,
+    "published": true
+  },
+  {
+    "id": "emura",
+    "slug": "emura",
+    "name": "Emura",
+    "positioning": "Dizájn ikon",
+    "summary": "A Daikin dizájn-zászlóshajója.",
+    "features": [
+      "Prémium dizájn",
+      "Érzékelős légterelés",
+      "Halk",
+      "Magas hatásfok"
+    ],
+    "image": "",
+    "body": "Az Emura a Daikin dizájn-zászlóshajója: elegáns, fém hatású előlap és letisztult formavilág. A prémium megjelenés mögött magas hatásfok, intelligens érzékelők, Flash Streamer légtisztítás és teljes okosvezérlés áll.\n\n## Főbb előnyök\n\n- **Prémium dizájn:** Fém hatású, elegáns előlap – dizájnelem a lakásban.\n- **Érzékelős légterelés:** Oda irányítja a levegőt, ahol valóban tartózkodik.\n- **Nagyon halk:** Kifinomult, csendes működés éjszaka is.\n- **Teljes okosvezérlés:** Daikin Onecta app és okosotthon-integráció.\n\n## Kinek ajánljuk?\n\n- Reprezentatív nappali\n- Ahol a klíma dizájnelem is\n- Igényes otthon\n\n## Főbb jellemzők\n\n- **Kategória:** Dizájn ikon\n- **Technológia:** inverteres\n- **Hűtőközeg:** R32 (környezetbarát)\n- **WiFi:** gyárilag beépített\n- **Kivitel:** fém hatású, prémium előlap\n- **Energiaosztály:** magas (akár A++)\n- **Teljesítmény:** több méretben – a felmérésen választjuk ki\n- **Garancia:** gyártói jótállás + teljes körű helyi szerviz",
+    "order": 3,
+    "published": true
+  },
+  {
+    "id": "stylish",
+    "slug": "stylish",
+    "name": "Stylish",
+    "positioning": "Kompakt dizájn",
+    "summary": "Dizájnos prémium meglepően kis helyen.",
+    "features": [
+      "Kompakt forma",
+      "Érzékelős",
+      "WiFi vezérlés",
+      "Magas hatásfok"
+    ],
+    "image": "",
+    "body": "A Stylish vékony, modern formájú prémium modell kiváló légáramlással, intelligens érzékelőkkel és WiFi-vezérléssel. Kompakt kültéri egység, tiszta levegőt adó szűrés – prémium tudás egy meglepően kis helyen.\n\n## Főbb előnyök\n\n- **Kompakt dizájn:** Vékony, modern beltéri egység kis helyre is.\n- **Kiváló légáramlás:** Erős, egyenletes légterelés a kompakt méret ellenére.\n- **Intelligens érzékelők:** Célzott, energiatakarékos légterelés.\n- **WiFi vezérlés:** Daikin Onecta app, bárhonnan irányítható.\n\n## Kinek ajánljuk?\n\n- Kisebb helyiségek\n- Ahol kompakt kültéri egység kell\n- Dizájnigényes, kisebb terek\n\n## Főbb jellemzők\n\n- **Kategória:** Kompakt dizájn\n- **Technológia:** inverteres\n- **Hűtőközeg:** R32 (környezetbarát)\n- **WiFi:** gyárilag beépített\n- **Kivitel:** vékony, kompakt beltéri és kültéri\n- **Energiaosztály:** magas (akár A++)\n- **Teljesítmény:** több méretben – a felmérésen választjuk ki\n- **Garancia:** gyártói jótállás + teljes körű helyi szerviz",
+    "order": 4,
+    "published": true
+  }
+]

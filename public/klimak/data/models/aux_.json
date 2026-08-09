@@ -1,0 +1,53 @@
+[
+  {
+    "id": "q-smart-plus",
+    "slug": "q-smart-plus",
+    "name": "Q-Smart Plus",
+    "positioning": "Népszerű okos modell",
+    "summary": "Verhetetlen ár-értékű okosklíma.",
+    "features": [
+      "Beépített WiFi",
+      "Inverteres, R32",
+      "Jó hatásfok",
+      "Kedvező ár"
+    ],
+    "image": "",
+    "body": "Az AUX Q-Smart Plus kedvező árú, jól felszerelt modell beépített WiFi-vel és jó hatásfokkal. Inverteres, R32-es működés, megbízható hűtés-fűtés hőszivattyús üzemben, verhetetlen ár-érték aránnyal – a mindennapi kényelemért.\n\n## Főbb előnyök\n\n- **Beépített WiFi:** Okostelefonról, ingyenes alkalmazással vezérelhető.\n- **Inverteres, R32:** Környezetbarát hűtőközeg, gazdaságos üzem.\n- **Jó hatásfok:** Energiatakarékos működés, alacsony rezsi.\n- **Kedvező ár:** Modern felszereltség verhetetlen ár-érték aránnyal.\n\n## Kinek ajánljuk?\n\n- Első okosklíma kedvező áron\n- Lakás, nappali, hálószoba\n- Aki modern felszereltséget akar olcsón\n\n## Főbb jellemzők\n\n- **Kategória:** Népszerű okos modell\n- **Technológia:** inverteres\n- **Hűtőközeg:** R32 (környezetbarát)\n- **WiFi:** gyárilag beépített\n- **Fűtés:** hőszivattyús üzem\n- **Energiaosztály:** jó\n- **Teljesítmény:** több méretben – a felmérésen választjuk ki\n- **Garancia:** gyártói jótállás + teljes körű helyi szerviz",
+    "order": 0,
+    "published": true
+  },
+  {
+    "id": "freedom",
+    "slug": "freedom",
+    "name": "Freedom",
+    "positioning": "Kényelmi széria",
+    "summary": "Kiegyensúlyozott komfort, jó téli fűtéssel.",
+    "features": [
+      "Inverter",
+      "Csendes",
+      "Jó téli fűtés",
+      "WiFi opció"
+    ],
+    "image": "",
+    "body": "Az AUX Freedom kiegyensúlyozott hűtés-fűtést ad megbízható inverteres működéssel és csendes üzemmel. Jó fűtési teljesítmény télen is, WiFi-vel bővíthető okosvezérlés – kényelmes és gazdaságos a mindennapokra.\n\n## Főbb előnyök\n\n- **Inverteres, gazdaságos:** Alacsony fogyasztás, kiszámítható üzem.\n- **Csendes üzem:** Halk működés nappaliba és hálószobába.\n- **Jó téli fűtés:** Megbízható hőszivattyús fűtés a hidegben is.\n- **WiFi opció:** Okosvezérléssel bővíthető, bárhonnan irányítható.\n\n## Kinek ajánljuk?\n\n- Nappali, hálószoba\n- Mindennapi kiegyensúlyozott komfort\n- Aki jó téli fűtést is vár\n\n## Főbb jellemzők\n\n- **Kategória:** Kényelmi széria\n- **Technológia:** inverteres\n- **Hűtőközeg:** R32 (környezetbarát)\n- **WiFi:** opcióként bővíthető\n- **Fűtés:** hőszivattyús, jó teljesítmény\n- **Energiaosztály:** jó\n- **Teljesítmény:** több méretben – a felmérésen választjuk ki\n- **Garancia:** gyártói jótállás + teljes körű helyi szerviz",
+    "order": 1,
+    "published": true
+  },
+  {
+    "id": "j-smart",
+    "slug": "j-smart",
+    "name": "J-Smart",
+    "positioning": "Dizájn kényelem",
+    "summary": "Dizájnos okosklíma, ami nem terheli a pénztárcát.",
+    "features": [
+      "Dizájnos",
+      "Okos vezérlés, WiFi",
+      "Energiatakarékos",
+      "Halk"
+    ],
+    "image": "",
+    "body": "Az AUX J-Smart letisztult megjelenést, okos vezérlést és jó energiaosztályt ad egy elérhető árú készülékben. Halk, energiatakarékos üzem és beépített WiFi – dizájnos okosklíma, ami nem terheli meg a pénztárcát.\n\n## Főbb előnyök\n\n- **Dizájnos megjelenés:** Letisztult előlap, ami illeszkedik a modern otthonhoz.\n- **Okos vezérlés, WiFi:** Beépített WiFi, telefonról bárhonnan irányítható.\n- **Energiatakarékos:** Jó energiaosztály, gazdaságos üzem.\n- **Halk működés:** Csendes beltéri egység a mindennapokra.\n\n## Kinek ajánljuk?\n\n- Ahol a megjelenés is számít\n- Modern lakás, hálószoba\n- Aki dizájnt és okos funkciókat akar olcsón\n\n## Főbb jellemzők\n\n- **Kategória:** Dizájn kényelem\n- **Technológia:** inverteres\n- **Hűtőközeg:** R32 (környezetbarát)\n- **WiFi:** gyárilag beépített\n- **Kivitel:** letisztult, dizájnos előlap\n- **Energiaosztály:** jó\n- **Teljesítmény:** több méretben – a felmérésen választjuk ki\n- **Garancia:** gyártói jótállás + teljes körű helyi szerviz",
+    "order": 2,
+    "published": true
+  }
+]

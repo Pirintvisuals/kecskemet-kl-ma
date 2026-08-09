@@ -1,0 +1,19 @@
+# Kecskemét Klíma – Márka/modell katalógus (Apache / cPanel)
+Options -Indexes
+DirectoryIndex index.php
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /klimak/
+
+    # Valós fájl vagy mappa (assets, uploads, data, admin, *.php) érintetlen
+    RewriteCond %{REQUEST_FILENAME} -f [OR]
+    RewriteCond %{REQUEST_FILENAME} -d
+    RewriteRule ^ - [L]
+
+    # /klimak/{márka}/{modell}/ -> model.php
+    RewriteRule ^([a-z0-9-]+)/([a-z0-9-]+)/?$ model.php?b=$1&m=$2 [L,QSA]
+
+    # /klimak/{márka}/ -> brand.php
+    RewriteRule ^([a-z0-9-]+)/?$ brand.php?b=$1 [L,QSA]
+</IfModule>

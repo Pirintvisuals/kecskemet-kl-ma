@@ -1,0 +1,70 @@
+[
+  {
+    "id": "msz-hr",
+    "slug": "msz-hr",
+    "name": "MSZ-HR",
+    "positioning": "Belépő modell",
+    "summary": "Japán minőség kedvező áron.",
+    "features": [
+      "Megbízható",
+      "Kedvező ár",
+      "Inverteres",
+      "Halk"
+    ],
+    "image": "",
+    "body": "Az MSZ-HR a Mitsubishi Electric belépő modellje: megbízható alapfelszereltség azoknak, akik a japán minőséget kedvező áron keresik. Inverteres, gazdaságos üzem és a gyártó ismert tartóssága – jó minőségű belépő, ami sokáig szolgál.\n\n## Főbb előnyök\n\n- **Kedvező ár:** Japán minőség a legkedvezőbb belépő szinten.\n- **Japán tartósság:** Precíz gyártás, hosszú, problémamentes élettartam.\n- **Inverteres, gazdaságos:** Alacsony fogyasztás, kiszámítható üzem.\n- **Halk működés:** Csendes beltéri egység a mindennapokra.\n\n## Kinek ajánljuk?\n\n- Első klíma megbízható minőséggel\n- Lakás, hálószoba\n- Aki tartós, halk klímát keres kedvező áron\n\n## Főbb jellemzők\n\n- **Kategória:** Belépő modell\n- **Technológia:** inverteres\n- **Hűtőközeg:** R32 (környezetbarát)\n- **WiFi:** opcióként (MELCloud)\n- **Fűtés:** hőszivattyús üzem\n- **Energiaosztály:** jó\n- **Teljesítmény:** több méretben – a felmérésen választjuk ki\n- **Garancia:** gyártói jótállás + teljes körű helyi szerviz",
+    "order": 0,
+    "published": true
+  },
+  {
+    "id": "msz-ay",
+    "slug": "msz-ay",
+    "name": "MSZ-AY",
+    "positioning": "Kényelmi széria",
+    "summary": "Kiegyensúlyozott kényelem, jó téli fűtéssel.",
+    "features": [
+      "Jó hatásfok",
+      "Csendes",
+      "WiFi opció",
+      "Jó téli fűtés"
+    ],
+    "image": "",
+    "body": "Az MSZ-AY kiegyensúlyozott hatásfokot és komfortot ad továbbfejlesztett működéssel, csendes üzemmel és jó fűtési teljesítménnyel. WiFi-vel vezérelhető, kifinomult légterelés – a mindennapok megbízható kényelme.\n\n## Főbb előnyök\n\n- **Jó hatásfok:** Gazdaságos, kiegyensúlyozott üzem egész évben.\n- **Csendes üzem:** Halk működés nappaliba és hálószobába.\n- **WiFi vezérlés:** MELCloud alkalmazás, bárhonnan irányítható.\n- **Jó téli fűtés:** Megbízható hőszivattyús fűtés a hidegben is.\n\n## Kinek ajánljuk?\n\n- Nappali, hálószoba\n- Mindennapi kiegyensúlyozott komfort\n- Aki jó fűtési teljesítményt is vár\n\n## Főbb jellemzők\n\n- **Kategória:** Kényelmi széria\n- **Technológia:** inverteres\n- **Hűtőközeg:** R32 (környezetbarát)\n- **WiFi:** vezérelhető (MELCloud)\n- **Fűtés:** hőszivattyús, jó teljesítmény\n- **Energiaosztály:** jó (akár A++)\n- **Teljesítmény:** több méretben – a felmérésen választjuk ki\n- **Garancia:** gyártói jótállás + teljes körű helyi szerviz",
+    "order": 1,
+    "published": true
+  },
+  {
+    "id": "msz-ln",
+    "slug": "msz-ln",
+    "name": "MSZ-LN Design",
+    "positioning": "Prémium dizájn",
+    "summary": "Ahol a klíma a lakberendezés része.",
+    "features": [
+      "Dizájn színek",
+      "Érzékelős légterelés",
+      "Csúcs hatásfok",
+      "Fejlett szűrés"
+    ],
+    "image": "",
+    "body": "Az MSZ-LN Design a Mitsubishi Electric dizájn-zászlóshajója: matt és fényes színekben elérhető, érzékelővel vezérelt légtereléssel, Plasma Quad Plus szűréssel és csúcs energiaosztállyal. Ahol a klíma a lakberendezés része – prémium minőség és megjelenés együtt.\n\n## Főbb előnyök\n\n- **Prémium dizájn színek:** Matt és fényes kivitel, ami illeszkedik az otthonhoz.\n- **Érzékelős légterelés:** A 3D érzékelő oda irányítja a levegőt, ahol vagy.\n- **Csúcs hatásfok:** Kiemelkedő energiaosztály, gazdaságos üzem.\n- **Erős fűtés:** Alacsony hőmérsékleten is stabil hőszivattyús fűtés.\n\n## Kinek ajánljuk?\n\n- Reprezentatív nappali\n- Ahol a klíma dizájnelem is\n- Aki csúcstudást és megjelenést is akar\n\n## Főbb jellemzők\n\n- **Kategória:** Prémium dizájn\n- **Technológia:** inverteres\n- **Hűtőközeg:** R32 (környezetbarát)\n- **WiFi:** gyárilag beépített (MELCloud)\n- **Szűrés:** Plasma Quad Plus\n- **Energiaosztály:** csúcskategóriás\n- **Teljesítmény:** több méretben – a felmérésen választjuk ki\n- **Garancia:** gyártói jótállás + teljes körű helyi szerviz\n\n## Gyakori kérdések\n\n### Milyen színekben kapható az MSZ-LN?\n\nMatt és fényes kivitelben is elérhető, több színben, hogy dizájnelemként illeszkedjen az otthonához. A pontos elérhető színekben segítünk.",
+    "order": 2,
+    "published": true
+  },
+  {
+    "id": "msz-ef",
+    "slug": "msz-ef",
+    "name": "MSZ-EF Kirigamine Zen",
+    "positioning": "Dizájn prémium",
+    "summary": "Csendben, feltűnésmentesen a legjobb.",
+    "features": [
+      "Elegáns lapos forma",
+      "Nagyon halk",
+      "Magas energiaosztály",
+      "Japán minőség"
+    ],
+    "image": "",
+    "body": "Az MSZ-EF Kirigamine Zen letisztult, lapos előlapú prémium modell, amely elegánsan illeszkedik a modern otthonokba. Nagyon halk üzem, magas energiaosztály és a Mitsubishi Electric precíz japán minősége – csendben, feltűnésmentesen a legjobb.\n\n## Főbb előnyök\n\n- **Elegáns lapos forma:** Letisztult előlap, ami észrevétlenül illeszkedik.\n- **Nagyon halk:** A piac egyik legcsendesebb beltéri egysége.\n- **Magas energiaosztály:** Gazdaságos, kiemelkedő hatásfokú üzem.\n- **Japán minőség:** Precíz gyártás, hosszú élettartam.\n\n## Kinek ajánljuk?\n\n- Modern, letisztult otthon\n- Hálószoba, ahol a csend fontos\n- Aki elegáns, feltűnésmentes prémiumot keres\n\n## Főbb jellemzők\n\n- **Kategória:** Dizájn prémium\n- **Technológia:** inverteres\n- **Hűtőközeg:** R32 (környezetbarát)\n- **WiFi:** opcióként (MELCloud)\n- **Kivitel:** lapos, elegáns előlap\n- **Energiaosztály:** magas (akár A++)\n- **Teljesítmény:** több méretben – a felmérésen választjuk ki\n- **Garancia:** gyártói jótállás + teljes körű helyi szerviz",
+    "order": 3,
+    "published": true
+  }
+]

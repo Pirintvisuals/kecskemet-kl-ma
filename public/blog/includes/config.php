@@ -8,12 +8,14 @@
  * data/posts mappában (nincs szükség adatbázisra).
  *
  * TEENDŐ ÉLESÍTÉS ELŐTT:
- *   1. Írd át a BLOG_ADMIN_USER és BLOG_ADMIN_PASSWORD értékét egy saját,
- *      erős felhasználónévre és jelszóra. (Ezzel lép be Zoltán a /blog/admin
- *      felületre.)
+ *   1. Az admin felhasználónév és jelszó NEM ebben a fájlban van (ez a fájl
+ *      publikus a repóban!). Hozz létre a szerveren egy
+ *      includes/config.local.php fájlt a config.local.example.php alapján,
+ *      és abban add meg a valódi, erős jelszót. Ez a fájl .gitignore-olt,
+ *      így soha nem kerül fel a GitHubra.
  *   2. FONTOS: újratöltéskor (a teljes out/ mappa feltöltésekor) NE írd felül
  *      a szerveren a blog/data és blog/uploads mappákat – ott vannak Zoltán
- *      bejegyzései és a feltöltött képek!
+ *      bejegyzései és a feltöltött képek! (Ugyanígy a config.local.php-t sem.)
  * ---------------------------------------------------------------------------
  */
 
@@ -24,9 +26,22 @@ const BLOG_TAGLINE    = 'Tippek, tanácsok és hírek a klímákról';
 const SITE_PHONE      = '+36 30 260 57 56';
 const SITE_PHONE_HREF = 'tel:+36302605756';
 
-// --- Admin belépés (>>> CSERÉLD LE <<<) ---
-const BLOG_ADMIN_USER     = 'zoltan';
-const BLOG_ADMIN_PASSWORD = 'klima-admin-2026';
+// --- Admin belépés ---
+// A VALÓDI jelszó NINCS ebben a (publikus) fájlban. A szerveren hozz létre egy
+// includes/config.local.php fájlt (lásd config.local.example.php), ami megadja:
+//   define('BLOG_ADMIN_USER', '...');  define('BLOG_ADMIN_PASSWORD', '...');
+$blogLocalConfig = __DIR__ . '/config.local.php';
+if (is_file($blogLocalConfig)) {
+    require $blogLocalConfig;
+}
+// Biztonságos alapérték: ha nincs config.local.php, a belépés le van tiltva
+// (senki sem tudja kitalálni ezt a véletlen jelszót).
+if (!defined('BLOG_ADMIN_USER')) {
+    define('BLOG_ADMIN_USER', 'admin');
+}
+if (!defined('BLOG_ADMIN_PASSWORD')) {
+    define('BLOG_ADMIN_PASSWORD', bin2hex(random_bytes(32)));
+}
 
 // --- URL-ek (a domain gyökeréhez képest) ---
 const BLOG_BASE_URL    = '/blog';

@@ -1,0 +1,53 @@
+[
+  {
+    "id": "tz-compact",
+    "slug": "tz-compact",
+    "name": "TZ Compact",
+    "positioning": "Kedvező belépő",
+    "summary": "A Panasonic minősége elérhető áron.",
+    "features": [
+      "Jó ár-érték",
+      "Inverteres",
+      "Megbízható",
+      "WiFi opció"
+    ],
+    "image": "",
+    "body": "A Panasonic TZ Compact jó ár-értékű, megbízható belépő modell a mindennapi hűtéshez és fűtéshez. Inverteres, gazdaságos üzem, halk működés és WiFi-vel bővíthető vezérlés – a Panasonic minősége elérhető áron.\n\n## Főbb előnyök\n\n- **Jó ár-érték:** A Panasonic bevált minősége kedvező belépő áron.\n- **Inverteres, gazdaságos:** Alacsony fogyasztás, kiszámítható üzem.\n- **Halk működés:** Csendes beltéri egység a mindennapokra.\n- **WiFi opció:** Comfort Cloud alkalmazással bővíthető vezérlés.\n\n## Kinek ajánljuk?\n\n- Első klíma kedvező áron\n- Lakás, hálószoba\n- Aki megbízható belépőt keres\n\n## Főbb jellemzők\n\n- **Kategória:** Kedvező belépő\n- **Technológia:** inverteres\n- **Hűtőközeg:** R32 (környezetbarát)\n- **WiFi:** opcióként (Comfort Cloud)\n- **Fűtés:** hőszivattyús üzem\n- **Energiaosztály:** jó\n- **Teljesítmény:** több méretben – a felmérésen választjuk ki\n- **Garancia:** gyártói jótállás + teljes körű helyi szerviz",
+    "order": 0,
+    "published": true
+  },
+  {
+    "id": "etherea",
+    "slug": "etherea",
+    "name": "Etherea (Z)",
+    "positioning": "Prémium, tiszta levegő",
+    "summary": "Prémium csúcs nanoe™ X légtisztítással.",
+    "features": [
+      "nanoe™ X légtisztítás",
+      "Csúcs hatásfok",
+      "Nagyon halk",
+      "Elegáns dizájn"
+    ],
+    "image": "",
+    "body": "A Panasonic Etherea (Z) prémium modell nanoe™ X levegőtisztítással, amely frissebb, tisztább beltéri levegőt ad – ideális allergiásoknak. Csúcs energiaosztály, nagyon halk üzem és elegáns, lapos megjelenés.\n\n## Főbb előnyök\n\n- **nanoe™ X légtisztítás:** Folyamatosan tisztább, egészségesebb beltéri levegő.\n- **Csúcs hatásfok:** Kiemelkedő energiaosztály, gazdaságos üzem.\n- **Nagyon halk:** Kifinomult, csendes működés éjszaka is.\n- **Aerowings légterelés:** Pontos, huzatmentes légáram a szobában.\n\n## Kinek ajánljuk?\n\n- Allergiás vagy egészségtudatos családok\n- Reprezentatív nappali, hálószoba\n- Aki tiszta levegőt és csúcstudást akar\n\n## Főbb jellemzők\n\n- **Kategória:** Prémium, tiszta levegő\n- **Technológia:** inverteres\n- **Hűtőközeg:** R32 (környezetbarát)\n- **WiFi:** gyárilag beépített (Comfort Cloud)\n- **Légtisztítás:** nanoe™ X\n- **Energiaosztály:** csúcskategóriás\n- **Teljesítmény:** több méretben – a felmérésen választjuk ki\n- **Garancia:** gyártói jótállás + teljes körű helyi szerviz\n\n## Gyakori kérdések\n\n### Miért jó allergiásoknak az Etherea?\n\nA nanoe™ X légtisztítás folyamatosan semlegesíti a szagokat, és kezeli az allergéneket, baktériumokat, penészt – tisztább, egészségesebb beltéri levegőt adva.",
+    "order": 1,
+    "published": true
+  },
+  {
+    "id": "pz",
+    "slug": "pz",
+    "name": "PZ",
+    "positioning": "Kényelmi széria",
+    "summary": "Megbízható középkategória, jó fűtéssel.",
+    "features": [
+      "Kiegyensúlyozott",
+      "Csendes",
+      "WiFi opció",
+      "Jó fűtés"
+    ],
+    "image": "",
+    "body": "A Panasonic PZ kiegyensúlyozott középkategóriás modell, amely jó egyensúlyt teremt az ár és a tudás között. Csendes, energiatakarékos működés, jó fűtési teljesítmény és WiFi-vezérelhetőség – a megbízható középkategória.\n\n## Főbb előnyök\n\n- **Jó hatásfok:** Gazdaságos, kiegyensúlyozott üzem egész évben.\n- **Csendes üzem:** Halk működés nappaliba és hálószobába.\n- **WiFi vezérlés:** Comfort Cloud alkalmazás, bárhonnan irányítható.\n- **Jó téli fűtés:** Megbízható hőszivattyús fűtés a hidegben is.\n\n## Kinek ajánljuk?\n\n- Nappali, hálószoba\n- Aki jó ár-tudás egyensúlyt keres\n- Mindennapi megbízható komfort\n\n## Főbb jellemzők\n\n- **Kategória:** Kényelmi széria\n- **Technológia:** inverteres\n- **Hűtőközeg:** R32 (környezetbarát)\n- **WiFi:** vezérelhető (Comfort Cloud)\n- **Fűtés:** hőszivattyús, jó teljesítmény\n- **Energiaosztály:** jó (akár A++)\n- **Teljesítmény:** több méretben – a felmérésen választjuk ki\n- **Garancia:** gyártói jótállás + teljes körű helyi szerviz",
+    "order": 2,
+    "published": true
+  }
+]
