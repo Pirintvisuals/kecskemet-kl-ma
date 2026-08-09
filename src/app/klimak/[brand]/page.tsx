@@ -16,6 +16,11 @@ import {
   Wind,
   Thermometer,
   Volume2,
+  Globe,
+  ShieldCheck,
+  PiggyBank,
+  PlayCircle,
+  HelpCircle,
   type LucideIcon,
 } from "lucide-react";
 import Navbar from "@/components/Navbar";
@@ -64,6 +69,18 @@ const techIcon: Record<string, LucideIcon> = {
   volume: Volume2,
 };
 
+const infoIcon: Record<string, LucideIcon> = {
+  wifi: Wifi,
+  flame: Flame,
+  leaf: Leaf,
+  wind: Wind,
+  thermometer: Thermometer,
+  volume: Volume2,
+  globe: Globe,
+  shield: ShieldCheck,
+  piggybank: PiggyBank,
+};
+
 export default async function BrandPage({
   params,
 }: {
@@ -76,8 +93,27 @@ export default async function BrandPage({
   const accent = b.accent;
   const others = brandPages.filter((x) => x.slug !== b.slug);
 
+  const faqJsonLd =
+    b.faq && b.faq.length > 0
+      ? {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: b.faq.map((f) => ({
+            "@type": "Question",
+            name: f.q,
+            acceptedAnswer: { "@type": "Answer", text: f.a },
+          })),
+        }
+      : null;
+
   return (
     <>
+      {faqJsonLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
+      )}
       <Navbar />
 
       {/* ---------------- HERO ---------------- */}
@@ -368,6 +404,95 @@ export default async function BrandPage({
         </section>
       )}
 
+      {/* ---------------- VIDEO ---------------- */}
+      {b.video && (
+        <section className="relative py-16">
+          <div
+            className="pointer-events-none absolute inset-x-0 top-0 h-px"
+            style={{ background: `linear-gradient(90deg, transparent, ${accent}55, transparent)` }}
+          />
+          <div className="mx-auto max-w-5xl px-6">
+            <Reveal className="mx-auto max-w-2xl text-center">
+              <span
+                className="inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-wider"
+                style={{ color: accent, backgroundColor: `${accent}1a`, border: `1px solid ${accent}40` }}
+              >
+                <PlayCircle className="h-3.5 w-3.5" />
+                Videó
+              </span>
+              <h2 className="mt-4 font-display text-3xl font-bold tracking-tight text-white sm:text-4xl">
+                {b.video.title}
+              </h2>
+              {b.video.text && (
+                <p className="mt-4 text-lg leading-relaxed text-muted">{b.video.text}</p>
+              )}
+            </Reveal>
+            <Reveal delay={0.08} className="mt-10">
+              <div
+                className="relative aspect-video w-full overflow-hidden rounded-3xl border border-white/8 bg-navy-950/60 shadow-[0_30px_80px_-30px_rgba(0,0,0,0.8)]"
+                style={{ boxShadow: `0 30px 80px -30px ${accent}55` }}
+              >
+                <iframe
+                  className="absolute inset-0 h-full w-full"
+                  src={`https://www.youtube-nocookie.com/embed/${b.video.id}?rel=0`}
+                  title={b.video.title}
+                  loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                />
+              </div>
+            </Reveal>
+          </div>
+        </section>
+      )}
+
+      {/* ---------------- IN-DEPTH INFO SECTIONS ---------------- */}
+      {b.infoSections && b.infoSections.length > 0 && (
+        <section className="relative py-16">
+          <div className="mx-auto max-w-7xl px-6">
+            <Reveal className="mx-auto max-w-2xl text-center">
+              <span
+                className="inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-wider"
+                style={{ color: accent, backgroundColor: `${accent}1a`, border: `1px solid ${accent}40` }}
+              >
+                Jó tudni
+              </span>
+              <h2 className="mt-4 font-display text-3xl font-bold tracking-tight text-white sm:text-4xl">
+                Amiért érdemes {b.name} klímát választani
+              </h2>
+              <p className="mt-4 text-lg leading-relaxed text-muted">
+                Technológia, megtakarítás és nyugalom – a legfontosabb tudnivalók
+                a {b.name} készülékekről, közérthetően.
+              </p>
+            </Reveal>
+            <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+              {b.infoSections.map((info, i) => {
+                const Icon = infoIcon[info.icon] ?? Check;
+                return (
+                  <Reveal key={info.title} delay={(i % 3) * 0.08}>
+                    <div className="flex h-full flex-col rounded-3xl border border-white/8 bg-navy-800/50 p-6 sm:p-7 transition-all duration-300 hover:-translate-y-1 hover:bg-navy-800/80">
+                      <span
+                        className="grid h-12 w-12 place-items-center rounded-2xl"
+                        style={{ backgroundColor: `${accent}1a`, color: accent }}
+                      >
+                        <Icon className="h-6 w-6" />
+                      </span>
+                      <h3 className="mt-5 font-display text-xl font-bold text-white">
+                        {info.title}
+                      </h3>
+                      <p className="mt-3 text-[15px] leading-relaxed text-muted">
+                        {info.text}
+                      </p>
+                    </div>
+                  </Reveal>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* ---------------- MODELS ---------------- */}
       <section className="relative py-16">
         <div className="mx-auto max-w-7xl px-6">
@@ -438,6 +563,46 @@ export default async function BrandPage({
           </p>
         </div>
       </section>
+
+      {/* ---------------- FAQ ---------------- */}
+      {b.faq && b.faq.length > 0 && (
+        <section className="relative py-16">
+          <div
+            className="pointer-events-none absolute inset-x-0 top-0 h-px"
+            style={{ background: `linear-gradient(90deg, transparent, ${accent}55, transparent)` }}
+          />
+          <div className="mx-auto max-w-3xl px-6">
+            <Reveal className="mx-auto max-w-2xl text-center">
+              <span
+                className="inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-wider"
+                style={{ color: accent, backgroundColor: `${accent}1a`, border: `1px solid ${accent}40` }}
+              >
+                <HelpCircle className="h-3.5 w-3.5" />
+                GYIK
+              </span>
+              <h2 className="mt-4 font-display text-3xl font-bold tracking-tight text-white sm:text-4xl">
+                Gyakori kérdések a {b.name} klímákról
+              </h2>
+            </Reveal>
+            <div className="mt-10 space-y-4">
+              {b.faq.map((item, i) => (
+                <Reveal key={item.q} delay={(i % 3) * 0.06}>
+                  <details className="group rounded-2xl border border-white/8 bg-navy-800/50 p-5 open:bg-navy-800/80 sm:p-6">
+                    <summary className="flex cursor-pointer list-none items-center justify-between gap-4 font-display text-lg font-semibold text-white">
+                      {item.q}
+                      <ChevronRight
+                        className="h-5 w-5 shrink-0 transition-transform duration-200 group-open:rotate-90"
+                        style={{ color: accent }}
+                      />
+                    </summary>
+                    <p className="mt-3 text-[15px] leading-relaxed text-muted">{item.a}</p>
+                  </details>
+                </Reveal>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* ---------------- SERVICES FOR THIS BRAND ---------------- */}
       <section className="relative py-16">

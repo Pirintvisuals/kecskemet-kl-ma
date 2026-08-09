@@ -45,6 +45,12 @@ export type Brand = {
   featuredSeries?: FeaturedSeries;
   /** Optional real reference photos of this brand's installed units. */
   photos?: { src: string; alt: string }[];
+  /** Optional embedded YouTube presentation video (id = the ?v= part). */
+  video?: { id: string; title: string; text?: string };
+  /** Optional in-depth explainer blocks (e.g. R32 hűtőközeg, H-tarifa). */
+  infoSections?: { icon: string; title: string; text: string }[];
+  /** Optional brand-specific FAQ. */
+  faq?: { q: string; a: string }[];
 };
 
 export const brandPages: Brand[] = [
@@ -270,6 +276,81 @@ export const brandPages: Brand[] = [
         description:
           "Fém hatású, exkluzív előlapú prémium Gree modell erős teljesítménnyel – ha a klíma dizájnelem is a lakásban. Csúcskategóriás anyaghasználat, kifinomult, halk működés, magas energiaosztály és teljes okosvezérlés WiFi-n keresztül. A Gree kínálatának dizájn-zászlóshajója.",
         features: ["Prémium fém dizájn", "Erős teljesítmény", "Csúcs energiaosztály", "Okosvezérlés WiFi-vel"],
+      },
+    ],
+    video: {
+      id: "uNRCooqHTes",
+      title: "Ismerje meg a Gree klímákat működés közben",
+      text: "A gyártó bemutatóvideója a Gree technológiáról és a lakossági szériákról. Ha kérdése van egy adott modellel kapcsolatban, hívjon – készséggel segítünk a választásban.",
+    },
+    infoSections: [
+      {
+        icon: "leaf",
+        title: "Környezetbarát R32 hűtőközeg",
+        text:
+          "A Gree készülékek az új, környezetbarát R32 hűtőközeggel üzemelnek, amely globálisan felváltja a korábbi R410a gázt. Az R32-nek nincs ózonkárosító hatása (ODP = 0), globális felmelegedési potenciálja (GWP) pedig 675 – jóval alacsonyabb az R410a 2088-as értékénél. Ráadásul hatékonyabb hőátadása révén kevesebb hűtőközeggel is jobb energiahatékonyságot ér el.",
+      },
+      {
+        icon: "piggybank",
+        title: "H-tarifa: akár 50% megtakarítás télen",
+        text:
+          "A H-tarifás Gree modellek megfelelnek a kedvezményes elektromos fűtési tarifa igénylési feltételeinek. Ezzel október 15. és április 15. között akár 50%-ot is megtakaríthat a fűtésre fordított áram költségén – így a Gree klímafűtés a hidegebb hónapokban is kifejezetten gazdaságos. Az igénylés feltételeiben és az ügyintézésben szívesen segítünk.",
+      },
+      {
+        icon: "wifi",
+        title: "GREE+ okosalkalmazás és hangvezérlés",
+        text:
+          "A WiFi-s Gree berendezések okostelefonról, a világ bármely pontjáról vezérelhetők az ingyenes GREE+ applikációval – ki- és bekapcsolás, hőmérséklet, időzítés mind egy érintésre. Az alkalmazással a klíma Google Home vagy Amazon Alexa okosotthon-rendszerbe is integrálható, így akár hangparanccsal is irányítható.",
+      },
+      {
+        icon: "globe",
+        title: "A világ legnagyobb klímagyártója",
+        text:
+          "A Gree a világ legnagyobb klímagyártója, amely évente több tízmillió készüléket állít elő, és számos más ismert márkának is beszállítója. Saját fejlesztésű inverteres kompresszorai és több évtizedes gyártási tapasztalata a kedvező ár mögött is stabil, kiszámítható minőséget adnak – ezért lett Magyarországon is az egyik legnépszerűbb választás.",
+      },
+      {
+        icon: "shield",
+        title: "Akár 10 év garancia – nyugalom hosszú távra",
+        text:
+          "A prémium Gree klímákra a gyártói regisztráció elvégzése és a feltételek teljesülése esetén akár 10 év garancia is igényelhető. Hivatalos szakszervizként a regisztrációban, a rendszeres karbantartásban és a garanciális ügyintézésben is végig Ön mellett állunk – nem csak beszereljük, hosszú távon gondozzuk is a készülékét.",
+      },
+      {
+        icon: "thermometer",
+        title: "I FEEL – ott legyen kellemes, ahol Ön van",
+        text:
+          "A Gree vezeték nélküli távirányítójába termosztát van építve: az I FEEL funkció bekapcsolásakor a klíma nem a beltéri egységnél, hanem az Ön közelében – a távirányítónál – mért hőmérséklethez igazítja a működését. Így pontosan ott lesz kellemes a hőérzet, ahol Ön tartózkodik.",
+      },
+    ],
+    faq: [
+      {
+        q: "Alkalmas-e a Gree klíma téli fűtésre?",
+        a:
+          "Igen. A téliesített modellek kompresszorház- és csepptálca-fűtéssel készülnek, így hőszivattyús üzemben akár -25 °C-os külső hőmérsékletig is hatékonyan fűtenek. A fűtési szezon nagy részében kiválthatják vagy kiegészíthetik a hagyományos fűtést.",
+      },
+      {
+        q: "Tényleg igényelhető 10 év garancia?",
+        a:
+          "A prémium Gree modellekre a gyártói regisztráció elvégzése és a feltételek – például a rendszeres szakszervizes karbantartás – teljesülése esetén akár 10 év garancia is igényelhető. Ebben teljes körűen segítünk.",
+      },
+      {
+        q: "Mi az a H-tarifa, és mennyit spórolhatok vele?",
+        a:
+          "A H-tarifa egy kedvezményes elektromos áramtarifa fűtési célra. A megfelelő, feltételeknek megfelelő Gree modellekkel október 15. és április 15. között akár 50%-kal is csökkenthető a fűtésre fordított áram költsége.",
+      },
+      {
+        q: "Vezérelhető a Gree klíma telefonról?",
+        a:
+          "Igen. A WiFi-s modellek az ingyenes GREE+ alkalmazással a világ bármely pontjáról vezérelhetők, és Google Home vagy Amazon Alexa okosotthon-rendszerbe is integrálhatók.",
+      },
+      {
+        q: "Milyen hűtőközeggel működnek a Gree klímák?",
+        a:
+          "A jelenlegi Gree készülékek a környezetbarát, ózonbarát (ODP = 0) R32 hűtőközeggel üzemelnek, amelynek a globális felmelegedési potenciálja is jóval alacsonyabb a korábbi R410a gázénál.",
+      },
+      {
+        q: "Mennyibe kerül egy Gree klíma beszerelve?",
+        a:
+          "Az ár a kiválasztott modelltől, a szükséges teljesítménytől és a beszerelés körülményeitől függ. Kérjen ingyenes helyszíni felmérést és pontos árajánlatot – a kiszállás és a felmérés díjmentes.",
       },
     ],
   },
