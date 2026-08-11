@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, type Variants } from "framer-motion";
-import { Phone, ArrowRight, ShieldCheck, Snowflake, Wind, CalendarCheck, BadgeCheck } from "lucide-react";
+import { Phone, ArrowRight, ShieldCheck, Snowflake, Wind, CalendarCheck, BadgeCheck, Sparkles } from "lucide-react";
 import AuroraBackground from "./AuroraBackground";
 import ClimatePanel from "./ClimatePanel";
 import Photo from "./Photo";
@@ -88,6 +88,16 @@ export default function Hero() {
                 {site.phone}
               </a>
             </span>
+            <a
+              href={site.quoteAgentUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group inline-flex items-center gap-2 rounded-full border border-brand-400/50 bg-brand-500/10 px-6 py-3.5 font-semibold text-brand-50 transition-all duration-200 hover:border-brand-400 hover:bg-brand-500/20 hover:text-white cursor-pointer"
+            >
+              <Sparkles className="h-5 w-5 text-brand-300" />
+              Azonnali árajánlat
+              <ArrowRight className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
+            </a>
             <a
               href="/kapcsolat/#foglalas"
               className="glass-strong group inline-flex items-center gap-2 rounded-full px-6 py-3.5 font-semibold text-brand-50 transition-all duration-200 hover:border-brand-400/60 hover:text-white cursor-pointer"

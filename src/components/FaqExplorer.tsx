@@ -2,7 +2,7 @@
 
 import { useMemo, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { Plus, Search, X, HelpCircle } from "lucide-react";
+import { Plus, Search, X, HelpCircle, Sparkles, ArrowRight } from "lucide-react";
 import { faqs, faqCategories, site } from "@/lib/site";
 import Reveal from "./Reveal";
 
@@ -150,9 +150,23 @@ export default function FaqExplorer() {
                       exit={{ height: 0, opacity: 0 }}
                       transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
                     >
-                      <p className="px-5 pb-5 text-[15px] leading-relaxed text-muted">
-                        {f.a}
-                      </p>
+                      <div className="px-5 pb-5">
+                        <p className="text-[15px] leading-relaxed text-muted">
+                          {f.a}
+                        </p>
+                        {f.link && (
+                          <a
+                            href={f.link.href}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="mt-4 inline-flex items-center gap-2 rounded-full bg-warm-500 px-5 py-2.5 text-sm font-semibold text-white transition-all duration-200 hover:-translate-y-0.5 hover:bg-warm-600 cursor-pointer"
+                          >
+                            <Sparkles className="h-4 w-4" />
+                            {f.link.label}
+                            <ArrowRight className="h-4 w-4" />
+                          </a>
+                        )}
+                      </div>
                     </motion.div>
                   )}
                 </AnimatePresence>

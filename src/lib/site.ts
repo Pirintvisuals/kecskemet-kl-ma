@@ -21,6 +21,8 @@ export const site = {
   // Opens the business on Google where visitors can read and leave reviews.
   googleUrl:
     "https://www.google.com/search?q=H%C3%ADr%C3%B6s+Kl%C3%ADmatechnika+-+Kl%C3%ADmatelep%C3%ADt%C3%A9s,+kl%C3%ADmaszerel%C3%A9s+%C3%A9s+karbantart%C3%A1s+Reviews&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxI2MTcwMrM0tjQ1MjYwtTQwMjax2MDI-Iox1OPw2qLD24oVvHMOr81NLElNzsjLzE5U0IUL5KQWHF5bcnhlsY5CNliouCq1KDUHKKAAwtmJRUmJeSWJRSWHFxYrBKWWZaaWFy9ipY25AG26lVrKAAAA&rldimm=4702693952305902348&tbm=lcl&hl=en-HU&sa=X#lkt=LocalPoiReviews",
+  // AI "Árajánló asszisztens" — instant online estimate chat (separate Vercel app).
+  quoteAgentUrl: "https://klima-quoting-agent.vercel.app/",
 } as const;
 
 export type Service = {
@@ -514,7 +516,13 @@ export const serviceAreas = [
   "Kadafalva",
 ];
 
-export type Faq = { q: string; a: string; category: string };
+export type Faq = {
+  q: string;
+  a: string;
+  category: string;
+  /** Optional call-to-action link shown under the answer (e.g. the Árajánló asszisztens). */
+  link?: { href: string; label: string };
+};
 
 /** Categories used by the GYIK explorer (order defines the filter chips). */
 export const faqCategories = [
@@ -527,6 +535,12 @@ export const faqCategories = [
 ] as const;
 
 export const faqs: Faq[] = [
+  {
+    category: "Ár & felmérés",
+    q: "Kaphatok azonnali árajánlatot online?",
+    a: "Igen! Az Árajánló asszisztensünkkel néhány egyszerű kérdés alapján percek alatt, éjjel-nappal kaphat egy tájékoztató árbecslést a klíma telepítésére vagy szervizére – anélkül, hogy telefonálnia kellene. A végleges árat ezután ingyenes, kötelezettségmentes helyszíni felméréssel véglegesítjük.",
+    link: { href: site.quoteAgentUrl, label: "Azonnali árajánlat indítása" },
+  },
   {
     category: "Ár & felmérés",
     q: "Ingyenes a helyszíni felmérés?",

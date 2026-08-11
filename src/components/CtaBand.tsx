@@ -1,4 +1,4 @@
-import { Phone, ArrowRight, Snowflake } from "lucide-react";
+import { Phone, ArrowRight, Snowflake, Sparkles } from "lucide-react";
 import { site } from "@/lib/site";
 import Reveal from "./Reveal";
 
@@ -69,6 +69,16 @@ export default function CtaBand({
               >
                 <Phone className="h-5 w-5" />
                 {site.phone}
+              </a>
+              <a
+                href={site.quoteAgentUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded-full border border-brand-400/50 bg-brand-500/10 px-6 py-3.5 font-semibold text-brand-50 transition-all duration-200 hover:border-brand-400 hover:bg-brand-500/20 hover:text-white cursor-pointer"
+              >
+                <Sparkles className="h-5 w-5 text-brand-300" />
+                Azonnali árajánlat
+                <ArrowRight className="h-4 w-4" />
               </a>
               <a
                 href="/kapcsolat/"
