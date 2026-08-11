@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Inter, Sora } from "next/font/google";
 import ScrollProgress from "@/components/ScrollProgress";
 import CookieNotice from "@/components/CookieNotice";
+import { site } from "@/lib/site";
 import "./globals.css";
 
 const inter = Inter({
@@ -68,11 +70,25 @@ export default function RootLayout({
         <noscript>
           <style>{`[style*="opacity:0"],[style*="opacity: 0"]{opacity:1 !important;transform:none !important}`}</style>
         </noscript>
+        {/* Árajánló asszisztens widget config — must be set before widget.js runs. */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `window.KLIMA_CONFIG={apiUrl:"${site.quoteAgentUrl.replace(/\/$/, "")}/api/faq-agent",assetsUrl:"${site.quoteAgentUrl.replace(/\/$/, "")}"};`,
+          }}
+        />
       </head>
       <body className="min-h-full flex flex-col bg-navy-950 text-foreground">
         <ScrollProgress />
         {children}
         <CookieNotice />
+
+        {/* Árajánló asszisztens — floating quote widget in the bottom-right corner
+            on every page. Served from the separate agent app; config in <head>
+            points the widget at that app's API + assets. */}
+        <Script
+          src={`${site.quoteAgentUrl.replace(/\/$/, "")}/widget.js`}
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );

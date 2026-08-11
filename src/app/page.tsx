@@ -90,7 +90,7 @@ export default function Home() {
       <a
         href={site.phoneHref}
         aria-label="Hívás most"
-        className="fixed bottom-4 right-4 z-40 flex items-center gap-2 rounded-full bg-warm-500 px-5 py-3.5 font-semibold text-white shadow-[0_16px_40px_-12px_rgba(249,115,22,0.95)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-warm-600 lg:hidden cursor-pointer"
+        className="fixed bottom-4 left-4 z-40 flex items-center gap-2 rounded-full bg-warm-500 px-5 py-3.5 font-semibold text-white shadow-[0_16px_40px_-12px_rgba(249,115,22,0.95)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-warm-600 lg:hidden cursor-pointer"
       >
         <Phone className="h-5 w-5" />
         Hívás
